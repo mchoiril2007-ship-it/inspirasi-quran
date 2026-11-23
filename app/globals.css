@@ -335,3 +335,9 @@ button, input, select { font: inherit; color: inherit; }
   .nav-collapsed .shell-main { margin-left: 0; }
 }
 @media (max-width: 380px) { .brand-text { font-size: 16px; } .header-cta { font-size: 14px; } }
+
+/* Gambar dari naskah (mis. peta surat) */
+.doc-figure { margin: 24px -8px 30px; }
+.doc-figure a { display: block; border-radius: 16px; overflow: hidden; border: 1px solid var(--line); background: #fff; }
+.doc-figure img { width: 100%; height: auto; display: block; }
+.doc-figure figcaption { text-align: center; color: var(--text-3); font-size: 13px; margin-top: 8px; }

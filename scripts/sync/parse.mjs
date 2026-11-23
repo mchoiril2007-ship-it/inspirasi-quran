@@ -63,6 +63,7 @@ export function parseNaskah(raw, { fileName = '', surah: forced = null } = {}) {
   if (firstH2 < 0) firstH2 = 0;
   const cover = raw.slice(0, firstH2).filter((b) => b.t === 'p').map((b) => b.text);
   const body = raw.slice(firstH2);
+  const coverStart = raw.slice(0, firstH2);
 
   // Surat: dari judul sampul, lalu nama file
   const titleLine = cover.find((t) => /surat|surah/i.test(t)) || '';
@@ -96,6 +97,12 @@ export function parseNaskah(raw, { fileName = '', surah: forced = null } = {}) {
 
   for (let i = 0; i < body.length; i++) {
     const b = body[i];
+    if (b.t === 'image') {
+      const lastH2 = [...blocks].reverse().find((x) => x.type === 'h2');
+      const altText = b.alt || (lastH2 && /peta/i.test(lastH2.text) ? `Peta struktur Surat ${surah.name}` : `Gambar dari naskah Surat ${surah.name}`);
+      if (b.data && b.data.length > 2000) blocks.push({ type: 'image', alt: altText, width: Math.round(b.cx / 9525) || 0, height: Math.round(b.cy / 9525) || 0, ext: b.ext, data: b.data });
+      continue;
+    }
     if (b.t === 'table') {
       const rows = b.rows.filter((r) => r.some((c) => c.length));
       if (rows.length === 1 && rows[0].length === 1) {

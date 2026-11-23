@@ -20,6 +20,7 @@ export type Block =
   | { type: 'ayah'; arabic: string; surahNumber: number; surahName: string; ayahs: number[]; ref: string; translation: string }
   | { type: 'arabic'; text: string }
   | { type: 'table'; head: string[]; rows: string[][] }
+  | { type: 'image'; src: string; alt: string; width: number; height: number }
   | { type: 'divider' }
   | { type: 'signature'; text: string };
 

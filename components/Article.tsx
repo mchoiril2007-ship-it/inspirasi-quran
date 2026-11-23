@@ -160,6 +160,17 @@ export default function Article({ blocks }: { blocks: Block[] }) {
           </table>,
         );
         break;
+      case 'image':
+        out.push(
+          <figure key={k} className="doc-figure">
+            <a href={b.src} target="_blank" rel="noopener" aria-label={`Perbesar gambar: ${b.alt || 'gambar'}`}>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src={b.src} alt={b.alt || ''} width={b.width || undefined} height={b.height || undefined} loading="lazy" decoding="async" />
+            </a>
+            <figcaption>Ketuk gambar untuk memperbesar</figcaption>
+          </figure>,
+        );
+        break;
       case 'divider':
         out.push(
           <div key={k} className="divider" aria-hidden="true">

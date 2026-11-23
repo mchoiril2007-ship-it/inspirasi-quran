@@ -1,6 +1,7 @@
 // Sinkron otomatis: Drive (naskah) + YouTube (video) + audio. Dijalankan tiap jam oleh GitHub Actions.
 // Prinsip: kalau ada yang gagal, lewati dan catat; jangan pernah merusak isi web yang sudah ada.
 import fs from 'node:fs';
+import crypto from 'node:crypto';
 import path from 'node:path';
 import { execFile } from 'node:child_process';
 import { promisify } from 'node:util';
@@ -49,6 +50,23 @@ function loadDocs() {
   return docs;
 }
 
+// Simpan gambar naskah (mis. peta surat) ke public/img/surat/<slug>/ dan ganti datanya dengan alamat file.
+function saveImages(doc) {
+  const dir = path.join(ROOT, 'public', 'img', 'surat', doc.slug);
+  fs.rmSync(dir, { recursive: true, force: true });
+  let n = 0;
+  for (const b of doc.blocks) {
+    if (b.type !== 'image' || !b.data) continue;
+    fs.mkdirSync(dir, { recursive: true });
+    const hash = crypto.createHash('sha1').update(b.data).digest('hex').slice(0, 10);
+    const name = `gambar-${++n}-${hash}.${b.ext || 'png'}`;
+    fs.writeFileSync(path.join(dir, name), b.data);
+    b.src = `/img/surat/${doc.slug}/${name}`;
+    delete b.data;
+    delete b.ext;
+  }
+}
+
 async function syncNaskah(bridge) {
   const docs = loadDocs();
   const files = await bridge.list();
@@ -82,6 +100,7 @@ async function syncNaskah(bridge) {
       const doc = parseNaskah(raw, { fileName: f.name, surah: s });
       const ayahCount = doc.blocks.filter((b) => b.type === 'ayah').length;
       if (doc.blocks.length < 8) throw new Error('Isi naskah terlalu sedikit atau formatnya tidak terbaca');
+      saveImages(doc);
       doc.source = { fileId: f.id, fileName: f.name, modifiedTime: f.modifiedTime, updatedAt: f.modifiedTime };
       writeJson(path.join(SURAT_DIR, `${s.slug}.json`), doc);
       status.naskah.push({ file: f.name, slug: s.slug, status: 'ok', message: existing ? `Diperbarui (${ayahCount} kutipan ayat)` : `Halaman baru dibuat (${ayahCount} kutipan ayat)` });

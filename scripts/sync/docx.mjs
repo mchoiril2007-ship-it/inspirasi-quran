@@ -53,6 +53,17 @@ function paragraph(p, ctx) {
       }
     }
   }
+  // Gambar (w:drawing → a:blip r:embed)
+  const images = [];
+  for (const d of findAll(kids(p), 'w:drawing')) {
+    const blip = findAll(kids(d), 'a:blip')[0];
+    const rid = blip && attr(blip, 'r:embed');
+    const target = rid && ctx.rels[rid];
+    if (!target) continue;
+    const docPr = findAll(kids(d), 'wp:docPr')[0];
+    const ext = findAll(kids(d), 'wp:extent')[0];
+    images.push({ target, alt: attr(docPr || {}, 'descr') || attr(docPr || {}, 'title') || '', cx: +attr(ext || {}, 'cx') || 0, cy: +attr(ext || {}, 'cy') || 0 });
+  }
   const runs = findAll(kids(p), 'w:r');
   let text = '';
   let boldChars = 0;
@@ -75,6 +86,7 @@ function paragraph(p, ctx) {
   }
   return {
     t: 'p',
+    images,
     text: (prefix + text).replace(/ /g, ' ').replace(/[ \t]+/g, ' ').trim(),
     style: styleName,
     bold: chars > 0 && boldChars / chars > 0.85,
@@ -131,7 +143,14 @@ async function readNumbering(zip) {
 /** @returns {Promise<Array<{t:'p',text:string,style:string,bold:boolean,align:string}|{t:'table',rows:any[][][]}>>} */
 export async function docxToRawBlocks(buffer) {
   const zip = await JSZip.loadAsync(buffer);
-  const ctx = { styles: await readStyles(zip), numFormats: await readNumbering(zip), counters: {} };
+  const rels = {};
+  const relFile = zip.file('word/_rels/document.xml.rels');
+  if (relFile) {
+    for (const r of findAll(parser.parse(await relFile.async('string')), 'Relationship')) {
+      if (/image/.test(attr(r, 'Type') || '')) rels[attr(r, 'Id')] = 'word/' + String(attr(r, 'Target')).replace(/^\/?word\//, '').replace(/^\.\.\//, '');
+    }
+  }
+  const ctx = { styles: await readStyles(zip), numFormats: await readNumbering(zip), counters: {}, rels };
   const doc = parser.parse(await zip.file('word/document.xml').async('string'));
   const body = findAll(doc, 'w:body')[0];
   const out = [];
@@ -140,11 +159,16 @@ export async function docxToRawBlocks(buffer) {
       const t = tag(n);
       if (t === 'w:p') {
         const p = paragraph(n, ctx);
+        for (const im of p.images) {
+          const f = zip.file(im.target);
+          if (f) out.push({ t: 'image', alt: im.alt, cx: im.cx, cy: im.cy, ext: (im.target.split('.').pop() || 'png').toLowerCase(), data: '__pending__', file: f });
+        }
         if (p.text) out.push(p);
       } else if (t === 'w:tbl') out.push(table(n, ctx));
       else if (t === 'w:sdt' || t === 'w:sdtContent' || t === 'w:customXml') walk(kids(n));
     }
   };
   walk(kids(body));
+  for (const b of out) if (b.t === 'image') b.data = await b.file.async('nodebuffer'), delete b.file;
   return out;
 }
