@@ -1,5 +1,4783 @@
 {
- "channel": null,
- "bySurah": {},
- "unmatched": []
+ "channel": {
+  "id": "UC08gqVpjgJ4Uvr56k5ERyhw",
+  "title": "M.Choiril Alam",
+  "handle": "@quraninspiration"
+ },
+ "bySurah": {
+  "al-qalam": [
+   {
+    "id": "J3PVAfLQ7dg",
+    "title": "Saat kita merasa, aku bisa sendiri. Surat Al Qalam",
+    "publishedAt": "2026-06-10T13:21:09Z"
+   },
+   {
+    "id": "fWTWErjhl2A",
+    "title": "Surat Al-Qalam: Keserakahan Akar Korupsi dan Kekafiran | Tafsir Religius & Sosial",
+    "publishedAt": "2025-05-16T22:25:17Z"
+   }
+  ],
+  "fussilat": [
+   {
+    "id": "y_Xw6F2CylI",
+    "title": "Hati gelisah walau banyak ibadah karena hati yang sulit hadir. Al Fussilat",
+    "publishedAt": "2026-01-12T23:43:45Z"
+   },
+   {
+    "id": "QL9_5RFUQrQ",
+    "title": "SOLUSI MASALAH DI DUNIA (FUSSILAT : 30)",
+    "publishedAt": "2019-04-12T11:51:20Z"
+   }
+  ],
+  "al-waqiah": [
+   {
+    "id": "jwjVl8_Mysc",
+    "title": "Baca Surat Al Waqiah supaya Kaya !, kaya itu apa ?",
+    "publishedAt": "2025-11-03T00:01:52Z"
+   },
+   {
+    "id": "ycMpc2cOT_k",
+    "title": "Surat Al Waqiah pembuka pintu rezeki",
+    "publishedAt": "2025-07-11T09:11:41Z"
+   }
+  ],
+  "maryam": [
+   {
+    "id": "JGvBqb8vjXw",
+    "title": "Baca surat Maryam supaya anaknya Cantik, apa iya hanya cantik wajah aja?",
+    "publishedAt": "2025-10-29T02:29:36Z"
+   },
+   {
+    "id": "l_Hzw9b0mTA",
+    "title": "Surat maryam dan surat al kahfi",
+    "publishedAt": "2017-03-04T10:49:11Z"
+   }
+  ],
+  "yusuf": [
+   {
+    "id": "OA_LRRzlXCE",
+    "title": "Kalo hamil Baca Surat Yusuf supaya anak Ganteng, apa cuma itu aja isi surat ini ? #yusuf #hamil",
+    "publishedAt": "2025-10-12T22:31:35Z"
+   },
+   {
+    "id": "iov4ThgF82I",
+    "title": "Kalo hamil baca surat Yusuf supaya Anaknya Ganteng, apa ya cuma itu ?.",
+    "publishedAt": "2025-10-12T12:19:24Z"
+   },
+   {
+    "id": "kg4omiMCKRg",
+    "title": "Tafsir Al Quran Surat Yusuf: Usaha yang Sukses (PART 2)",
+    "publishedAt": "2021-06-23T10:00:31Z"
+   },
+   {
+    "id": "eeEIjI1fJrI",
+    "title": "Tafsir Al-Quran Surat Yusuf: Usaha yang Sukses",
+    "publishedAt": "2021-06-17T10:00:30Z"
+   },
+   {
+    "id": "VMR9i6kcET0",
+    "title": "Tafsir Surat Yusuf Ayat: 54 - 55 (PART 2)",
+    "publishedAt": "2021-06-04T10:00:13Z"
+   },
+   {
+    "id": "dD4mHT_yaEA",
+    "title": "Tafsir Surat Yusuf Ayat: 54 - 55",
+    "publishedAt": "2021-06-02T10:00:13Z"
+   },
+   {
+    "id": "25om9vsgSRo",
+    "title": "Tafsir Surah Yusuf Ayat 65 - Tidak Sensitif Karena Memiliki Power",
+    "publishedAt": "2021-04-23T07:15:00Z"
+   },
+   {
+    "id": "zFzRQQXHPM0",
+    "title": "Kenapa masalah silih berganti ? - Surat Yusuf ayat 64",
+    "publishedAt": "2021-04-20T05:45:04Z"
+   },
+   {
+    "id": "ClQhssljoFk",
+    "title": "Menjadi Pribadi Lebih Baik |  Surah Yusuf Ayat 57-58 #QuranInspiration",
+    "publishedAt": "2021-04-16T08:00:07Z"
+   },
+   {
+    "id": "viyctl0DwJ4",
+    "title": "Memahami Arti Rahmat Allah di dalam Surah Yusuf Ayat 56 |#QuranInspiration",
+    "publishedAt": "2021-04-13T06:30:08Z"
+   },
+   {
+    "id": "m25_SqjKKLU",
+    "title": "Keteladanan dan Kepemimpinan Nabi Yusuf | Surah Yusuf Ayat 55 #QuranInspiration",
+    "publishedAt": "2021-04-05T04:30:02Z"
+   },
+   {
+    "id": "RvIeZDam9vI",
+    "title": "Rencana Allah didalam Surah Yusuf Ayat 56 | #QuranInspiration Eps.20",
+    "publishedAt": "2021-03-31T01:00:03Z"
+   },
+   {
+    "id": "RQaAu1k6dtM",
+    "title": "Kisah Kepemimpinan Nabi Yusuf | Surah Yusuf Ayat 55 #QuranInspiration Eps.20",
+    "publishedAt": "2021-03-29T07:45:01Z"
+   },
+   {
+    "id": "ymaN369DRMQ",
+    "title": "Nabi Yusuf menjadi bermanfaat untuk orang banyak | Surah Yusuf Ayat 55 #QuranInspiration PART 2",
+    "publishedAt": "2021-03-24T08:00:08Z"
+   },
+   {
+    "id": "egt9VWuz_GM",
+    "title": "Dijatuhkan karena Seakan Membuat Kesalahan  | Surah Yusuf Ayat 50 #QuranInspiration Eps.20",
+    "publishedAt": "2021-03-18T04:00:07Z"
+   },
+   {
+    "id": "DTRQod8eqe0",
+    "title": "Muslim Memberikan Manfaat untuk Non Muslim | Surat Yusuf Ayat 55 #QuranInspiration PART 1",
+    "publishedAt": "2021-03-15T08:00:02Z"
+   },
+   {
+    "id": "XtFHMxNb8iw",
+    "title": "Tafsir Mimpi Raja | Surah Yusuf Ayat 54 #QuranInspiration . Eps20",
+    "publishedAt": "2021-03-12T06:30:01Z"
+   },
+   {
+    "id": "LxDqpuen8-8",
+    "title": "Ayat ini menerangkan pengakuan istri al-Aziz | Surah Yusuf Ayat 52 #QuranInspiration",
+    "publishedAt": "2021-03-01T09:00:06Z"
+   },
+   {
+    "id": "U9vh-OkQPAY",
+    "title": "Akhirnya Zulaikha Mengaku - Surah Yusuf Ayat 51 | #QuranInspiration Eps.20",
+    "publishedAt": "2021-02-24T02:00:02Z"
+   },
+   {
+    "id": "lH05wnzusbE",
+    "title": "Nafsu Tidak Selalu Berujung Buruk | Surah Yusuf Ayat 53  | #QuranInspiration Eps.20",
+    "publishedAt": "2021-02-20T05:00:19Z"
+   },
+   {
+    "id": "qR3XtGLEfnY",
+    "title": "Surat Yusuf Ayat 7 (Tanda tanda Kekuasaan Allah Pada Kisah Nabi Yusuf) | #QuranInspiration Eps. 15",
+    "publishedAt": "2020-11-14T10:06:35Z"
+   },
+   {
+    "id": "athrJQRmixM",
+    "title": "Surat Yusuf Ayat 11 (Tidak ada kekhawatiran terhadap takdir) | #QuranInspiration Eps. 15",
+    "publishedAt": "2020-11-07T05:48:58Z"
+   },
+   {
+    "id": "UfWHRoVRNgo",
+    "title": "Surat Yusuf Ayat 36 (Sesungguhnya aku bermimpi, bahwa aku memeras anggur) | #QuranInspiration Eps.15",
+    "publishedAt": "2020-10-28T10:45:47Z"
+   },
+   {
+    "id": "pKHPegV-phM",
+    "title": "Surah Yusuf Ayat 36 (Nabi Yusuf berada di penjara) #Quran Inspiration Eps.15",
+    "publishedAt": "2020-10-23T10:39:26Z"
+   },
+   {
+    "id": "WMLDYE4dl5E",
+    "title": "Surah Yusuf  (Penjara lebih aku sukai daripada memenuhi ajakan mereka) | Qur'an Inspiration Eps.15",
+    "publishedAt": "2020-10-19T09:37:33Z"
+   },
+   {
+    "id": "OMOL8L8Y4xM",
+    "title": "Surah Yusuf Ayat 38-39 (Hidup Bahagia Dengan Bersyukur) | Teuku Wisnu & Ust.M.Choiril Alam 18 okt'20",
+    "publishedAt": "2020-10-18T16:20:39Z"
+   },
+   {
+    "id": "GQfKblALEDQ",
+    "title": "Surat Yusuf Eps 12 (Perbuatan Jahat Yang Menyelamatkan Orang Beriman) #QuranInspiration",
+    "publishedAt": "2020-09-15T11:30:01Z"
+   },
+   {
+    "id": "jEx52L9PSp0",
+    "title": "Surat Yusuf Eps 12 (Sudah berbuat baik, malah diberi ujian) #QuranInspiration",
+    "publishedAt": "2020-09-09T08:00:15Z"
+   },
+   {
+    "id": "awYrvgQuYhg",
+    "title": "Surat Yusuf Eps 11 (Konsekuensi setiap perbuatan) | #QuranInspiration",
+    "publishedAt": "2020-09-04T09:02:54Z"
+   },
+   {
+    "id": "3pXll7hk6JA",
+    "title": "Surat Yusuf Eps 10 (Memaafkan orang lain juga butuh proses) | #QuranInspiration",
+    "publishedAt": "2020-09-02T09:00:01Z"
+   },
+   {
+    "id": "QAjL078_Eic",
+    "title": "Surat Yusuf Eps 9 (Jangan jadi playing victim) | #QuranInspiration",
+    "publishedAt": "2020-07-22T11:00:18Z"
+   },
+   {
+    "id": "Fumw6JcYlJM",
+    "title": "Surat Yusuf Eps 8 (Jangan iri terhadap rezeki orang lain) | #QuranInspiration",
+    "publishedAt": "2020-07-20T12:06:21Z"
+   },
+   {
+    "id": "a-2uaq-W0H8",
+    "title": "Surat Yusuf Eps 7 (Curhat ke orang yang salah) | #QuranInspiration",
+    "publishedAt": "2020-07-15T08:28:13Z"
+   },
+   {
+    "id": "3WRE8G7pH3E",
+    "title": "Surat Yusuf Eps 6 (Tidak jaminan, hal buruk juga bisa masuk di lingkungan yang baik) | #QuranInsp",
+    "publishedAt": "2020-07-10T00:00:00Z"
+   },
+   {
+    "id": "J9ocds5ypzM",
+    "title": "Surat Yusuf Eps 5 (Jangan memuji anak berlebihan) | #QuranInspiration",
+    "publishedAt": "2020-07-08T07:00:03Z"
+   },
+   {
+    "id": "GjZiSRtD1_w",
+    "title": "Surat Yusuf Eps 4 (Bagaimana menyikapi perilaku buruk anak?) | #QuranInspiration",
+    "publishedAt": "2020-06-13T00:00:05Z"
+   },
+   {
+    "id": "EAytwO3XXtY",
+    "title": "Surat Yusuf Eps 3 (Bagaimana menjadi orang tua  yang bisa dekat dengan anaknya?) | #QuranInspiration",
+    "publishedAt": "2020-06-10T08:37:46Z"
+   },
+   {
+    "id": "H_mO8liQizk",
+    "title": "Surat Yusuf Eps 2 (Mengapa kisah di dalam Al Qur'an tidak detail?) | #QuranInspiration",
+    "publishedAt": "2020-06-08T08:29:24Z"
+   },
+   {
+    "id": "tSbhsZ51iR4",
+    "title": "Surat Yusuf untuk Ibu Hamil - Surat Yusuf Eps 1 (sejarah singkat Nabi Yusuf dan zulaikha)",
+    "publishedAt": "2020-06-06T09:17:06Z"
+   }
+  ],
+  "yasin": [
+   {
+    "id": "i6jZXT_IqyQ",
+    "title": "Hidup dibuat susah sendiri. Surat Yasin #inspirasiquran",
+    "publishedAt": "2025-09-16T06:55:17Z"
+   },
+   {
+    "id": "lrWmJ3oyIxc",
+    "title": "Pedoman Hidup yang diberikan Allah SWT | Surah Yasin Ayat 41 #QuranInspiration Eps. 19",
+    "publishedAt": "2021-02-17T11:30:05Z"
+   },
+   {
+    "id": "0VLrGERfyCU",
+    "title": "Nasehat Alm. Syekh Ali Jaber | Surah Yasin Ayat 20 #QuranInspiration",
+    "publishedAt": "2021-01-20T08:06:11Z"
+   },
+   {
+    "id": "sGKxSdDwvgI",
+    "title": "Yasiin Eps 12 (Saksi yang memberatkan manusia di Akhirat) | #QuranInspiration",
+    "publishedAt": "2020-05-30T03:14:29Z"
+   },
+   {
+    "id": "l7pLSWG5WC8",
+    "title": "Yasiin Eps 11 (Golongan orang orang zalim) #QuranInspiration",
+    "publishedAt": "2020-05-27T10:24:16Z"
+   },
+   {
+    "id": "wYYC0xXHi8U",
+    "title": "Yasiin Eps 10 (Hukuman dan Hadiah) #QuranInspiration",
+    "publishedAt": "2020-05-22T09:55:13Z"
+   },
+   {
+    "id": "BqlzH7PKAn0",
+    "title": "Yasiin Eps 9 (Orang yang menolak untuk berpikir) #QuranInspiration",
+    "publishedAt": "2020-05-17T10:22:47Z"
+   },
+   {
+    "id": "uaZco4dSFFw",
+    "title": "Yasiin Eps 8 (Perlunya mempelajari ilmu agama dan ilmu dunia secara bersamaan) #QuranInspiration",
+    "publishedAt": "2020-05-15T21:46:04Z"
+   },
+   {
+    "id": "WZvITV9jQ6s",
+    "title": "Surat Yasiin Eps 7 (ciptaan ALLAH SWT, serta gambaran Surga) #QuranInspiration",
+    "publishedAt": "2020-05-14T11:29:39Z"
+   },
+   {
+    "id": "Y_stbsjyzAo",
+    "title": "Yasiin Eps 6 (Laki-laki dari penghujung kota) Part 3 #QuranInspiration",
+    "publishedAt": "2020-05-10T21:59:16Z"
+   },
+   {
+    "id": "vMCGQnkQ2as",
+    "title": "Tafsir Surat Yasin Eps 5 (Laki-laki dari penghujung kota) Part 2 #QuranInspiration",
+    "publishedAt": "2020-05-09T17:52:15Z"
+   },
+   {
+    "id": "fwyR7i_zcmM",
+    "title": "Tafsir Surat Yasin Eps 4 (Laki laki dari penghujung kota) #QuranInspiration",
+    "publishedAt": "2020-05-07T15:47:00Z"
+   },
+   {
+    "id": "J2T6s0_ZeL0",
+    "title": "Tafsir Al Quran Surah Yasin eps 3",
+    "publishedAt": "2020-05-06T13:01:14Z"
+   },
+   {
+    "id": "lcRsukeXEOo",
+    "title": "Tafsir Al Quran Surah Yasin  Eps 2",
+    "publishedAt": "2020-05-05T15:11:35Z"
+   },
+   {
+    "id": "qSc84XqORM0",
+    "title": "Surat Yasin eps 1, Surat Yasin dan Terjemahan",
+    "publishedAt": "2020-05-02T14:05:05Z"
+   },
+   {
+    "id": "NWfEb6mPivI",
+    "title": "PROSTITUSI ONLINE (YASIN : 80)",
+    "publishedAt": "2019-01-30T09:31:00Z"
+   }
+  ],
+  "al-fil": [
+   {
+    "id": "x79uIFTjfNA",
+    "title": "Surat Al Fiil ttg apa ?, pasukan bergajah, yuk kita liat lagi. #dakwahquran #inspirasiquran",
+    "publishedAt": "2025-08-17T00:15:59Z"
+   },
+   {
+    "id": "ZJOJj-BJbRc",
+    "title": "Pasukan bergajah Tak menghancurkan kabah Dalam Surat Al Fil | Quran Inspiration Eps. 18",
+    "publishedAt": "2021-02-05T07:54:25Z"
+   }
+  ],
+  "taha": [
+   {
+    "id": "1aU-KBPah8M",
+    "title": "QS  TAHA 2-3, Bahagia itu butuh rasa takut",
+    "publishedAt": "2022-11-29T22:54:10Z"
+   },
+   {
+    "id": "IaDuMp0k_Ck",
+    "title": "Tafsir Al Quran Surat Taha : Hidup Jadi Sempit Karena 1 Hal ini",
+    "publishedAt": "2021-07-04T15:07:56Z"
+   },
+   {
+    "id": "dU4EsFCNsbg",
+    "title": "Moment Bertemu Dengan Allah (Tafsir Surat Taha : 14)",
+    "publishedAt": "2018-05-31T01:10:41Z"
+   },
+   {
+    "id": "8d35--A5pJc",
+    "title": "Story telling surat Taha",
+    "publishedAt": "2017-05-25T11:34:54Z"
+   }
+  ],
+  "al-mulk": [
+   {
+    "id": "ya2G5W4I_vI",
+    "title": "QS AL MULK 23, BERPIKIR INTELEKTUAL MENEMUKAN TUHAN",
+    "publishedAt": "2022-11-29T22:48:58Z"
+   },
+   {
+    "id": "LBE23YQaLGk",
+    "title": "KEINDAHAN SURAT AL - MULK (1:30)",
+    "publishedAt": "2019-03-08T07:00:39Z"
+   }
+  ],
+  "al-kahf": [
+   {
+    "id": "TmWoKrJRQKc",
+    "title": "Surat Al Kahfi Eps Nabi Musa Dan Khidr (Part 3)",
+    "publishedAt": "2022-10-28T00:00:08Z"
+   },
+   {
+    "id": "3brphNPImTw",
+    "title": "Surat Al Kahfi Eps Nabi Musa Dan Khidr (Part 2)",
+    "publishedAt": "2022-10-27T12:30:07Z"
+   },
+   {
+    "id": "_Oc7CywMu1k",
+    "title": "Surat Al Kahfi Eps Nabi Musa Dan Khidr",
+    "publishedAt": "2022-10-24T01:44:27Z"
+   },
+   {
+    "id": "v6uR4KqVmMU",
+    "title": "Pemuda Ashabul Kahfi",
+    "publishedAt": "2021-08-31T03:09:20Z"
+   },
+   {
+    "id": "KIAdownjwWE",
+    "title": "Al Kahfi (Salah lensa, sehingga tidak clear melihat) | Zidni Adam & Ust. M.Choiril Alam",
+    "publishedAt": "2020-08-09T04:57:24Z"
+   },
+   {
+    "id": "VmjhVFZ3Z6w",
+    "title": "Al Kahfi (Salah lensa sehingga tidak clear melihat) | Zidni Adam & Ust. M.Choiril Alam",
+    "publishedAt": "2020-08-08T05:23:10Z"
+   },
+   {
+    "id": "IsYLQKPQ0_M",
+    "title": "Al Kahfi : Salah Memuji | live zoom",
+    "publishedAt": "2020-07-26T05:51:53Z"
+   },
+   {
+    "id": "xQLrKYvsrqs",
+    "title": "Salah Memuji | Kajian surat Al Kahfi bersama Cupink Topan | Quran Inspiration Live Streaming",
+    "publishedAt": "2020-07-26T05:04:41Z"
+   },
+   {
+    "id": "vZ1sg2MNPts",
+    "title": "Tips Sabar bersama Andi Asril. Gimana bisa bersabar kalau tidak punya pengalaman? | surat Al Kahfi",
+    "publishedAt": "2020-07-19T04:50:21Z"
+   },
+   {
+    "id": "SkfOrlpdGJU",
+    "title": "KISAH - KISAH INSPIRATIF DALAM SURAT AL - KAHFI",
+    "publishedAt": "2019-06-26T11:37:58Z"
+   },
+   {
+    "id": "szNAul9m6oA",
+    "title": "\"KALAU TIDAK ADA KAMU, PASTI HIDUP SAYA SUSAH\" - BENARKAH SEPERTI INI ? (AL - KAHFI : 83 -101)",
+    "publishedAt": "2018-12-07T07:41:52Z"
+   },
+   {
+    "id": "vViSDnuMDlY",
+    "title": "AL Kahfi summary",
+    "publishedAt": "2016-11-10T10:43:22Z"
+   },
+   {
+    "id": "jPPxkTFAVPc",
+    "title": "Surat Kahfi : Pemilik Kebun part 2",
+    "publishedAt": "2016-11-07T14:47:43Z"
+   },
+   {
+    "id": "29oYGHRIXs0",
+    "title": "Surat Al Kahfi : Dua Pemilik Kebun",
+    "publishedAt": "2016-11-06T11:46:03Z"
+   },
+   {
+    "id": "fYQ4pMF4N_o",
+    "title": "Kenapa kita harus belajar dari sosok pemuda pemuda ashabul kahfi ?, kelebihan mereka apa ?",
+    "publishedAt": "2016-11-02T01:25:37Z"
+   },
+   {
+    "id": "yAeVzwA2nR0",
+    "title": "Ketika bingung, apa yang harus dilakukan (al kahfi :9-10)",
+    "publishedAt": "2016-10-31T23:43:38Z"
+   },
+   {
+    "id": "cVq9V9ws2Hk",
+    "title": "Quran Inspiration: nilai selalu berubah, mau ikut yg fix atau yg bengkok (al kahfi :1)",
+    "publishedAt": "2016-10-31T00:22:21Z"
+   }
+  ],
+  "al-baqarah": [
+   {
+    "id": "uy8FQxy7ZYo",
+    "title": "Belajar Surat Al Baqarah Ayat 54-57",
+    "publishedAt": "2022-09-22T23:30:11Z"
+   },
+   {
+    "id": "qsGWErVnbes",
+    "title": "Belajar Surat Al Baqarah Ayat 49-54",
+    "publishedAt": "2022-09-20T23:30:09Z"
+   },
+   {
+    "id": "H_fNSaACgIM",
+    "title": "Belajar Surat Al Baqarah Ayat 42-46",
+    "publishedAt": "2022-08-31T22:00:11Z"
+   },
+   {
+    "id": "l6iSig1NmAY",
+    "title": "Belajar Surat Al Baqarah Ayat 47-49",
+    "publishedAt": "2022-08-30T22:00:12Z"
+   },
+   {
+    "id": "6JM3uIsKH18",
+    "title": "Belajar Surat Al Baqarah Ayat 40-41",
+    "publishedAt": "2022-08-24T22:00:12Z"
+   },
+   {
+    "id": "TCIbbZNobYs",
+    "title": "Belajar Surat Al Baqarah Ayat 35-39",
+    "publishedAt": "2022-08-17T17:00:14Z"
+   },
+   {
+    "id": "wkQYoMkTZ5s",
+    "title": "Belajar Surat Al Baqarah Ayat 30-34",
+    "publishedAt": "2022-08-07T22:42:06Z"
+   },
+   {
+    "id": "a5UAa2EIimU",
+    "title": "Belajar Surat Al Baqarah Ayat 28-29",
+    "publishedAt": "2022-07-19T07:34:04Z"
+   },
+   {
+    "id": "wpSl7jOpORw",
+    "title": "Belajar Surat Al Baqarah Ayat 21-26",
+    "publishedAt": "2022-07-12T00:08:35Z"
+   },
+   {
+    "id": "xYV1tjyYQM4",
+    "title": "Belajar Surat Al Baqarah Ayat 8-20",
+    "publishedAt": "2022-06-24T02:05:24Z"
+   },
+   {
+    "id": "yj_0n9w5pko",
+    "title": "Belajar Surat Al Baqarah Ayat 6-7",
+    "publishedAt": "2022-06-22T23:38:06Z"
+   },
+   {
+    "id": "y2FGv301Nec",
+    "title": "Belajar Surat Al Baqarah Ayat 1-5",
+    "publishedAt": "2022-06-21T23:55:54Z"
+   },
+   {
+    "id": "73NHybc4pDU",
+    "title": "Ade Jigo Banyak Diberi Ujian Dan Selalu Berhusnudzon Kepada Allah | Al Baqarah Ayat 286 | Full Eps",
+    "publishedAt": "2020-10-04T03:00:00Z"
+   },
+   {
+    "id": "nGeIRQImzv4",
+    "title": "Teaser - Ade Jigo Selalu Berhusnudzon Kepada Allah | Kajian Surah Al Baqarah Ayat 286 | #QuranInsp",
+    "publishedAt": "2020-10-03T07:23:59Z"
+   },
+   {
+    "id": "EZtJ08jNAI4",
+    "title": "[SPESIAL RAMADHAN] TRAINING UNTUK HIDUP MUDAH (AL - BAQARAH : 185) eps 7",
+    "publishedAt": "2019-05-21T02:04:44Z"
+   },
+   {
+    "id": "imyC2kN9qdQ",
+    "title": "[SPESIAL RAMADHAN] 2 PERSEPSI MANUSIA (AL - BAQARAH : 185) EPS 6",
+    "publishedAt": "2019-05-17T12:17:54Z"
+   },
+   {
+    "id": "hGRJM0jpz3E",
+    "title": "[SPESIAL RAMADHAN] MERASAKAN KEHADIRAN ALLAH (AL - BAQARAH : 185) EPS 5",
+    "publishedAt": "2019-05-15T11:17:44Z"
+   },
+   {
+    "id": "X12DW_cSBXg",
+    "title": "[SPESIAL RAMADHAN] MEMISAHKAN MANA YANG BAIK DAN YANG BURUK (AL-BAQARAH : 185) EPS 4",
+    "publishedAt": "2019-05-14T12:21:48Z"
+   },
+   {
+    "id": "KMdASXBvdX8",
+    "title": "[SPESIAL RAMADHAN] GIMANA KITA TAHU AGAMA KITA YANG PALING BENAR ? (AL - BAQARAH : 185) EPS 3",
+    "publishedAt": "2019-05-13T04:25:02Z"
+   },
+   {
+    "id": "P6CpKH6ncC8",
+    "title": "[SPESIAL RAMADHAN] ILMU YG BANYAK TAPI TDK DIGUNAKAN MAKA TDK MEMBERI BENEFIT(AL - BAQARAH:185) EPS2",
+    "publishedAt": "2019-05-09T07:34:33Z"
+   },
+   {
+    "id": "XFL1MCkmUws",
+    "title": "[SPESIAL RAMADHAN] BUKAN HANYA KHATAM TAPI MENGERTI APA YANG KITA BACA (AL - BAQARAH : 185)",
+    "publishedAt": "2019-05-09T02:34:51Z"
+   },
+   {
+    "id": "cNtGfxSeumg",
+    "title": "KENAPA BEBAN HIDUP KITA KOK BERAT (AL - BAQARAH : 286)",
+    "publishedAt": "2018-10-26T08:25:19Z"
+   },
+   {
+    "id": "3tqyr-fDa5M",
+    "title": "KONSEKUENSI ATAS PERBUATAN KITA (Al Baqarah : 286)",
+    "publishedAt": "2018-07-03T06:38:52Z"
+   },
+   {
+    "id": "IoSKfN8kxy0",
+    "title": "Putus Asa Atau Optimis (Al-Baqarah : 185 - 186)",
+    "publishedAt": "2018-05-23T04:17:56Z"
+   }
+  ],
+  "al-fatihah": [
+   {
+    "id": "grmUusZnS6s",
+    "title": "Tafsir Quran Surat Al-Fatihah | #QuranInspiration",
+    "publishedAt": "2021-09-24T10:00:22Z"
+   },
+   {
+    "id": "lkfeYk4K3ks",
+    "title": "Tafsir Quran Surat Al-Fatihah | #QuranInspiration",
+    "publishedAt": "2021-09-10T10:00:24Z"
+   },
+   {
+    "id": "UgokkdM1tvE",
+    "title": "Inspirasi Tafsir Al-Quran Al Fatihah - Allah sayang kepada kita #QuranInspiration",
+    "publishedAt": "2021-08-05T10:00:12Z"
+   },
+   {
+    "id": "5Z8ktShaF_0",
+    "title": "Inspirasi Tafsir Al Quran Al Fatihah - Manusia Untuk Tumbuh #QuranInspiration",
+    "publishedAt": "2021-07-16T10:00:02Z"
+   },
+   {
+    "id": "_7EhDujqALM",
+    "title": "Inspirasi Tafsir Al Quran Al Fatihah- Jangan tinggalkan shalat dalam hal apapun #QuranInspiration",
+    "publishedAt": "2021-07-14T10:00:24Z"
+   },
+   {
+    "id": "FhKOhrDf20k",
+    "title": "Tafsir Al Quran Surat Al Fatihah | Orang ingin hidup bebas #QuranInspiration",
+    "publishedAt": "2021-07-09T10:00:13Z"
+   },
+   {
+    "id": "2wW62wQl1JI",
+    "title": "Tafsir Al Quran Surat Al Fatihah Ayat 2 | #QuranInspiration",
+    "publishedAt": "2021-07-05T10:00:02Z"
+   },
+   {
+    "id": "JRMXq7i1CD0",
+    "title": "Setiap orang memiliki jalan yang unik (kajian Surah Al Fatihah)",
+    "publishedAt": "2020-07-12T04:13:13Z"
+   },
+   {
+    "id": "CItSCcYc810",
+    "title": "Struktur Surat Al Fatihah",
+    "publishedAt": "2020-05-01T00:40:12Z"
+   },
+   {
+    "id": "LGQv7dfEaDY",
+    "title": "Fatihah (Jangan masukkan kami dari 2 kelompok)",
+    "publishedAt": "2020-04-30T04:52:31Z"
+   },
+   {
+    "id": "dtGmhNKhhus",
+    "title": "Al Fatihah (Meminta Jalan bukan Tujuan)",
+    "publishedAt": "2020-04-28T11:38:11Z"
+   },
+   {
+    "id": "dXmbE_Vpj9s",
+    "title": "Al Fatihah (Meminta Dengan Hati)",
+    "publishedAt": "2020-04-26T09:17:58Z"
+   },
+   {
+    "id": "T-t9UlYekrE",
+    "title": "KITA MEMPUNYAI KASIH SAYANG ALLAH, MAKA KITA HARUS TAU DIRI (AL - FATIHAH)",
+    "publishedAt": "2020-02-21T13:27:29Z"
+   },
+   {
+    "id": "Cv_keUOitec",
+    "title": "MEMINTA BELAS KASIH ALLAH SAAT HARI PEMBALASAN TIBA (AL - FATIHAH)",
+    "publishedAt": "2020-02-14T11:55:39Z"
+   },
+   {
+    "id": "tWrcPd5hrYY",
+    "title": "CARA MENDAPATKAN KETENANGAN DAN FOKUS DALAM BERIBADAH (AL - FATIHAH)",
+    "publishedAt": "2020-02-10T14:46:31Z"
+   },
+   {
+    "id": "20m109bWUgc",
+    "title": "UCAPKAN ALHAMDULILLAH DENGAN HATI, UNTUK ALLAH (AL - FATIHAH)",
+    "publishedAt": "2020-02-01T03:05:39Z"
+   },
+   {
+    "id": "OfemWhRIfi0",
+    "title": "MAKNA ALHAMDULILLAH SECARA MENDALAM (AL - FATIHAH)",
+    "publishedAt": "2020-01-19T13:58:31Z"
+   },
+   {
+    "id": "Uj8-hXEdC_8",
+    "title": "Day 10, Al Fatihah",
+    "publishedAt": "2019-08-21T23:14:23Z"
+   },
+   {
+    "id": "BYMvaX8rBbs",
+    "title": "[SPESIAL RAMADHAN] PETUNJUK BAGI UMMAT ISLAM (AL - FATIHAH) EPS 3",
+    "publishedAt": "2019-05-27T14:36:02Z"
+   },
+   {
+    "id": "E3MIGVw6Lbo",
+    "title": "[SPESIAL RAMADHAN] AGAMA TIDAK MENJADI EGOIS (AL - FATIHAH) eps 2",
+    "publishedAt": "2019-05-22T04:04:32Z"
+   },
+   {
+    "id": "FvL6I52ve8Q",
+    "title": "[SPESIAL RAMADHAN] MINTA PETUNJUK TAPI TIDAK KOMITMEN MELAKUKAN (AL-FATIHAH)",
+    "publishedAt": "2019-05-22T03:41:32Z"
+   },
+   {
+    "id": "jdGg1-89DCI",
+    "title": "Al Fatihah : Minta petunjuk berulang ulang",
+    "publishedAt": "2017-01-20T03:43:21Z"
+   },
+   {
+    "id": "zxNz02feptI",
+    "title": "Al fatihah : Kita selalu meminta, setelah kita diberi, kita malah cuekin",
+    "publishedAt": "2017-01-16T23:21:21Z"
+   }
+  ],
+  "asy-syura": [
+   {
+    "id": "UWv5Q1Pvjx4",
+    "title": "Inspirasi Tafsir Al Quran Surat Shura, Jangan Perpecah belah, malah kita berpecah belah",
+    "publishedAt": "2021-07-10T15:03:34Z"
+   }
+  ],
+  "al-anfal": [
+   {
+    "id": "BpicvO7XKRQ",
+    "title": "Tafsir Al Quran Surat Al Anfal: Allah sebagai pendamping hidup kita (Part 2) | #QuranInspiration",
+    "publishedAt": "2021-07-02T10:00:11Z"
+   },
+   {
+    "id": "rZ0y1VgSS2I",
+    "title": "Tafsir Al Quran Surat Al Anfal: Allah sebagai pendamping hidup kita (Part 1) | #QuranInspiration",
+    "publishedAt": "2021-07-01T10:00:18Z"
+   }
+  ],
+  "al-hadid": [
+   {
+    "id": "kp9KmJ97myE",
+    "title": "Tafsir Al Quran Surat Al Hadid : Beragama tapi hati menjadi keras",
+    "publishedAt": "2021-06-20T15:00:31Z"
+   }
+  ],
+  "al-adiyat": [
+   {
+    "id": "onHT8c4Rxrw",
+    "title": "Tafsir Al Adiyat, Eps 2 : Loyal Terhadap Dunia, Bukan Terhadap Allah",
+    "publishedAt": "2021-05-15T07:01:00Z"
+   },
+   {
+    "id": "vxmoSAiBHVQ",
+    "title": "TAFSIR AL QURAN : SURAH AL-ADIYAT, APA HUBUNGAN KUDA PERANG DENGAN TIDAK LOYAL KEPADA ALLAH",
+    "publishedAt": "2021-05-10T07:05:50Z"
+   },
+   {
+    "id": "pKQ8RdHNhyM",
+    "title": "Kuda Perang al Adiyat",
+    "publishedAt": "2021-02-22T02:00:30Z"
+   },
+   {
+    "id": "Rlqb94CSzRg",
+    "title": "Cholidi Asadil Alam (Kajian Surat Al Adiyat - Cinta Dunia) Full Eps | #QuranInspiration",
+    "publishedAt": "2020-09-06T03:00:02Z"
+   },
+   {
+    "id": "QBBMWH5iUi0",
+    "title": "Cholidi Asadil Alam (kajain Surat Al Adiyat - Cinta Dunia) Teaser | #QuranInspiration",
+    "publishedAt": "2020-09-05T10:40:53Z"
+   },
+   {
+    "id": "qt4u0vFCBvE",
+    "title": "KUDA SAJA LOYAL PADA TUANNYA, MANUSIA TIDAK LOYAL PADA ALLAH (AL ADIYAT 1:11) TAFSIR AL QURAN",
+    "publishedAt": "2018-11-14T03:41:33Z"
+   },
+   {
+    "id": "ekaakzVtYK0",
+    "title": "Kuda perang berlari kencang terengah engah (Al Adiyat)",
+    "publishedAt": "2017-03-12T10:45:05Z"
+   }
+  ],
+  "al-kausar": [
+   {
+    "id": "Nzu7Vf3Zisk",
+    "title": "Tafsir al Quran Surat Al Kautsar",
+    "publishedAt": "2021-05-05T07:03:48Z"
+   },
+   {
+    "id": "9j8SabhHGgs",
+    "title": "Tadabur Al Quran (Al Kausar) | Ust.M Choiril Alam, H.Taufik K, dan sahabat Quran Inspiration",
+    "publishedAt": "2020-07-18T14:17:25Z"
+   },
+   {
+    "id": "H8HIPQ_rMTM",
+    "title": "Ketika dihina, fokus kita kepada hinaan bukan perbaikan diri (Al Kaushar)",
+    "publishedAt": "2017-01-26T04:36:34Z"
+   }
+  ],
+  "ar-rahman": [
+   {
+    "id": "uA4c1BbjjDs",
+    "title": "Inspirasi Tafsir Al Quran : Surat Ar Rahman - Menjaga Keseimbangan Hidup",
+    "publishedAt": "2021-05-03T02:28:00Z"
+   },
+   {
+    "id": "jWO2m5Rn-jM",
+    "title": "Inspirasi Tafsir AL Quran : Surat Ar Rahman - Pertanyaan Atheis, Kenapa harus ada Neraka ?",
+    "publishedAt": "2021-04-25T14:17:25Z"
+   },
+   {
+    "id": "feYYa1RVS5w",
+    "title": "Inspirasi Tafsir Al Quran : Surat Ar Rahman - Merasakan Sendiri Kedahsyatan Al Quran",
+    "publishedAt": "2021-04-18T20:58:53Z"
+   },
+   {
+    "id": "FQ6XDuhOdeg",
+    "title": "AR RAHMAN PART 3",
+    "publishedAt": "2020-06-23T10:33:13Z"
+   },
+   {
+    "id": "FQ6XDuhOdeg",
+    "title": "AR RAHMAN PART 3",
+    "publishedAt": "2020-06-23T10:33:13Z"
+   },
+   {
+    "id": "hzcXkWu_iMk",
+    "title": "AR RAHMAN RE RUN PART 2",
+    "publishedAt": "2020-06-15T13:19:23Z"
+   },
+   {
+    "id": "hzcXkWu_iMk",
+    "title": "AR RAHMAN RE RUN PART 2",
+    "publishedAt": "2020-06-15T13:19:23Z"
+   },
+   {
+    "id": "MkZgAvp5XSk",
+    "title": "JANGAN MENGEJEK BAHASA ORANG LAIN KARENA BAHASA ADALAH DATANGNYA DARI ALLAH (AR - RAHMAN)",
+    "publishedAt": "2020-04-24T12:56:52Z"
+   },
+   {
+    "id": "MPVF0BpAbaA",
+    "title": "WUJUD KASIH SAYANG ALLAH SWT KEPADA KITA (AR - RAHMAN)",
+    "publishedAt": "2020-04-19T11:53:17Z"
+   },
+   {
+    "id": "rxM3z0yOTnE",
+    "title": "Ar Rahman Eps 1 (Kajian secara urut Surat Ar rahman)",
+    "publishedAt": "2020-04-17T03:04:10Z"
+   },
+   {
+    "id": "jMNRgaFv1ws",
+    "title": "MENELADANI SIFAT KASIH SAYANG ALLAH DI KEHIDUPAN KITA SEHARI - HARI (AR - RAHMAN)",
+    "publishedAt": "2020-04-13T11:53:44Z"
+   },
+   {
+    "id": "aLIxgYueg9s",
+    "title": "METODE MENGAJAR BERDASARKAN AL - QURAN (AR - RAHMAN : 1 - 2)",
+    "publishedAt": "2020-04-10T10:00:00Z"
+   },
+   {
+    "id": "JkKlao2t3K8",
+    "title": "JANGAN KITA BERLAKU TIDAK ADIL KARENA ITU PERILAKU MANUSIA YANG TIDAK BERSYUKUR (AR - RAHMAN)",
+    "publishedAt": "2020-04-06T10:15:02Z"
+   },
+   {
+    "id": "L7g5P4pfOg4",
+    "title": "TINGKATKAN RASA SYUKUR KITA PADA ALLAH, INILAH PEMBAHASANNYA DALAM SURAT AR - RAHMAN : 22 - 24",
+    "publishedAt": "2020-04-04T05:32:38Z"
+   },
+   {
+    "id": "q9GuOcn6eTo",
+    "title": "INGATKAN DIRI KITA UNTUK SELALU BERSYUKUR KEPADA ALLAH (AR - RAHMAN 12 : 20)",
+    "publishedAt": "2020-04-02T11:56:14Z"
+   },
+   {
+    "id": "nZfHUSsvAkw",
+    "title": "Ar Rahman Eps 2",
+    "publishedAt": "2020-04-01T02:12:22Z"
+   },
+   {
+    "id": "9xmhj-qv0_Y",
+    "title": "Ar Rahman Ayat 1 dan 2",
+    "publishedAt": "2020-04-01T01:45:47Z"
+   },
+   {
+    "id": "w9Z-67O2VaY",
+    "title": "HATI - HATI BISIKAN SETAN SEHINGGA KITA TIDAK BERSYUKUR KEPADA ALLAH (AR - RAHMAN : 13 -15)",
+    "publishedAt": "2020-03-21T11:28:25Z"
+   },
+   {
+    "id": "20LYs_nNRWs",
+    "title": "AJARKAN ANAK KITA UNTUK BERSYUKUR SEJAK DINI (AR - RAHMAN)",
+    "publishedAt": "2020-03-20T12:40:09Z"
+   },
+   {
+    "id": "2z9Ju-zI3VA",
+    "title": "TIPS AGAR KITA SELALU BERSYUKUR DAN SELALU SABAR (AR - RAHMAN)",
+    "publishedAt": "2020-03-14T13:16:25Z"
+   },
+   {
+    "id": "Uw01V1z_yjU",
+    "title": "HATI - HATI ATAS SEBUAH PUJIAN (AR - RAHMAN : 1 - 2)",
+    "publishedAt": "2018-11-02T07:32:30Z"
+   },
+   {
+    "id": "ca317ZzVXH0",
+    "title": "Kenapa ada ayat neraka di surat ar rahman ?",
+    "publishedAt": "2017-08-29T12:32:01Z"
+   },
+   {
+    "id": "XOWu6WoHt60",
+    "title": "Quran Inspiration : Ar Rahman (1-2)",
+    "publishedAt": "2016-10-25T01:34:36Z"
+   }
+  ],
+  "an-nasr": [
+   {
+    "id": "zPX_jEs4dEI",
+    "title": "Cara Tidak Sombong Ketika Sukses | Tafsir An Nasr",
+    "publishedAt": "2021-02-04T03:00:10Z"
+   }
+  ],
+  "luqman": [
+   {
+    "id": "HW4ZN0VQ01k",
+    "title": "Sesungguhnya seburuk-buruk suara ialah suara keledai | Surah Luqman Ayat 19 #QuranInspiration Eps.17",
+    "publishedAt": "2021-01-31T01:00:03Z"
+   },
+   {
+    "id": "xU_3GKIvO4U",
+    "title": "Kapan kita harus \"Melunakkan suara\" | Surah Luqman Ayat 19 #QuranInspiration Eps.17",
+    "publishedAt": "2021-01-29T10:20:22Z"
+   },
+   {
+    "id": "JsmSKgCo2w8",
+    "title": "Berjalan Itu Tidak Cepat dan Tidak Lambat | Surah Luqman Ayat 19 #QuranInspiration Eps.17",
+    "publishedAt": "2021-01-23T09:17:40Z"
+   },
+   {
+    "id": "oYlIMio06yU",
+    "title": "Selalu menempatkan Allah di dalam hati | Umar Rasyid | Surat Luqman ayat 13 | #QuranInspiration",
+    "publishedAt": "2021-01-09T07:16:12Z"
+   },
+   {
+    "id": "sL0oYm4QmQY",
+    "title": "Q&A Surat Luqman ayat 18: Larangan berlaku sombong dan angkuh #QuranInspiration",
+    "publishedAt": "2020-12-31T02:49:34Z"
+   },
+   {
+    "id": "zfTGrpkoiC8",
+    "title": "ILMU PARENTING SESUAI DENGAN AL - QURAN (SURAT LUQMAN)",
+    "publishedAt": "2019-08-14T07:39:06Z"
+   }
+  ],
+  "al-humazah": [
+   {
+    "id": "iZDwoAzh8v0",
+    "title": "Surat Al Humazah | Umar Rasyid | #QuranInspiration",
+    "publishedAt": "2021-01-11T02:00:03Z"
+   }
+  ],
+  "al-araf": [
+   {
+    "id": "6yRStM8LIzM",
+    "title": "Tafsir Surat Al A'raf - Q&A(Iblis menyesatkan manusia dari amal-amal shaleh dan berusaha merusaknya)",
+    "publishedAt": "2020-12-25T08:44:38Z"
+   },
+   {
+    "id": "t4L4AYEXKcE",
+    "title": "MENDING GA PAKE JILBAB (AL - A'RAF : 17)",
+    "publishedAt": "2019-01-18T08:38:41Z"
+   },
+   {
+    "id": "3D7vW_Y0vmE",
+    "title": "KITA BUKAN PEMBERI HIDAYAH (AL - A'RAF : 17)",
+    "publishedAt": "2019-01-17T12:12:39Z"
+   },
+   {
+    "id": "tMRi4BwrbTY",
+    "title": "BANGGA ATAS AMAL (AL - A;RAF : 17)",
+    "publishedAt": "2019-01-16T05:19:20Z"
+   },
+   {
+    "id": "GrypI-UQz1g",
+    "title": "IBLIS MENGGODA KITA UNTUK MENYIA - NYIAKAN WAKTU (AL A'RAF : 14)",
+    "publishedAt": "2019-01-09T06:36:00Z"
+   },
+   {
+    "id": "oLSWVU8jtsQ",
+    "title": "KONSEP HIDUP DI DUNIA UNTUK AKHIRAT (AL - A'RAF : 17)",
+    "publishedAt": "2018-12-28T04:41:05Z"
+   },
+   {
+    "id": "69_nktiyWtI",
+    "title": "KENAPA YA, ADA USTADZ YANG MASIH MELAKUKAN MAKSIAT?  (AL - A'RAF : 16 - 17)",
+    "publishedAt": "2018-10-20T06:59:00Z"
+   },
+   {
+    "id": "aQI27klpDBw",
+    "title": "BERIBADAH HANYA UNTUK MENDAPATKAN PENGAKUAN ? AL - A'RAF : 12",
+    "publishedAt": "2018-09-21T03:29:34Z"
+   },
+   {
+    "id": "Qrlv4fE3lhA",
+    "title": "GENTLE ITU.. AKUI KESALAHAN DAN MINTA MAAF (AL - A'RAF : 22 - 23)",
+    "publishedAt": "2018-08-03T02:46:56Z"
+   }
+  ],
+  "asy-syams": [
+   {
+    "id": "QBM5eQ10OxY",
+    "title": "Eps. 14 Mempelajari Surah Asy Syams Yang Makna nya Sangat Dahsyat | Qur'an Inspiration",
+    "publishedAt": "2020-10-14T09:24:16Z"
+   },
+   {
+    "id": "2HE3jS0HZ58",
+    "title": "Eps. 14 Surah Asy Syams (Agar kita bisa bijaksana dengan diri kita & orang lain) | Quran Inspiration",
+    "publishedAt": "2020-10-09T08:01:42Z"
+   },
+   {
+    "id": "r7Tej53I5Zg",
+    "title": "Eps. 14 Memahami Isi Ayat-ayat Surat Asy-Syams Agar Lebih Bijak Tidak Baperan",
+    "publishedAt": "2020-10-08T09:36:44Z"
+   },
+   {
+    "id": "6j-aJhHeO9w",
+    "title": "Eps. 14 (Belajar Mengenal Dalam Diri Manusia Melalui Surat Asy-syams ) | Qur'an Inspiration",
+    "publishedAt": "2020-10-02T10:16:22Z"
+   },
+   {
+    "id": "DILCeCMnJmE",
+    "title": "Baim Wong Jadikan Segala Masalah Sebagai Kunci Menuju Sukses | Surah Asy Syams | #QuranInspiration",
+    "publishedAt": "2020-09-27T03:00:02Z"
+   },
+   {
+    "id": "TaAOtquBuO0",
+    "title": "Teaser | Baim Wong - Kajian Surah Asy Syams (Mengerti Diri Kita) | #QuranInspiration",
+    "publishedAt": "2020-09-25T12:48:08Z"
+   },
+   {
+    "id": "au_zispNKnM",
+    "title": "[PART 2] SEGARKAN KEMBALI BATIN DAN PIKIRAN KITA DENGAN AL - QUR'AN (ASY - SYAMS)",
+    "publishedAt": "2020-02-29T03:58:32Z"
+   },
+   {
+    "id": "yDgCUv1BO9U",
+    "title": "[PART 1] MANAJEMEN DIRI DENGAN BAIK BERDASARKAN AL - QURAN (ASY -  SYAMS 1:8)",
+    "publishedAt": "2020-02-25T10:44:04Z"
+   }
+  ],
+  "at-tagabun": [
+   {
+    "id": "DW3cXiaM0hA",
+    "title": "Surat At-Taghabun Eps 13 ( Semua Atas Ijin Allah Dan Rasulnya ) | #QuranInspiration",
+    "publishedAt": "2020-10-01T11:41:42Z"
+   },
+   {
+    "id": "qC7gdgBVruw",
+    "title": "Surat At-Taghabun Eps 13 (Makna Keindahan di Setiap Ayat Dalam Al-Qur'an) | #QuranInspiration",
+    "publishedAt": "2020-09-24T09:03:34Z"
+   },
+   {
+    "id": "fifvPBjeCmQ",
+    "title": "Tafsir Surah At Taghabun Ayat 13- Petunjuk Dari Masalah Hidup | #QuranInspiration",
+    "publishedAt": "2020-09-21T09:55:34Z"
+   },
+   {
+    "id": "YKzCyNX5_YQ",
+    "title": "Umaru Takaeda (Kajian Surat At Tagabun - Sibuk Dengan Masalah) Full Eps | #QuranInspiration",
+    "publishedAt": "2020-09-20T03:00:03Z"
+   },
+   {
+    "id": "1qP2_JNI5Ww",
+    "title": "Umaru Takaeda (Kajian Surat At Tagabun - Sibuk Dengan Masalah) Teaser | #QuranInspiration",
+    "publishedAt": "2020-09-19T15:15:40Z"
+   }
+  ],
+  "asy-syarh": [
+   {
+    "id": "b8qLkfPwlfg",
+    "title": "Ricky Perdana (Kajian Surah Al Insyirah - Kemudahan bersama Kesulitan) Full Eps | #QuranInspiration",
+    "publishedAt": "2020-09-13T03:00:03Z"
+   },
+   {
+    "id": "MRuSfJ8DxSw",
+    "title": "Ricky Perdana (Kajian Surah Al Insyirah - Kemudahan bersama Kesulitan) Teaser | #QuranInspiration",
+    "publishedAt": "2020-09-12T07:57:50Z"
+   },
+   {
+    "id": "siAiOKoT1Ac",
+    "title": "KEMUDAHAN DIBALIK KESULITAN (AS - SYARH)",
+    "publishedAt": "2019-08-09T10:56:43Z"
+   }
+  ],
+  "at-takasur": [
+   {
+    "id": "rQgfnQpv3to",
+    "title": "Jhody Bejo (Dunia yang melalaikan: Surah At Takasur) | Full Eps | #QuranInspiration",
+    "publishedAt": "2020-08-30T03:00:14Z"
+   },
+   {
+    "id": "L4Ih1cLenlk",
+    "title": "Jhody Bejo (Kajian surah At Takasur) | Teaser",
+    "publishedAt": "2020-08-29T05:42:32Z"
+   },
+   {
+    "id": "vh-YOA9DZcQ",
+    "title": "At TAKASHUR",
+    "publishedAt": "2017-03-23T06:37:13Z"
+   }
+  ],
+  "ali-imran": [
+   {
+    "id": "dk2jXVjNrAE",
+    "title": "Al Imran (Fokus pada yang detail dan lalai pada yang makruf) | Part 2 | #QuranInspiration",
+    "publishedAt": "2020-08-28T08:00:22Z"
+   },
+   {
+    "id": "Al4gbEyitRA",
+    "title": "Ali Imran (Orang yang berbeda dengan kita, maka ibadah mereka tidak di terima) | #QuranInspiration",
+    "publishedAt": "2020-08-26T01:00:00Z"
+   },
+   {
+    "id": "Hx7pwjcWKTU",
+    "title": "APAKAH SEORANG PEMIMPIN SELALU MENDAPATKAN PENGHORMATAN ? ALI - IMRAN : 26 (EPISODE 2)",
+    "publishedAt": "2018-08-31T04:17:24Z"
+   }
+  ],
+  "an-nahl": [
+   {
+    "id": "QkgWwqUYx7M",
+    "title": "Memaksakan jalan yang sama untuk orang yang berbeda | Kajian surat An Nahl:25",
+    "publishedAt": "2020-08-02T04:35:47Z"
+   },
+   {
+    "id": "ggjp9UZrw6c",
+    "title": "Quran Inspiration : Hujan Dan Quran (AN NAHL 65)",
+    "publishedAt": "2016-11-06T01:06:43Z"
+   }
+  ],
+  "al-anbiya": [
+   {
+    "id": "5hjsQhuTBaU",
+    "title": "DOA SAAT DIBERI UJIAN PENYAKIT (AN - ANBIYA)",
+    "publishedAt": "2020-03-29T11:00:07Z"
+   },
+   {
+    "id": "rDWfhWZXHug",
+    "title": "DOA TANPA ADA PERMINTAAN TAPI ALLAH KABULKAN (AL - ANBIYA : 83)",
+    "publishedAt": "2019-07-30T14:10:01Z"
+   }
+  ],
+  "an-naziat": [
+   {
+    "id": "eb9rlCuxBEg",
+    "title": "PEMBELAJARAN UNTUK KEHIDUPAN DUNIA DAN AKHIRAT (AN - NAZIAT)",
+    "publishedAt": "2020-01-16T12:03:30Z"
+   },
+   {
+    "id": "y6_yN6q2ZRA",
+    "title": "KELAK ALLAH AKAN INGATKAN APA SAJA YANG SUDAH KITA LAKUKAN (AN- NAZIAT 34-38)",
+    "publishedAt": "2019-12-23T10:56:18Z"
+   },
+   {
+    "id": "99T-iQgI81E",
+    "title": "JANGAN JADI MANUSIA YANG SOMBONG, DI ATAS LANGIT MASIH ADA LANGIT (AN-NAZIAT : 24-28)",
+    "publishedAt": "2019-12-15T11:23:39Z"
+   },
+   {
+    "id": "VVrvfR9z5D0",
+    "title": "MENJADI KAYA MEMBUAT KITA SOMBONG DAN MELAMPAUI BATAS? (AN - NAZIAT : 24)",
+    "publishedAt": "2019-12-11T08:12:17Z"
+   },
+   {
+    "id": "55u8Qaf_E6k",
+    "title": "MENJAGA KEDAMAIAN SESAMA MUSLIM (AN - NAZIAT : 18-23)",
+    "publishedAt": "2019-12-06T06:50:12Z"
+   },
+   {
+    "id": "l36PgBFn7yU",
+    "title": "BERPERILAKU SANTUN MESKIPUN SEDANG MARAH (AN - NAZIAT : 17-18)",
+    "publishedAt": "2019-11-29T07:07:01Z"
+   },
+   {
+    "id": "PU-ndrlvufs",
+    "title": "JANGAN DUSTAKAN KEBENARAN - KEBENARAN YANG ALLAH DATANGKAN (AN- NAZIAT)",
+    "publishedAt": "2019-11-21T12:27:00Z"
+   },
+   {
+    "id": "IlWtygHF0qM",
+    "title": "HUKUMAN BAGI ORANG - ORANG YANG TIDAK PERCAYA HARI KIAMAT (AN - NAZIAT)",
+    "publishedAt": "2019-11-19T06:14:12Z"
+   }
+  ],
+  "at-tahrim": [
+   {
+    "id": "fkjQP6KKoRY",
+    "title": "MENGATASI KEMUNAFIKAN DI SEKITAR KITA (AT - TAHRIM 9-12)",
+    "publishedAt": "2019-11-04T11:16:55Z"
+   },
+   {
+    "id": "SeuLMUlnqNQ",
+    "title": "MEMBELA HAK TANPA MEMBUAT ORANG LAIN MERASA BERSALAH (AT-TAHRIM : 1)",
+    "publishedAt": "2019-10-29T13:59:32Z"
+   }
+  ],
+  "al-fath": [
+   {
+    "id": "ErKeMYj0WkI",
+    "title": "SEPERTI APA SEHARUSNYA KITA MENGGUNAKAN AL - QURAN SEBAGAI PEDOMAN (AL - FATH : 24)",
+    "publishedAt": "2019-10-20T06:25:12Z"
+   },
+   {
+    "id": "bURsHuS1hs0",
+    "title": "KEMENANGAN MUSLIM ADALAH MENDAPATKAN AMPUNAN ALLAH (AL - FATH : 1 & 29)",
+    "publishedAt": "2019-04-24T10:58:35Z"
+   },
+   {
+    "id": "l-n9qcPP2kA",
+    "title": "KEMENANGAN UMMAT ISLAM (AL - FATH AYAT 29)",
+    "publishedAt": "2019-04-10T09:59:35Z"
+   },
+   {
+    "id": "d12ns0cGkA0",
+    "title": "STANDAR KEIMANAN SETIAP ORANG BERBEDA (AL- FATH : 1- 2)",
+    "publishedAt": "2019-04-05T11:04:26Z"
+   },
+   {
+    "id": "9FhgfR4fj_U",
+    "title": "KAUM MUSLIM JANGAN GAGAL FOKUS (AL - FATH : 4 - 5)",
+    "publishedAt": "2019-03-25T13:02:43Z"
+   },
+   {
+    "id": "s4WXmfAMs7E",
+    "title": "SAKINAH ADALAH AZAB BAGI MUSUH MUSLIM (AL - FATH : 5 - 7)",
+    "publishedAt": "2019-03-18T10:15:40Z"
+   },
+   {
+    "id": "yy3TG2K8eLQ",
+    "title": "Mutiara Al Fath Ayat 4",
+    "publishedAt": "2016-09-29T01:24:21Z"
+   }
+  ],
+  "al-lail": [
+   {
+    "id": "cCoAOpD8GOs",
+    "title": "MANFAAT SEDEKAH BAGI DUNIA DAN AKHIRAT (AL - LAIL)",
+    "publishedAt": "2019-09-18T10:36:57Z"
+   },
+   {
+    "id": "o5LCvS1Yy2M",
+    "title": "PRINSIP DALAM ISLAM (AL - LAIL : 4-7)",
+    "publishedAt": "2019-09-16T11:29:13Z"
+   }
+  ],
+  "al-isra": [
+   {
+    "id": "B8yrV-3DNeY",
+    "title": "SETIAP ORANG UNIK (AL - ISRA' 82 : 84)",
+    "publishedAt": "2018-12-17T11:15:48Z"
+   },
+   {
+    "id": "xE5_RvriCE8",
+    "title": "Quran Inspiration : Musa dan Isa untuk Bani Israil",
+    "publishedAt": "2016-10-18T01:44:28Z"
+   }
+  ],
+  "al-hasyr": [
+   {
+    "id": "pUWoDEgT9HQ",
+    "title": "BERIBADAH KOK INGIN MASUK SURGA SENDIRIAN (AL - HASYR : 10)",
+    "publishedAt": "2018-09-28T04:34:59Z"
+   }
+  ],
+  "az-zukhruf": [
+   {
+    "id": "gghblJljgrA",
+    "title": "Melemahkan orang lain untuk keuntungan kita (Tafsir Surat Az-Zukhruf : 54)",
+    "publishedAt": "2018-06-03T21:08:48Z"
+   }
+  ],
+  "an-nisa": [
+   {
+    "id": "ph_pxz6zc1M",
+    "title": "Menghormati sesama  (An-Nisa : 1-2)",
+    "publishedAt": "2018-04-30T07:47:26Z"
+   },
+   {
+    "id": "kDZ3vAqY2z0",
+    "title": "an nisa : 18",
+    "publishedAt": "2016-11-10T11:38:07Z"
+   },
+   {
+    "id": "dVmAX8UQDNY",
+    "title": "An Nisa :  14 15",
+    "publishedAt": "2016-11-10T11:02:18Z"
+   },
+   {
+    "id": "xM4cN9Pfyz0",
+    "title": "an nisa : 17",
+    "publishedAt": "2016-11-10T10:58:37Z"
+   },
+   {
+    "id": "smwjbOlimsk",
+    "title": "an nisa : 16",
+    "publishedAt": "2016-11-10T10:47:42Z"
+   },
+   {
+    "id": "kPKTNSuaYZ0",
+    "title": "An Nisa : 11-12 Part 5",
+    "publishedAt": "2016-11-10T10:31:05Z"
+   },
+   {
+    "id": "8e1wqT-Fw18",
+    "title": "An Nisa : 11-12 Part 4",
+    "publishedAt": "2016-11-10T10:30:34Z"
+   },
+   {
+    "id": "VGaw07LDppU",
+    "title": "An Nisa : 11-12 Part 3",
+    "publishedAt": "2016-11-10T10:22:42Z"
+   },
+   {
+    "id": "s6_A3jyhYuA",
+    "title": "An Nisa : 11-12 Part 2",
+    "publishedAt": "2016-11-10T10:18:38Z"
+   },
+   {
+    "id": "6ScHWgqqArI",
+    "title": "An Nisa : 11 (Pembagian Waris)",
+    "publishedAt": "2016-11-04T14:28:47Z"
+   },
+   {
+    "id": "QgGVlexbAZQ",
+    "title": "An Nisa 3",
+    "publishedAt": "2016-10-22T01:08:34Z"
+   },
+   {
+    "id": "NGHS6pm_sm0",
+    "title": "An Nisa : 4",
+    "publishedAt": "2016-10-22T00:35:31Z"
+   },
+   {
+    "id": "EOd7pyc3SMk",
+    "title": "An Nisa : 2",
+    "publishedAt": "2016-10-21T23:16:11Z"
+   },
+   {
+    "id": "Jb3v8uhP7q0",
+    "title": "An Nisa 1",
+    "publishedAt": "2016-10-21T00:07:10Z"
+   }
+  ],
+  "ibrahim": [
+   {
+    "id": "IVIj1D3XlG8",
+    "title": "Ketika dalam krisis, kita sulit melihat nikmat (Surat Ibrahim ayat 5-7 )",
+    "publishedAt": "2018-01-17T15:04:14Z"
+   }
+  ],
+  "al-maun": [
+   {
+    "id": "xRzAhHHNbME",
+    "title": "Pendusta agama (Al Ma'un)",
+    "publishedAt": "2017-03-28T08:55:42Z"
+   }
+  ],
+  "al-asr": [
+   {
+    "id": "f1NL58BT8i4",
+    "title": "Al Asr",
+    "publishedAt": "2017-03-19T11:10:08Z"
+   }
+  ],
+  "an-naba": [
+   {
+    "id": "hZRvqjLc8Ks",
+    "title": "Orang orang sarkastik tentang Akhirat (Surat An Naba)",
+    "publishedAt": "2017-01-25T00:14:38Z"
+   }
+  ],
+  "al-jumuah": [
+   {
+    "id": "8twwhMrn0L4",
+    "title": "Entertainment dan Bisnis dalam jumuah",
+    "publishedAt": "2016-11-24T14:41:51Z"
+   }
+  ],
+  "al-qiyamah": [
+   {
+    "id": "W56ZRZyg1oI",
+    "title": "Quran Inspiration : Al Qiyamah",
+    "publishedAt": "2016-10-07T06:51:58Z"
+   }
+  ],
+  "an-nur": [
+   {
+    "id": "oEW5z-4tbKs",
+    "title": "Quran Inspiration : An Nur 2 dan 4",
+    "publishedAt": "2016-10-06T01:55:59Z"
+   }
+  ],
+  "sad": [
+   {
+    "id": "d8miWJ6s2Is",
+    "title": "Surat Sad  Full",
+    "publishedAt": "2016-10-02T09:13:32Z"
+   },
+   {
+    "id": "QUXTnt2McAc",
+    "title": "Keindahan Surat Sad",
+    "publishedAt": "2016-10-01T04:43:29Z"
+   }
+  ],
+  "al-muminun": [
+   {
+    "id": "Dqt2lBlBYpc",
+    "title": "Day 5 Part 4- Mutiara Past Tense Al Mu'minun",
+    "publishedAt": "2016-09-25T04:43:34Z"
+   }
+  ]
+ },
+ "unmatched": [
+  {
+   "id": "WCTiD-ZD-10",
+   "title": "nanti aja kalo sudah kaya",
+   "publishedAt": "2026-11-20T12:46:56Z"
+  },
+  {
+   "id": "mSFu3JWXEMY",
+   "title": "Gengsi Minta Maaf",
+   "publishedAt": "2026-11-19T13:47:15Z"
+  },
+  {
+   "id": "2OpOnCPj0NQ",
+   "title": "Munafik ternyata ada Akar Masalahnya",
+   "publishedAt": "2026-11-18T22:55:17Z"
+  },
+  {
+   "id": "oc8hu-gKhyM",
+   "title": "Kokoh di Luar rapuh di dalam",
+   "publishedAt": "2026-11-17T23:21:36Z"
+  },
+  {
+   "id": "SoDZWIVrGZk",
+   "title": "DIPERSULIT SUPAYA KITA MENYERAH DAN PERGI",
+   "publishedAt": "2026-11-17T11:09:28Z"
+  },
+  {
+   "id": "7eD6U2Yo1S8",
+   "title": "kita yang jujur malah dia yang dipercaya, kita malah difitnah",
+   "publishedAt": "2026-11-15T22:47:57Z"
+  },
+  {
+   "id": "M3kjXIDsi5g",
+   "title": "nanti aja minta maafnya",
+   "publishedAt": "2026-11-13T13:54:39Z"
+  },
+  {
+   "id": "framZa0ij2U",
+   "title": "sibuk tanpa Jeda",
+   "publishedAt": "2026-11-12T00:08:49Z"
+  },
+  {
+   "id": "V1ee_0k_0zk",
+   "title": "Ketinggalan dari Teman",
+   "publishedAt": "2026-11-10T08:39:50Z"
+  },
+  {
+   "id": "jBAWpL_L9Uc",
+   "title": "Ratusan Kajian Udah Ditonton tapi Diri Kita Tetep Nggak berubah",
+   "publishedAt": "2026-11-08T13:27:46Z"
+  },
+  {
+   "id": "bdP2j_xOGok",
+   "title": "Ada Kabar Baik ttg Hari Pembalasan, untuk orang yg selalu disakiti dan didholimi",
+   "publishedAt": "2026-11-05T23:00:06Z"
+  },
+  {
+   "id": "UOVWlJUtT7o",
+   "title": "hidup perlu contoh",
+   "publishedAt": "2026-11-04T14:12:42Z"
+  },
+  {
+   "id": "ZGm0jQLe6lE",
+   "title": "Kalo gagal siapa yang paling kita takuti",
+   "publishedAt": "2026-11-03T23:00:13Z"
+  },
+  {
+   "id": "tBUuS70j5Y4",
+   "title": "Salah arah tapi tetep Jalan Terus",
+   "publishedAt": "2026-11-02T23:15:52Z"
+  },
+  {
+   "id": "QrxXDmowV8Q",
+   "title": "siapa yang siap ?, semua saling tunggu",
+   "publishedAt": "2026-11-01T23:00:05Z"
+  },
+  {
+   "id": "Cn6HKwPVRi0",
+   "title": "Sok Alim",
+   "publishedAt": "2026-10-31T23:00:18Z"
+  },
+  {
+   "id": "lU23qIFmICY",
+   "title": "“nanti aja, belum siap”. 🧭#dakwahquran #inspirasiquran #kontenislami #nasehatislami #hijrah",
+   "publishedAt": "2026-10-30T04:02:08Z"
+  },
+  {
+   "id": "TUaLktXOFLw",
+   "title": "Aku Bisa Sendiri. #islamicvideo",
+   "publishedAt": "2026-10-29T23:24:25Z"
+  },
+  {
+   "id": "82i63DI9G54",
+   "title": "kita percaya tapi dia tapi berkianat",
+   "publishedAt": "2026-10-28T23:07:38Z"
+  },
+  {
+   "id": "I8fp1SDmoRs",
+   "title": "Janji apa yang paling lama kamu tunda? #AshShaff #TafsirQuran #quraninsp #MenepatiJanji #Muhasabah",
+   "publishedAt": "2026-10-28T23:01:59Z"
+  },
+  {
+   "id": "YBYkMUNdDpE",
+   "title": "boleh baik nggak ke yang lain keyakinan",
+   "publishedAt": "2026-10-27T11:19:19Z"
+  },
+  {
+   "id": "YkCTgQFzoqg",
+   "title": "ketika sahabatmu memutuskan hubungan setelah berhutang",
+   "publishedAt": "2026-10-25T23:49:34Z"
+  },
+  {
+   "id": "8Cb5NcHcp-U",
+   "title": "sudah lama tidak buka Quran tapi hidup baik baik saja, hati hati...",
+   "publishedAt": "2026-10-22T14:49:35Z"
+  },
+  {
+   "id": "XdMBYEjcHrE",
+   "title": "meninggalkan pekerjaan yang haram.",
+   "publishedAt": "2026-10-22T02:15:28Z"
+  },
+  {
+   "id": "KhIV2zAk-z0",
+   "title": "Keadaan Susah Karena Kebijakan Yang Dholim #dosa #islamicvideo",
+   "publishedAt": "2026-10-21T02:26:19Z"
+  },
+  {
+   "id": "0wCQuvG92tQ",
+   "title": "Kamu  merasa kotor untuk berdoa karena menerima uang kotor.#islamicvideo #kotor",
+   "publishedAt": "2026-10-21T02:00:52Z"
+  },
+  {
+   "id": "1MPnY3fwBg4",
+   "title": "M.Choiril Alam is live!",
+   "publishedAt": "2026-10-21T01:55:07Z"
+  },
+  {
+   "id": "eGmeP9OqXoU",
+   "title": "saat orang terdekat menyakiti kita",
+   "publishedAt": "2026-10-14T23:31:14Z"
+  },
+  {
+   "id": "uI9KtmA7Xuo",
+   "title": "kehilangan belum tapi rasa takutnya udah datang duluan dan bisa menghancurkan diri kita",
+   "publishedAt": "2026-10-13T14:38:50Z"
+  },
+  {
+   "id": "oSNdmcEDnLM",
+   "title": "Kemenangan tanpa membalas dendam",
+   "publishedAt": "2026-10-12T15:11:05Z"
+  },
+  {
+   "id": "QH1zlJA6poA",
+   "title": "Yang banyak dan kuat belum tentu benar",
+   "publishedAt": "2026-09-29T23:15:14Z"
+  },
+  {
+   "id": "QqqfnmhlvFs",
+   "title": "29 September 2026",
+   "publishedAt": "2026-09-28T23:03:34Z"
+  },
+  {
+   "id": "oznfTd2VwHI",
+   "title": "29 September 2026",
+   "publishedAt": "2026-09-28T23:03:11Z"
+  },
+  {
+   "id": "pKdk3smghbE",
+   "title": "Ketika kehilangan datang",
+   "publishedAt": "2026-09-27T23:50:07Z"
+  },
+  {
+   "id": "q2tYGEtjkC8",
+   "title": "Melanjutkan hidup padahal hati masih hancur",
+   "publishedAt": "2026-09-27T23:36:53Z"
+  },
+  {
+   "id": "7mO5aC8AZcE",
+   "title": "Pertolongan yang tidak sesuai dengan rencana kita",
+   "publishedAt": "2026-09-27T23:23:54Z"
+  },
+  {
+   "id": "Tl3HS5aI1_I",
+   "title": "Berani berbuat Salah",
+   "publishedAt": "2026-09-27T23:12:56Z"
+  },
+  {
+   "id": "wFrAXDi4yOo",
+   "title": "Tidak meraa dihargai",
+   "publishedAt": "2026-09-27T01:53:39Z"
+  },
+  {
+   "id": "TbRLTehhRFQ",
+   "title": "Orang yang berjasa dalam hidup kita",
+   "publishedAt": "2026-09-26T11:57:48Z"
+  },
+  {
+   "id": "x-iTo6Rsk4g",
+   "title": "Kesempatan sudsh datang tapi belum tentu kita siap",
+   "publishedAt": "2026-09-26T11:47:36Z"
+  },
+  {
+   "id": "X7uE2lzdBlI",
+   "title": "Capek ketika potongan cerita yang tidak utuh yang dipercaya",
+   "publishedAt": "2026-09-26T03:32:16Z"
+  },
+  {
+   "id": "fvO32BdRjfw",
+   "title": "Pujian yang berubah menjadi kebutuhan",
+   "publishedAt": "2026-09-26T03:13:00Z"
+  },
+  {
+   "id": "YRQzLmXXuj4",
+   "title": "Hari kita rusak karena 1 omongan",
+   "publishedAt": "2026-09-26T02:58:09Z"
+  },
+  {
+   "id": "Q15eCBxlcfQ",
+   "title": "Kecewa karena sebuah keputusan",
+   "publishedAt": "2026-09-26T02:53:18Z"
+  },
+  {
+   "id": "0ERCXEoVIp0",
+   "title": "Kadang Kita Ragu Untuk Berdoa karena Kita merasa Kecil dan kita ini siapa",
+   "publishedAt": "2026-09-26T02:26:37Z"
+  },
+  {
+   "id": "bSL21JU538k",
+   "title": "Sedikit kosong buka HP",
+   "publishedAt": "2026-09-25T11:04:26Z"
+  },
+  {
+   "id": "J0kzxgNjnlk",
+   "title": "Diomongin di belakang kita",
+   "publishedAt": "2026-09-25T03:53:45Z"
+  },
+  {
+   "id": "lOZYph5kW3A",
+   "title": "Capek ama orang yang depan kita bilang A, depan orang bilang B",
+   "publishedAt": "2026-09-25T00:52:16Z"
+  },
+  {
+   "id": "Bpjaar0F6_A",
+   "title": "Udah salah masih berani sumpah bahwa dia bener",
+   "publishedAt": "2026-09-25T00:50:38Z"
+  },
+  {
+   "id": "wyQ_DG8y9HM",
+   "title": "Menangis karena Luka",
+   "publishedAt": "2026-08-11T23:33:14Z"
+  },
+  {
+   "id": "S9unCVGqcb4",
+   "title": "Percaya diri tidak akan tergoda",
+   "publishedAt": "2026-08-06T03:02:08Z"
+  },
+  {
+   "id": "zJsuhnI_eNc",
+   "title": "Pernah merasa ketika mau berbuat salah,  tiba tiba asa suara “jangan” ?",
+   "publishedAt": "2026-08-06T00:31:19Z"
+  },
+  {
+   "id": "ujwTOtsZG1U",
+   "title": "Kali ini aja, nanti juga tobat",
+   "publishedAt": "2026-07-31T03:38:23Z"
+  },
+  {
+   "id": "1jLJfkQeTN4",
+   "title": "Kenapa dia yang naik ?, padahal saya lebih pantas",
+   "publishedAt": "2026-07-28T23:31:15Z"
+  },
+  {
+   "id": "Y2W-WY2Ds-w",
+   "title": "Kenapa keadaan tidak juga berubah ?, padahal udah ikhtiar dan doa",
+   "publishedAt": "2026-07-23T23:26:59Z"
+  },
+  {
+   "id": "MxKfy2KSO1U",
+   "title": "Butuh doa orang karena kita nggak didengar",
+   "publishedAt": "2026-07-14T23:18:53Z"
+  },
+  {
+   "id": "L4FLlZ-ktf4",
+   "title": "Lelah karena melihat orang lebih dari kita",
+   "publishedAt": "2026-07-14T08:12:35Z"
+  },
+  {
+   "id": "xRucTWVG1lM",
+   "title": "Selalu pingin jawaban baru padahal nasehat lama blm dijalankan",
+   "publishedAt": "2026-07-10T11:30:34Z"
+  },
+  {
+   "id": "8mDIPfd3Nn8",
+   "title": "Merasa kecil untuk bisa mengubah",
+   "publishedAt": "2026-07-10T02:39:16Z"
+  },
+  {
+   "id": "pN_uuIdr8go",
+   "title": "Makan sambil maen HP",
+   "publishedAt": "2026-07-10T02:38:02Z"
+  },
+  {
+   "id": "mhFEjryGchA",
+   "title": "Kita lupa atas 2 hal ini, sehingga selalu merasa kurang",
+   "publishedAt": "2026-07-08T09:15:46Z"
+  },
+  {
+   "id": "eGF5EFU8BRw",
+   "title": "3 July 2026",
+   "publishedAt": "2026-07-03T02:37:32Z"
+  },
+  {
+   "id": "P7FOEMGWus8",
+   "title": "Gelisah karena sering scroll",
+   "publishedAt": "2026-07-02T02:21:59Z"
+  },
+  {
+   "id": "nNQQQLvEV-A",
+   "title": "Bisa jadi berkah bisa jadi musibah, karena apa ?",
+   "publishedAt": "2026-07-01T10:46:41Z"
+  },
+  {
+   "id": "f2A1KHczy04",
+   "title": "Merasa gagal walaupun sudah usaha",
+   "publishedAt": "2026-06-29T23:24:38Z"
+  },
+  {
+   "id": "znHruAJ1u7E",
+   "title": "Kerja lebih keras tapi rezeki koq gitu gitu aja",
+   "publishedAt": "2026-06-28T23:19:27Z"
+  },
+  {
+   "id": "P7sejn9iMxo",
+   "title": "Mengobati Hati Yang Mudah Gelisah",
+   "publishedAt": "2026-06-26T03:40:59Z"
+  },
+  {
+   "id": "9RkNTGU0B0c",
+   "title": "Senang kalau kontribusi kita diakui",
+   "publishedAt": "2026-06-24T02:53:51Z"
+  },
+  {
+   "id": "YgRwstJjf1o",
+   "title": "Kita bilang ini tidak adil tapi akhirnya kita bilang untung itu terjadi",
+   "publishedAt": "2026-06-23T03:50:50Z"
+  },
+  {
+   "id": "jIBR6Vuxc1E",
+   "title": "Ada kejadian yang dulu kamu anggap musibah. Hari ini kamu bersyukur itu pernah terjadi.”",
+   "publishedAt": "2026-06-22T02:04:55Z"
+  },
+  {
+   "id": "0sQSJPr2qe8",
+   "title": "Jangan jangan aku yang salah karena aku beda",
+   "publishedAt": "2026-06-19T00:21:27Z"
+  },
+  {
+   "id": "8B3WnZdcL3o",
+   "title": "14 June 2026",
+   "publishedAt": "2026-06-14T00:19:52Z"
+  },
+  {
+   "id": "uAHbI2_0d0o",
+   "title": "12 June 2026",
+   "publishedAt": "2026-06-11T23:56:45Z"
+  },
+  {
+   "id": "3ftM9lSMYe0",
+   "title": "Kalau Allah Mengatur Langit, Kenapa Kita Masih Takut Masa Depan?",
+   "publishedAt": "2026-06-09T23:56:25Z"
+  },
+  {
+   "id": "8TKZzoU7EAo",
+   "title": "Dada gampang sesak dan capek ?",
+   "publishedAt": "2026-06-09T00:08:22Z"
+  },
+  {
+   "id": "zhvKe7_QQIk",
+   "title": "Takut gagal dan kehilangan #dosa #jalanyangjauhjanganlupapulang #parenting",
+   "publishedAt": "2026-06-07T17:00:06Z"
+  },
+  {
+   "id": "QU5jYoPQR7I",
+   "title": "Gampang Cemas",
+   "publishedAt": "2026-05-20T04:10:17Z"
+  },
+  {
+   "id": "h1fVQ3F_5iU",
+   "title": "Hidup banyak takutnya",
+   "publishedAt": "2026-05-19T07:13:08Z"
+  },
+  {
+   "id": "ehOoqMmkVzk",
+   "title": "Suara kecil di kepala",
+   "publishedAt": "2026-05-18T08:37:02Z"
+  },
+  {
+   "id": "mgfKu9tRXlY",
+   "title": "Kenapa aku ?, aku nggak salah",
+   "publishedAt": "2026-05-13T03:36:33Z"
+  },
+  {
+   "id": "HXJUB7OcwfA",
+   "title": "Insecure",
+   "publishedAt": "2026-05-09T05:13:50Z"
+  },
+  {
+   "id": "cAVAKgz6YCM",
+   "title": "Tiba tiba dijahui",
+   "publishedAt": "2026-05-09T05:13:42Z"
+  },
+  {
+   "id": "B6aAU5TeGq8",
+   "title": "Dihina, diremehkan, maka spontan ingin…",
+   "publishedAt": "2026-04-29T23:13:15Z"
+  },
+  {
+   "id": "B9sQxfW6h4c",
+   "title": "Overthinking tiap malam",
+   "publishedAt": "2026-04-29T23:12:35Z"
+  },
+  {
+   "id": "RgoftyxiUro",
+   "title": "Dikit dikit upload",
+   "publishedAt": "2026-04-29T23:12:32Z"
+  },
+  {
+   "id": "0Ra-MxI9giw",
+   "title": "Kehilangan",
+   "publishedAt": "2026-04-26T23:55:32Z"
+  },
+  {
+   "id": "dsYf6CBp6Gw",
+   "title": "Bela kebenaran atau bela ego ?",
+   "publishedAt": "2026-04-20T23:21:43Z"
+  },
+  {
+   "id": "yMHMhm6rnm8",
+   "title": "20 April 2026",
+   "publishedAt": "2026-04-19T23:22:10Z"
+  },
+  {
+   "id": "1S4ZuSqUbok",
+   "title": "Suka buka hp diturutin terus akhirnya subuh kelewat",
+   "publishedAt": "2026-04-16T01:10:46Z"
+  },
+  {
+   "id": "esQ-1XWvlCA",
+   "title": "Sombong bukan karena hebat tapi karena lemah",
+   "publishedAt": "2026-04-16T01:06:05Z"
+  },
+  {
+   "id": "9_AHwNNXif0",
+   "title": "Saya takut kehilangan",
+   "publishedAt": "2026-04-16T01:05:31Z"
+  },
+  {
+   "id": "yi3Ul4Q-xik",
+   "title": "Cinta itu Indah, salah nya dimana ?",
+   "publishedAt": "2026-04-16T01:04:30Z"
+  },
+  {
+   "id": "90G6qzCU0zY",
+   "title": "Kehilangan orang yang kita sayangi",
+   "publishedAt": "2026-04-10T00:17:01Z"
+  },
+  {
+   "id": "nOsTLAvJy6E",
+   "title": "Berhadapan dengan orang NPD",
+   "publishedAt": "2026-04-08T22:57:56Z"
+  },
+  {
+   "id": "DAeZiizikmY",
+   "title": "Trigger mengobtrol diri kita, capek ?",
+   "publishedAt": "2026-04-08T00:19:43Z"
+  },
+  {
+   "id": "p_uO5JwS6fY",
+   "title": "Hawa Napsu sudah kontrol diri kita",
+   "publishedAt": "2026-04-06T23:26:06Z"
+  },
+  {
+   "id": "rjDHlPfcQTI",
+   "title": "Kita tau itu salah tapi kita inginkan, kemudian itu terlihat benar",
+   "publishedAt": "2026-04-05T22:36:58Z"
+  },
+  {
+   "id": "ehlzTQDsfk0",
+   "title": "Semua Nasehat terasa salah ketika emosi naik",
+   "publishedAt": "2026-04-03T10:42:25Z"
+  },
+  {
+   "id": "QNBQPtM_FH8",
+   "title": "Musibah Bertubi tubi, kenapa ?. #musibah",
+   "publishedAt": "2026-03-21T12:30:51Z"
+  },
+  {
+   "id": "YYCPlsR-I1U",
+   "title": "Pintar tapi tidak Sukses",
+   "publishedAt": "2026-03-16T20:49:08Z"
+  },
+  {
+   "id": "YXKK8XfVpTU",
+   "title": "Dulu jelas salah skr jadi biasa",
+   "publishedAt": "2026-03-14T02:05:28Z"
+  },
+  {
+   "id": "twJ6IyWzRd4",
+   "title": "Makin hacur makin dekat Tuhan",
+   "publishedAt": "2026-03-14T02:03:41Z"
+  },
+  {
+   "id": "oT5ZHxuHfn4",
+   "title": "Makin hari makin sulit",
+   "publishedAt": "2026-03-14T02:02:56Z"
+  },
+  {
+   "id": "5vUeRLbf_Cs",
+   "title": "Tiba tiba ngaku salah",
+   "publishedAt": "2026-03-14T02:01:45Z"
+  },
+  {
+   "id": "Dx3ZYuGRTck",
+   "title": "Hidup Makin Gelisah",
+   "publishedAt": "2026-03-02T10:16:18Z"
+  },
+  {
+   "id": "NSCy6rsCH8I",
+   "title": "Hasil Investasi Kebakar Semua",
+   "publishedAt": "2026-03-02T10:16:17Z"
+  },
+  {
+   "id": "XgKYAC9Sf7I",
+   "title": "Dicuri Lalat Kecil",
+   "publishedAt": "2026-03-01T02:23:39Z"
+  },
+  {
+   "id": "GloU7sw_oEs",
+   "title": "Merasa udah terlalu jauh dari Allah",
+   "publishedAt": "2026-02-27T21:11:02Z"
+  },
+  {
+   "id": "QJxxOp1zBSo",
+   "title": "Kenapa Allah nggak cegah perang dan pembunuhan ?",
+   "publishedAt": "2026-02-27T01:08:35Z"
+  },
+  {
+   "id": "W5xuFBvq8KU",
+   "title": "Tidak semua yang ditangisi itu buruk",
+   "publishedAt": "2026-02-25T22:40:52Z"
+  },
+  {
+   "id": "oBTasyg8dww",
+   "title": "Sudah sering doa, tapi koq nggak ada yang berubah",
+   "publishedAt": "2026-02-24T22:55:57Z"
+  },
+  {
+   "id": "slT9sIkmJY0",
+   "title": "Ibadah rajin tapi orientasi hanya dunia",
+   "publishedAt": "2026-02-23T21:04:53Z"
+  },
+  {
+   "id": "9-VJ4bn8GPY",
+   "title": "Yang curang main kuat, yang jujur tersingkir",
+   "publishedAt": "2026-02-23T21:03:20Z"
+  },
+  {
+   "id": "LDhzwJFFJ9I",
+   "title": "Agama hanya jadi simbol",
+   "publishedAt": "2026-02-23T21:02:05Z"
+  },
+  {
+   "id": "tLUIzUtQ2q0",
+   "title": "Hidup lagi berantakan",
+   "publishedAt": "2026-02-19T23:58:24Z"
+  },
+  {
+   "id": "uCjChZaEJTU",
+   "title": "Kalau Engkau Ada Tuhan, tunjukkan dirimu ?, pernah punya pemikiran ini ?",
+   "publishedAt": "2026-02-19T23:57:23Z"
+  },
+  {
+   "id": "CdqB7dVjSDE",
+   "title": "Sudah Tau Itu Dosa tapi…",
+   "publishedAt": "2026-02-19T23:56:01Z"
+  },
+  {
+   "id": "_BQXC343NO4",
+   "title": "Takut masa depan",
+   "publishedAt": "2026-02-19T23:55:33Z"
+  },
+  {
+   "id": "LBwtZb7mbbo",
+   "title": "Bangun Tidur Langsung buka HP",
+   "publishedAt": "2026-02-10T01:38:52Z"
+  },
+  {
+   "id": "2WYwx_3av_A",
+   "title": "Kenap Belum Bahagia ?",
+   "publishedAt": "2026-02-09T01:31:28Z"
+  },
+  {
+   "id": "JNkStAXwNgs",
+   "title": "Tenang kalo ada Uang",
+   "publishedAt": "2026-02-06T01:52:47Z"
+  },
+  {
+   "id": "9e0yfXPiB0o",
+   "title": "Kepala nggak pernah berhenti berpikir",
+   "publishedAt": "2026-02-06T01:47:17Z"
+  },
+  {
+   "id": "_L5AFjSECdQ",
+   "title": "Harus Berpura Pura sehingga bikin Capek",
+   "publishedAt": "2026-02-03T23:21:35Z"
+  },
+  {
+   "id": "KbFZFJElJIg",
+   "title": "Niatnya baik tapi malah berantakan",
+   "publishedAt": "2026-01-27T23:34:42Z"
+  },
+  {
+   "id": "WbXW455_6wA",
+   "title": "Udah ngaji tapi hidup masih gelap",
+   "publishedAt": "2026-01-26T23:49:32Z"
+  },
+  {
+   "id": "Q4UFQZB1wDU",
+   "title": "Makin dituruti, Makin Lelah Hati Kita",
+   "publishedAt": "2026-01-25T22:56:39Z"
+  },
+  {
+   "id": "SO5L33pB91c",
+   "title": "Merasa tertinggal ama yang Lain",
+   "publishedAt": "2026-01-21T23:20:28Z"
+  },
+  {
+   "id": "-vleQgYdbjQ",
+   "title": "Paling Capek Kalau Hati tidak Tenang",
+   "publishedAt": "2026-01-21T00:21:23Z"
+  },
+  {
+   "id": "Ee73OhuNxGY",
+   "title": "Capek hidup benar",
+   "publishedAt": "2026-01-19T23:06:05Z"
+  },
+  {
+   "id": "8LJ6V5c-wqA",
+   "title": "Hidup Muter di Masalah yang Sama",
+   "publishedAt": "2026-01-18T23:20:41Z"
+  },
+  {
+   "id": "KdJNEwdPpec",
+   "title": "Berharap Hidup Berubah tapi malah hati yang berubah",
+   "publishedAt": "2026-01-14T22:57:58Z"
+  },
+  {
+   "id": "hMXdLWlpycg",
+   "title": "14 January 2026",
+   "publishedAt": "2026-01-13T22:53:32Z"
+  },
+  {
+   "id": "b755MldXbNA",
+   "title": "Menjaga hidup itu sulit tapi merusaknya mudah",
+   "publishedAt": "2026-01-08T22:50:29Z"
+  },
+  {
+   "id": "WbeYZqz9RPc",
+   "title": "Apa hubungan zakat dan shalat khusuk ? #inspirasiquran",
+   "publishedAt": "2026-01-07T23:03:54Z"
+  },
+  {
+   "id": "7EIa7eD2cV8",
+   "title": "Udah rajin sholat tapi hati tetep gelisah",
+   "publishedAt": "2026-01-06T00:09:19Z"
+  },
+  {
+   "id": "v9egZMEfbpQ",
+   "title": "Rasa cemas atas hidup",
+   "publishedAt": "2026-01-04T22:58:22Z"
+  },
+  {
+   "id": "C_o71qnWwuY",
+   "title": "Hidup Penuh Rasa Takut",
+   "publishedAt": "2026-01-03T10:41:18Z"
+  },
+  {
+   "id": "fn-naVNW9eQ",
+   "title": "Isi dompet atau isi hati yang bikin sempit ?",
+   "publishedAt": "2026-01-03T10:38:50Z"
+  },
+  {
+   "id": "UzQenbWTM5E",
+   "title": "Obat anxiety #inspirasiquran #kontenislami #nasehatislami #anxiety",
+   "publishedAt": "2025-12-30T23:12:01Z"
+  },
+  {
+   "id": "x3-B0TJxbQk",
+   "title": "Cara Hidup Lebih Tenang",
+   "publishedAt": "2025-12-29T12:47:34Z"
+  },
+  {
+   "id": "jGh6Ivh4FEI",
+   "title": "Mengalami Anxiety, burnout dan overthinking",
+   "publishedAt": "2025-12-26T00:11:19Z"
+  },
+  {
+   "id": "TmXhPdpLt9A",
+   "title": "Marah ketika gagal",
+   "publishedAt": "2025-12-26T00:11:07Z"
+  },
+  {
+   "id": "R1ZkyxSkM40",
+   "title": "Capek dengan hidup",
+   "publishedAt": "2025-12-26T00:08:59Z"
+  },
+  {
+   "id": "7omEi4fUGX4",
+   "title": "Sakit hati seperti terbakar karena ucapan orang",
+   "publishedAt": "2025-12-25T23:55:09Z"
+  },
+  {
+   "id": "_Jnw4nTMc0Y",
+   "title": "Sudah berusaha tapi diremenkan",
+   "publishedAt": "2025-12-25T23:51:05Z"
+  },
+  {
+   "id": "0pMlq4cnZRQ",
+   "title": "Masalah hidup terlalu berat, capek",
+   "publishedAt": "2025-12-19T03:03:49Z"
+  },
+  {
+   "id": "yNqlb-Fkwto",
+   "title": "Kebaikan hanya dilakukan untuk Konten",
+   "publishedAt": "2025-12-19T03:03:26Z"
+  },
+  {
+   "id": "3RcwSaZKHeA",
+   "title": "Apa arti kita hidup di dunia ini ?",
+   "publishedAt": "2025-12-14T22:46:20Z"
+  },
+  {
+   "id": "zReNf0fPo9c",
+   "title": "15 December 2025",
+   "publishedAt": "2025-12-14T22:45:25Z"
+  },
+  {
+   "id": "GK2zO5G9km4",
+   "title": "Sudah bersyukur, tapi nikmat tidak disalurkan ke orang lain, itu blm bersyukur namanya",
+   "publishedAt": "2025-12-12T01:15:30Z"
+  },
+  {
+   "id": "GA-8dk7V9oU",
+   "title": "Apa arti Hidupku ini ?. #inspirasiquran #manusia #maknahidup",
+   "publishedAt": "2025-12-11T22:41:39Z"
+  },
+  {
+   "id": "bdGS1k7kDQw",
+   "title": "Datang ke orang “pintar” supaya bisa sukses",
+   "publishedAt": "2025-12-09T23:19:02Z"
+  },
+  {
+   "id": "Rj5fCwENKaU",
+   "title": "Takut ama Jin, tapi ada juga yang minta tolong ama Jin, apakah mereka bisa nolong ?",
+   "publishedAt": "2025-12-08T23:14:55Z"
+  },
+  {
+   "id": "aEcWYILjLHs",
+   "title": "Kesalahpahaman tentang Tuhan",
+   "publishedAt": "2025-12-05T03:25:59Z"
+  },
+  {
+   "id": "H3IFsfA8BMc",
+   "title": "Menjaga Diri Dari Zina itu bukan Kuno Tapi Keberanian",
+   "publishedAt": "2025-12-02T22:42:03Z"
+  },
+  {
+   "id": "wXERQYQH0xY",
+   "title": "Tuduhan zina tanpa 4 orang saksi",
+   "publishedAt": "2025-12-02T02:54:01Z"
+  },
+  {
+   "id": "s8AWU1KudjQ",
+   "title": "Zina adalah kegelapan",
+   "publishedAt": "2025-12-01T08:37:31Z"
+  },
+  {
+   "id": "VksANT_DePk",
+   "title": "Pintu rezeki",
+   "publishedAt": "2025-11-30T04:48:16Z"
+  },
+  {
+   "id": "aOk5PBjPHJU",
+   "title": "Allah sedang MenungguMu",
+   "publishedAt": "2025-11-30T04:46:35Z"
+  },
+  {
+   "id": "Ui2VDNl1nCA",
+   "title": "Hati Gelisah tiba tiba di malam hari",
+   "publishedAt": "2025-11-27T02:30:27Z"
+  },
+  {
+   "id": "ta5VUJANllk",
+   "title": "Penyesalan yang menyakitkan",
+   "publishedAt": "2025-11-25T23:03:31Z"
+  },
+  {
+   "id": "gfBCED7jah4",
+   "title": "Kenapa Hidupku Serumit ini ?. #hidup  #rumit",
+   "publishedAt": "2025-11-25T03:46:35Z"
+  },
+  {
+   "id": "AlJeZXEadAo",
+   "title": "Hidup seperti teka teki kehidupan",
+   "publishedAt": "2025-11-24T03:46:51Z"
+  },
+  {
+   "id": "FlmE3v9tNSs",
+   "title": "Awalnya menolong tapi lama lama ingin menguasai",
+   "publishedAt": "2025-11-20T23:35:04Z"
+  },
+  {
+   "id": "G7fOMkp5JQU",
+   "title": "Sakitnya Kehilangan Orang yang Dicintai",
+   "publishedAt": "2025-11-20T07:53:50Z"
+  },
+  {
+   "id": "0M1O77SrJqg",
+   "title": "Surat Al Qomar : Quran itu mudah. #inspirasiquran",
+   "publishedAt": "2025-11-19T01:59:19Z"
+  },
+  {
+   "id": "dHrxlDX_Vyg",
+   "title": "Talak sudah Jatuh, hati hancur",
+   "publishedAt": "2025-11-16T08:31:49Z"
+  },
+  {
+   "id": "OE7b1FeTDus",
+   "title": "Pingin keliatan baik, bukan jadi baik",
+   "publishedAt": "2025-11-13T22:27:03Z"
+  },
+  {
+   "id": "3RexouhZ44A",
+   "title": "Hidup makin absurd. #inspirasiquran",
+   "publishedAt": "2025-11-12T23:29:21Z"
+  },
+  {
+   "id": "1-On0z8P2Wk",
+   "title": "Poligami",
+   "publishedAt": "2025-11-12T10:38:33Z"
+  },
+  {
+   "id": "96zG6mabtzQ",
+   "title": "Hati kehilangan Rasa",
+   "publishedAt": "2025-11-10T21:40:21Z"
+  },
+  {
+   "id": "_mR3zbNk72k",
+   "title": "Ngatur segala tapi ujungnya nggak buat kita tenang karena penuh dengan khawatir",
+   "publishedAt": "2025-11-09T23:04:01Z"
+  },
+  {
+   "id": "C1FOjg5NjZQ",
+   "title": "Jatuh kebawah karena “Hawa”",
+   "publishedAt": "2025-11-08T06:17:16Z"
+  },
+  {
+   "id": "LQAgwcq8bJo",
+   "title": "Pingin sempurna tapi lupa jadi manusia",
+   "publishedAt": "2025-11-07T01:57:58Z"
+  },
+  {
+   "id": "bsdOvcSDonU",
+   "title": "Gagal dan langsung drop",
+   "publishedAt": "2025-11-07T01:54:35Z"
+  },
+  {
+   "id": "5QeaPweTJiU",
+   "title": "Hidup dikejar Target, tapi capek dan merasa kosong",
+   "publishedAt": "2025-11-07T01:53:22Z"
+  },
+  {
+   "id": "uemetrjJ5vY",
+   "title": "Lelah menghadapi orang yang Narsis",
+   "publishedAt": "2025-11-03T23:30:16Z"
+  },
+  {
+   "id": "FcAN9oZXYRE",
+   "title": "Gimana bisa sabar kalo nggak tau alasannya",
+   "publishedAt": "2025-11-03T00:11:51Z"
+  },
+  {
+   "id": "e4MIquPZOt4",
+   "title": "Kenapa yang buruk dibiarkan terjadi. #inspirasiquran #alkahfi",
+   "publishedAt": "2025-10-31T01:22:16Z"
+  },
+  {
+   "id": "Wny9IaZJuRU",
+   "title": "Merasa sendirian, di cap buruk dan disalahpahami",
+   "publishedAt": "2025-10-30T02:07:41Z"
+  },
+  {
+   "id": "jKkPNhdXEUI",
+   "title": "Difitnah tapi pilih Diam",
+   "publishedAt": "2025-10-28T01:40:41Z"
+  },
+  {
+   "id": "vfNjwe7gl04",
+   "title": "Sibuk jadi hebat tapi lupa jadi tenang. #inspirasiquran #hebat #tenang",
+   "publishedAt": "2025-10-27T00:06:33Z"
+  },
+  {
+   "id": "d-N1smtTjlA",
+   "title": "Udah usaha, tapi takdir bergerak ke arah yang beda. #inspirasiquran #takdiryangtertulis",
+   "publishedAt": "2025-10-27T00:05:52Z"
+  },
+  {
+   "id": "k3LHmWLP-pM",
+   "title": "Menulis ulang masa lalu, supaya jauh lebih Indah",
+   "publishedAt": "2025-10-24T00:08:11Z"
+  },
+  {
+   "id": "-VpermtGww8",
+   "title": "Orang yg nyakitin kamu, skr minta tolong ke kamu. #inspirasiquran #maaf",
+   "publishedAt": "2025-10-23T00:49:13Z"
+  },
+  {
+   "id": "4UdtSQXUclQ",
+   "title": "22 October 2025",
+   "publishedAt": "2025-10-21T23:25:36Z"
+  },
+  {
+   "id": "oz-id-wwym0",
+   "title": "Berbuat baik tapi malah diabaikan",
+   "publishedAt": "2025-10-20T23:31:47Z"
+  },
+  {
+   "id": "oiWH47zJ8tM",
+   "title": "Menjadi Jahat Karena Hatinya Luka #inspirasiquran #dosa #luka",
+   "publishedAt": "2025-10-20T00:53:06Z"
+  },
+  {
+   "id": "9YxaStxb0LM",
+   "title": "Baru sembuh dari luka, datang ujian baru #inspirasiquran #dosa #yusuf",
+   "publishedAt": "2025-10-18T22:20:28Z"
+  },
+  {
+   "id": "VrhcQokEmkg",
+   "title": "Takut ketahuan akhirnya bohong #dosa #inspirasiquran",
+   "publishedAt": "2025-10-16T23:07:22Z"
+  },
+  {
+   "id": "BkgMLmZwyqw",
+   "title": "Hidup merasa lebih berat, masalah dan kecewa datang bertubi tubi",
+   "publishedAt": "2025-10-16T12:17:04Z"
+  },
+  {
+   "id": "vp8igbuIdvA",
+   "title": "Berbuat dosa karena merasa punya alasan",
+   "publishedAt": "2025-10-16T03:16:14Z"
+  },
+  {
+   "id": "y-GRGHMFUgk",
+   "title": "Luka paling dalam bisa datang dari dalam rumah #inspirasiquran #luka",
+   "publishedAt": "2025-10-14T23:30:24Z"
+  },
+  {
+   "id": "VcPapKMb5hk",
+   "title": "Kadang Itu Kejam",
+   "publishedAt": "2025-10-14T07:56:37Z"
+  },
+  {
+   "id": "iTyDpNmGSGM",
+   "title": "Belajar bohong supaya bisa bertahan di sistem",
+   "publishedAt": "2025-10-13T10:57:47Z"
+  },
+  {
+   "id": "-7PjV99Xz6M",
+   "title": "Lelah dengan Hidup. #inspirasiquran",
+   "publishedAt": "2025-10-10T00:44:12Z"
+  },
+  {
+   "id": "rhoq6qfo2s0",
+   "title": "Belajar ama Maha Guru. #inspirasiquran",
+   "publishedAt": "2025-10-08T23:17:54Z"
+  },
+  {
+   "id": "Ay7XSvSoUQk",
+   "title": "Rasa takut menjaga kita Bahagia",
+   "publishedAt": "2025-10-07T23:37:12Z"
+  },
+  {
+   "id": "UFPh15r49oU",
+   "title": "Minder Belajar Quran, taku salah",
+   "publishedAt": "2025-10-06T23:19:45Z"
+  },
+  {
+   "id": "42TjPFn5h7I",
+   "title": "Hidup yang ringan",
+   "publishedAt": "2025-10-03T07:36:29Z"
+  },
+  {
+   "id": "iisXgcLaWyo",
+   "title": "Takut setan karena sosoknya menyeramkan, ternyata alamnya ada batasnya",
+   "publishedAt": "2025-10-03T07:19:29Z"
+  },
+  {
+   "id": "V9oaHX3l64M",
+   "title": "Kita harus bahagia dan positif tapi kenyataanya tidak selalu seperti itu. #inspirasiquran #bahagia",
+   "publishedAt": "2025-10-02T04:45:56Z"
+  },
+  {
+   "id": "ldCFpqV3AWc",
+   "title": "Rasa Sakit Kehilangan",
+   "publishedAt": "2025-10-01T09:27:47Z"
+  },
+  {
+   "id": "AFBRxZYElY0",
+   "title": "Hidup Koq Gini gini aja",
+   "publishedAt": "2025-09-28T23:41:20Z"
+  },
+  {
+   "id": "xFMsumdV700",
+   "title": "Minder Karena Sosmed",
+   "publishedAt": "2025-09-28T04:13:51Z"
+  },
+  {
+   "id": "vCzTHMEr6_w",
+   "title": "Hidup berasa kosong",
+   "publishedAt": "2025-09-23T23:33:05Z"
+  },
+  {
+   "id": "2-1lHTX5wjE",
+   "title": "Dunia sering tidak adil",
+   "publishedAt": "2025-09-23T23:31:48Z"
+  },
+  {
+   "id": "ncA7vRgNbnA",
+   "title": "Banjir informasi, scroll sebentar, jutaan konten masuk kepala kita, membuat kita lebih bijak ?",
+   "publishedAt": "2025-09-21T23:21:04Z"
+  },
+  {
+   "id": "7dXEdIbBvVU",
+   "title": "Tau Salah tapi masih melakukan",
+   "publishedAt": "2025-09-18T23:05:13Z"
+  },
+  {
+   "id": "krRFMs2g6zg",
+   "title": "Pernah kita merasaKeras kepala ? #inspirasiquran",
+   "publishedAt": "2025-09-18T02:25:21Z"
+  },
+  {
+   "id": "Th9kRH_WBqU",
+   "title": "Kagum ama Ustad dan lupa apa yang mereka ajarkan",
+   "publishedAt": "2025-09-16T02:16:14Z"
+  },
+  {
+   "id": "uISNJy1gVYY",
+   "title": "Udah ada bukti tapi masih tidak ngaku",
+   "publishedAt": "2025-09-16T01:47:31Z"
+  },
+  {
+   "id": "K3Yl1GKNOcU",
+   "title": "Jika hanya berhenti ritual, agama bisa jadi hampa.",
+   "publishedAt": "2025-09-10T23:30:15Z"
+  },
+  {
+   "id": "SP-6g3xymCo",
+   "title": "Gampang Marah dan Dendam, mana surat Yasinnya ? #inspirasiquran",
+   "publishedAt": "2025-09-09T23:17:55Z"
+  },
+  {
+   "id": "gxSwSac8vaU",
+   "title": "Hidup koq susah terus ? #inspirasiquran",
+   "publishedAt": "2025-09-09T06:39:55Z"
+  },
+  {
+   "id": "CQDLXFv8qt4",
+   "title": "Hidup kini kini aja, bangun, kerja, scrolling, tidur, akhirnya hidup jadi kosong",
+   "publishedAt": "2025-09-08T04:35:06Z"
+  },
+  {
+   "id": "BVbflC0Mehs",
+   "title": "Dalam Film Horor, baca Ayat Kursi supaya syetan terbakar, yuk kita cek kebenarannya !",
+   "publishedAt": "2025-09-04T01:45:40Z"
+  },
+  {
+   "id": "D_1AD34pUQQ",
+   "title": "Saling Claim kebenaran, agama bisa jadi bahan pertikaian",
+   "publishedAt": "2025-09-04T01:44:59Z"
+  },
+  {
+   "id": "hBvh9_Hw7Jk",
+   "title": "Sudah ikut rencana tapi tetep gagal karena salah arah #inspirasiquran",
+   "publishedAt": "2025-09-02T02:05:05Z"
+  },
+  {
+   "id": "Hcq2T-jk6-s",
+   "title": "Dikasih kesempatan kedua ketiga dst tapi nggak Sadar, berikutnya Hukuman. #inspirasiquran #alfatihah",
+   "publishedAt": "2025-09-02T02:03:06Z"
+  },
+  {
+   "id": "R6WhmC2h790",
+   "title": "Dibalik dijatuhkan itu… Allah sedang menunjukkan kasih sayang-Nya. #inspirasiquran #alfatihah",
+   "publishedAt": "2025-09-02T02:00:56Z"
+  },
+  {
+   "id": "cFzrvBLbBn4",
+   "title": "Mulai sesuatu atas nama kita bukan atas nama Allah. #inspirasiquran #alfatihah #bismillah",
+   "publishedAt": "2025-08-29T04:01:12Z"
+  },
+  {
+   "id": "q88q0z_FNhY",
+   "title": "Kita pikir bisa mengatur semuanya. #inspirasiquran #alfatihah #kontenislami",
+   "publishedAt": "2025-08-28T09:00:26Z"
+  },
+  {
+   "id": "7Brpz6uVbCQ",
+   "title": "Hidup penuh pencapaian tapi kosong tujuan. #inspirasiquran #kontenislami #pahamquran",
+   "publishedAt": "2025-08-27T01:41:53Z"
+  },
+  {
+   "id": "i3nP6ENB7os",
+   "title": "Punya Kuasa malah makin Sombong #inspirasiquran #pemimpin",
+   "publishedAt": "2025-08-26T13:07:27Z"
+  },
+  {
+   "id": "lfKBkqrCBzE",
+   "title": "Kenapa hidup makin hancur setelah rajin ibadah ?, #dakwahquran #inspirasiquran #kontenislami",
+   "publishedAt": "2025-08-24T23:28:28Z"
+  },
+  {
+   "id": "4CcSkjZVua8",
+   "title": "Yang pamer harta makin Viral. #inspirasiquran",
+   "publishedAt": "2025-08-21T23:26:49Z"
+  },
+  {
+   "id": "kSgsty-XUaU",
+   "title": "Dicap sok suci",
+   "publishedAt": "2025-08-21T08:23:05Z"
+  },
+  {
+   "id": "LNKnEPmETO4",
+   "title": "Selalu sibuk, tapi lupa waktu lupa diri sendiri. #inspirasiquran #dakwahquran #kontenislami",
+   "publishedAt": "2025-08-19T23:38:43Z"
+  },
+  {
+   "id": "P2RzOVWJ-oI",
+   "title": "Hidup baik baik saja kalo bisa makan, scroll dan kerja. #dakwahquran #inspirasiquran #kontenislami",
+   "publishedAt": "2025-08-19T05:47:53Z"
+  },
+  {
+   "id": "WtozlJ2OLz8",
+   "title": "Isi kepala Rame tp hati sepi. #dakwahquran #inspirasiquran #kontenislami #nasehatislam #reelsislami",
+   "publishedAt": "2025-08-18T23:38:13Z"
+  },
+  {
+   "id": "bVKrydRAbJs",
+   "title": "Merasa aman dengan apa yang kita punya ?, itu bahaya. #inspirasiquran #kontenislami #dakwah #quran",
+   "publishedAt": "2025-08-15T02:14:03Z"
+  },
+  {
+   "id": "3sLdGdhuz0I",
+   "title": "Nyinyir ?, biasa Aja, tapi kita dibilang Celaka",
+   "publishedAt": "2025-08-13T23:35:36Z"
+  },
+  {
+   "id": "va41vTDx0os",
+   "title": "Orang pikir masalahnya adalah Gaji kurang, padahal banyak orang hancur ketika gaji udah gede",
+   "publishedAt": "2025-08-12T23:49:39Z"
+  },
+  {
+   "id": "s5OPeqI585M",
+   "title": "Rajin Ibadah tapi nggak peduli orang susah. #inspirasiquran #kontenislami #nasehatislami #ibadah",
+   "publishedAt": "2025-08-11T23:59:12Z"
+  },
+  {
+   "id": "RvhOYrhUIT8",
+   "title": "Kenapa yang curang makin kaya, yang Dholim malah dipuja ?. #inspirasiquran #kontenislami #keadilan",
+   "publishedAt": "2025-08-10T23:40:58Z"
+  },
+  {
+   "id": "njMTAWG8bd4",
+   "title": "Hidup sering ngeluh, padahal hidup kita baik baik saja #syukur #syukurselalu #bahagia",
+   "publishedAt": "2025-08-07T23:56:51Z"
+  },
+  {
+   "id": "VuND0HNCmag",
+   "title": "Tidak semua hal harus dikompromikan",
+   "publishedAt": "2025-08-07T06:10:35Z"
+  },
+  {
+   "id": "py6J30xH2Yo",
+   "title": "Bikin Gosib tapi ketika tambil seolah jadi orang bijak",
+   "publishedAt": "2025-08-06T23:57:51Z"
+  },
+  {
+   "id": "4nonuJ4_dzg",
+   "title": "Banyak orang hancur bukan karena gagal tapi ketika sukses",
+   "publishedAt": "2025-08-06T00:46:39Z"
+  },
+  {
+   "id": "qM-SO2PukEM",
+   "title": "Hati yang rapuh",
+   "publishedAt": "2025-08-05T10:10:13Z"
+  },
+  {
+   "id": "9wenP_aCWPg",
+   "title": "Hidup penuh ancaman",
+   "publishedAt": "2025-08-04T08:31:49Z"
+  },
+  {
+   "id": "LIR6geGWuVQ",
+   "title": "Dihianati padahal sudah kasih hati",
+   "publishedAt": "2025-08-03T23:16:16Z"
+  },
+  {
+   "id": "EWe8D33UQs0",
+   "title": "Ada hati yang terganggu karena diri kita bahagia",
+   "publishedAt": "2025-08-01T03:06:54Z"
+  },
+  {
+   "id": "G-z5RyW8ns4",
+   "title": "Bisikan dari orang dekat",
+   "publishedAt": "2025-07-31T01:28:27Z"
+  },
+  {
+   "id": "qZySQZ-0OyU",
+   "title": "Belum kecewa tapi udah siap siap sakit hati, itu godaan",
+   "publishedAt": "2025-07-30T09:15:24Z"
+  },
+  {
+   "id": "dxgUG6fwwzA",
+   "title": "Musuh paling bahaya itu bukan dari luar tapi dari dalam, pelan, diam diam tapi menghancurkan",
+   "publishedAt": "2025-07-30T00:02:38Z"
+  },
+  {
+   "id": "HpHvbqOUZa4",
+   "title": "Butuh Pelarian karena Capek dan Stress. #stress #capek",
+   "publishedAt": "2025-07-28T01:38:27Z"
+  },
+  {
+   "id": "W40ecI8DSes",
+   "title": "Seandainya masih dengan mantan, saya akan bahagia",
+   "publishedAt": "2025-07-27T01:49:27Z"
+  },
+  {
+   "id": "dSoKHQHGWm8",
+   "title": "Ibadah disisipin kesombongan",
+   "publishedAt": "2025-07-25T12:00:19Z"
+  },
+  {
+   "id": "G3jGOfIXZQ0",
+   "title": "Khawatir tentang masa depan",
+   "publishedAt": "2025-07-24T14:31:07Z"
+  },
+  {
+   "id": "zUjoTIFpTwQ",
+   "title": "Bahagia sebentar setelah itu hati jadi kosong",
+   "publishedAt": "2025-07-24T10:48:04Z"
+  },
+  {
+   "id": "tLz0iccEmh8",
+   "title": "Masa lalu yang tak mau pergi, padahal kita ingin move on",
+   "publishedAt": "2025-07-22T06:02:20Z"
+  },
+  {
+   "id": "n_95-wgHJYw",
+   "title": "Scroll lama…kenapa otak capek dan hati jadi nggak tenang ?",
+   "publishedAt": "2025-07-21T06:55:45Z"
+  },
+  {
+   "id": "lNmHEEVSaRM",
+   "title": "Kita bukan gagal, tapi belajar berjalan dengan luka",
+   "publishedAt": "2025-07-19T10:59:07Z"
+  },
+  {
+   "id": "g37aQyRkYCg",
+   "title": "Stuck dalam sebuah kondisi, yang rasanya tak ada jalan keluar",
+   "publishedAt": "2025-07-17T11:28:50Z"
+  },
+  {
+   "id": "Z_RElnVBJ7o",
+   "title": "Problemnya bukan pasa masalahnya tapi hati kita yang belum lapang",
+   "publishedAt": "2025-07-16T05:59:32Z"
+  },
+  {
+   "id": "irAp04gLl9U",
+   "title": "Kenapa fokusnya hanya kepada masalah ?, sehingga membuat kita menderita sendiri",
+   "publishedAt": "2025-07-16T02:43:09Z"
+  },
+  {
+   "id": "pnK9Eyyn_04",
+   "title": "Baru selesai 1 masalah, datang masalah baru",
+   "publishedAt": "2025-07-14T21:41:50Z"
+  },
+  {
+   "id": "8BembbM4WJ4",
+   "title": "Quran hanya dijadikan bacaan seremonial tanpa dipahami isinya",
+   "publishedAt": "2025-07-10T10:42:39Z"
+  },
+  {
+   "id": "YG-DTKr64GE",
+   "title": "Memperbaiki rezeki keluarga",
+   "publishedAt": "2025-07-09T22:46:56Z"
+  },
+  {
+   "id": "79Db9h99cwY",
+   "title": "Mudah marah setelah naik jabatan",
+   "publishedAt": "2025-07-07T10:25:37Z"
+  },
+  {
+   "id": "o7tsJwKZcUk",
+   "title": "Enak ya hidup kamu, orang kadang hanya melihat hasil tanpa melihat proses",
+   "publishedAt": "2025-07-03T03:54:18Z"
+  },
+  {
+   "id": "RAbSRl1mtt8",
+   "title": "Kalo banyak masalah, sholat jadi nyaman",
+   "publishedAt": "2025-07-02T11:04:18Z"
+  },
+  {
+   "id": "sPTlbZGx04c",
+   "title": "Rezeki masih Tertutup",
+   "publishedAt": "2025-07-01T06:17:09Z"
+  },
+  {
+   "id": "W7WaiO46t-8",
+   "title": "Rezeki mengalir karena menjadi orang baik",
+   "publishedAt": "2025-06-29T06:37:01Z"
+  },
+  {
+   "id": "LY8zjAXKzU4",
+   "title": "POV",
+   "publishedAt": "2025-06-28T11:28:43Z"
+  },
+  {
+   "id": "hTOVIibzTIE",
+   "title": "Marah ketika tujuan kita dihalangi",
+   "publishedAt": "2025-06-26T04:56:18Z"
+  },
+  {
+   "id": "i5_Xg_uz-Jc",
+   "title": "Menyesal karena melakukan kesalahan yang kita sudah tau itu memang salah",
+   "publishedAt": "2025-06-25T06:16:58Z"
+  },
+  {
+   "id": "B5Oqcmv4Xd0",
+   "title": "Selalu bicara yang negatif",
+   "publishedAt": "2025-06-24T04:02:40Z"
+  },
+  {
+   "id": "Lvc9H6--VJo",
+   "title": "Mengeluh dan komplain",
+   "publishedAt": "2025-06-20T07:28:23Z"
+  },
+  {
+   "id": "UmfUQq0zynE",
+   "title": "Kenapa sabar dan bersyukur menjadi penting ?",
+   "publishedAt": "2025-06-19T06:50:41Z"
+  },
+  {
+   "id": "0t8tpNwx3v0",
+   "title": "Kenapa kisah dalam Quran berulang ulang diceritakannya ?",
+   "publishedAt": "2025-06-19T01:13:14Z"
+  },
+  {
+   "id": "jtcLK9L3fRs",
+   "title": "Awal kagum, lama lama berkurang",
+   "publishedAt": "2025-06-18T00:02:19Z"
+  },
+  {
+   "id": "7anMD7-Sokk",
+   "title": "Dihianati orang yang kita cintai",
+   "publishedAt": "2025-06-17T23:54:47Z"
+  },
+  {
+   "id": "2cpf3BLwF-k",
+   "title": "Baca terjemah kadang tiba tiba ganti tema dan nggak nyambung dengan bagian sebelumnya, kenapa ya ?",
+   "publishedAt": "2025-06-12T11:55:44Z"
+  },
+  {
+   "id": "9NUySKTYyyM",
+   "title": "Apa itu musibah ?",
+   "publishedAt": "2025-06-11T12:02:09Z"
+  },
+  {
+   "id": "kxCkxhRWIg4",
+   "title": "Terlihat Memotivasi tapi sebenarnya  menyombong",
+   "publishedAt": "2025-06-11T09:43:57Z"
+  },
+  {
+   "id": "jIy_oHXksZQ",
+   "title": "Kehilangan orang yang disayangi",
+   "publishedAt": "2025-06-11T09:39:10Z"
+  },
+  {
+   "id": "KpOfiH9sSK8",
+   "title": "Udah capek, udah usaha tapi hidup masih berat",
+   "publishedAt": "2025-06-09T22:35:00Z"
+  },
+  {
+   "id": "ktqldcjoU8M",
+   "title": "Musibah itu adalah kepastian, mau taat maupun tidak. Trus kenapa kita harus taat kalo seperti itu ?",
+   "publishedAt": "2025-06-09T13:16:03Z"
+  },
+  {
+   "id": "EEYdckC838U",
+   "title": "Ya udah sabar aja, itu nasib kita. Apakah ini namanya sabar atau baru tunduk pada keadaan ?",
+   "publishedAt": "2025-06-09T13:11:42Z"
+  },
+  {
+   "id": "W0NLdxCftxk",
+   "title": "Dibacakan Quran tapi kita tidak merasakan apa apa",
+   "publishedAt": "2025-06-06T08:09:20Z"
+  },
+  {
+   "id": "y84fFRFRPWI",
+   "title": "Kesabaran kita diuji karena perbuatan seseorang",
+   "publishedAt": "2025-06-05T03:37:36Z"
+  },
+  {
+   "id": "W6iELGCPbic",
+   "title": "Masuk neraka ternyata butuh extra usaha, manusia templetenya adalah ke surga",
+   "publishedAt": "2025-06-05T03:31:47Z"
+  },
+  {
+   "id": "vBFL9w5_i6Q",
+   "title": "Kembali kepada Quran tapi ternyata tidak paham apa yang dibaca. Hanya berhenti di Qualitas bacaan",
+   "publishedAt": "2025-06-02T02:56:36Z"
+  },
+  {
+   "id": "lsOjNxoBIWE",
+   "title": "Orang kaya dan miskin bisa tetep serakah",
+   "publishedAt": "2025-05-22T23:39:04Z"
+  },
+  {
+   "id": "HHHD2_gUoA8",
+   "title": "Orang sombong menonjolkan dirinya dan mengecilkan Allah",
+   "publishedAt": "2025-05-20T00:00:49Z"
+  },
+  {
+   "id": "tsaaZ7V3uc4",
+   "title": "Syukur Vs Kafir",
+   "publishedAt": "2025-05-19T23:47:24Z"
+  },
+  {
+   "id": "cqqFW4XVyS0",
+   "title": "Nabi Adam dan perintah Puasa Ramadan",
+   "publishedAt": "2025-05-19T23:44:47Z"
+  },
+  {
+   "id": "TFTRsbfsrBs",
+   "title": "Training untuk memudahkan kita menghadaoi realitas",
+   "publishedAt": "2025-05-19T23:40:38Z"
+  },
+  {
+   "id": "9s6Zvk6Q9-Q",
+   "title": "Puasa apakah jadi target utama atau perantara saja ?",
+   "publishedAt": "2025-05-19T23:35:22Z"
+  },
+  {
+   "id": "MrEH4WyrISw",
+   "title": "Meminta koq cuma dunia aja ketika haji dan umroh",
+   "publishedAt": "2025-05-19T23:30:17Z"
+  },
+  {
+   "id": "f7IMf29ClR8",
+   "title": "Apa kemenangan itu",
+   "publishedAt": "2025-05-19T23:29:12Z"
+  },
+  {
+   "id": "l-W7FoMsQ5w",
+   "title": "Apakah pesan yg tegas harus disampaikan dengan keras ?",
+   "publishedAt": "2025-05-19T23:21:08Z"
+  },
+  {
+   "id": "2ZOrsW97qMk",
+   "title": "Apa bukti kita rugi ?, waktu adalah buktinya",
+   "publishedAt": "2025-05-19T23:18:10Z"
+  },
+  {
+   "id": "tLzDvKnt5Gs",
+   "title": "Jalan Hidup Setiap orang Berbeda beda",
+   "publishedAt": "2025-05-19T08:30:05Z"
+  },
+  {
+   "id": "ESD0HHlNXHg",
+   "title": "Permintaan terpenting kita apa ?",
+   "publishedAt": "2025-05-19T08:26:40Z"
+  },
+  {
+   "id": "nuSmDTcW-W8",
+   "title": "Quran Inspiration is live!",
+   "publishedAt": "2025-05-19T05:08:14Z"
+  },
+  {
+   "id": "SdkYLMc72gI",
+   "title": "Tidak percaya diri, karena background kita tidak bagus",
+   "publishedAt": "2025-05-19T05:00:53Z"
+  },
+  {
+   "id": "dwr02E4lHxc",
+   "title": "Pesan yang sama antara semua Nabi Dan Rasul yaitu tentang kita berasal dari Tuhan Yang Sama",
+   "publishedAt": "2025-05-16T23:37:15Z"
+  },
+  {
+   "id": "cdfm95vEs8s",
+   "title": "Tidak Bersedekah: Bukan Kriminal di Dunia, Tapi Berat di Hadapan Allah!",
+   "publishedAt": "2025-05-16T02:56:10Z"
+  },
+  {
+   "id": "FiAcJUbhW6o",
+   "title": "3 July 2024",
+   "publishedAt": "2024-07-03T14:24:27Z"
+  },
+  {
+   "id": "Q2v573koOTo",
+   "title": "Agama hanya dijadikan alat untuk memenuhi keinginan kita saja",
+   "publishedAt": "2024-06-24T04:43:07Z"
+  },
+  {
+   "id": "zWjtD9agUTA",
+   "title": "Nasehat harus melihat konteks",
+   "publishedAt": "2024-06-15T14:23:33Z"
+  },
+  {
+   "id": "8VC03d3IUbw",
+   "title": "Menumbuhkan rasa percaya diri",
+   "publishedAt": "2024-06-15T14:21:38Z"
+  },
+  {
+   "id": "9_a2WTOwi1I",
+   "title": "Go Global dan Menyebar secara Organic",
+   "publishedAt": "2024-05-31T14:04:48Z"
+  },
+  {
+   "id": "D5YhGXOukCk",
+   "title": "Ketika Kondisi Cheos, apa yg harus kita lakukan dan mulai dari mana ?",
+   "publishedAt": "2024-05-16T02:11:30Z"
+  },
+  {
+   "id": "FccoP-KCCc0",
+   "title": "Apa makna ibadah, apakah hanya sholat, puasa, zakat, haji ?",
+   "publishedAt": "2024-05-15T04:33:12Z"
+  },
+  {
+   "id": "MYS05jEsfd8",
+   "title": "Kenapa ada kata ganti Kami untuk Tuhan kemudian berubah menjadi Aku, apa maksudnya sih ?",
+   "publishedAt": "2024-05-15T02:39:29Z"
+  },
+  {
+   "id": "z6K1cHPr5Es",
+   "title": "Jika tidak ayat yg sampai kepada seseorang maka orang itu masuk neraka atau tidak ?",
+   "publishedAt": "2024-05-15T02:17:26Z"
+  },
+  {
+   "id": "P5JOdsnm8JU",
+   "title": "Kalau kita melihat diri kita tidak sempurna, bagaimana kita melihat Allah pencipta kita sempurna ?",
+   "publishedAt": "2024-05-15T01:52:31Z"
+  },
+  {
+   "id": "LacW_MYJ4yk",
+   "title": "Dengarkan dulu, baru meminta",
+   "publishedAt": "2023-05-08T04:49:30Z"
+  },
+  {
+   "id": "ILlfzvWe3LA",
+   "title": "Bagaimana dekat dengan Tuhan ?",
+   "publishedAt": "2023-05-08T04:47:13Z"
+  },
+  {
+   "id": "ea9OYKbXoxY",
+   "title": "Kemenangan terbesar setelah bukan ramadan",
+   "publishedAt": "2023-05-08T04:45:50Z"
+  },
+  {
+   "id": "cNzyjtLSRlc",
+   "title": "Kadang apapun yg kita lakukan bisa sukses, tapi kadang sudah usaha ini dan itu tapi tidak berhasil",
+   "publishedAt": "2023-05-08T04:43:32Z"
+  },
+  {
+   "id": "iWHUpHs7B7M",
+   "title": "Menjadi manusia yang bermanfaat buat kehidupan bukan menjadi beban kehidupan itu sendiri",
+   "publishedAt": "2023-04-16T21:40:46Z"
+  },
+  {
+   "id": "5TfEO9gY-gI",
+   "title": "Moment menemukan solusi, ini moment menemukan petunjuk",
+   "publishedAt": "2023-04-16T03:56:22Z"
+  },
+  {
+   "id": "qVpYnw09bvo",
+   "title": "Merasakan mukjizat itu mudah",
+   "publishedAt": "2023-04-13T21:48:14Z"
+  },
+  {
+   "id": "9ydprGbbAKM",
+   "title": "Fokus kepada aturan dan detail detail puasa, lupa tujuan utama yaitu Taqwa",
+   "publishedAt": "2023-04-12T10:05:50Z"
+  },
+  {
+   "id": "XDwi5agQgxU",
+   "title": "Puasa dan Taqwa, apa hubungannya ?",
+   "publishedAt": "2023-04-10T01:08:00Z"
+  },
+  {
+   "id": "C9gVgBbPQs0",
+   "title": "Free Will tapi takdir sudah ditentukan",
+   "publishedAt": "2023-01-29T01:04:55Z"
+  },
+  {
+   "id": "3eo7-D6igIc",
+   "title": "Konsumsi more and more gadget terlah mendistract kita dari sesuatu yg sangat penting",
+   "publishedAt": "2023-01-03T22:21:00Z"
+  },
+  {
+   "id": "tRY8eSbez2s",
+   "title": "Bathil Inside dalam hati kita ketika melihat pasangan kita",
+   "publishedAt": "2022-12-13T23:30:08Z"
+  },
+  {
+   "id": "UtY5F60hjMI",
+   "title": "NON MUSLIM HANYA BELAJAR TERJEMAHAN QURAN MENJADI MUALLAF",
+   "publishedAt": "2022-12-06T00:34:03Z"
+  },
+  {
+   "id": "txk13C59MDM",
+   "title": "QS AL BAQOROH : 30,  Malaikat Bertanya",
+   "publishedAt": "2022-11-30T23:00:07Z"
+  },
+  {
+   "id": "bITJqqRumUo",
+   "title": "Apresiasi dan Pujian",
+   "publishedAt": "2022-11-21T01:11:03Z"
+  },
+  {
+   "id": "ArouPdQeZ20",
+   "title": "Hormati Setiap Manusia",
+   "publishedAt": "2022-11-19T10:53:45Z"
+  },
+  {
+   "id": "qudY6zs0ujQ",
+   "title": "Sesuatu yang Buruk Dalam Alam Bawah Sadar",
+   "publishedAt": "2022-11-15T12:30:10Z"
+  },
+  {
+   "id": "X_FmuYQJWcE",
+   "title": "Pujian terhadap orang lain, merupakan penderitaan kepada kita ?",
+   "publishedAt": "2022-10-18T23:14:11Z"
+  },
+  {
+   "id": "SLs2t4BE-Ik",
+   "title": "Terlalu banyak asumsi membuat kita berprasangka buruk | #quraninspiration",
+   "publishedAt": "2022-10-01T01:00:08Z"
+  },
+  {
+   "id": "8A9FiCFCQwg",
+   "title": "Small difficulties often make us furious. What’s wrong with us?",
+   "publishedAt": "2022-09-20T13:49:04Z"
+  },
+  {
+   "id": "c2DnCUyFFAc",
+   "title": "Hal hal kecil sering membuat kita marah dengan intensitas tinggi. Apa yg terjadi pada diri kita ?",
+   "publishedAt": "2022-09-17T23:28:36Z"
+  },
+  {
+   "id": "_aVWS6aPG9k",
+   "title": "Kita dikendalikan oleh orang lain, ini adalah pribadi yang tidak sukses",
+   "publishedAt": "2022-09-17T02:41:00Z"
+  },
+  {
+   "id": "tYGcq6p8mdI",
+   "title": "Memenuhi pikiran dengan masalah, akhirnya hati nya jadi baper",
+   "publishedAt": "2022-08-19T23:43:37Z"
+  },
+  {
+   "id": "qKNfsPdE0us",
+   "title": "Apakah bahagia itu perintah agama? | #Quraninspiration",
+   "publishedAt": "2022-08-17T01:00:13Z"
+  },
+  {
+   "id": "1XeEoDdoJ-E",
+   "title": "Mendapat musibah tapi di suruh bersyukur",
+   "publishedAt": "2022-07-10T01:00:00Z"
+  },
+  {
+   "id": "KW_qIu_Ii9A",
+   "title": "Al Baqoroh Ayat 1-20",
+   "publishedAt": "2022-06-19T23:05:45Z"
+  },
+  {
+   "id": "OQwOcML-RBg",
+   "title": "Mengejar Pujian",
+   "publishedAt": "2022-06-06T23:40:06Z"
+  },
+  {
+   "id": "70CwOGqka40",
+   "title": "Berbahagia dalam hidup",
+   "publishedAt": "2022-06-05T03:48:07Z"
+  },
+  {
+   "id": "sWjn7RLO9fs",
+   "title": "Healing karena over thinking",
+   "publishedAt": "2022-04-23T23:38:26Z"
+  },
+  {
+   "id": "q8n8dOgJg0k",
+   "title": "Digoda dalam Kebaikan",
+   "publishedAt": "2022-04-07T23:53:38Z"
+  },
+  {
+   "id": "m5A0YgHBl94",
+   "title": "Membuat alasan untuk tidak patuh",
+   "publishedAt": "2022-04-06T23:57:41Z"
+  },
+  {
+   "id": "t8rzPKDsM-E",
+   "title": "Over Thinking",
+   "publishedAt": "2022-04-05T00:45:14Z"
+  },
+  {
+   "id": "DbT7gI1woC8",
+   "title": "Dihantui Kesalahan Masa Lalu",
+   "publishedAt": "2022-04-01T17:00:11Z"
+  },
+  {
+   "id": "rvsLkcaWYV8",
+   "title": "Hawa Napsu menjadi Tuhan",
+   "publishedAt": "2022-03-21T01:01:43Z"
+  },
+  {
+   "id": "jowp9dZAqJY",
+   "title": "Kajian Online : Hawa Napsu Menjadi Tuhan",
+   "publishedAt": "2022-03-21T00:58:38Z"
+  },
+  {
+   "id": "NSY73k7v390",
+   "title": "Kekosongan Hati",
+   "publishedAt": "2022-03-15T23:00:14Z"
+  },
+  {
+   "id": "MlWhjRCYmaU",
+   "title": "Jalan Jalan Ke Majalengka",
+   "publishedAt": "2022-02-28T14:21:57Z"
+  },
+  {
+   "id": "nUB-PDMp004",
+   "title": "Hari Yang Buruk",
+   "publishedAt": "2022-02-25T14:10:58Z"
+  },
+  {
+   "id": "7sUyvwDIDf0",
+   "title": "Kemudahan Setelah kesulitan",
+   "publishedAt": "2022-02-18T23:00:12Z"
+  },
+  {
+   "id": "zWn8TYTlSDo",
+   "title": "Pingin Serba Cepat",
+   "publishedAt": "2022-02-17T23:00:12Z"
+  },
+  {
+   "id": "ByBEUZvZHT4",
+   "title": "Happyness bukan Moving Target",
+   "publishedAt": "2022-02-16T23:00:12Z"
+  },
+  {
+   "id": "DzccE2JvpG8",
+   "title": "Kemudahan Bersama Kesulitan",
+   "publishedAt": "2022-02-15T23:00:13Z"
+  },
+  {
+   "id": "ZstOcdN25AA",
+   "title": "Mencari Bahagia",
+   "publishedAt": "2022-02-14T23:00:09Z"
+  },
+  {
+   "id": "qjTvWkxVraI",
+   "title": "Awan Gelap Meliputi : Ini awal Bencana ?",
+   "publishedAt": "2022-02-13T23:42:09Z"
+  },
+  {
+   "id": "moaI4Y9qpmw",
+   "title": "Hari Ke 2 Kata Kerja Dalam Al Quran",
+   "publishedAt": "2022-02-12T14:04:48Z"
+  },
+  {
+   "id": "ZBV7rCjaZVI",
+   "title": "Belajar Nahwu Hari Ke 1 Bersama Rasyid  :  ISM",
+   "publishedAt": "2022-02-11T00:22:48Z"
+  },
+  {
+   "id": "dUjFm4a4ejM",
+   "title": "Kata Kerja Past Tense Dengan Subyek di Dalamnya",
+   "publishedAt": "2022-01-27T22:33:59Z"
+  },
+  {
+   "id": "2jsT0A7SSak",
+   "title": "Kata Kerja Past Tense Bahasa Arab",
+   "publishedAt": "2022-01-24T18:23:09Z"
+  },
+  {
+   "id": "2iRAFpnle7g",
+   "title": "Belajar Bahasa Al Quran",
+   "publishedAt": "2022-01-23T23:41:13Z"
+  },
+  {
+   "id": "Klk-2894H-w",
+   "title": "Ultimate Goal Vs Milestone",
+   "publishedAt": "2021-11-15T22:53:40Z"
+  },
+  {
+   "id": "fs1gb0ozL_w",
+   "title": "Kebahagiaan Hidup",
+   "publishedAt": "2021-10-26T12:05:21Z"
+  },
+  {
+   "id": "X8421O_xydo",
+   "title": "Framing Kita Salah",
+   "publishedAt": "2021-10-10T23:53:06Z"
+  },
+  {
+   "id": "rLuauqZ8jwA",
+   "title": "Silet Majority Siap Menerima Kebenaran",
+   "publishedAt": "2021-10-03T22:56:40Z"
+  },
+  {
+   "id": "GIBV-rRnlcE",
+   "title": "Apa itu Istianah ? | #QuranInspiration",
+   "publishedAt": "2021-08-29T10:00:11Z"
+  },
+  {
+   "id": "k7HAA7apsIQ",
+   "title": "Bagaimana cara pandang kita terhadap Allah | #QuranInspiration",
+   "publishedAt": "2021-08-25T10:00:18Z"
+  },
+  {
+   "id": "ZSlrtniwO4g",
+   "title": "Menjadi Muslim yang Baik | #QuranInspiration",
+   "publishedAt": "2021-08-21T10:00:25Z"
+  },
+  {
+   "id": "ztBTqRYouTg",
+   "title": "Harta dan Anak",
+   "publishedAt": "2021-08-21T00:27:48Z"
+  },
+  {
+   "id": "wh-BuLEZiQk",
+   "title": "Permintaan kita kepada Allah | #QuranInspiration",
+   "publishedAt": "2021-08-16T10:00:23Z"
+  },
+  {
+   "id": "bGjzxLz4sPQ",
+   "title": "Kenapa Ketidak Adilan Terjadi dan Allah ijinkan itu terjadi ?",
+   "publishedAt": "2021-08-08T15:04:21Z"
+  },
+  {
+   "id": "8P9lpgTFV5Q",
+   "title": "Raport Kehidupan Manusia Didunia | #QuranInspiration",
+   "publishedAt": "2021-08-07T10:00:08Z"
+  },
+  {
+   "id": "s4VxWIPotYo",
+   "title": "Salah Memuji, karena tidak mampu melihat siapa yang menolong",
+   "publishedAt": "2021-08-01T21:56:15Z"
+  },
+  {
+   "id": "nssBqbYYz0E",
+   "title": "Memanfaatkan sifat kasih sayang Allah - #QuranInspiration",
+   "publishedAt": "2021-07-30T10:00:26Z"
+  },
+  {
+   "id": "wChjQcqLXgI",
+   "title": "Menjadi Wali Allah",
+   "publishedAt": "2021-07-29T01:00:02Z"
+  },
+  {
+   "id": "c6ikux2KncY",
+   "title": "Allah adalah Raja sekaligus Pemilik #QuranInspiration",
+   "publishedAt": "2021-07-26T10:00:12Z"
+  },
+  {
+   "id": "EQhV_H4IuTo",
+   "title": "Manusia dan Allah | #QuranInspiration",
+   "publishedAt": "2021-07-21T10:00:04Z"
+  },
+  {
+   "id": "bEz-tfrxt9Q",
+   "title": "Belajar Bahasa Alquran - Kita sesat atau tidak itu sudah takdir ?",
+   "publishedAt": "2021-07-02T03:43:48Z"
+  },
+  {
+   "id": "IznQpmPJfks",
+   "title": "Jalan Berbeda Setiap Orang",
+   "publishedAt": "2021-06-14T00:36:35Z"
+  },
+  {
+   "id": "xJWRuj8Mv6c",
+   "title": "Class Quran Inspiration",
+   "publishedAt": "2021-04-05T02:07:55Z"
+  },
+  {
+   "id": "twkOK0rFXzs",
+   "title": "Arogan ketika memiliki Power",
+   "publishedAt": "2021-03-15T03:13:42Z"
+  },
+  {
+   "id": "46vtL-iR1NM",
+   "title": "Q&A ( Rugi bagi orang yang lebih mementingkan dunia ) | #QuranInspiration",
+   "publishedAt": "2021-01-05T08:12:10Z"
+  },
+  {
+   "id": "E--SuSqtOOk",
+   "title": "Q&A ( Mengapa iblis selalu menyesatkan manusia dengan berbagai upaya ) | #QuranInspiration",
+   "publishedAt": "2020-12-24T08:24:44Z"
+  },
+  {
+   "id": "EDibucVvkIg",
+   "title": "Q&A (Al Qur'an membuat kita menjadi pribadi yang lebih baik) #QuranInspiration",
+   "publishedAt": "2020-12-18T12:13:42Z"
+  },
+  {
+   "id": "XV4ON37Dj94",
+   "title": "PART 2 Q&A (Semakin kita dekat dengan dunia, maka semakin jauh kita dengan Allah) #QuranInspiration",
+   "publishedAt": "2020-12-11T09:46:36Z"
+  },
+  {
+   "id": "7bQSKSDM4cY",
+   "title": "PART 1 Q&A (Semakin kita dekat dengan dunia, maka semakin jauh kita dengan Allah) #QuranInspiration",
+   "publishedAt": "2020-12-09T11:23:45Z"
+  },
+  {
+   "id": "FCrl63eYrnw",
+   "title": "Q.S Yusuf Ayat 39 ( Keputusan itu hanyalah kepunyaan Allah ) | #QuranInspiration Eps. 15",
+   "publishedAt": "2020-12-04T08:28:15Z"
+  },
+  {
+   "id": "YYCRj68Y5AY",
+   "title": "Q&A Quran Inspiration ( Al-Qur'an membawa kita melihat dari sisi yang berbeda ) | #QuranInspiration",
+   "publishedAt": "2020-12-02T08:01:18Z"
+  },
+  {
+   "id": "PC2_TPSqJUw",
+   "title": "Surat Al Hujarat Ayat 7 (Cinta pada keimanan) | #QuranInspiration Eps.16",
+   "publishedAt": "2020-11-23T03:27:47Z"
+  },
+  {
+   "id": "0qPjwYOaZsk",
+   "title": "Surat Al Hujarat Ayat 7 (Memberi Nasihat Kepada Orang Beriman) | #QuranInspiration Eps. 16",
+   "publishedAt": "2020-11-19T09:40:23Z"
+  },
+  {
+   "id": "6T9bFeQr3BQ",
+   "title": "Full Eps | Chand Kelvin Sempat Alami Black Out - Percaya Pertolongan Allah Tepat Pada Waktunya | #QI",
+   "publishedAt": "2020-10-11T03:00:01Z"
+  },
+  {
+   "id": "3xvvkJ8Xl9Y",
+   "title": "Chand Kelvin Sempat Alami Black Out | Percaya Pertolongan Allah Tepat Pada Waktunya | #QuranInsp",
+   "publishedAt": "2020-10-10T09:00:40Z"
+  },
+  {
+   "id": "6_k207DG6X0",
+   "title": "Q&A Quran Inspiration Eps 10 (Salat atau Al Quran yang wajib dipelajari?) | #QuranInspiration",
+   "publishedAt": "2020-09-17T11:30:00Z"
+  },
+  {
+   "id": "wQz4J3Lp_64",
+   "title": "Raffi Ahmad Eps 2 | Banyak perkataan yang menyakiti hati orang lain | Full Eps | #QuranInspiration",
+   "publishedAt": "2020-08-23T03:00:20Z"
+  },
+  {
+   "id": "hJhcenLxo6U",
+   "title": "Q&A Quran Inspiration Eps 9 (Pentingnya pengajaran orang tua terhadap anak) | #QuranInspiration",
+   "publishedAt": "2020-08-22T10:00:19Z"
+  },
+  {
+   "id": "BjMp6OfR30o",
+   "title": "Teaser | Raffi Ahmad Eps 2 (Banyak perkataan yang menyakiti orang lain)",
+   "publishedAt": "2020-08-22T07:23:51Z"
+  },
+  {
+   "id": "Q8aIlXlRQ2Q",
+   "title": "Q&A Quran Inspiration Eps 8 (Mudah dendam kepada orang lain) | #QuranInspiration",
+   "publishedAt": "2020-08-17T01:00:05Z"
+  },
+  {
+   "id": "9Zhn7hNv3l8",
+   "title": "Rafathar jadi alert Raffi Ahmad untuk hijrah | Eps 1 | #QuranInspiration",
+   "publishedAt": "2020-08-16T03:43:45Z"
+  },
+  {
+   "id": "0n4Bdl4tKs0",
+   "title": "Q&A Quran Inspiration Eps 7 (Berpikir negatif, yang didapat juga hal negatif) | #QuranInspiration",
+   "publishedAt": "2020-08-10T00:00:01Z"
+  },
+  {
+   "id": "ZcI1wBWsJJM",
+   "title": "Q&A Quran Inspiration Eps 6 (Minder kepada orang yang sudah lebih baik) | #QuranInspiration",
+   "publishedAt": "2020-08-07T08:00:10Z"
+  },
+  {
+   "id": "F9ySoIrOUDY",
+   "title": "Q&A Quran Inspiration Eps 5 (Bersedih disaat kematian anggota keluarga) | #QuranInspiration",
+   "publishedAt": "2020-08-05T08:00:02Z"
+  },
+  {
+   "id": "Iax3QfuZNJ8",
+   "title": "Q&A Quran Inspiration Eps 4 (Jangan belajar Al Qur'an sendiri nanti tersesat, Apakah benar?)",
+   "publishedAt": "2020-08-03T08:00:02Z"
+  },
+  {
+   "id": "wnebHZY7nJc",
+   "title": "Q&A Quran Inspiration Eps 3 (Terlalu yakin ibadahnya pasti diterima) | #QuranInspiration",
+   "publishedAt": "2020-08-01T00:00:07Z"
+  },
+  {
+   "id": "4b4UcZeJg-Y",
+   "title": "Q&A Quran Inspiration Eps 2 (Tidak perlu usaha, kalau rezeki pasti akan datang)",
+   "publishedAt": "2020-07-28T10:00:00Z"
+  },
+  {
+   "id": "wBIRWjr2j60",
+   "title": "Q&A Quran Inspiration Eps 1 (Hidup selalu ditimpa musibah, lalu mengapa ALLAH menciptakan kita?)",
+   "publishedAt": "2020-07-26T10:00:20Z"
+  },
+  {
+   "id": "AwLs-9nfWV4",
+   "title": "Umar Syarief bercerita, bagaimana memanfaatkan kebaikan ALLAH, dan bukan menjadi bucin dunia | #QI",
+   "publishedAt": "2020-07-13T03:00:02Z"
+  },
+  {
+   "id": "jLqQQeNHOgI",
+   "title": "Lucky Resha bercerita tentang pengalaman hidup dan menjadi loyal kepada ALLAH - Part 2",
+   "publishedAt": "2020-07-06T10:30:06Z"
+  },
+  {
+   "id": "uIY2UuzZGcE",
+   "title": "Inspirasi Arrahman",
+   "publishedAt": "2020-07-05T16:35:35Z"
+  },
+  {
+   "id": "JiOlmqUvghE",
+   "title": "Lucky Resha bercerita tentang pengalaman hidup dan menjadi loyal kepada ALLAH - Part 1",
+   "publishedAt": "2020-06-30T05:46:27Z"
+  },
+  {
+   "id": "RqTwEIxa4hg",
+   "title": "Berbagi ketika kamu sama-sama tertimpa musibah, bersama Koh Steven Indra Wibowo - Part 3",
+   "publishedAt": "2020-06-27T00:00:04Z"
+  },
+  {
+   "id": "Hsb8F-Zy_6Q",
+   "title": "Koh Steven Indra Wibowo - Janganlah kau berburuk sangka, ketika tertimpa musibah - Part 2",
+   "publishedAt": "2020-06-21T23:00:06Z"
+  },
+  {
+   "id": "AjinhaQ1iDk",
+   "title": "Bersyukur ketika mendapat musibah, bersama Koh Steven Indra Wibowo - Part 1 | #QuranInspiration",
+   "publishedAt": "2020-06-17T23:00:03Z"
+  },
+  {
+   "id": "dtkopBJkwjI",
+   "title": "Quran Inspiration Spesial Idul Fitri 1441H, part 2 | #QuranInspiration",
+   "publishedAt": "2020-05-25T13:00:23Z"
+  },
+  {
+   "id": "9MVSLsrxEYk",
+   "title": "Quran Inspiration Spesial Idul Fitri 1441H, part 1 | #QuranInspiration",
+   "publishedAt": "2020-05-25T09:42:17Z"
+  },
+  {
+   "id": "uptL_-ZofMU",
+   "title": "MEMAHAMI KEBESARAN ALLAH DARI HAL KECIL, MENJADIKAN KITA SELALU BERSYUKUR KEPADA ALLAH",
+   "publishedAt": "2020-05-08T10:32:04Z"
+  },
+  {
+   "id": "VkUyiNYYvzg",
+   "title": "Kenapa Ada Penderitaan",
+   "publishedAt": "2020-03-31T13:47:03Z"
+  },
+  {
+   "id": "p-u1oIPCkjQ",
+   "title": "Bersyukur kala musibah",
+   "publishedAt": "2020-03-27T13:32:42Z"
+  },
+  {
+   "id": "lbAuP2kd8kI",
+   "title": "KITA PAHAMI KONSEP INI, MAKA KITA AKAN SELALU BERSABAR DAN BERSYUKUR",
+   "publishedAt": "2020-03-26T10:45:00Z"
+  },
+  {
+   "id": "AsV-5UzCxag",
+   "title": "Doa Ketika Penyakit Datang",
+   "publishedAt": "2020-03-25T14:13:57Z"
+  },
+  {
+   "id": "jwMJhzhEuDs",
+   "title": "Inspirasi Arrahman",
+   "publishedAt": "2020-03-24T11:11:58Z"
+  },
+  {
+   "id": "3kPfdPAQY1E",
+   "title": "Tidak Mampu Sabar",
+   "publishedAt": "2020-03-21T06:48:43Z"
+  },
+  {
+   "id": "Yre6nYYhtT4",
+   "title": "Jamaah atau tidak ketika Wabah",
+   "publishedAt": "2020-03-20T04:50:51Z"
+  },
+  {
+   "id": "XNx4Uy9RKQ4",
+   "title": "HIDUP DI DUNIA HANYA SEBENTAR, UDAH TOBAT DAN PERBANYAK IBADAH UNTUK KELAK DI AKHIRAT ?",
+   "publishedAt": "2020-01-06T14:08:44Z"
+  },
+  {
+   "id": "LRx5tx1c9so",
+   "title": "METODOLOGI DAKWAH YANG LUAR BIASA",
+   "publishedAt": "2019-12-04T13:05:51Z"
+  },
+  {
+   "id": "iN3sfWYZOHQ",
+   "title": "Strategi musuh-musuh Islam dalam menjatuhkan Pemimpin Islam",
+   "publishedAt": "2019-11-08T12:06:27Z"
+  },
+  {
+   "id": "K-ztKAzgOIM",
+   "title": "MENDINGAN SAYA, GA PAKE KERUDUNG TAPI HATINYA BAIK",
+   "publishedAt": "2019-10-12T12:34:51Z"
+  },
+  {
+   "id": "2dmg9rZPTKc",
+   "title": "KETIKA DIHINA, MENGATASI KOMEN - KOMEN KURANG BAIK DI SOSIAL MEDIA",
+   "publishedAt": "2019-10-06T15:00:52Z"
+  },
+  {
+   "id": "nJ7GdKb0iFw",
+   "title": "SIFAT IRI HATI DAN DENDAM DALAM KISAH YANG MENGINSPIRASI",
+   "publishedAt": "2019-09-30T11:58:02Z"
+  },
+  {
+   "id": "0NUhIJa1Uc4",
+   "title": "BEGINILAH SIFAT IBLIS, BERIBADAH HANYA INGIN MENDAPATKAN PENGAKUAN SAJA",
+   "publishedAt": "2019-09-23T11:57:12Z"
+  },
+  {
+   "id": "OY3Tiay9rfA",
+   "title": "PENGUCAPAN ALHAMDULILLAH DENGAN KONTEKS DAN CARA YANG BENAR (LUQMAN 12-13)",
+   "publishedAt": "2019-09-05T06:27:16Z"
+  },
+  {
+   "id": "PB4lNDETVyg",
+   "title": "INI CARA AGAR SELALU FOKUS KEPADA AL - QURAN",
+   "publishedAt": "2019-08-27T12:26:58Z"
+  },
+  {
+   "id": "IQkk_ivBu2Q",
+   "title": "Day 12 : Jumlah Ismiyyah",
+   "publishedAt": "2019-08-22T02:10:16Z"
+  },
+  {
+   "id": "Y48SNugxdA0",
+   "title": "Day 11 : Kata Tunjuk",
+   "publishedAt": "2019-08-21T23:27:50Z"
+  },
+  {
+   "id": "4C7k2mfooOo",
+   "title": "Day 10 : Rekap Fragmen",
+   "publishedAt": "2019-08-21T23:03:31Z"
+  },
+  {
+   "id": "cqEDuvgU_Zo",
+   "title": "Belajar Bahasa Alquran - Day 10 : Fleksible non Fleksible",
+   "publishedAt": "2019-08-21T23:00:30Z"
+  },
+  {
+   "id": "eRy1LIZ1b6g",
+   "title": "Belajar Bahasa Alquran - Day 9 :  Kata sifat",
+   "publishedAt": "2019-08-21T22:38:17Z"
+  },
+  {
+   "id": "gAx7D2yPqrc",
+   "title": "Belajar Bahasa Alquran - Day 8 : Kata Jamak",
+   "publishedAt": "2019-08-16T22:42:03Z"
+  },
+  {
+   "id": "6HireP8lKzk",
+   "title": "Belajar Bahasa Alquran - Day 7 :  Idafah",
+   "publishedAt": "2019-08-08T13:47:00Z"
+  },
+  {
+   "id": "szQeFhJunGQ",
+   "title": "Belajar Bahasa Alquran - Day 6 : Harf Jarr",
+   "publishedAt": "2019-08-07T23:17:06Z"
+  },
+  {
+   "id": "1nssCzLqkBc",
+   "title": "Belajar Bahasa Alquran - Day 5 :  Harf Nasb",
+   "publishedAt": "2019-08-05T23:05:04Z"
+  },
+  {
+   "id": "xQ5YW-FIi0A",
+   "title": "Belajar Bahasa Alquran - Day 4 : Kata Ganti",
+   "publishedAt": "2019-08-05T22:35:48Z"
+  },
+  {
+   "id": "6bHVa_FkEXc",
+   "title": "Belajar Bahasa Alquran - Day 3 :  Gender",
+   "publishedAt": "2019-08-05T22:27:51Z"
+  },
+  {
+   "id": "oxZ_U8BQ8c0",
+   "title": "Belajar Bahasa Alquran - Day 2 : Bentuk Jamak",
+   "publishedAt": "2019-08-04T23:21:24Z"
+  },
+  {
+   "id": "u6l8Csm5XU0",
+   "title": "Belajar Bahasa Alquran - Nahwu Day 1 (Rafa, Nasb dan Jar)",
+   "publishedAt": "2019-08-04T03:21:30Z"
+  },
+  {
+   "id": "ZYAW2tMPRys",
+   "title": "MENJAGA KARAKTER KITA SESUAI DENGAN AL - QUR'AN",
+   "publishedAt": "2019-07-29T08:52:54Z"
+  },
+  {
+   "id": "9ZcVFyhk8D4",
+   "title": "MENGHARGAI SESAMA MUSLIM DAN TIDAK BERPECAH BELAH",
+   "publishedAt": "2019-07-17T12:32:15Z"
+  },
+  {
+   "id": "TyAJkkc8wtI",
+   "title": "GENERASI MUSLIM YANG KUAT",
+   "publishedAt": "2019-06-29T10:03:21Z"
+  },
+  {
+   "id": "CaprToNjo7k",
+   "title": "AGAMA DIGUNAKAN UNTUK MENJATUHKAN ORANG LAIN",
+   "publishedAt": "2019-03-10T05:09:38Z"
+  },
+  {
+   "id": "_SV81XAJKJY",
+   "title": "MASIH MAU PACARAN ? AWAS GODAAN IBLIS DARI DEPAN KAMU",
+   "publishedAt": "2019-01-07T10:45:44Z"
+  },
+  {
+   "id": "pnEblGBaWgA",
+   "title": "\"Bagaimana cara menjaga keistiqomahan kita dalam berinteraksi dengan Al - Quran? (QnA Session)",
+   "publishedAt": "2018-12-12T08:51:39Z"
+  },
+  {
+   "id": "sPu5cli-cjo",
+   "title": "SYAITAN BUKAN MEMBUAT KITA MELAKUKAN KESALAHAN NAMUN MEMBUAT KITA TIDAK BERSYUKUR",
+   "publishedAt": "2018-12-05T13:02:36Z"
+  },
+  {
+   "id": "AbZ8nYmAOaI",
+   "title": "BERSYUKUR DAN BERLINDUNG KEPADA ALLAH ATAS GODAAN IBLIS (PART 2)",
+   "publishedAt": "2018-10-19T04:16:40Z"
+  },
+  {
+   "id": "ZGuWR7kr9Ec",
+   "title": "WASPADA GODAAN IBLIS DARI BELAKANG (PART 1)",
+   "publishedAt": "2018-10-19T04:01:27Z"
+  },
+  {
+   "id": "E0ONxbgEvU0",
+   "title": "STRATEGI MENGALAHKAN IBLIS",
+   "publishedAt": "2018-10-17T08:01:56Z"
+  },
+  {
+   "id": "IeeqJ_SfX-8",
+   "title": "SIFAT IBLIS YANG SEHARI - HARI ADA DI KEHIDUPAN KITA",
+   "publishedAt": "2018-10-05T09:10:07Z"
+  },
+  {
+   "id": "qs3uyZzh-YM",
+   "title": "PROUD TO BE A MUSLIM - @cibuburmengaji",
+   "publishedAt": "2018-09-18T10:26:47Z"
+  },
+  {
+   "id": "BPPwm1T-LG8",
+   "title": "MEMINTA SUPAYA BISA MENDIRIKAN SHALAT - IBRAHIM : 40",
+   "publishedAt": "2018-09-14T04:28:06Z"
+  },
+  {
+   "id": "XeqwsGQ72x4",
+   "title": "KENAPA PEMIMPIN YANG TIDAK AMANAH BISA MENANG PEMILIHAN UMUM ?",
+   "publishedAt": "2018-08-24T08:15:47Z"
+  },
+  {
+   "id": "Gmp3m_aUdEs",
+   "title": "SUKSES ITU JADI KAYA DAN PUNYA JABATAN, TERNYATA SALAH!!",
+   "publishedAt": "2018-08-17T01:53:35Z"
+  },
+  {
+   "id": "rNe28Rx1kDU",
+   "title": "MENDAPAT MUSIBAH ? BEGINI CARA MUSLIM MENYIKAPINYA",
+   "publishedAt": "2018-08-10T03:34:13Z"
+  },
+  {
+   "id": "22rVkEVQ3T4",
+   "title": "ISLAM DAN BOM BUNUH DIRI (Ibrahim : 24 - 25)",
+   "publishedAt": "2018-07-27T15:00:00Z"
+  },
+  {
+   "id": "LbtytzZJ1ms",
+   "title": "SEBERAPA BAGUSKAH KUALITAS DIRI KITA ? (THAHA : 114)",
+   "publishedAt": "2018-07-26T03:26:05Z"
+  },
+  {
+   "id": "gSYyuuR1cT0",
+   "title": "BERIBADAH HANYA UNTUK MENDAPATKAN APA YANG KITA INGINKAN ?",
+   "publishedAt": "2018-07-19T11:35:29Z"
+  },
+  {
+   "id": "ns37ZHRIIaQ",
+   "title": "JANGAN HUKUM KAMI",
+   "publishedAt": "2018-07-13T07:01:57Z"
+  },
+  {
+   "id": "V1asp8_E8O8",
+   "title": "Jalan setiap orang berbeda, mungkin berbeda dengan kita",
+   "publishedAt": "2018-07-12T06:26:31Z"
+  },
+  {
+   "id": "wENZWSSGdOI",
+   "title": "Tambahkan kualitas diriku",
+   "publishedAt": "2018-07-04T15:49:21Z"
+  },
+  {
+   "id": "3avx4qKoQXQ",
+   "title": "Musibah, kenapa harus bersyukur ?",
+   "publishedAt": "2018-06-11T09:50:26Z"
+  },
+  {
+   "id": "oJxkHDfaNJw",
+   "title": "Memuji diri sendiri",
+   "publishedAt": "2018-06-11T09:47:03Z"
+  },
+  {
+   "id": "_DqrreOZSSc",
+   "title": "Resign karena merasa dosa",
+   "publishedAt": "2018-05-28T02:45:07Z"
+  },
+  {
+   "id": "ya56NudPk3Y",
+   "title": "Melemahkan orang lain",
+   "publishedAt": "2018-05-24T10:27:14Z"
+  },
+  {
+   "id": "EG2S9G1z-lA",
+   "title": "Defensif ketika berbuat salah",
+   "publishedAt": "2018-05-18T07:40:45Z"
+  },
+  {
+   "id": "XDmhiGo0-3c",
+   "title": "General formula Doa (Nuh : 10 - 12)",
+   "publishedAt": "2018-05-15T09:41:29Z"
+  },
+  {
+   "id": "g5TCZeOH_Oc",
+   "title": "Obat Hati",
+   "publishedAt": "2018-04-26T13:16:01Z"
+  },
+  {
+   "id": "midiipnLFm8",
+   "title": "Tanpa Jarak, tanpa perantara",
+   "publishedAt": "2018-04-21T09:04:25Z"
+  },
+  {
+   "id": "AtbfQW6C5H8",
+   "title": "Hubungan personal",
+   "publishedAt": "2018-04-16T14:02:35Z"
+  },
+  {
+   "id": "V_uAL2Izi_A",
+   "title": "Akar kesalahan besar",
+   "publishedAt": "2018-04-14T23:51:13Z"
+  },
+  {
+   "id": "mYLXwsoKQhQ",
+   "title": "Prioritas agama",
+   "publishedAt": "2018-04-10T12:20:02Z"
+  },
+  {
+   "id": "sZWLtofRgNM",
+   "title": "Cahaya atas cahaya",
+   "publishedAt": "2018-04-04T12:41:10Z"
+  },
+  {
+   "id": "WPh54pMXzYE",
+   "title": "Agama hanya dibuat culture",
+   "publishedAt": "2018-03-26T12:41:49Z"
+  },
+  {
+   "id": "rfv99T4m8oM",
+   "title": "Kenapa diberi musibah",
+   "publishedAt": "2018-03-22T12:02:11Z"
+  },
+  {
+   "id": "kqTK2keoaio",
+   "title": "Mental customer dalam meminta",
+   "publishedAt": "2018-03-15T13:31:49Z"
+  },
+  {
+   "id": "uBsjRv23iEE",
+   "title": "Kenapa Allah tidak menolong saya",
+   "publishedAt": "2018-03-14T07:54:56Z"
+  },
+  {
+   "id": "Eh1-sP1FWuQ",
+   "title": "Telaga surga",
+   "publishedAt": "2018-03-13T08:55:50Z"
+  },
+  {
+   "id": "19pv-_CQguY",
+   "title": "Sirah dan Quran",
+   "publishedAt": "2018-03-07T05:25:31Z"
+  },
+  {
+   "id": "G14JvrXz-uE",
+   "title": "Gampang mencuplik Quran tanpa tau konteks",
+   "publishedAt": "2018-03-05T09:36:22Z"
+  },
+  {
+   "id": "lxEWTTi7y1Q",
+   "title": "Gampang menghakimi orang",
+   "publishedAt": "2018-03-04T01:31:03Z"
+  },
+  {
+   "id": "4q_aSDUKGhE",
+   "title": "Pendengaran membentuk pola pikir",
+   "publishedAt": "2018-03-02T12:29:53Z"
+  },
+  {
+   "id": "2vahEdYdVBw",
+   "title": "Jalan lurus itu sederhana",
+   "publishedAt": "2018-03-01T13:35:46Z"
+  },
+  {
+   "id": "DuWhAdwzLRY",
+   "title": "Sedih bukan berarti nggak sabar",
+   "publishedAt": "2018-02-21T08:26:57Z"
+  },
+  {
+   "id": "mbV8BH2ihCk",
+   "title": "Menyangka beramal namun nilainya kosong",
+   "publishedAt": "2018-02-14T07:29:45Z"
+  },
+  {
+   "id": "iPoMpuICA7o",
+   "title": "Mencari bukti intelektual ( Al-Baqoroh ayat 108 )",
+   "publishedAt": "2018-02-07T13:37:24Z"
+  },
+  {
+   "id": "ainpIPfDLP8",
+   "title": "Udah dibantu, koq malah nyakitin kita",
+   "publishedAt": "2018-02-03T15:13:18Z"
+  },
+  {
+   "id": "atgLxS50yyI",
+   "title": "Pilihan kebenaran (Al Furqon ayat 7)",
+   "publishedAt": "2018-01-28T14:55:49Z"
+  },
+  {
+   "id": "2e3CKTbrNXE",
+   "title": "Mengenal bahasa Quran",
+   "publishedAt": "2018-01-24T13:39:45Z"
+  },
+  {
+   "id": "fg9eFY3Zk_c",
+   "title": "Ketika dalam kesulitan, kita masih memiliki kapasitas membantu orang lain (Surat Al Furqon)",
+   "publishedAt": "2018-01-23T15:12:37Z"
+  },
+  {
+   "id": "dPpAOzGxleM",
+   "title": "Membaca berbeda dengan mengaji",
+   "publishedAt": "2018-01-20T00:51:34Z"
+  },
+  {
+   "id": "lbT0gYOEHfs",
+   "title": "Perjalanan Doa",
+   "publishedAt": "2018-01-17T02:02:47Z"
+  },
+  {
+   "id": "3ATM9QZblRE",
+   "title": "Hafiz Indonesia",
+   "publishedAt": "2018-01-12T00:26:56Z"
+  },
+  {
+   "id": "zOiUMZ3KMkI",
+   "title": "Kenapa Doa lambat terkabul",
+   "publishedAt": "2018-01-11T10:28:12Z"
+  },
+  {
+   "id": "xgWvaO8Wk8w",
+   "title": "Belajar banyak lupa esensi utama islam",
+   "publishedAt": "2018-01-03T14:13:09Z"
+  },
+  {
+   "id": "ensJCzYV0nY",
+   "title": "Menahan amal, merasa amalnya sudah besar",
+   "publishedAt": "2017-12-29T01:30:04Z"
+  },
+  {
+   "id": "D0nNdhMWjZs",
+   "title": "Standar manusia selalu komplain",
+   "publishedAt": "2017-12-27T03:33:59Z"
+  },
+  {
+   "id": "ziVMkWKhylc",
+   "title": "Air terjun madikaripura",
+   "publishedAt": "2017-12-26T02:47:01Z"
+  },
+  {
+   "id": "EcPMc-QNK2g",
+   "title": "Bromo des 2017",
+   "publishedAt": "2017-12-25T11:39:59Z"
+  },
+  {
+   "id": "goiSKqQjMC0",
+   "title": "Timbangan dzikir",
+   "publishedAt": "2017-12-15T10:41:02Z"
+  },
+  {
+   "id": "pTyikn1kx9U",
+   "title": "Masih dengki kepada sesama orang beriman ?",
+   "publishedAt": "2017-12-14T10:20:30Z"
+  },
+  {
+   "id": "znvzndVlZYc",
+   "title": "Timbangan setiap orang berbeda sesuai dengan potensi nya",
+   "publishedAt": "2017-12-12T10:20:32Z"
+  },
+  {
+   "id": "DAOwADRGZaA",
+   "title": "Apakah ada rasa dengki kepada orang beriman ?",
+   "publishedAt": "2017-12-11T13:39:15Z"
+  },
+  {
+   "id": "g6ZySPox53g",
+   "title": "Menolak bersedekah",
+   "publishedAt": "2017-12-08T07:19:13Z"
+  },
+  {
+   "id": "snN6LjSaLXQ",
+   "title": "Menolak untuk berpikir",
+   "publishedAt": "2017-12-08T07:14:49Z"
+  },
+  {
+   "id": "4NgKdnvsKlw",
+   "title": "Mengaji ttg kendaraan",
+   "publishedAt": "2017-12-03T07:22:04Z"
+  },
+  {
+   "id": "LxQpCAB6Sv8",
+   "title": "Theory and case study 2",
+   "publishedAt": "2017-12-02T05:03:33Z"
+  },
+  {
+   "id": "H2vIus9GDBs",
+   "title": "Theory dan Case Study",
+   "publishedAt": "2017-11-15T03:37:08Z"
+  },
+  {
+   "id": "lS8Ppxhs67E",
+   "title": "Berbuat maksiat itu ternyata susah",
+   "publishedAt": "2017-11-10T03:18:38Z"
+  },
+  {
+   "id": "FFrL8LN6fC8",
+   "title": "Pengabdi syetan",
+   "publishedAt": "2017-11-08T10:44:55Z"
+  },
+  {
+   "id": "bnsWoqb5sfU",
+   "title": "Refleksi ayat alam semesta",
+   "publishedAt": "2017-11-05T13:57:56Z"
+  },
+  {
+   "id": "MrLjj_wBxLQ",
+   "title": "Jalan lurus 2",
+   "publishedAt": "2017-11-02T16:06:28Z"
+  },
+  {
+   "id": "m1a8IbMVJhY",
+   "title": "Jalan lurus",
+   "publishedAt": "2017-11-02T15:35:13Z"
+  },
+  {
+   "id": "hvNT2MY4OdE",
+   "title": "metode belajar",
+   "publishedAt": "2017-10-31T14:30:24Z"
+  },
+  {
+   "id": "NrePyydRIUg",
+   "title": "Priview Surga",
+   "publishedAt": "2017-10-27T01:16:22Z"
+  },
+  {
+   "id": "TKHEa9hXCzw",
+   "title": "Penista agama",
+   "publishedAt": "2017-10-24T23:43:04Z"
+  },
+  {
+   "id": "kwJgrO1Gh-A",
+   "title": "Bukan Tuhanmu dan Tuhanku, tapi Tuhan Kita",
+   "publishedAt": "2017-10-18T10:39:49Z"
+  },
+  {
+   "id": "2zpx3C6VzjM",
+   "title": "Bukan Kontes Ego",
+   "publishedAt": "2017-10-18T07:21:54Z"
+  },
+  {
+   "id": "9R1lLzlkP7A",
+   "title": "Cinta kitab lain lupa Quran",
+   "publishedAt": "2017-10-15T09:27:01Z"
+  },
+  {
+   "id": "snSPK1_jk3g",
+   "title": "Mengubah hati orang lain",
+   "publishedAt": "2017-10-10T05:46:52Z"
+  },
+  {
+   "id": "JCcMxZwcMxo",
+   "title": "Coherence",
+   "publishedAt": "2017-10-07T09:53:28Z"
+  },
+  {
+   "id": "Uh82EjTxskk",
+   "title": "Teliti alam semesta, maka akan bertemu dengan Tuhan",
+   "publishedAt": "2017-10-06T09:25:16Z"
+  },
+  {
+   "id": "IPL9xnp6QDg",
+   "title": "Peringatan",
+   "publishedAt": "2017-10-03T14:46:45Z"
+  },
+  {
+   "id": "1NqRizy9KCY",
+   "title": "Berada di jalan lurus",
+   "publishedAt": "2017-09-28T06:42:38Z"
+  },
+  {
+   "id": "BC-zR0xouCE",
+   "title": "Mempertanyakan Tuhan",
+   "publishedAt": "2017-09-27T07:15:54Z"
+  },
+  {
+   "id": "Dcavmhao2ps",
+   "title": "Allah maha pengasih, kenapa membuat neraka untuk mahluknya ?",
+   "publishedAt": "2017-09-25T14:32:45Z"
+  },
+  {
+   "id": "-Intr1mN7_A",
+   "title": "Kita dan Napsu kita lemah",
+   "publishedAt": "2017-09-23T02:19:05Z"
+  },
+  {
+   "id": "UG1mTAfkg7A",
+   "title": "Fokus kepada perbaikan diri, jangan fokus kepada yang menghina",
+   "publishedAt": "2017-09-17T09:44:31Z"
+  },
+  {
+   "id": "MpY4klvPFQY",
+   "title": "Musibah, bersyukurlah dan memudahkanmu bersabar",
+   "publishedAt": "2017-09-13T03:10:32Z"
+  },
+  {
+   "id": "TsMWQiMV9aU",
+   "title": "Bertumbuh dan berkembang",
+   "publishedAt": "2017-09-11T10:13:15Z"
+  },
+  {
+   "id": "PhInI3xQtPI",
+   "title": "Mencela orang",
+   "publishedAt": "2017-09-11T08:54:25Z"
+  },
+  {
+   "id": "n2GYohAHiKo",
+   "title": "Memuji diri sendiri",
+   "publishedAt": "2017-09-11T08:52:18Z"
+  },
+  {
+   "id": "_j4q3sTo5N8",
+   "title": "Inspirasi dari rasul",
+   "publishedAt": "2017-09-07T12:39:30Z"
+  },
+  {
+   "id": "1cHmRmZpAC8",
+   "title": "Bagaimana tumbuh menjadi pribadi baik",
+   "publishedAt": "2017-09-07T12:32:26Z"
+  },
+  {
+   "id": "t7gzmLhMVpA",
+   "title": "Rasyid collection",
+   "publishedAt": "2017-09-02T02:08:28Z"
+  },
+  {
+   "id": "zvHuyj_iZWM",
+   "title": "Potensi tergelincir",
+   "publishedAt": "2017-09-02T02:01:16Z"
+  },
+  {
+   "id": "6R1cj3TN3OY",
+   "title": "Di Surga, ada bidadari cantik yang belum pernah disentuh",
+   "publishedAt": "2017-08-28T13:29:04Z"
+  },
+  {
+   "id": "TtQUJ0jGrKs",
+   "title": "Suka memuji diri sendiri",
+   "publishedAt": "2017-08-27T10:27:48Z"
+  },
+  {
+   "id": "R-GRUP7fUGI",
+   "title": "Nikmat apa yang paling tinggi ?",
+   "publishedAt": "2017-08-26T07:54:36Z"
+  },
+  {
+   "id": "qwWsf2tu-24",
+   "title": "Hidup lebih bermanfaat",
+   "publishedAt": "2017-08-22T13:29:30Z"
+  },
+  {
+   "id": "P4VSft5Rawk",
+   "title": "Muslim Kaya",
+   "publishedAt": "2017-08-15T12:53:53Z"
+  },
+  {
+   "id": "YQRij4d9QF8",
+   "title": "Kiki Wedding 2017",
+   "publishedAt": "2017-08-12T06:50:59Z"
+  },
+  {
+   "id": "xDYavl0nl4I",
+   "title": "Kebiasaan menghina",
+   "publishedAt": "2017-08-12T01:13:38Z"
+  },
+  {
+   "id": "tOVsROnhLEI",
+   "title": "kawinan kiki",
+   "publishedAt": "2017-08-06T12:25:39Z"
+  },
+  {
+   "id": "g0-P70LA1go",
+   "title": "Panduan ketika kita bingung dalam masalah agama",
+   "publishedAt": "2017-08-02T06:35:07Z"
+  },
+  {
+   "id": "neJ8DnE1WBg",
+   "title": "Programming 2017",
+   "publishedAt": "2017-07-30T03:32:05Z"
+  },
+  {
+   "id": "7xz4DACv5V0",
+   "title": "Programming Agt 2017",
+   "publishedAt": "2017-07-29T23:20:13Z"
+  },
+  {
+   "id": "TD2slPqBc-w",
+   "title": "Kanapa perbuatan makar tetap terjadi",
+   "publishedAt": "2017-07-24T09:21:13Z"
+  },
+  {
+   "id": "_j2OKvU2QW8",
+   "title": "Rasyid sakit batuk",
+   "publishedAt": "2017-07-22T13:58:43Z"
+  },
+  {
+   "id": "-Rk0uoL9oKE",
+   "title": "Memperbaiki kesalahan masa lalu",
+   "publishedAt": "2017-07-20T01:38:08Z"
+  },
+  {
+   "id": "5aSb2-Dp9bE",
+   "title": "Merasakan kedekatan dengan Allah",
+   "publishedAt": "2017-07-17T08:16:29Z"
+  },
+  {
+   "id": "40IoYFVIXaI",
+   "title": "Jalan lebar menuju Allah",
+   "publishedAt": "2017-07-10T08:14:44Z"
+  },
+  {
+   "id": "SM6I9bXoOjg",
+   "title": "Malaysia dibuang sayang komplit",
+   "publishedAt": "2017-07-10T08:00:24Z"
+  },
+  {
+   "id": "7M5TfrgnlRQ",
+   "title": "Lebaran 2017 gasibu",
+   "publishedAt": "2017-07-10T07:52:40Z"
+  },
+  {
+   "id": "6chUc0nGRH0",
+   "title": "Keluarga the saleh",
+   "publishedAt": "2017-07-10T07:31:22Z"
+  },
+  {
+   "id": "HKbjqyl7D8k",
+   "title": "Malaysia 2017",
+   "publishedAt": "2017-07-08T06:55:53Z"
+  },
+  {
+   "id": "K8SbfNXvDHw",
+   "title": "Malam yang memiliki Value",
+   "publishedAt": "2017-07-04T03:31:58Z"
+  },
+  {
+   "id": "Ld6AEitvaRE",
+   "title": "Lebaran 2017",
+   "publishedAt": "2017-07-04T03:21:48Z"
+  },
+  {
+   "id": "kBCE4uXKmOI",
+   "title": "Lebaran 2017",
+   "publishedAt": "2017-07-04T03:19:53Z"
+  },
+  {
+   "id": "wkdn4geVLXE",
+   "title": "Berdamai kepada sesama muslim",
+   "publishedAt": "2017-07-03T09:12:52Z"
+  },
+  {
+   "id": "a07rBOmecpA",
+   "title": "Sky bridge Malaysia",
+   "publishedAt": "2017-07-03T08:36:22Z"
+  },
+  {
+   "id": "3tYx8pWHOrU",
+   "title": "Hopping Island Malasyia",
+   "publishedAt": "2017-07-03T07:57:46Z"
+  },
+  {
+   "id": "GSaRtS-1fy8",
+   "title": "Ketika terjadi masalah dengan keluarga",
+   "publishedAt": "2017-06-08T02:55:53Z"
+  },
+  {
+   "id": "X-M5n7I3gq4",
+   "title": "Al Baqoroh struktur",
+   "publishedAt": "2017-06-07T11:58:18Z"
+  },
+  {
+   "id": "6wlxN-17bGU",
+   "title": "Al Baqoroh bagian 8",
+   "publishedAt": "2017-06-06T08:05:02Z"
+  },
+  {
+   "id": "jN7i3dsw9ok",
+   "title": "Al Baqoroh bagian 7, part 2",
+   "publishedAt": "2017-06-05T02:53:16Z"
+  },
+  {
+   "id": "euao4IE_qUg",
+   "title": "Al Baqoroh bagian 7",
+   "publishedAt": "2017-06-04T06:26:18Z"
+  },
+  {
+   "id": "HHnb2HbG4CM",
+   "title": "Al baqoroh bagian 6",
+   "publishedAt": "2017-06-02T03:11:26Z"
+  },
+  {
+   "id": "MfFOBtT5ZxQ",
+   "title": "Al Baqoroh Bagian 5",
+   "publishedAt": "2017-05-31T03:03:20Z"
+  },
+  {
+   "id": "LxuHK4AOocQ",
+   "title": "Al Baqoroh bagian 4",
+   "publishedAt": "2017-05-30T08:13:06Z"
+  },
+  {
+   "id": "8v8GWr5HJls",
+   "title": "Al Baqoroh Bagian 3",
+   "publishedAt": "2017-05-29T02:47:23Z"
+  },
+  {
+   "id": "fKs9yK6URJE",
+   "title": "Al Baqoroh Bagian 2",
+   "publishedAt": "2017-05-27T01:51:00Z"
+  },
+  {
+   "id": "7W7JdzTgYbk",
+   "title": "Pengantar program ramadan",
+   "publishedAt": "2017-05-26T21:15:34Z"
+  },
+  {
+   "id": "iJki4sL-6ek",
+   "title": "Al Baqoroh Bagian 1",
+   "publishedAt": "2017-05-23T10:54:50Z"
+  },
+  {
+   "id": "eK6FfDebS1o",
+   "title": "Apa itu Kafir ?",
+   "publishedAt": "2017-05-20T00:45:34Z"
+  },
+  {
+   "id": "1DsJSVJoAcQ",
+   "title": "Kenapa Allah menyebutkan nikmat ?",
+   "publishedAt": "2017-05-19T12:38:18Z"
+  },
+  {
+   "id": "wp8J6I8g06A",
+   "title": "Musibah itu derita atau rahmat ?",
+   "publishedAt": "2017-05-19T12:07:09Z"
+  },
+  {
+   "id": "KKP6YrnnNbM",
+   "title": "Keindahan story telling",
+   "publishedAt": "2017-05-04T12:57:04Z"
+  },
+  {
+   "id": "muGo-SXuLmI",
+   "title": "Apa yang membuat kita berhenti berpikir akhirat ?",
+   "publishedAt": "2017-05-02T08:38:32Z"
+  },
+  {
+   "id": "uhiSSbwO2G8",
+   "title": "Kenapa kisah para nabi terdapat dari beberapa surat ?",
+   "publishedAt": "2017-05-01T14:23:42Z"
+  },
+  {
+   "id": "IE0-eb4YPyk",
+   "title": "Kenapa harus ada rasa takut ?",
+   "publishedAt": "2017-04-20T01:00:04Z"
+  },
+  {
+   "id": "IFq3_dy7YCI",
+   "title": "Hidup Lalai, dan tidak sadar hingga masuk dalam kubur",
+   "publishedAt": "2017-03-31T08:45:44Z"
+  },
+  {
+   "id": "NWKEliRO6-M",
+   "title": "agama untuk tujuan lain",
+   "publishedAt": "2017-03-29T01:00:01Z"
+  },
+  {
+   "id": "Hq1jfMOdbFQ",
+   "title": "Wanita akan mendapatkan bidadara di surga ?",
+   "publishedAt": "2017-03-28T10:18:04Z"
+  },
+  {
+   "id": "FJ0-4nWoEqo",
+   "title": "Memahami lebih banyak surat",
+   "publishedAt": "2017-03-28T09:33:29Z"
+  },
+  {
+   "id": "auJR56QL20w",
+   "title": "Hubungan 4 surat juz 30",
+   "publishedAt": "2017-03-28T08:22:14Z"
+  },
+  {
+   "id": "MUC1kyMMN-M",
+   "title": "Makin tambah ilmu, makin berpecah belah, harusnya kebanaran yang dibela bukan Ego",
+   "publishedAt": "2017-03-28T05:43:23Z"
+  },
+  {
+   "id": "QVhelTFB2Eg",
+   "title": "surat arrahman ayat 1 dan 2",
+   "publishedAt": "2017-03-09T06:39:58Z"
+  },
+  {
+   "id": "3Fu1T3vkIA8",
+   "title": "Jauh dari Quran",
+   "publishedAt": "2017-03-07T10:15:15Z"
+  },
+  {
+   "id": "ZAsd63TRqbI",
+   "title": "Jangan takut baca kitab",
+   "publishedAt": "2017-03-07T06:19:40Z"
+  },
+  {
+   "id": "7sWdmafvN2I",
+   "title": "Anak sukses, siapa yang mau. Kriteria apa ya ?, yuk liat Quran",
+   "publishedAt": "2017-03-02T06:47:43Z"
+  },
+  {
+   "id": "_wNAtyl9_0g",
+   "title": "Kenapa doa kita tidak dikabul",
+   "publishedAt": "2017-03-01T12:00:59Z"
+  },
+  {
+   "id": "YyNZUOFzEog",
+   "title": "Ketika berhasil, cepat cepat istighfar supaya nggak sombong",
+   "publishedAt": "2017-02-16T05:10:07Z"
+  },
+  {
+   "id": "CKxLO2xZbEc",
+   "title": "Al Baqoroh 1-5 bersama Syifa",
+   "publishedAt": "2017-02-16T04:39:36Z"
+  },
+  {
+   "id": "MPPk7ovd7Ok",
+   "title": "Pembukaan Al baqoroh (bersama Syifa)",
+   "publishedAt": "2017-02-15T23:03:47Z"
+  },
+  {
+   "id": "VCl8TFtiV1Q",
+   "title": "Rendahkan Sayapmu di hadapan orang tuamu",
+   "publishedAt": "2017-02-14T14:29:23Z"
+  },
+  {
+   "id": "i7LUhrrE-FY",
+   "title": "Muslim yang cerdas, membaca dan memahami Quran",
+   "publishedAt": "2017-02-14T05:40:33Z"
+  },
+  {
+   "id": "AhnllrJQGSs",
+   "title": "Kita minta bisa menangis bahagia, bukan menangis berduka",
+   "publishedAt": "2017-02-13T06:54:40Z"
+  },
+  {
+   "id": "Mbk9AajMK-I",
+   "title": "Beriman atau tidak, Allah tetep memberikan rezeki karena semuanya ada mahluknya Allah",
+   "publishedAt": "2017-02-12T15:09:26Z"
+  },
+  {
+   "id": "gWCKv3nNC6Q",
+   "title": "Kenapa masih takut beramal ?",
+   "publishedAt": "2017-02-10T12:52:48Z"
+  },
+  {
+   "id": "wCtXB-Q__Qw",
+   "title": "Kenapa kita selalu minta petunjuk jalan yang lurus ?",
+   "publishedAt": "2017-02-09T07:40:47Z"
+  },
+  {
+   "id": "ungW1ggmkzo",
+   "title": "puncak emosi adalah awal pintu rahmat",
+   "publishedAt": "2017-02-07T23:58:31Z"
+  },
+  {
+   "id": "366_yRtDImk",
+   "title": "Banyak menyebut Nikmat, jangan pamer penderitaan",
+   "publishedAt": "2017-02-03T09:18:42Z"
+  },
+  {
+   "id": "eSvUUn2KSBY",
+   "title": "Ketika orang bilang kita aneh, padahal kita benar",
+   "publishedAt": "2017-01-31T10:59:00Z"
+  },
+  {
+   "id": "CKtQT7Jbt1w",
+   "title": "Cara mengusir syetan yang menggoda kita",
+   "publishedAt": "2017-01-30T23:39:24Z"
+  },
+  {
+   "id": "a9cepUuVmlo",
+   "title": "Ajak Anak Anakmu beramal",
+   "publishedAt": "2017-01-28T23:28:32Z"
+  },
+  {
+   "id": "d4IiuNPMH7A",
+   "title": "Mengagumi Al Quran : Musa & Isa",
+   "publishedAt": "2017-01-28T02:34:47Z"
+  },
+  {
+   "id": "b5SSjydp8p0",
+   "title": "Setelah beramal, bangga atau bertobat ?",
+   "publishedAt": "2017-01-26T15:26:05Z"
+  },
+  {
+   "id": "kdaqG2FQDrw",
+   "title": "Berhasil itu jika...., ternyata logika kita berbeda dengan Quran",
+   "publishedAt": "2017-01-25T00:32:31Z"
+  },
+  {
+   "id": "xEJCRdzxDdA",
+   "title": "Apakah kita rendah hati ?.",
+   "publishedAt": "2017-01-20T03:50:29Z"
+  },
+  {
+   "id": "Nzi07-8Sxc8",
+   "title": "Ketika lensa kacamata kita salah maka kita akan melihat dunia dengan tidak jelas",
+   "publishedAt": "2017-01-20T01:06:31Z"
+  },
+  {
+   "id": "S7UcweJM6Fo",
+   "title": "Parenting, menjadi ayah yang baik",
+   "publishedAt": "2017-01-12T15:47:07Z"
+  },
+  {
+   "id": "4WK8ov4cmyg",
+   "title": "Dikarunia nikmat, tapi malah lalai",
+   "publishedAt": "2017-01-09T07:22:48Z"
+  },
+  {
+   "id": "TNg8ndprUvg",
+   "title": "Nak, ceritakan prestasimu kepada kami, jangan ke saudaramu",
+   "publishedAt": "2017-01-05T07:26:35Z"
+  },
+  {
+   "id": "Q3e-IdGS3VE",
+   "title": "Merasa diri serba cukup",
+   "publishedAt": "2017-01-04T05:00:28Z"
+  },
+  {
+   "id": "l-nefTcoSZ8",
+   "title": "The Lost Generation, kita ukur diri kita !!!",
+   "publishedAt": "2017-01-02T11:13:45Z"
+  },
+  {
+   "id": "AL-wDuQtMPg",
+   "title": "Formulasi supaya ringan ketika musibah hadir",
+   "publishedAt": "2016-12-31T03:21:37Z"
+  },
+  {
+   "id": "1JbPzFJBWsg",
+   "title": "Meninggalkan ibadah jumat krn smart phone",
+   "publishedAt": "2016-12-28T06:30:23Z"
+  },
+  {
+   "id": "WKkVqHc5wu8",
+   "title": "Musibah, bersabar atau bersyukur ?",
+   "publishedAt": "2016-12-26T11:06:40Z"
+  },
+  {
+   "id": "leSHtVsvGZg",
+   "title": "Ketulusan cinta dalam nasehat",
+   "publishedAt": "2016-12-26T10:36:22Z"
+  },
+  {
+   "id": "IDQK86fgisA",
+   "title": "Pergeseran makna alhamdulillah",
+   "publishedAt": "2016-12-19T10:50:23Z"
+  },
+  {
+   "id": "1g5Clv2XEy0",
+   "title": "Ketika ada misi yg sulit, apa yg harus kita utamakan untuk diminta ?",
+   "publishedAt": "2016-12-13T12:01:27Z"
+  },
+  {
+   "id": "fWUH1PAy-Gk",
+   "title": "Sabar itu, jika memiliki ilmu dan pengalaman (update HD)",
+   "publishedAt": "2016-12-11T12:53:52Z"
+  },
+  {
+   "id": "iLzHISDbgRc",
+   "title": "Semut dan burung memiliki kemampuan analisa yang tajam",
+   "publishedAt": "2016-12-11T12:22:43Z"
+  },
+  {
+   "id": "fKoqxWZu54I",
+   "title": "Belajar rendah hati ketika sudah beribadah",
+   "publishedAt": "2016-12-11T11:56:49Z"
+  },
+  {
+   "id": "xVVovWw58WA",
+   "title": "Banyak ibadah, tidak harus menjadi sombong",
+   "publishedAt": "2016-12-05T07:51:45Z"
+  },
+  {
+   "id": "20SUsnM9TX4",
+   "title": "Al baqoroh 211",
+   "publishedAt": "2016-12-03T01:37:32Z"
+  },
+  {
+   "id": "RfMC6u32tvA",
+   "title": "Orang baik diberikan trigger utk berbuat dosa",
+   "publishedAt": "2016-11-26T14:57:24Z"
+  },
+  {
+   "id": "knvlNYv3ETA",
+   "title": "Sukses itu, ya menjadi SABAR",
+   "publishedAt": "2016-11-25T22:21:52Z"
+  },
+  {
+   "id": "lhrvAB3E1U0",
+   "title": "Quran Inspiration : Musibah, apakah baik ?",
+   "publishedAt": "2016-11-18T03:50:33Z"
+  },
+  {
+   "id": "oiDkChxVMGY",
+   "title": "Quran Inspiration : Solusi terbaik dari setiap masalah",
+   "publishedAt": "2016-11-16T15:47:59Z"
+  },
+  {
+   "id": "edIY17GZVDo",
+   "title": "al baqoroh 204",
+   "publishedAt": "2016-11-14T11:35:21Z"
+  },
+  {
+   "id": "Yy2sz3G1gKc",
+   "title": "Hubungan Ayah dan Anak",
+   "publishedAt": "2016-11-13T06:08:48Z"
+  },
+  {
+   "id": "DOI7ml7Y8w4",
+   "title": "al baqoroh 206",
+   "publishedAt": "2016-11-13T02:57:12Z"
+  },
+  {
+   "id": "WMbwyS8Dmp8",
+   "title": "Al baqoroh : 205",
+   "publishedAt": "2016-11-10T14:06:24Z"
+  },
+  {
+   "id": "PW2xfTSwOn4",
+   "title": "Quran Inspiration : Berbuat baik,iringi dengan istighfar",
+   "publishedAt": "2016-11-10T01:06:26Z"
+  },
+  {
+   "id": "iiMUlWd21Ak",
+   "title": "Gender Mutiara Quran",
+   "publishedAt": "2016-11-08T14:25:14Z"
+  },
+  {
+   "id": "48oTvarslC0",
+   "title": "Gender part 2",
+   "publishedAt": "2016-11-08T13:57:56Z"
+  },
+  {
+   "id": "vU3-mv6kRD0",
+   "title": "Arabic Quranic : Gender",
+   "publishedAt": "2016-11-08T02:06:01Z"
+  },
+  {
+   "id": "pB4L9moYphE",
+   "title": "Quran Inspiration : hubungan air hujan dan Efek Quran",
+   "publishedAt": "2016-11-07T01:00:10Z"
+  },
+  {
+   "id": "g4volBkYwos",
+   "title": "Arabic Quranic : Number (Mutiara Quran)",
+   "publishedAt": "2016-11-05T23:58:56Z"
+  },
+  {
+   "id": "-UZ5n3Kch7w",
+   "title": "Arabic Quranic : Number latihan",
+   "publishedAt": "2016-11-05T11:35:46Z"
+  },
+  {
+   "id": "6LRWA0-Ixvw",
+   "title": "Arabic Quranic : Number",
+   "publishedAt": "2016-11-05T06:42:29Z"
+  },
+  {
+   "id": "sVY1B1eGPRM",
+   "title": "Quran memandu sikap terhadap yang melecehkan islam",
+   "publishedAt": "2016-11-01T00:38:16Z"
+  },
+  {
+   "id": "18gvk60vOH8",
+   "title": "Quran Inspiration : Kita sudah merasakan kematian",
+   "publishedAt": "2016-10-30T00:03:52Z"
+  },
+  {
+   "id": "ch4CnDURUdE",
+   "title": "Day 7 : Arabic Quranic (present tense)",
+   "publishedAt": "2016-10-27T13:48:35Z"
+  },
+  {
+   "id": "Q9rpUJU0DWM",
+   "title": "Quran Inspiration : Meng handle kesombongan",
+   "publishedAt": "2016-10-27T04:02:27Z"
+  },
+  {
+   "id": "zc4zfkwdhmY",
+   "title": "Quran Inspiration : Ketika islam dihina",
+   "publishedAt": "2016-10-26T06:10:59Z"
+  },
+  {
+   "id": "4G_IhB32yH8",
+   "title": "Day 9 : Pasif present tense",
+   "publishedAt": "2016-10-23T00:30:53Z"
+  },
+  {
+   "id": "BZvhzWUrr54",
+   "title": "Day 8 : Pasif past tense",
+   "publishedAt": "2016-10-22T23:50:56Z"
+  },
+  {
+   "id": "YMx6l1wbq4E",
+   "title": "Quran Inspiration : Minum di surga",
+   "publishedAt": "2016-10-22T13:10:18Z"
+  },
+  {
+   "id": "7lY4VAYqHY0",
+   "title": "Quran Inspiration : Menasehati muslim yang berbuat salah",
+   "publishedAt": "2016-10-18T19:17:00Z"
+  },
+  {
+   "id": "LD5yT_WoVvQ",
+   "title": "Quran Inspiration : Al Khausar",
+   "publishedAt": "2016-10-18T11:24:46Z"
+  },
+  {
+   "id": "LD5yT_WoVvQ",
+   "title": "Quran Inspiration : Al Khausar",
+   "publishedAt": "2016-10-18T11:24:46Z"
+  },
+  {
+   "id": "AJ5sgTp_cAo",
+   "title": "Inspirasi dr seorang muallaf",
+   "publishedAt": "2016-10-17T22:04:47Z"
+  },
+  {
+   "id": "xu9WAb23KJc",
+   "title": "Quran Inspiration - Belajar dari Nabi Ibrahim",
+   "publishedAt": "2016-10-13T01:04:07Z"
+  },
+  {
+   "id": "i7zCpUNKtIY",
+   "title": "Day 2 - Muslim dan Muslimah",
+   "publishedAt": "2016-10-12T23:07:14Z"
+  },
+  {
+   "id": "wjCn826AV8c",
+   "title": "Day 1 Part 3 - Ism Lanjutan",
+   "publishedAt": "2016-10-12T22:58:52Z"
+  },
+  {
+   "id": "4khEZe5Qnu0",
+   "title": "Day 5 Part 3- Past tense",
+   "publishedAt": "2016-10-05T22:31:24Z"
+  },
+  {
+   "id": "ty-diWc3-Lo",
+   "title": "Day 5 Part 2 - Past tense",
+   "publishedAt": "2016-10-05T21:57:31Z"
+  },
+  {
+   "id": "sS-QKRDtN6I",
+   "title": "Day 5 Part 1 - Past Tense (HD)",
+   "publishedAt": "2016-10-05T08:34:35Z"
+  },
+  {
+   "id": "RKAMYmv3fGQ",
+   "title": "Day 1 - Mutiara Ism Al Imron 185",
+   "publishedAt": "2016-10-05T02:10:11Z"
+  },
+  {
+   "id": "nOroPjB885Y",
+   "title": "Day 1 - Mutiara Belajar Ism",
+   "publishedAt": "2016-10-04T10:07:31Z"
+  },
+  {
+   "id": "opHeup7iZlI",
+   "title": "Day 5 Part 1 - Past Tense",
+   "publishedAt": "2016-09-30T07:27:13Z"
+  },
+  {
+   "id": "X-_clSgYE5I",
+   "title": "Day 4 Part 2 - Contoh Kata Ganti",
+   "publishedAt": "2016-09-30T06:45:38Z"
+  },
+  {
+   "id": "bF-rtTR0cs0",
+   "title": "Day 4 Part 1 - Kata Ganti lanjutan",
+   "publishedAt": "2016-09-30T04:04:26Z"
+  },
+  {
+   "id": "ssN6PZZruUI",
+   "title": "Day 1 Part 2 - Ism Status Rafa",
+   "publishedAt": "2016-09-30T00:09:43Z"
+  },
+  {
+   "id": "BSiKzm8UkIw",
+   "title": "Day 1 Part 1 - Kata Bahasa Arab",
+   "publishedAt": "2016-09-29T23:52:27Z"
+  },
+  {
+   "id": "cYItbDGu4l0",
+   "title": "Day 3 - Kata Ganti",
+   "publishedAt": "2016-09-29T14:44:51Z"
+  }
+ ]
 }

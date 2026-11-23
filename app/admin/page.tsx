@@ -16,6 +16,7 @@ export default function Admin() {
   const [data, setData] = useState<any>(null);
   const [err, setErr] = useState('');
   const [busy, setBusy] = useState(false);
+  const [showAll, setShowAll] = useState(false);
 
   async function load(password: string) {
     setBusy(true);
@@ -175,7 +176,7 @@ export default function Admin() {
         )
       ) : null}
 
-      <h2>Video YouTube yang belum cocok dengan surat</h2>
+      <h2>Video YouTube yang belum cocok dengan surat ({data.unmatchedVideos.length})</h2>
       <p style={{ color: 'var(--text-2)', fontSize: 16 }}>
         Channel: {data.channel ? `${data.channel.title} ${data.channel.handle || ''}` : st?.youtube?.message || 'belum terbaca'}. Tambahkan nama surat di judul video (misalnya &quot;Al-Ikhlas&quot;), maka
         video akan muncul otomatis pada sinkron berikutnya.
@@ -184,7 +185,7 @@ export default function Admin() {
         <p className="form-msg err">Mungkin maksudnya: {st.youtube.suggestions.map((s: any) => s.title).join(', ')}</p>
       ) : null}
       <div className="list">
-        {data.unmatchedVideos.map((v: any) => (
+        {data.unmatchedVideos.slice(0, showAll ? undefined : 30).map((v: any) => (
           <div className="row" key={v.id}>
             <a href={`https://www.youtube.com/watch?v=${v.id}`} target="_blank" rel="noopener">
               {v.title}
@@ -194,6 +195,13 @@ export default function Admin() {
         ))}
         {!data.unmatchedVideos.length ? <div className="row">Tidak ada. ✓</div> : null}
       </div>
+      {data.unmatchedVideos.length > 30 && !showAll ? (
+        <div className="actions">
+          <button className="btn btn-ghost" onClick={() => setShowAll(true)}>
+            Tampilkan semua ({data.unmatchedVideos.length})
+          </button>
+        </div>
+      ) : null}
 
       <h2>Surat yang tayang</h2>
       <div className="list">
