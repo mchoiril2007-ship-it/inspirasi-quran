@@ -15,7 +15,11 @@ export async function GET(req: Request, { params }: { params: Promise<{ slug: st
   const out = new Headers({
     'Content-Type': 'audio/mpeg',
     'Accept-Ranges': 'bytes',
-    'Cache-Control': 'public, max-age=86400',
+    // Jangan disimpan di CDN Vercel: CDN mengabaikan header Range sehingga potongan audio bisa tertukar.
+    'Cache-Control': 'private, max-age=86400',
+    'CDN-Cache-Control': 'no-store',
+    'Vercel-CDN-Cache-Control': 'no-store',
+    Vary: 'Range',
   });
   for (const h of ['content-length', 'content-range', 'etag', 'last-modified']) {
     const v = upstream.headers.get(h);
