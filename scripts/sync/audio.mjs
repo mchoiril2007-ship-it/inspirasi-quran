@@ -11,6 +11,9 @@ import { applyDict } from './pronounce.mjs';
 
 const run = promisify(execFile);
 const AR = /[؀-ۿݐ-ݿࢠ-ࣿﭐ-﷿ﹰ-﻿]+/g;
+const HAS_AR = /[\u0600-\u06FF]/;
+// Ayat yang sering dikutip di luar surat yang dibahas (mis. "inna lillahi…" = QS 2:156)
+const EXTRA_VERSES = ['2:156', '2:286', '2:255', '1:1', '1:2', '1:5', '1:6', '112:1', '3:173', '65:3', '94:5', '94:6', '13:28', '2:152', '39:53'];
 
 export function speakable(text) {
   return String(text || '')
@@ -31,8 +34,37 @@ export function speakable(text) {
 }
 
 /** Susun daftar segmen audio dari struktur naskah. */
-export function buildScript(doc, dict = null) {
+export function buildScript(doc, dict = null, opts = {}) {
   const seg = [];
+  // Daftar ayat yang dikutip naskah, untuk mencari rekaman per kata
+  const verseKeys = [];
+  for (const b of doc.blocks) if (b.type === 'ayah') for (const a of b.ayahs) verseKeys.push(`${b.surahNumber}:${a}`);
+  let lastVerse = null;
+  const versesFor = () => {
+    const i = lastVerse ? verseKeys.indexOf(lastVerse) : -1;
+    return i < 0 ? verseKeys : [...verseKeys.slice(i), ...verseKeys.slice(0, i)].reverse().sort((x, y) => (x === lastVerse ? -1 : y === lastVerse ? 1 : 0));
+  };
+  // Pecah teks menjadi bagian Latin (dibacakan AI Indonesia) dan Arab (rekaman qari per kata / suara AI Arab)
+  const sayMixed = (text, chapter) => {
+    text = String(text).replace(/ﷺ/g, ' shallallahu alaihi wa sallam ').replace(/ﷻ/g, ' jalla jalaaluh ');
+    if (!opts.arabicWords || !HAS_AR.test(text)) return say(text, chapter);
+    const parts = String(text).split(/([\u0600-\u06FF\u0750-\u077F\u08A0-\u08FF\uFB50-\uFDFF\uFE70-\uFEFF][\u0600-\u06FF\u0750-\u077F\u08A0-\u08FF\uFB50-\uFDFF\uFE70-\uFEFF\s]*)/);
+    let first = true;
+    for (let i = 0; i < parts.length; i++) {
+      const part = parts[i];
+      if (i % 2 === 1) {
+        const ar = part.trim();
+        if (ar.replace(/[\s\u064B-\u065F\u0670\u06D6-\u06ED]/g, '').length < 2) continue;
+        seg.push({ kind: 'silence', ms: 120 });
+        seg.push({ kind: 'arabic', text: ar, verses: [...versesFor().slice(0, 40), ...EXTRA_VERSES] });
+        seg.push({ kind: 'silence', ms: 120 });
+      } else {
+        const latin = part.replace(/\(\s*$/, ' ').replace(/^\s*\)/, ' ').replace(/^\s*[,;:.]\s*/, '').replace(/[,;:]\s*$/, '');
+        if (latin.trim()) say(latin, first ? chapter : undefined);
+      }
+      first = false;
+    }
+  };
   const say = (text, chapter) => {
     const t = dict ? applyDict(speakable(text), dict) : speakable(text);
     if (t && /[a-z0-9]/i.test(t)) seg.push({ kind: 'tts', text: t, chapter });
@@ -61,16 +93,17 @@ export function buildScript(doc, dict = null) {
       case 'p':
       case 'faq':
       case 'li':
-        say(b.type === 'li' ? `${b.n}. ${b.text}` : b.text);
+        sayMixed(b.type === 'li' ? `${b.n}. ${b.text}` : b.text);
         pause(250);
         break;
       case 'keyword':
-        say(`${b.term}: ${b.text}`);
+        if (opts.arabicWords && b.arabic) sayMixed(`${b.term}, ${b.arabic}: ${b.text}`);
+        else say(`${b.term}: ${b.text}`);
         pause(250);
         break;
       case 'callout':
         pause(300);
-        say(`${b.label ? b.label + '. ' : ''}${b.text}`);
+        sayMixed(`${b.label ? b.label + '. ' : ''}${b.text}`);
         pause(500);
         break;
       case 'table':
@@ -82,6 +115,7 @@ export function buildScript(doc, dict = null) {
       case 'ayah':
         pause(500);
         for (const a of b.ayahs) seg.push({ kind: 'ayah', surah: b.surahNumber, ayah: a });
+        lastVerse = `${b.surahNumber}:${b.ayahs[0]}`;
         pause(500);
         say(`${b.ref.replace(/^QS\.\s*/, 'Quran Surat ').replace(/:\s*/, ', ayat ')}.`);
         pause(200);
@@ -110,13 +144,13 @@ async function ffprobeDuration(file) {
 
 const NORM = ['-ar', '44100', '-ac', '1', '-c:a', 'pcm_s16le'];
 
-async function tts(text, out, config) {
+async function tts(text, out, config, voice = null) {
   const txt = out + '.txt';
   fs.writeFileSync(txt, text);
   for (let i = 0; i < 4; i++) {
     try {
       const proxy = process.env.HTTPS_PROXY || process.env.https_proxy;
-      const args = ['--voice', config.ttsVoice, `--rate=${config.ttsRate}`, `--pitch=${config.ttsPitch || '+0Hz'}`, '--file', txt, '--write-media', out + '.mp3'];
+      const args = ['--voice', voice || config.ttsVoice, `--rate=${config.ttsRate}`, `--pitch=${config.ttsPitch || '+0Hz'}`, '--file', txt, '--write-media', out + '.mp3'];
       if (proxy) args.unshift('--proxy', proxy);
       await run('edge-tts', args, { timeout: 120000 });
       if (fs.statSync(out + '.mp3').size > 500) break;
@@ -153,6 +187,76 @@ async function murattal(surah, ayah, out, config, cacheDir) {
   await run('ffmpeg', ['-y', '-v', 'error', '-i', cached, '-af', 'loudnorm=I=-16:TP=-1.5:LRA=11', ...NORM, out]);
 }
 
+// Kata/frasa Arab: cari di ayat yang dikutip (rekaman qari per kata dari Quran.com), jika tidak ada → suara AI Arab.
+const stripAr = (t) =>
+  t
+    .replace(/[\u064B-\u065F\u0670\u06D6-\u06ED\u0640\u08D3-\u08FF\u06DE\u06E9]/g, '')
+    .replace(/[\u0622\u0623\u0625\u0671\u0672\u0673]/g, '\u0627')
+    .replace(/\u0649/g, '\u064A')
+    .replace(/\u0629/g, '\u0647')
+    .replace(/\u0624/g, '\u0648')
+    .replace(/\u0626/g, '\u064A')
+    .replace(/[\u0621\u06E1]/g, '')
+    .replace(/[^\u0600-\u06FF\s]/g, '')
+    .trim();
+const skeleton = (t) => stripAr(t).replace(/[\u0627\u0648\u064A]/g, '');
+const verseCache = new Map();
+async function verseWords(key, cacheDir) {
+  if (verseCache.has(key)) return verseCache.get(key);
+  const file = path.join(cacheDir, `wbw-${key.replace(':', '_')}.json`);
+  let words = null;
+  try {
+    words = JSON.parse(fs.readFileSync(file, 'utf8'));
+  } catch {
+    try {
+      const res = await fetch(`https://api.quran.com/api/v4/verses/by_key/${key}?words=true&word_fields=text_uthmani`);
+      if (res.ok) {
+        const d = await res.json();
+        words = d.verse.words.filter((w) => w.char_type_name === 'word' && w.audio_url).map((w) => ({ text: w.text_uthmani, audio: w.audio_url }));
+        fs.writeFileSync(file, JSON.stringify(words));
+      }
+    } catch {}
+  }
+  verseCache.set(key, words || []);
+  return words || [];
+}
+export async function findArabicWords(text, verses, cacheDir) {
+  const toks = text.split(/\s+/).map(stripAr).filter(Boolean);
+  if (!toks.length) return null;
+  for (const norm of [stripAr, skeleton]) {
+    const want = toks.map((t) => (norm === skeleton ? t.replace(/[\u0627\u0648\u064A]/g, '') : t));
+    for (const key of verses) {
+      const words = await verseWords(key, cacheDir);
+      const have = words.map((w) => norm(w.text));
+      for (let i = 0; i + want.length <= have.length; i++) {
+        if (want.every((t, j) => t === have[i + j])) return { key, words: words.slice(i, i + want.length) };
+      }
+    }
+  }
+  return null;
+}
+async function arabic(seg, out, config, cacheDir) {
+  const hit = await findArabicWords(seg.text, seg.verses || [], cacheDir).catch(() => null);
+  if (hit) {
+    const parts = [];
+    for (const w of hit.words) {
+      const cached = path.join(cacheDir, 'wbw-' + w.audio.replace(/[^\w.]/g, '_'));
+      if (!fs.existsSync(cached)) {
+        const res = await fetch('https://audio.qurancdn.com/' + w.audio);
+        if (!res.ok) throw new Error('Rekaman kata gagal diunduh');
+        fs.writeFileSync(cached, Buffer.from(await res.arrayBuffer()));
+      }
+      parts.push(cached);
+    }
+    const list = out + '.list.txt';
+    fs.writeFileSync(list, parts.map((f) => `file '${f}'`).join('\n'));
+    await run('ffmpeg', ['-y', '-v', 'error', '-f', 'concat', '-safe', '0', '-i', list, '-af', 'loudnorm=I=-16:TP=-1.5:LRA=11', ...NORM, out]);
+    return 'qari';
+  }
+  await tts(seg.text, out, config, config.arabicVoice || 'ar-SA-HamedNeural');
+  return 'ai';
+}
+
 async function silence(ms, out) {
   await run('ffmpeg', ['-y', '-v', 'error', '-f', 'lavfi', '-i', 'anullsrc=r=44100:cl=mono', '-t', String(ms / 1000), ...NORM, out]);
 }
@@ -177,9 +281,11 @@ export async function renderAudio(doc, segments, config, workDir) {
   fs.mkdirSync(cacheDir, { recursive: true });
 
   const files = segments.map((_, i) => path.join(dir, String(i).padStart(4, '0') + '.wav'));
+  const stats = { qari: 0, ai: 0 };
   await pool(segments, 6, async (s, i) => {
     if (s.kind === 'tts') await tts(s.text, files[i], config);
     else if (s.kind === 'ayah') await murattal(s.surah, s.ayah, files[i], config, cacheDir);
+    else if (s.kind === 'arabic') stats[await arabic(s, files[i], config, cacheDir)]++;
     else await silence(s.ms, files[i]);
   });
 
@@ -198,5 +304,5 @@ export async function renderAudio(doc, segments, config, workDir) {
     '-metadata', `title=${doc.title}`, '-metadata', 'artist=Quran Inspiration', '-metadata', 'album=Inspirasi Quran', out], { maxBuffer: 1 << 26 });
   const duration = await ffprobeDuration(out);
   fs.rmSync(dir, { recursive: true, force: true });
-  return { file: out, duration: Math.round(duration), chapters };
+  return { file: out, duration: Math.round(duration), chapters, arabicWords: stats };
 }

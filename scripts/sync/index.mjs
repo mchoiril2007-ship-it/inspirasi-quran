@@ -252,7 +252,7 @@ async function syncAudio(bridge) {
 
   const todo = [];
   for (const doc of Object.values(docs).sort((a, b) => a.number - b.number)) {
-    const segments = buildScript(doc, useDict);
+    const segments = buildScript(doc, useDict, { arabicWords: !!config.arabicWords });
     const hash = scriptHash(segments, config);
     if (audio[doc.slug]?.hash === hash) continue;
     todo.push({ doc, segments, hash });
