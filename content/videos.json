@@ -5,6 +5,44 @@
   "handle": "@quraninspiration"
  },
  "bySurah": {
+  "al-munafiqun": [
+   {
+    "id": "WCTiD-ZD-10",
+    "title": "nanti aja kalo sudah kaya. #munafikun",
+    "publishedAt": "2026-11-20T12:46:56Z",
+    "matchedBy": "judul"
+   },
+   {
+    "id": "mSFu3JWXEMY",
+    "title": "Gengsi Minta Maaf. #munafik",
+    "publishedAt": "2026-11-19T13:47:15Z",
+    "matchedBy": "hashtag"
+   },
+   {
+    "id": "2OpOnCPj0NQ",
+    "title": "Munafik ternyata ada Akar Masalahnya. #munafik",
+    "publishedAt": "2026-11-18T22:55:17Z",
+    "matchedBy": "hashtag"
+   },
+   {
+    "id": "oc8hu-gKhyM",
+    "title": "Kokoh di Luar rapuh di dalam. #munafik",
+    "publishedAt": "2026-11-17T23:21:36Z",
+    "matchedBy": "hashtag"
+   },
+   {
+    "id": "SoDZWIVrGZk",
+    "title": "DIPERSULIT SUPAYA KITA MENYERAH DAN PERGI. #munafik",
+    "publishedAt": "2026-11-17T11:09:28Z",
+    "matchedBy": "hashtag"
+   },
+   {
+    "id": "7eD6U2Yo1S8",
+    "title": "kita yang jujur malah dia yang dipercaya, kita malah difitnah.#munafik",
+    "publishedAt": "2026-11-15T22:47:57Z",
+    "matchedBy": "hashtag"
+   }
+  ],
   "as-saff": [
    {
     "id": "I8fp1SDmoRs",
@@ -2737,36 +2775,6 @@
   ]
  },
  "unmatched": [
-  {
-   "id": "WCTiD-ZD-10",
-   "title": "nanti aja kalo sudah kaya",
-   "publishedAt": "2026-11-20T12:46:56Z"
-  },
-  {
-   "id": "mSFu3JWXEMY",
-   "title": "Gengsi Minta Maaf",
-   "publishedAt": "2026-11-19T13:47:15Z"
-  },
-  {
-   "id": "2OpOnCPj0NQ",
-   "title": "Munafik ternyata ada Akar Masalahnya",
-   "publishedAt": "2026-11-18T22:55:17Z"
-  },
-  {
-   "id": "oc8hu-gKhyM",
-   "title": "Kokoh di Luar rapuh di dalam",
-   "publishedAt": "2026-11-17T23:21:36Z"
-  },
-  {
-   "id": "SoDZWIVrGZk",
-   "title": "DIPERSULIT SUPAYA KITA MENYERAH DAN PERGI",
-   "publishedAt": "2026-11-17T11:09:28Z"
-  },
-  {
-   "id": "7eD6U2Yo1S8",
-   "title": "kita yang jujur malah dia yang dipercaya, kita malah difitnah",
-   "publishedAt": "2026-11-15T22:47:57Z"
-  },
   {
    "id": "M3kjXIDsi5g",
    "title": "nanti aja minta maafnya",
