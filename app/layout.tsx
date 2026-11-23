@@ -1,8 +1,8 @@
 import type { Metadata, Viewport } from 'next';
-import Link from 'next/link';
 import { Analytics } from '@vercel/analytics/next';
 import SubscribeForm from '@/components/SubscribeForm';
-import { SITE_URL } from '@/lib/content';
+import SiteShell from '@/components/SiteShell';
+import { SITE_URL, getDocs, getSurah } from '@/lib/content';
 import './globals.css';
 
 export const metadata: Metadata = {
@@ -27,6 +27,7 @@ export const viewport: Viewport = {
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
+  const navItems = getDocs().map((d) => ({ slug: d.slug, number: d.number, name: getSurah(d.slug)?.name || d.name, arabic: getSurah(d.slug)?.arabic || '' }));
   return (
     <html lang="id">
       <head>
@@ -36,29 +37,20 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&display=swap" rel="stylesheet" />
       </head>
       <body>
-        <header className="site-header">
-          <div className="wrap">
-            <Link href="/" className="brand" aria-label="Quran Inspiration, ke beranda">
-              <span className="brand-mark" aria-hidden="true">ق</span>
-              Quran Inspiration
-            </Link>
-            <a href="#langganan" className="header-cta">
-              Langganan
-            </a>
-          </div>
-        </header>
-        <main>{children}</main>
-        <SubscribeForm />
-        <footer className="site-footer">
-          <div className="wrap">
-            <span>© {new Date().getFullYear()} Quran Inspiration · M. Choiril Alam</span>
-            <span>
-              <a href="https://www.instagram.com/quran.insp/" rel="noopener" target="_blank">Instagram @quran.insp</a>
-              {' · '}
-              <a href="https://www.youtube.com/@QuranInspiration" rel="noopener" target="_blank">YouTube</a>
-            </span>
-          </div>
-        </footer>
+        <SiteShell items={navItems}>
+          <main>{children}</main>
+          <SubscribeForm />
+          <footer className="site-footer">
+            <div className="wrap">
+              <span>© {new Date().getFullYear()} Quran Inspiration · M. Choiril Alam</span>
+              <span>
+                <a href="https://www.instagram.com/quran.insp/" rel="noopener" target="_blank">Instagram @quran.insp</a>
+                {' · '}
+                <a href="https://www.youtube.com/@QuranInspiration" rel="noopener" target="_blank">YouTube</a>
+              </span>
+            </div>
+          </footer>
+        </SiteShell>
         <Analytics />
       </body>
     </html>
