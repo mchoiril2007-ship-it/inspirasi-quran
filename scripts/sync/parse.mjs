@@ -44,6 +44,7 @@ function toCallout(paras) {
   const text = texts.join('\n').trim();
   let variant = 'reflection';
   if (/GOLDEN/i.test(label)) variant = 'golden';
+  else if (/RENUNG|REFLEKSI|PERTANYAAN|COBA/i.test(label)) variant = 'reflection';
   else if (label) variant = 'key';
   return { type: 'callout', variant, label: label ? titleCase(label) : '', text };
 }
@@ -118,9 +119,14 @@ export function parseNaskah(raw, { fileName = '', surah: forced = null } = {}) {
         const ref = parseRef(m[1], m[2], surah);
         const trans = body[i + 2];
         const transText = trans?.t === 'p' && !isArabic(trans.text) && !REF.test(trans.text) && !LABELS.includes(trans.text.toLowerCase()) ? trans.text : '';
+        // Beberapa paragraf Arab berturut-turut sebelum satu rujukan (mis. QS: 2–4) → satu kutipan
+        const parts = [text];
+        while (ref.ayahs.length > 1 && blocks.length && blocks[blocks.length - 1].type === 'arabic' && parts.length < ref.ayahs.length) {
+          parts.unshift(blocks.pop().text);
+        }
         blocks.push({
           type: 'ayah',
-          arabic: text,
+          arabic: parts.join('\n'),
           surahNumber: ref.surah.number,
           surahName: ref.surah.name,
           ayahs: ref.ayahs,
@@ -145,6 +151,10 @@ export function parseNaskah(raw, { fileName = '', surah: forced = null } = {}) {
       continue;
     }
     if (/@\S+\s*•/.test(text) && text.length < 120 && i > body.length - 4) continue; // footer
+    if (/@[\w.]+/.test(text) && text.length < 60 && i > body.length - 4 && !/•/.test(text)) {
+      blocks.push({ type: 'signature', text: text.replace(/^[—–-]\s*/, '') });
+      continue;
+    }
     if (H2.test(text) && !endsLikeSentence(text) && text.length < 70) {
       const m = text.match(H2);
       blocks.push({ type: 'h2', text: m[2].trim(), num: +m[1], id: uid(m[2]) });

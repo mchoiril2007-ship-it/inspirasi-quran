@@ -139,6 +139,8 @@ button, input, select { font: inherit; color: inherit; }
 .ayah-ar { font-family: var(--arabic); font-size: clamp(27px, 6.4vw, 34px); line-height: 2.15; text-align: right; direction: rtl; margin: 0 0 14px; color: var(--text); }
 .ayah-ref { font-weight: 700; color: var(--teal); font-size: 15px; margin: 0 0 8px; letter-spacing: .01em; }
 .ayah-tr { margin: 0; color: var(--text-2); font-size: 17px; line-height: 1.7; }
+.ayah-tr + .ayah-tr { margin-top: 8px; }
+.ayah-ar + .ayah-ar { margin-top: -4px; }
 .arabic-only { font-family: var(--arabic); font-size: 30px; text-align: right; direction: rtl; line-height: 2.1; margin: 20px 0; }
 
 .kw { margin: 0 0 16px; padding-left: 16px; border-left: 3px solid var(--teal-soft); }

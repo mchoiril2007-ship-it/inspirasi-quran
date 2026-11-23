@@ -109,12 +109,22 @@ export default function Article({ blocks }: { blocks: Block[] }) {
       case 'ayah':
         out.push(
           <figure key={k} className="ayah">
-            <p className="ayah-ar" lang="ar" dir="rtl">
-              {b.arabic}
-            </p>
+            {b.arabic.split('\n').map((line, i) => (
+              <p key={i} className="ayah-ar" lang="ar" dir="rtl">
+                {line}
+              </p>
+            ))}
             <figcaption>
               <p className="ayah-ref">({b.ref})</p>
-              {b.translation ? <p className="ayah-tr">{b.translation}</p> : null}
+              {b.translation
+                ? b.translation
+                    .split(/\s(?=\(\d{1,3}\)\s)/)
+                    .map((t, i) => (
+                      <p key={i} className="ayah-tr">
+                        {t}
+                      </p>
+                    ))
+                : null}
             </figcaption>
           </figure>,
         );
