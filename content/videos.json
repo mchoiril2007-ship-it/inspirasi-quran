@@ -5,6 +5,44 @@
   "handle": "@quraninspiration"
  },
  "bySurah": {
+  "at-taghabun": [
+   {
+    "id": "yC1RMUhvWTs",
+    "title": "Masalah nggak Hilang Tapi Kenapa Hati Tenang ya ?.#AtTaghabun",
+    "publishedAt": "2026-11-23T23:04:28Z",
+    "matchedBy": "hashtag"
+   },
+   {
+    "id": "DW3cXiaM0hA",
+    "title": "Surat At-Taghabun Eps 13 ( Semua Atas Ijin Allah Dan Rasulnya ) | #QuranInspiration",
+    "publishedAt": "2020-10-01T11:41:42Z",
+    "matchedBy": "judul"
+   },
+   {
+    "id": "qC7gdgBVruw",
+    "title": "Surat At-Taghabun Eps 13 (Makna Keindahan di Setiap Ayat Dalam Al-Qur'an) | #QuranInspiration",
+    "publishedAt": "2020-09-24T09:03:34Z",
+    "matchedBy": "judul"
+   },
+   {
+    "id": "fifvPBjeCmQ",
+    "title": "Tafsir Surah At Taghabun Ayat 13- Petunjuk Dari Masalah Hidup | #QuranInspiration",
+    "publishedAt": "2020-09-21T09:55:34Z",
+    "matchedBy": "judul"
+   },
+   {
+    "id": "YKzCyNX5_YQ",
+    "title": "Umaru Takaeda (Kajian Surat At Tagabun - Sibuk Dengan Masalah) Full Eps | #QuranInspiration",
+    "publishedAt": "2020-09-20T03:00:03Z",
+    "matchedBy": "judul"
+   },
+   {
+    "id": "1qP2_JNI5Ww",
+    "title": "Umaru Takaeda (Kajian Surat At Tagabun - Sibuk Dengan Masalah) Teaser | #QuranInspiration",
+    "publishedAt": "2020-09-19T15:15:40Z",
+    "matchedBy": "judul"
+   }
+  ],
   "al-munafiqun": [
    {
     "id": "WCTiD-ZD-10",
@@ -141,12 +179,6 @@
     "title": "Pemuda Ashabul Kahfi",
     "publishedAt": "2021-08-31T03:09:20Z",
     "matchedBy": "judul"
-   },
-   {
-    "id": "ztBTqRYouTg",
-    "title": "Harta dan Anak",
-    "publishedAt": "2021-08-21T00:27:48Z",
-    "matchedBy": "tag"
    },
    {
     "id": "bGjzxLz4sPQ",
@@ -537,12 +569,6 @@
     "matchedBy": "judul"
    },
    {
-    "id": "tSbhsZ51iR4",
-    "title": "Surat Yusuf untuk Ibu Hamil - Surat Yusuf Eps 1 (sejarah singkat Nabi Yusuf dan zulaikha)",
-    "publishedAt": "2020-06-06T09:17:06Z",
-    "matchedBy": "judul"
-   },
-   {
     "id": "S7UcweJM6Fo",
     "title": "Parenting, menjadi ayah yang baik",
     "publishedAt": "2017-01-12T15:47:07Z",
@@ -572,6 +598,12 @@
     "id": "0VLrGERfyCU",
     "title": "Nasehat Alm. Syekh Ali Jaber | Surah Yasin Ayat 20 #QuranInspiration",
     "publishedAt": "2021-01-20T08:06:11Z",
+    "matchedBy": "judul"
+   },
+   {
+    "id": "HDgcJS4I8Ig",
+    "title": "Yasiin Eps 13(Ayat-ayat Allah bukan hal misterius,tetapi apa yang bisa kita lihat) #QuranInspiration",
+    "publishedAt": "2020-05-31T13:13:05Z",
     "matchedBy": "judul"
    },
    {
@@ -787,6 +819,12 @@
     "title": "Apa itu Istianah ? | #QuranInspiration",
     "publishedAt": "2021-08-29T10:00:11Z",
     "matchedBy": "tag"
+   },
+   {
+    "id": "k7HAA7apsIQ",
+    "title": "Bagaimana cara pandang kita terhadap Allah | #QuranInspiration",
+    "publishedAt": "2021-08-25T10:00:18Z",
+    "matchedBy": "playlist"
    },
    {
     "id": "k7HAA7apsIQ",
@@ -2157,38 +2195,6 @@
     "matchedBy": "judul"
    }
   ],
-  "at-taghabun": [
-   {
-    "id": "DW3cXiaM0hA",
-    "title": "Surat At-Taghabun Eps 13 ( Semua Atas Ijin Allah Dan Rasulnya ) | #QuranInspiration",
-    "publishedAt": "2020-10-01T11:41:42Z",
-    "matchedBy": "judul"
-   },
-   {
-    "id": "qC7gdgBVruw",
-    "title": "Surat At-Taghabun Eps 13 (Makna Keindahan di Setiap Ayat Dalam Al-Qur'an) | #QuranInspiration",
-    "publishedAt": "2020-09-24T09:03:34Z",
-    "matchedBy": "judul"
-   },
-   {
-    "id": "fifvPBjeCmQ",
-    "title": "Tafsir Surah At Taghabun Ayat 13- Petunjuk Dari Masalah Hidup | #QuranInspiration",
-    "publishedAt": "2020-09-21T09:55:34Z",
-    "matchedBy": "judul"
-   },
-   {
-    "id": "YKzCyNX5_YQ",
-    "title": "Umaru Takaeda (Kajian Surat At Tagabun - Sibuk Dengan Masalah) Full Eps | #QuranInspiration",
-    "publishedAt": "2020-09-20T03:00:03Z",
-    "matchedBy": "judul"
-   },
-   {
-    "id": "1qP2_JNI5Ww",
-    "title": "Umaru Takaeda (Kajian Surat At Tagabun - Sibuk Dengan Masalah) Teaser | #QuranInspiration",
-    "publishedAt": "2020-09-19T15:15:40Z",
-    "matchedBy": "judul"
-   }
-  ],
   "asy-syarh": [
    {
     "id": "b8qLkfPwlfg",
@@ -2617,12 +2623,6 @@
     "title": "Menyangka beramal namun nilainya kosong",
     "publishedAt": "2018-02-14T07:29:45Z",
     "matchedBy": "deskripsi"
-   },
-   {
-    "id": "oEW5z-4tbKs",
-    "title": "Quran Inspiration : An Nur 2 dan 4",
-    "publishedAt": "2016-10-06T01:55:59Z",
-    "matchedBy": "judul"
    }
   ],
   "al-qasas": [
@@ -5194,6 +5194,11 @@
    "id": "wjCn826AV8c",
    "title": "Day 1 Part 3 - Ism Lanjutan",
    "publishedAt": "2016-10-12T22:58:52Z"
+  },
+  {
+   "id": "gu4vEQdzM_Q",
+   "title": "Day 6 - Past Tense Lanjutan",
+   "publishedAt": "2016-10-06T00:22:01Z"
   },
   {
    "id": "4khEZe5Qnu0",
