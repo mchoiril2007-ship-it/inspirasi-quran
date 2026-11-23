@@ -9,6 +9,7 @@ import { makeBridge } from './bridge.mjs';
 import { docxToRawBlocks } from './docx.mjs';
 import { parseNaskah } from './parse.mjs';
 import { buildScript, scriptHash, renderAudio } from './audio.mjs';
+import { loadDict, collectTerms } from './pronounce.mjs';
 import { findSurah, findSurahInTag } from '../../lib/match.mjs';
 
 const run = promisify(execFile);
@@ -213,9 +214,26 @@ async function syncAudio(bridge) {
     }
   }
 
+  // Kamus pelafalan: tambahkan istilah Arab baru dari naskah secara otomatis
+  const dictFile = path.join(CONTENT, 'pelafalan.json');
+  const dict = loadDict(dictFile);
+  dict.otomatis ||= {};
+  let added = 0;
+  for (const doc of Object.values(docs)) {
+    for (const [k, v] of Object.entries(collectTerms(doc, dict))) {
+      dict.otomatis[k] = v;
+      added++;
+    }
+  }
+  if (added) {
+    writeJson(dictFile, dict);
+    status.audio.push({ status: 'info', message: `${added} istilah Arab baru ditambahkan ke kamus pelafalan.` });
+  }
+  const useDict = config.ttsDictionary ? dict : null;
+
   const todo = [];
   for (const doc of Object.values(docs).sort((a, b) => a.number - b.number)) {
-    const segments = buildScript(doc);
+    const segments = buildScript(doc, useDict);
     const hash = scriptHash(segments, config);
     if (audio[doc.slug]?.hash === hash) continue;
     todo.push({ doc, segments, hash });

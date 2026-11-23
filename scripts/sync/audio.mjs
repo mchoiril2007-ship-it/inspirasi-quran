@@ -7,6 +7,7 @@ import { promisify } from 'node:util';
 import fs from 'node:fs';
 import path from 'node:path';
 import crypto from 'node:crypto';
+import { applyDict } from './pronounce.mjs';
 
 const run = promisify(execFile);
 const AR = /[؀-ۿݐ-ݿࢠ-ࣿﭐ-﷿ﹰ-﻿]+/g;
@@ -30,10 +31,10 @@ export function speakable(text) {
 }
 
 /** Susun daftar segmen audio dari struktur naskah. */
-export function buildScript(doc) {
+export function buildScript(doc, dict = null) {
   const seg = [];
   const say = (text, chapter) => {
-    const t = speakable(text);
+    const t = dict ? applyDict(speakable(text), dict) : speakable(text);
     if (t && /[a-z0-9]/i.test(t)) seg.push({ kind: 'tts', text: t, chapter });
   };
   const pause = (ms) => seg.push({ kind: 'silence', ms });
@@ -97,7 +98,7 @@ export function buildScript(doc) {
 export function scriptHash(segments, config) {
   return crypto
     .createHash('sha256')
-    .update(JSON.stringify({ v: 2, voice: config.ttsVoice, rate: config.ttsRate, reciter: config.reciter, segments }))
+    .update(JSON.stringify({ v: 2, voice: config.ttsVoice, rate: config.ttsRate, ...(config.ttsPitch ? { pitch: config.ttsPitch } : {}), reciter: config.reciter, segments }))
     .digest('hex')
     .slice(0, 16);
 }
@@ -114,7 +115,10 @@ async function tts(text, out, config) {
   fs.writeFileSync(txt, text);
   for (let i = 0; i < 4; i++) {
     try {
-      await run('edge-tts', ['--voice', config.ttsVoice, `--rate=${config.ttsRate}`, '--file', txt, '--write-media', out + '.mp3'], { timeout: 120000 });
+      const proxy = process.env.HTTPS_PROXY || process.env.https_proxy;
+      const args = ['--voice', config.ttsVoice, `--rate=${config.ttsRate}`, `--pitch=${config.ttsPitch || '+0Hz'}`, '--file', txt, '--write-media', out + '.mp3'];
+      if (proxy) args.unshift('--proxy', proxy);
+      await run('edge-tts', args, { timeout: 120000 });
       if (fs.statSync(out + '.mp3').size > 500) break;
     } catch (e) {
       if (i === 3) throw new Error('Suara AI gagal: ' + (e.stderr || e.message).slice(0, 200));
