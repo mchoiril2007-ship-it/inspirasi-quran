@@ -114,7 +114,7 @@ export function matchVideos(videos, playlists = []) {
   const common = (count, k) => n >= 10 && count.get(k) / n > 0.15;
   const playlistOf = new Map();
   for (const p of playlists) {
-    const s = findSurah(p.title, { strict: true });
+    const s = findSurah(p.title, { strict: false });
     if (s) for (const id of p.videoIds || []) if (!playlistOf.has(id)) playlistOf.set(id, s);
   }
   return videos.map((v) => {
@@ -142,7 +142,15 @@ async function syncVideos(bridge) {
     const bySurah = {};
     const unmatched = [];
     const byCount = {};
-    for (const { v, s, by } of matchVideos(data.videos, data.playlists || [])) {
+    // Pencocokan manual (content/video-manual.json): { "ID_VIDEO": "slug-surat" atau null untuk menyembunyikan }
+    const manual = readJson(path.join(CONTENT, 'video-manual.json'), {});
+    for (const m of matchVideos(data.videos, data.playlists || [])) {
+      if (Object.prototype.hasOwnProperty.call(manual, m.v.id)) {
+        m.s = manual[m.v.id] ? { slug: manual[m.v.id] } : null;
+        m.by = manual[m.v.id] ? 'manual' : null;
+        if (!m.s) continue;
+      }
+      const { v, s, by } = m;
       const item = { id: v.id, title: v.title, publishedAt: v.publishedAt };
       if (s) {
         (bySurah[s.slug] ||= []).push({ ...item, matchedBy: by });

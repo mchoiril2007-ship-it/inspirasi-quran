@@ -10,7 +10,9 @@ Balas dalam bahasa Indonesia yang sederhana. Proyek ini TERPISAH dari dashboard 
 - **Sinkron tiap jam**: `.github/workflows/sync.yml` → `scripts/sync/index.mjs`
   - Naskah: folder Drive "Inspirasi Quran" (id `1-1ZW84uj74cpH4s7Hq6HdzPzq7y4PitP`), .docx / Google Docs. Nama file dicocokkan ke surat (`lib/match.mjs`).
   - Ubah .docx → blok halaman: `scripts/sync/docx.mjs` + `scripts/sync/parse.mjs`.
-  - Video: channel YouTube `@QuranInspiration` (`content/config.json` → `youtubeHandle`), dicocokkan lewat judul.
+  - Video: channel YouTube "M.Choiril Alam" `@quraninspiration` (`content/config.json` → `youtubeHandle`). Dicocokkan berurutan lewat
+    judul → hashtag (#AlMunafiqun) → tag → playlist bernama surat → deskripsi ("Surat …"/"QS …"). Pencocokan manual:
+    `content/video-manual.json` (`{"ID_VIDEO": "al-munafiqun"}`; `null` = sembunyikan). Kalau pemilik minta "video X masuk surat Y", isi file itu.
   - Audio: `scripts/sync/audio.mjs` — narasi suara AI Edge TTS (`id-ID-GadisNeural`) + murattal per ayat Syekh As-Sudais dari EveryAyah,
     disimpan sebagai aset GitHub Release `audio` dan disalin ke subfolder Drive "Audio". Web memutarnya lewat `/api/audio/<slug>`.
   - Status (gagal/peringatan, video tak cocok, waktu sinkron) ditulis ke branch `status` → dibaca halaman `/admin`.

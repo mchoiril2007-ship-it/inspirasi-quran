@@ -1,5 +1,5 @@
 1	Al-Fatihah	الفاتحة	Pembukaan	7	Makkiyah	Fatiha
-2	Al-Baqarah	البقرة	Sapi Betina	286	Madaniyah	Baqara
+2	Al-Baqarah	البقرة	Sapi Betina	286	Madaniyah	Baqara|Baqoroh|Baqarah
 3	Ali 'Imran	آل عمران	Keluarga Imran	200	Madaniyah	Al-Imran|Ali Imran|Imran
 4	An-Nisa'	النساء	Perempuan	176	Madaniyah	Nisa
 5	Al-Ma'idah	المائدة	Hidangan	120	Madaniyah	Maidah|Maida
@@ -73,7 +73,7 @@
 73	Al-Muzzammil	المزمل	Orang yang Berselimut	20	Makkiyah
 74	Al-Muddassir	المدثر	Orang yang Berkemul	56	Makkiyah	Muddatstsir
 75	Al-Qiyamah	القيامة	Hari Kiamat	40	Makkiyah
-76	Al-Insan	الإنسان	Manusia	31	Madaniyah	Ad-Dahr
+76	Al-Insan	الإنسان	Manusia	31	Madaniyah	Ad-Dahr|Insaan
 77	Al-Mursalat	المرسلات	Malaikat yang Diutus	50	Makkiyah
 78	An-Naba'	النبأ	Berita Besar	40	Makkiyah
 79	An-Nazi'at	النازعات	Malaikat yang Mencabut	46	Makkiyah
@@ -88,7 +88,7 @@
 88	Al-Gasyiyah	الغاشية	Hari Pembalasan	26	Makkiyah
 89	Al-Fajr	الفجر	Fajar	30	Makkiyah
 90	Al-Balad	البلد	Negeri	20	Makkiyah
-91	Asy-Syams	الشمس	Matahari	15	Makkiyah
+91	Asy-Syams	الشمس	Matahari	15	Makkiyah	Syam|Shams
 92	Al-Lail	الليل	Malam	21	Makkiyah
 93	Ad-Duha	الضحى	Duha	11	Makkiyah
 94	Asy-Syarh	الشرح	Lapang	8	Makkiyah	Al-Insyirah|Alam Nasyrah
