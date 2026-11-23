@@ -7,7 +7,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const doc = getDoc((await params).slug)!;
   return {
     title: `Audio ${doc.title}`,
-    description: `Dengarkan versi audio inspirasi Quran Surat ${doc.name}, lengkap dengan murattal Syekh Abdurrahman As-Sudais.`,
+    description: `Dengarkan versi audio inspirasi Quran Surat ${doc.name}, lengkap dengan murattal ayat Al-Qur'an.`,
     alternates: { canonical: `/surat/${doc.slug}/dengarkan` },
   };
 }
@@ -22,7 +22,7 @@ export default async function DengarkanPage({ params }: { params: Promise<{ slug
       {audio ? (
         <>
           <AudioPlayer src={`/api/audio/${slug}?v=${audio.hash}`} title={doc.title} arabic={s.arabic} duration={audio.duration} chapters={audio.chapters || []} slug={slug} />
-          <p className="audio-note">Ayat dibacakan oleh Syekh Abdurrahman As-Sudais (rekaman EveryAyah). Narasi dibacakan suara AI.</p>
+          <p className="audio-note">Ayat dibacakan oleh {audio.reciterName || 'Syekh Abdurrahman As-Sudais'} (rekaman EveryAyah). Narasi dibacakan suara AI.</p>
         </>
       ) : (
         <div className="soon">

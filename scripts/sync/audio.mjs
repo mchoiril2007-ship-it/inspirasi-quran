@@ -1,6 +1,6 @@
 // Membuat audio "podcast" satu surat dari naskah:
 // - teks bahasa Indonesia dibacakan suara AI (Microsoft Edge Neural TTS, gratis, lewat paket edge-tts)
-// - setiap kutipan ayat diganti rekaman murattal asli per ayat (EveryAyah, Syekh Abdurrahman As-Sudais)
+// - setiap kutipan ayat diganti rekaman murattal asli per ayat (EveryAyah, qari diatur di content/config.json → reciter)
 // - setelah ayat, AI membacakan rujukan (QS. Surat: ayat) dan terjemahan Kemenag
 import { execFile } from 'node:child_process';
 import { promisify } from 'node:util';
@@ -132,7 +132,7 @@ async function murattal(surah, ayah, out, config, cacheDir) {
   const id = String(surah).padStart(3, '0') + String(ayah).padStart(3, '0');
   const cached = path.join(cacheDir, `${config.reciter}-${id}.mp3`);
   if (!fs.existsSync(cached)) {
-    const urls = [`https://everyayah.com/data/${config.reciter}/${id}.mp3`, `https://everyayah.com/data/Abdurrahmaan_As-Sudais_192kbps/${id}.mp3`];
+    const urls = [`https://everyayah.com/data/${config.reciter}/${id}.mp3`];
     let ok = false;
     for (const u of urls) {
       for (let i = 0; i < 3 && !ok; i++) {

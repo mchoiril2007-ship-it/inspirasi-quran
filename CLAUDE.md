@@ -13,7 +13,8 @@ Balas dalam bahasa Indonesia yang sederhana. Proyek ini TERPISAH dari dashboard 
   - Video: channel YouTube "M.Choiril Alam" `@quraninspiration` (`content/config.json` → `youtubeHandle`). Dicocokkan berurutan lewat
     judul → hashtag (#AlMunafiqun) → tag → playlist bernama surat → deskripsi ("Surat …"/"QS …"). Pencocokan manual:
     `content/video-manual.json` (`{"ID_VIDEO": "al-munafiqun"}`; `null` = sembunyikan). Kalau pemilik minta "video X masuk surat Y", isi file itu.
-  - Audio: `scripts/sync/audio.mjs` — narasi suara AI Edge TTS (`id-ID-GadisNeural`) + murattal per ayat Syekh As-Sudais dari EveryAyah,
+  - Audio: `scripts/sync/audio.mjs` — narasi suara AI Edge TTS laki-laki (`id-ID-ArdiNeural`, disetujui pemilik) + kamus pelafalan + murattal per ayat
+    Syekh Yasser Ad-Dossary dari EveryAyah (`config.reciter` = `Yasser_Ad-Dussary_128kbps`),
     disimpan sebagai aset GitHub Release `audio` dan disalin ke subfolder Drive "Audio". Web memutarnya lewat `/api/audio/<slug>`.
   - Kamus pelafalan suara: `content/pelafalan.json` (`manual` = ditulis tangan, `otomatis` = istilah Arab baru dari naskah,
     ditambahkan sinkron). Hanya untuk suara, teks web tidak berubah. Aktif bila `config.ttsDictionary` = true.
