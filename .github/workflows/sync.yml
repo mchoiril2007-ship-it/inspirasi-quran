@@ -42,7 +42,7 @@ jobs:
       - name: Sinkron
         env:
           BRIDGE_URL: ${{ secrets.BRIDGE_URL }}
-          BRIDGE_KEY: ${{ secrets.BRIDGE_KEY }}
+          BRIDGE_KEY: ${{ secrets.BRIDGE_KEY || vars.BRIDGE_KEY }}
           GH_TOKEN: ${{ github.token }}
           MAX_AUDIO_PER_RUN: ${{ inputs.max_audio || '3' }}
         run: node scripts/sync/index.mjs
