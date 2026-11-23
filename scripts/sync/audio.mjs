@@ -132,7 +132,7 @@ export function buildScript(doc, dict = null, opts = {}) {
 export function scriptHash(segments, config) {
   return crypto
     .createHash('sha256')
-    .update(JSON.stringify({ v: 2, voice: config.ttsVoice, rate: config.ttsRate, ...(config.ttsPitch ? { pitch: config.ttsPitch } : {}), reciter: config.reciter, segments }))
+    .update(JSON.stringify({ v: 2, voice: config.ttsVoice, rate: config.ttsRate, ...(config.ttsPitch ? { pitch: config.ttsPitch } : {}), ...(config.arabicWords ? { arabicSource: config.arabicWordSource || 'ai', arabicVoice: config.arabicVoice || 'ar-SA-HamedNeural' } : {}), reciter: config.reciter, segments }))
     .digest('hex')
     .slice(0, 16);
 }
@@ -236,7 +236,8 @@ export async function findArabicWords(text, verses, cacheDir) {
   return null;
 }
 async function arabic(seg, out, config, cacheDir) {
-  const hit = await findArabicWords(seg.text, seg.verses || [], cacheDir).catch(() => null);
+  // config.arabicWordSource: 'ai' (dipilih pemilik) = selalu suara AI Arab; 'qari' = rekaman per kata Quran.com bila ada
+  const hit = config.arabicWordSource === 'qari' ? await findArabicWords(seg.text, seg.verses || [], cacheDir).catch(() => null) : null;
   if (hit) {
     const parts = [];
     for (const w of hit.words) {

@@ -6,5 +6,8 @@
   "ttsRate": "-4%",
   "reciter": "Yasser_Ad-Dussary_128kbps",
   "ttsDictionary": true,
-  "reciterName": "Syekh Yasser Ad-Dossary"
+  "reciterName": "Syekh Yasser Ad-Dossary",
+  "arabicWords": true,
+  "arabicWordSource": "ai",
+  "arabicVoice": "ar-SA-HamedNeural"
 }

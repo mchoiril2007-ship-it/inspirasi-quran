@@ -19,9 +19,9 @@ Balas dalam bahasa Indonesia yang sederhana. Proyek ini TERPISAH dari dashboard 
   - Kamus pelafalan suara: `content/pelafalan.json` (`manual` = ditulis tangan, `otomatis` = istilah Arab baru dari naskah,
     ditambahkan sinkron). Hanya untuk suara, teks web tidak berubah. Aktif bila `config.ttsDictionary` = true.
     Contoh audio: `node scripts/sample-audio.mjs <slug> <voice> <kamus 1|0> <rate> <pitch> out.mp3` (lokal perlu `NODE_USE_ENV_PROXY=1`).
-  - Kata Arab di dalam kalimat (kata kunci, dll.) dibacakan bila `config.arabicWords` = true: dicari di ayat yang dikutip naskah
-    (+ beberapa ayat populer) lalu diambil dari rekaman qari per kata Quran.com (api.quran.com, audio.qurancdn.com);
-    bila tidak ada di Al-Qur'an (mis. doa dari hadits) → suara AI Arab `ar-SA-HamedNeural`.
+  - Kata Arab di dalam kalimat (kata kunci, dll.) dibacakan (`config.arabicWords` = true) dengan suara AI Arab
+    `ar-SA-HamedNeural` (`arabicWordSource: 'ai'`, pilihan pemilik). Opsi `'qari'` = rekaman per kata Quran.com.
+    Ayat utama tetap murattal utuh dari EveryAyah.
   - Status (gagal/peringatan, video tak cocok, waktu sinkron) ditulis ke branch `status` → dibaca halaman `/admin`.
 - **Jembatan Google**: `apps-script/Code.gs` (Google Apps Script milik pemilik) untuk Drive, YouTube, dan Google Sheet pendaftar.
   Kunci rahasianya TIDAK ada di repo (repo ini publik).
