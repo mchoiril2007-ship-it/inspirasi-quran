@@ -118,13 +118,48 @@ function videos_(handle) {
       videos.push({
         id: it.contentDetails.videoId,
         title: it.snippet.title,
+        description: String(it.snippet.description || '').slice(0, 2000),
         publishedAt: it.contentDetails.videoPublishedAt || it.snippet.publishedAt,
         thumbnail: it.snippet.thumbnails && (it.snippet.thumbnails.high || it.snippet.thumbnails.medium || it.snippet.thumbnails.default || {}).url,
       });
     });
     token = res.nextPageToken;
   } while (token && videos.length < 2000);
-  return { ok: true, channel: { id: channel.id, title: channel.snippet.title, handle: channel.snippet.customUrl }, videos: videos };
+  // Tag video (diambil per 50 video)
+  var byId = {};
+  videos.forEach(function (v) {
+    byId[v.id] = v;
+  });
+  for (var i = 0; i < videos.length; i += 50) {
+    var ids = videos.slice(i, i + 50).map(function (v) {
+      return v.id;
+    });
+    var vr = YouTube.Videos.list('snippet', { id: ids.join(','), maxResults: 50 });
+    (vr.items || []).forEach(function (x) {
+      if (byId[x.id]) byId[x.id].tags = (x.snippet.tags || []).slice(0, 40);
+    });
+  }
+  // Playlist milik channel beserta isinya
+  var playlists = [];
+  var pt;
+  do {
+    var pl = YouTube.Playlists.list('snippet', { channelId: channel.id, maxResults: 50, pageToken: pt });
+    (pl.items || []).forEach(function (p) {
+      playlists.push({ id: p.id, title: p.snippet.title, videoIds: [] });
+    });
+    pt = pl.nextPageToken;
+  } while (pt && playlists.length < 300);
+  playlists.forEach(function (p) {
+    var t;
+    do {
+      var r = YouTube.PlaylistItems.list('contentDetails', { playlistId: p.id, maxResults: 50, pageToken: t });
+      (r.items || []).forEach(function (it) {
+        p.videoIds.push(it.contentDetails.videoId);
+      });
+      t = r.nextPageToken;
+    } while (t && p.videoIds.length < 1000);
+  });
+  return { ok: true, channel: { id: channel.id, title: channel.snippet.title, handle: channel.snippet.customUrl }, videos: videos, playlists: playlists };
 }
 
 function sheet_() {

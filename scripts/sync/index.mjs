@@ -9,7 +9,7 @@ import { makeBridge } from './bridge.mjs';
 import { docxToRawBlocks } from './docx.mjs';
 import { parseNaskah } from './parse.mjs';
 import { buildScript, scriptHash, renderAudio } from './audio.mjs';
-import { findSurah } from '../../lib/match.mjs';
+import { findSurah, findSurahInTag } from '../../lib/match.mjs';
 
 const run = promisify(execFile);
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..');
@@ -101,6 +101,39 @@ async function syncNaskah(bridge) {
   }
 }
 
+// Mencocokkan video ke surat, berurutan: judul → hashtag/tag → playlist → deskripsi.
+export function matchVideos(videos, playlists = []) {
+  const n = videos.length || 1;
+  // Kalimat/tag yang muncul di >15% video dianggap template (mis. ajakan subscribe), diabaikan.
+  const lineCount = new Map();
+  const tagCount = new Map();
+  for (const v of videos) {
+    for (const l of new Set(String(v.description || '').split(/\n+/).map((x) => x.trim()).filter(Boolean))) lineCount.set(l, (lineCount.get(l) || 0) + 1);
+    for (const t of new Set((v.tags || []).map((x) => x.toLowerCase()))) tagCount.set(t, (tagCount.get(t) || 0) + 1);
+  }
+  const common = (count, k) => n >= 10 && count.get(k) / n > 0.15;
+  const playlistOf = new Map();
+  for (const p of playlists) {
+    const s = findSurah(p.title, { strict: true });
+    if (s) for (const id of p.videoIds || []) if (!playlistOf.has(id)) playlistOf.set(id, s);
+  }
+  return videos.map((v) => {
+    let s = findSurah(v.title, { strict: true });
+    if (s) return { v, s, by: 'judul' };
+    const desc = String(v.description || '')
+      .split(/\n+/)
+      .map((x) => x.trim())
+      .filter((l) => l && !common(lineCount, l))
+      .join('\n');
+    const hashtags = [...`${v.title} ${desc}`.matchAll(/#([\p{L}\p{N}_]+)/gu)].map((m) => m[1]);
+    for (const h of hashtags) if ((s = findSurahInTag(h))) return { v, s, by: 'hashtag' };
+    for (const t of v.tags || []) if (!common(tagCount, t.toLowerCase()) && (s = findSurahInTag(t))) return { v, s, by: 'tag' };
+    if ((s = playlistOf.get(v.id))) return { v, s, by: 'playlist' };
+    if ((s = findSurah(desc.replace(/#[\p{L}\p{N}_]+/gu, ' '), { strict: true, requireContext: true }))) return { v, s, by: 'deskripsi' };
+    return { v, s: null, by: null };
+  });
+}
+
 async function syncVideos(bridge) {
   const handle = config.youtubeHandle || 'QuranInspiration';
   const videosFile = path.join(CONTENT, 'videos.json');
@@ -108,17 +141,19 @@ async function syncVideos(bridge) {
     const data = await bridge.videos(handle);
     const bySurah = {};
     const unmatched = [];
-    for (const v of data.videos) {
-      const s = findSurah(v.title, { strict: true });
+    const byCount = {};
+    for (const { v, s, by } of matchVideos(data.videos, data.playlists || [])) {
       const item = { id: v.id, title: v.title, publishedAt: v.publishedAt };
-      if (s) (bySurah[s.slug] ||= []).push(item);
-      else unmatched.push(item);
+      if (s) {
+        (bySurah[s.slug] ||= []).push({ ...item, matchedBy: by });
+        byCount[by] = (byCount[by] || 0) + 1;
+      } else unmatched.push(item);
     }
     for (const k of Object.keys(bySurah)) bySurah[k].sort((a, b) => (b.publishedAt || '').localeCompare(a.publishedAt || ''));
     unmatched.sort((a, b) => (b.publishedAt || '').localeCompare(a.publishedAt || ''));
     writeJson(videosFile, { channel: data.channel, bySurah, unmatched });
-    status.youtube = { ok: true, channel: data.channel, total: data.videos.length, matched: data.videos.length - unmatched.length, unmatched: unmatched.length };
-    log(`YouTube: ${data.videos.length} video, ${unmatched.length} belum cocok`);
+    status.youtube = { ok: true, channel: data.channel, total: data.videos.length, matched: data.videos.length - unmatched.length, unmatched: unmatched.length, matchedBy: byCount, playlists: (data.playlists || []).length };
+    log(`YouTube: ${data.videos.length} video, ${unmatched.length} belum cocok`, JSON.stringify(byCount));
   } catch (e) {
     status.youtube = { ok: false, message: e.message, suggestions: e.data?.suggestions || [] };
   }
@@ -239,7 +274,7 @@ async function main() {
   log(JSON.stringify(status, null, 1));
 }
 
-main().catch((e) => {
+if (process.argv[1] && fileURLToPath(import.meta.url) === path.resolve(process.argv[1])) main().catch((e) => {
   status.errors.push('Sinkron berhenti: ' + e.message);
   writeJson(path.join(WORK, 'status.json'), status);
   console.error(e);
