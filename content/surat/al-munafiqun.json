@@ -10,9 +10,9 @@
  "blocks": [
   {
    "type": "h2",
-   "text": "Pembuka",
+   "text": "Awal Cerita",
    "num": 1,
-   "id": "pembuka"
+   "id": "awal-cerita"
   },
   {
    "type": "p",
@@ -50,9 +50,9 @@
   },
   {
    "type": "h2",
-   "text": "Mengapa Surat Ini Ada",
+   "text": "Konteks Surat",
    "num": 2,
-   "id": "mengapa-surat-ini-ada"
+   "id": "konteks-surat"
   },
   {
    "type": "p",
@@ -80,6 +80,10 @@
   },
   {
    "type": "p",
+   "text": "Keputusan Nabi menerima sumpah Ibnu Ubay dan menolak menindaknya punya satu dasar: manusia dihukumi berdasarkan yang tampak, bukan dugaan tentang isi hati, meskipun wahyu kemudian membongkarnya. Menghadapi kepalsuan tidak harus dengan cara yang merusak kepercayaan, dan kebenaran punya cara sendiri untuk terungkap. Di sini, Allah sendiri yang mengungkapnya."
+  },
+  {
+   "type": "p",
    "text": "Kenapa relevan sekarang? Karena kita hidup di zaman ketika kesan bisa dibangun tanpa kenyataan. Profil bisa dirapikan, kata-kata bisa dipoles, citra bisa dipesan. Jarak antara yang kelihatan dan yang sebenarnya tidak pernah semudah ini dilebarkan. Surat ini bicara tepat di celah itu."
   },
   {
@@ -89,8 +93,70 @@
    "id": "peta-surat"
   },
   {
+   "type": "table",
+   "head": [
+    "Ayat",
+    "Isi dalam satu kalimat"
+   ],
+   "rows": [
+    [
+     "1",
+     "Orang munafik berkata “kami bersaksi engkau Rasul Allah”. Kalimatnya benar, tetapi Allah menyatakan mereka pendusta karena hati mereka tidak sejalan dengan ucapannya."
+    ],
+    [
+     "2",
+     "Mereka memakai sumpah sebagai perisai untuk melindungi diri, lalu menghalangi orang dari jalan Allah."
+    ],
+    [
+     "3",
+     "Mereka pernah menerima iman lalu menolaknya, sehingga hati mereka tertutup dan tidak lagi mengerti."
+    ],
+    [
+     "4",
+     "Penampilan dan ucapan mereka mengagumkan, tetapi bagai kayu yang disandarkan: tampak kokoh, kosong di dalam, dan selalu merasa terancam."
+    ],
+    [
+     "5",
+     "Ketika diajak meminta ampun, mereka memalingkan muka dengan sombong."
+    ],
+    [
+     "6",
+     "Dimohonkan ampun atau tidak, sama saja bagi mereka selama hati mereka menolak kembali."
+    ],
+    [
+     "7",
+     "Mereka berkata “jangan beri bantuan kepada pengikut Rasul supaya mereka bubar”. Dijawab: perbendaharaan langit dan bumi milik Allah."
+    ],
+    [
+     "8",
+     "Mereka berkata “yang kuat akan mengusir yang lemah”. Dijawab: kemuliaan milik Allah, Rasul-Nya, dan orang-orang beriman."
+    ],
+    [
+     "9",
+     "Sapaan berbalik kepada orang beriman: jangan sampai harta dan anak membuatmu lalai mengingat Allah."
+    ],
+    [
+     "10",
+     "Bersedekahlah selagi sempat. Setelah ajal datang, orang hanya bisa memohon ditunda sebentar supaya bisa bersedekah."
+    ],
+    [
+     "11",
+     "Allah tidak menunda ajal siapa pun, dan Allah Mahateliti terhadap apa yang kita kerjakan."
+    ]
+   ]
+  },
+  {
    "type": "p",
-   "text": "Surat ini bergerak dalam dua babak. Ayat 1–8 membongkar kemunafikan: ucapan yang benar tapi hati yang berdusta, penampilan yang memukau tapi kosong, dan dua senjata mereka, yaitu tekanan ekonomi dan klaim status. Ayat 9–11 membalik arah: peringatan bagi orang beriman agar harta dan anak tidak melalaikan, dan agar bersedekah sebelum terlambat. Surat ini berpasangan dengan Al-Jumu'ah, surat sebelumnya, yang juga bicara tentang harta yang menarik orang dari mengingat Allah. Surat sesudahnya, At-Taghabun, melanjutkan tema harta, anak, dan kerugian yang sesungguhnya."
+   "text": "Surat ini bergerak dalam dua babak. Ayat 1–8 membongkar kemunafikan: ucapan yang benar tapi hati yang berdusta, penampilan yang memukau tapi kosong, dan dua senjata mereka, yaitu tekanan ekonomi dan klaim status. Ayat 9–11 membalik arah: peringatan bagi orang beriman agar harta dan anak tidak melalaikan, dan agar bersedekah sebelum terlambat."
+  },
+  {
+   "type": "h3",
+   "text": "Hubungan dengan Surat Sebelum dan Sesudah",
+   "id": "hubungan-dengan-surat-sebelum-dan-sesudah"
+  },
+  {
+   "type": "p",
+   "text": "Surat ini berpasangan dengan Al-Jumu'ah, surat sebelumnya, yang juga bicara tentang harta yang menarik orang dari mengingat Allah. Surat sesudahnya, At-Taghabun, melanjutkan tema harta, anak, dan kerugian yang sesungguhnya."
   },
   {
    "type": "h2",
@@ -141,8 +207,9 @@
    "text": "Huruf lam di depan kata ini adalah penegasan: bukan “mungkin berbohong”, tapi pasti."
   },
   {
-   "type": "label",
-   "text": "Kenapa Ayat Ini Ada di Sini"
+   "type": "h3",
+   "text": "Konteks Ayat",
+   "id": "konteks-ayat"
   },
   {
    "type": "p",
@@ -291,8 +358,9 @@
    "text": "Suara keras. Mereka mengira setiap suara keras ditujukan kepada mereka."
   },
   {
-   "type": "label",
-   "text": "Kenapa Ayat Ini Ada di Sini"
+   "type": "h3",
+   "text": "Konteks Ayat",
+   "id": "konteks-ayat-2"
   },
   {
    "type": "p",
@@ -400,7 +468,11 @@
   },
   {
    "type": "p",
-   "text": "Doa orang lain tidak bisa menggantikan kemauan diri sendiri untuk kembali. Bahkan doa seorang Nabi pun tidak bisa memaksa hati yang memilih membuang muka. Ampunan itu seperti pintu: bisa dibukakan oleh siapa saja, tapi hanya bisa dimasuki oleh orang yang mau melangkah. (Soal apakah pintu taubat tertutup bagi orang munafik, lihat Bagian 5.)"
+   "text": "Doa orang lain tidak bisa menggantikan kemauan diri sendiri untuk kembali. Bahkan doa seorang Nabi pun tidak bisa memaksa hati yang memilih membuang muka. Ampunan itu seperti pintu: bisa dibukakan oleh siapa saja, tapi hanya bisa dimasuki oleh orang yang mau melangkah."
+  },
+  {
+   "type": "p",
+   "text": "Apakah itu berarti pintu taubat tertutup bagi orang munafik? Tidak. Ayat 6 berbicara tentang orang yang dalam keadaan menolak, yang membuang muka ketika diajak kembali (ayat 5). Allah menegaskan di surat lain bahwa orang munafik pun bisa selamat jika mereka bertaubat, memperbaiki diri, berpegang teguh kepada Allah, dan mengikhlaskan agama mereka (QS. An-Nisa: 145–146). Yang tertutup bukan pintunya, tetapi kemauan orang yang tidak mau masuk."
   },
   {
    "type": "h3",
@@ -452,8 +524,9 @@
    "text": "Kekuatan dan kehormatan yang tidak bisa dikalahkan. Ibnu Ubay mengklaim dirinya “yang paling mulia” (الْاَعَزُّ), dan Allah menjawab dengan kata dari akar yang sama."
   },
   {
-   "type": "label",
-   "text": "Kenapa Ayat Ini Ada di Sini"
+   "type": "h3",
+   "text": "Konteks Ayat",
+   "id": "konteks-ayat-3"
   },
   {
    "type": "p",
@@ -562,8 +635,9 @@
    "text": "Istilah pedagang: modal habis, untung tidak ada."
   },
   {
-   "type": "label",
-   "text": "Kenapa Ayat Ini Ada di Sini"
+   "type": "h3",
+   "text": "Konteks Ayat",
+   "id": "konteks-ayat-4"
   },
   {
    "type": "p",
@@ -584,6 +658,18 @@
   {
    "type": "p",
    "text": "Tapi kita juga tahu rasanya: azan (panggilan shalat) terdengar dan kita bilang \"sebentar lagi\". Al-Qur'an di rak tidak tersentuh berminggu-minggu karena \"lagi sibuk banget\". Tidak ada yang salah dengan pekerjaannya. Yang salah adalah apa yang tergeser olehnya."
+  },
+  {
+   "type": "p",
+   "text": "Di titik ini pertanyaan yang jujur biasanya muncul: kalau omongan dan perbuatanku sering tidak sejalan, apakah aku munafik? Para ulama membedakan dua jenis kemunafikan (nifaq). Yang pertama nifaq keyakinan, seperti Ibnu Ubay: tampak beriman, tetapi hatinya menolak. Itu yang dibahas ayat 1–8, dan pelakunya tidak termasuk orang beriman. Yang kedua nifaq perbuatan, yaitu sifat munafik yang bisa menempel pada seorang mukmin. Nabi ﷺ menyebut tandanya dalam hadits riwayat Bukhari dan Muslim: jika berbicara ia dusta, jika berjanji ia ingkar, jika dipercaya ia khianat."
+  },
+  {
+   "type": "p",
+   "text": "Jadi sifat itu memang bisa ada di diri kita, dan itu serius. Dalam Shahih Bukhari dicatat bahwa Ibnu Abi Mulaikah bertemu tiga puluh sahabat Nabi, dan semuanya khawatir ada kemunafikan pada dirinya. Imam Bukhari juga mencantumkan ucapan Hasan al-Bashri yang maknanya: tidak ada yang takut pada kemunafikan kecuali orang beriman, dan tidak ada yang merasa aman darinya kecuali orang munafik. Kegelisahan kita justru tanda hati masih hidup."
+  },
+  {
+   "type": "p",
+   "text": "Tapi cemas saja tidak cukup. Resepnya ada di ayat ini dan ayat berikutnya: jaga dzikir dari kesibukan, dan latih diri melepas dunia lewat infak."
   },
   {
    "type": "label",
@@ -681,8 +767,9 @@
    "text": "Satu-satunya hal yang ia minta waktu untuk lakukan."
   },
   {
-   "type": "label",
-   "text": "Kenapa Ayat Ini Ada di Sini"
+   "type": "h3",
+   "text": "Konteks Ayat",
+   "id": "konteks-ayat-5"
   },
   {
    "type": "p",
@@ -742,74 +829,8 @@
   },
   {
    "type": "h2",
-   "text": "Pertanyaan Paling Berat",
-   "num": 5,
-   "id": "pertanyaan-paling-berat"
-  },
-  {
-   "type": "faq",
-   "text": "Aku sering nggak konsisten antara omongan dan perbuatan. Apa aku munafik?"
-  },
-  {
-   "type": "p",
-   "text": "Pertanyaan ini wajar muncul setelah membaca surat ini, dan jawabannya perlu jujur, bukan cepat-cepat menenangkan."
-  },
-  {
-   "type": "p",
-   "text": "Para ulama membedakan dua jenis kemunafikan, yang dalam bahasa Arab disebut nifaq. Yang pertama adalah nifaq keyakinan, seperti Ibnu Ubay: menampakkan iman, tapi hatinya menolak. Itulah yang dibahas ayat 1–8, dan pelakunya tidak termasuk orang beriman. Yang kedua adalah nifaq perbuatan, yaitu sifat-sifat munafik yang bisa menempel pada seorang mukmin. Nabi ﷺ menyebut tandanya dalam hadits riwayat Bukhari dan Muslim: jika berbicara ia dusta, jika berjanji ia ingkar, jika dipercaya ia khianat."
-  },
-  {
-   "type": "p",
-   "text": "Jadi ya, sifat munafik bisa ada di diri kita, dan itu serius. Para sahabat sendiri takut akan hal ini. Dalam Shahih Bukhari dicatat perkataan Ibnu Abi Mulaikah bahwa ia bertemu tiga puluh sahabat Nabi, dan semuanya khawatir ada kemunafikan pada dirinya. Diriwayatkan pula bahwa Umar bin Khattab pernah bertanya kepada Hudzaifah, pemegang rahasia nama-nama munafik: apakah namaku ada di antara mereka?"
-  },
-  {
-   "type": "p",
-   "text": "Di bab yang sama, Imam Bukhari juga mencantumkan ucapan Hasan al-Bashri yang maknanya: tidak ada yang takut terhadap kemunafikan kecuali orang beriman, dan tidak ada yang merasa aman darinya kecuali orang munafik. Artinya, kegelisahan kita justru tanda hati masih hidup. Yang berbahaya bukan merasa takut, tapi berhenti merasa takut."
-  },
-  {
-   "type": "p",
-   "text": "Tapi takut saja tidak cukup. Rasa takut itu harus berubah menjadi perbaikan, dan surat ini sudah memberi resepnya di ayat 9–10: jaga dzikir dari kesibukan, dan latih diri melepas dunia lewat infak."
-  },
-  {
-   "type": "faq",
-   "text": "Ayat 6 bilang Allah tidak akan mengampuni mereka. Apa pintu taubat tertutup bagi orang munafik?"
-  },
-  {
-   "type": "p",
-   "text": "Tidak. Ayat 6 berbicara tentang orang yang dalam keadaan menolak, yang membuang muka ketika diajak kembali (ayat 5). Selama ia terus memilih menolak, istighfar orang lain tidak akan berguna untuknya."
-  },
-  {
-   "type": "p",
-   "text": "Di surat lain, Allah menegaskan bahwa orang munafik pun bisa selamat jika mereka bertaubat, memperbaiki diri, berpegang teguh kepada Allah, dan mengikhlaskan agama mereka (QS. An-Nisa: 145–146). Jadi yang tertutup bukan pintunya, tapi kemauan orang yang tidak mau masuk."
-  },
-  {
-   "type": "faq",
-   "text": "Kalau Nabi tahu Ibnu Ubay munafik, kenapa beliau tetap menerima sumpahnya dan tidak menindaknya?"
-  },
-  {
-   "type": "p",
-   "text": "Karena Islam menghukumi manusia berdasarkan yang tampak, bukan berdasarkan dugaan tentang isi hati. Nabi ﷺ tidak menghukum seseorang atas apa yang tidak terbukti di hadapan manusia, meskipun wahyu kemudian membongkarnya."
-  },
-  {
-   "type": "p",
-   "text": "Dan ketika Umar meminta izin untuk menindaknya, Nabi menolak dengan alasan yang sangat strategis: beliau tidak ingin orang berkata bahwa Muhammad membunuh sahabatnya sendiri. Menghadapi kepalsuan tidak harus dengan cara yang merusak kepercayaan publik. Kebenaran punya caranya sendiri untuk terungkap, dan dalam kasus ini, Allah sendiri yang mengungkapnya."
-  },
-  {
-   "type": "faq",
-   "text": "Aku belum banyak belajar agama. Apakah surat ini relevan untukku?"
-  },
-  {
-   "type": "p",
-   "text": "Ya. Anda tidak perlu hafal istilah apa pun untuk mengenali pertanyaan pokok surat ini: apakah ucapanku sejalan dengan batinku, dan apa yang kutahan atau kutunda karena terlalu menggenggam dunia? Istilah dan konteksnya bisa dipelajari sambil jalan."
-  },
-  {
-   "type": "p",
-   "text": "Pertanyaan itu berlaku bagi siapa saja, baik yang sudah lama beragama maupun yang baru mulai bertanya. Dan surat ini tidak meminta Anda menilai orang lain. Ia meminta Anda memeriksa diri sendiri."
-  },
-  {
-   "type": "h2",
    "text": "Latihan 7 Hari",
-   "num": 6,
+   "num": 5,
    "id": "latihan-7-hari"
   },
   {
@@ -853,7 +874,7 @@
     [
      "1",
      "Lisan & hati (ayat 1)",
-     "Kalimat baik apa yang sering kuucapkan tanpa kujalani?",
+     "Di bagian hidup mana jarak antara yang kuucapkan dan yang kujalani paling lebar?",
      "Berhenti satu detik setiap kali mengucap \"insyaAllah\" atau \"aku doakan\"",
      "Ya Allah, satukan lisanku dengan hatiku."
     ],
@@ -867,7 +888,7 @@
     [
      "3",
      "Kayu tersandar (ayat 4)",
-     "Apa yang membuatku tegak kalau tidak ada yang melihat?",
+     "Apa sandaran yang membuatku tegak, dan apa yang terjadi kalau sandaran itu ditarik?",
      "Lakukan satu kebaikan yang tidak diketahui siapa pun",
      "Ya Allah, tanamkan akar iman di hatiku."
     ],
@@ -881,21 +902,21 @@
     [
      "5",
      "Milik siapa? (ayat 7–8)",
-     "Bantuan apa yang kutahan karena merasa itu milikku?",
+     "Kapan terakhir aku menahan pemberian karena merasa lebih berhak atau lebih tinggi?",
      "Beri bantuan kecil kepada orang yang selama ini kuhindari",
      "Ya Allah, Engkau pemilik segalanya, aku hanya penyalur."
     ],
     [
      "6",
      "Kesibukan (ayat 9)",
-     "Apa yang paling sering membuatku bilang \"nanti\" kepada Allah?",
+     "Kesibukan apa yang paling sering menggeser Allah dari hariku?",
      "Pasang satu jangkar dzikir yang tidak bisa ditawar",
      "Ya Allah, jangan biarkan dunia melalaikanku dari-Mu."
     ],
     [
      "7",
      "Waktu sebentar lagi (ayat 10–11)",
-     "Kalau hari ini hadiah waktu tambahan, apa yang pertama kulakukan?",
+     "Kalau malam ini batas waktuku, kebaikan apa yang kutunda dan harus kulakukan sekarang?",
      "Atur sedekah rutin otomatis mulai hari ini",
      "Ya Allah, jangan matikan aku dalam penyesalan."
     ]
@@ -904,7 +925,7 @@
   {
    "type": "h2",
    "text": "Penutup",
-   "num": 7,
+   "num": 6,
    "id": "penutup"
   },
   {
@@ -926,36 +947,6 @@
    "text": "Al-Munafiqun dibuka dengan lisan yang bersaksi palsu, dan ditutup dengan lisan yang menyesal terlambat. Di antara keduanya, ada kita, yang masih punya waktu untuk membuat lisan dan hati mengatakan hal yang sama."
   },
   {
-   "type": "h3",
-   "text": "5 Pertanyaan Refleksi Akhir",
-   "id": "5-pertanyaan-refleksi-akhir"
-  },
-  {
-   "type": "li",
-   "n": 1,
-   "text": "Di bagian hidup mana jarak antara yang kuucapkan dan yang kujalani paling lebar?"
-  },
-  {
-   "type": "li",
-   "n": 2,
-   "text": "Apa \"sandaran\" yang selama ini membuatku terlihat tegak, dan apa yang terjadi kalau sandaran itu ditarik?"
-  },
-  {
-   "type": "li",
-   "n": 3,
-   "text": "Kapan terakhir aku menahan pemberian karena merasa lebih berhak atau lebih tinggi?"
-  },
-  {
-   "type": "li",
-   "n": 4,
-   "text": "Kesibukan apa yang paling sering menggeser Allah dari hariku?"
-  },
-  {
-   "type": "li",
-   "n": 5,
-   "text": "Kalau malam ini adalah batas waktuku, kebaikan apa yang paling akan kusesali karena kutunda?"
-  },
-  {
    "type": "divider"
   },
   {
@@ -964,9 +955,9 @@
   }
  ],
  "source": {
-  "fileId": "1r7-R0PZ9rX7auA2j-qw_rD6Z6fzHlHNQ",
+  "fileId": "10rkF8gfez-xvLrdd8CBGowQnHb_p2h39",
   "fileName": "Inspirasi_Quran_Al-Munafiqun.docx",
-  "modifiedTime": "2026-11-23T03:45:25.262Z",
-  "updatedAt": "2026-11-23T03:45:25.262Z"
+  "modifiedTime": "2026-11-23T14:30:22.591Z",
+  "updatedAt": "2026-11-23T14:30:22.591Z"
  }
 }
