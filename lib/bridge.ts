@@ -1,7 +1,7 @@
 import config from '../content/config.json';
 
 export function bridgeConfig() {
-  const url = process.env.BRIDGE_URL || (config as any).bridgeUrl;
+  const url = (config as any).bridgeUrl || process.env.BRIDGE_URL;
   // Toleran terhadap salah tempel: buang spasi, tanda petik, titik koma, dan awalan "var KEY ="
   const key = (process.env.BRIDGE_KEY || '').replace(/^\s*(var\s+)?KEY\s*=\s*/i, '').replace(/[\s'";]/g, '');
   return url && key ? { url, key } : null;

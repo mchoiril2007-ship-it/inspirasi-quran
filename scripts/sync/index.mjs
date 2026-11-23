@@ -256,7 +256,7 @@ async function syncAudio(bridge) {
 
 async function main() {
   const bridgeKey = (process.env.BRIDGE_KEY || '').replace(/^\s*(var\s+)?KEY\s*=\s*/i, '').replace(/[\s'";]/g, '');
-  const bridge = makeBridge(process.env.BRIDGE_URL || config.bridgeUrl, bridgeKey);
+  const bridge = makeBridge(config.bridgeUrl || process.env.BRIDGE_URL, bridgeKey);
   if (bridge) {
     try {
       await bridge.ping();
