@@ -18,8 +18,8 @@ Balas dalam bahasa Indonesia yang sederhana. Proyek ini TERPISAH dari dashboard 
   Kunci rahasianya TIDAK ada di repo (repo ini publik).
 
 ## Rahasia (secret)
-- GitHub Actions secrets: `BRIDGE_URL`, `BRIDGE_KEY`, opsional `VERCEL_DEPLOY_HOOK`.
-- Vercel env: `BRIDGE_URL`, `BRIDGE_KEY`, `ADMIN_PASSWORD`.
+- GitHub Actions secrets: `BRIDGE_KEY` (wajib), opsional `BRIDGE_URL` (default: `content/config.json` → `bridgeUrl`) dan `VERCEL_DEPLOY_HOOK`.
+- Vercel env: `BRIDGE_KEY`, `ADMIN_PASSWORD` (URL jembatan dibaca dari `content/config.json`).
 Jangan pernah menulis nilai rahasia ke file repo, commit, atau chat.
 
 ## Tugas umum

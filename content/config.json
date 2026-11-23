@@ -1,7 +1,7 @@
 {
   "siteUrl": "https://quraninspiration.vercel.app",
   "youtubeHandle": "QuranInspiration",
-  "bridgeUrl": "",
+  "bridgeUrl": "https://script.google.com/macros/s/AKfycbyfyk75cn3lI13de55FeRc4NoQ9oUZXezq4g7KcrfzJ5nlbs03ASI22CpN09J-grzg_wA/exec",
   "ttsVoice": "id-ID-GadisNeural",
   "ttsRate": "-4%",
   "reciter": "Abdurrahmaan_As-Sudais_64kbps"
