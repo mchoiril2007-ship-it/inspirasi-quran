@@ -155,6 +155,21 @@ async function syncAudio(bridge) {
   // Hapus audio untuk surat yang halamannya sudah tidak ada
   for (const slug of Object.keys(audio)) if (!docs[slug]) delete audio[slug];
 
+  // Audio yang sudah ada tapi belum tersalin ke Drive (mis. jembatan sempat bermasalah) → salin sekarang.
+  if (bridge) {
+    for (const [slug, a] of Object.entries(audio)) {
+      if (a.driveId || !a.url) continue;
+      try {
+        const res = await fetch(a.url);
+        if (!res.ok) throw new Error('HTTP ' + res.status);
+        a.driveId = (await bridge.uploadAudio(a.file, Buffer.from(await res.arrayBuffer()))).id;
+        status.audio.push({ slug, status: 'ok', message: 'Audio disalin ke folder Drive "Audio"' });
+      } catch (e) {
+        status.audio.push({ slug, status: 'warning', message: 'Salinan audio ke Drive gagal: ' + e.message });
+      }
+    }
+  }
+
   const todo = [];
   for (const doc of Object.values(docs).sort((a, b) => a.number - b.number)) {
     const segments = buildScript(doc);

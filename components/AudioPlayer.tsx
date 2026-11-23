@@ -12,7 +12,8 @@ function fmt(t: number) {
   return (h ? h + ':' + String(m).padStart(2, '0') : m) + ':' + String(s).padStart(2, '0');
 }
 
-export default function AudioPlayer({ src, title, arabic, duration, chapters, slug }: { src: string; title: string; arabic: string; duration: number; chapters: Chapter[]; slug: string }) {
+export default function AudioPlayer({ src, title, arabic, duration, chapters: rawChapters, slug }: { src: string; title: string; arabic: string; duration: number; chapters: Chapter[]; slug: string }) {
+  const chapters = rawChapters.filter((c, i) => i === 0 || c.title !== rawChapters[i - 1].title);
   const ref = useRef<HTMLAudioElement>(null);
   const [playing, setPlaying] = useState(false);
   const [time, setTime] = useState(0);
