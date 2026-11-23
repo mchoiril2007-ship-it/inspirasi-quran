@@ -1,0 +1,2 @@
+{ "name": "Quran Inspiration", "short_name": "Quran Insp", "start_url": "/", "display": "standalone", "background_color": "#ffffff", "theme_color": "#1A7A6E", "lang": "id",
+  "icons": [{ "src": "/icon-512.png", "sizes": "512x512", "type": "image/png" }, { "src": "/icon.svg", "sizes": "any", "type": "image/svg+xml" }] }
