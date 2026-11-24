@@ -10,9 +10,9 @@
  "blocks": [
   {
    "type": "h2",
-   "text": "Pembuka",
+   "text": "Awal Cerita",
    "num": 1,
-   "id": "pembuka"
+   "id": "awal-cerita"
   },
   {
    "type": "p",
@@ -34,17 +34,17 @@
    "type": "callout",
    "variant": "key",
    "label": "Inti Pesan Surat",
-   "text": "Hidup adalah transaksi, dan untung-ruginya baru terbukti di Hari Taghabun. Hal yang paling sering membuat kita salah menaksir adalah yang paling kita sayangi (keluarga dan harta) dan yang paling kita takuti (musibah). Surat ini memberi pegangan supaya kita tidak tertipu: iman yang menuntun hati, takwa semampunya, dan memberi seolah meminjamkan kepada Allah."
+   "text": "Hidup adalah transaksi, dan untung-ruginya baru terbukti di Hari Taghabun. Hal yang paling sering membuat kita salah menaksir adalah yang paling kita sayangi (keluarga dan harta) dan yang paling kita takuti (musibah). Surat ini memberi pegangan supaya kita tidak tertipu: iman yang menuntun hati, takwa (menjaga diri dengan taat kepada Allah) semampunya, dan memberi seolah meminjamkan kepada Allah."
   },
   {
    "type": "h2",
-   "text": "Mengapa Surat Ini Ada",
+   "text": "Konteks Surat",
    "num": 2,
-   "id": "mengapa-surat-ini-ada"
+   "id": "konteks-surat"
   },
   {
    "type": "p",
-   "text": "At-Taghabun adalah surat ke-64 dalam mushaf (susunan tertulis Al-Qur'an), terdiri dari 18 ayat. Mushaf standar Indonesia mencatatnya sebagai surat Madaniyah (turun di Madinah, setelah Nabi ﷺ hijrah dari Makkah). Sebagian ulama berpendapat bagian awalnya bernuansa Makkiyah (turun di Makkah) karena bicara tentang tauhid (mengesakan Allah), hari kebangkitan, dan umat terdahulu, sedangkan bagian akhirnya jelas Madaniyah karena membahas persoalan masyarakat Muslim yang sudah terbentuk: keluarga, harta, dan infak (mengeluarkan sebagian harta untuk kebaikan)."
+   "text": "At-Taghabun adalah surat ke-64 dalam mushaf (susunan tertulis Al-Qur'an), terdiri dari 18 ayat. Mushaf standar Indonesia mencatatnya sebagai surat Madaniyah (turun di Madinah, setelah Nabi ﷺ hijrah dari Makkah). Bagian awalnya bernuansa Makkiyah (turun di Makkah) menurut sebagian pendapat, karena bicara tentang tauhid (mengesakan Allah), hari kebangkitan, dan umat terdahulu, sedangkan bagian akhirnya jelas Madaniyah karena membahas persoalan masyarakat Muslim yang sudah terbentuk: keluarga, harta, dan infak (mengeluarkan sebagian harta untuk kebaikan)."
   },
   {
    "type": "p",
@@ -70,6 +70,87 @@
    "id": "peta-surat"
   },
   {
+   "type": "table",
+   "head": [
+    "Ayat",
+    "Isi dalam satu kalimat"
+   ],
+   "rows": [
+    [
+     "1",
+     "Seluruh langit dan bumi bertasbih, dan semuanya milik Allah."
+    ],
+    [
+     "2",
+     "Manusia diciptakan lalu memilih jalan sendiri, dan pilihannya disaksikan."
+    ],
+    [
+     "3",
+     "Penciptaan punya tujuan, rupa manusia dibaguskan, dan semua kembali kepada-Nya."
+    ],
+    [
+     "4",
+     "Allah mengetahui yang dirahasiakan, yang dinyatakan, sampai isi dada."
+    ],
+    [
+     "5",
+     "Umat terdahulu sudah merasakan akibat buruk perbuatan mereka."
+    ],
+    [
+     "6",
+     "Mereka menolak rasul karena pembawanya manusia biasa, dan yang rugi hanya mereka."
+    ],
+    [
+     "7",
+     "Klaim tidak akan dibangkitkan dijawab dengan sumpah bahwa semua pasti dibangkitkan dan diberitakan."
+    ],
+    [
+     "8",
+     "Perintah beriman kepada Allah, Rasul-Nya, dan cahaya Al-Qur'an."
+    ],
+    [
+     "9",
+     "Hari Taghabun: yang beriman dan beramal saleh dihapus kesalahannya dan meraih kemenangan agung."
+    ],
+    [
+     "10",
+     "Yang kafir dan mendustakan ayat-ayat Allah menjadi penghuni neraka."
+    ],
+    [
+     "11",
+     "Musibah terjadi dengan izin Allah, dan orang beriman ditunjuki hatinya."
+    ],
+    [
+     "12",
+     "Perintah taat, dan tugas rasul hanya menyampaikan dengan jelas."
+    ],
+    [
+     "13",
+     "Tidak ada tuhan selain Allah, maka hanya kepada-Nya orang beriman bertawakal."
+    ],
+    [
+     "14",
+     "Sebagian istri dan anak bisa menjadi penghalang, maka waspadalah dan tetaplah memaafkan."
+    ],
+    [
+     "15",
+     "Harta dan anak adalah ujian, dan pahala besar ada di sisi Allah."
+    ],
+    [
+     "16",
+     "Bertakwalah semampumu, berinfaklah, dan terjaga dari kikir adalah keberuntungan."
+    ],
+    [
+     "17",
+     "Pinjaman yang baik kepada Allah dilipatgandakan dan disertai ampunan."
+    ],
+    [
+     "18",
+     "Allah mengetahui yang gaib dan yang nyata, Mahaperkasa dan Mahabijaksana."
+    ]
+   ]
+  },
+  {
    "type": "image",
    "alt": "Peta susunan Surat At-Taghabun",
    "width": 600,
@@ -78,7 +159,24 @@
   },
   {
    "type": "p",
-   "text": "Surat ini terbagi dalam dua babak. Babak pertama (ayat 1 sampai 10) menetapkan dasar penilaian: semua milik Allah dan semua tercatat sampai isi hati, lalu memberi contoh umat terdahulu yang salah menaksir, sampai puncaknya di Hari Taghabun, yang menyejajarkan kolom untung dan kolom rugi tanpa kolom ketiga. Babak kedua (ayat 11 sampai 18) menjawab cara berada di kolom yang benar sejak sekarang: menghadapi musibah dengan hati yang ditunjuki, taat dan bersandar kepada Allah, mewaspadai keluarga dan harta yang bisa merebut pusat hati, lalu bertakwa semampunya, berinfak, dan memberi sebagai pinjaman kepada Allah. Ayat 18 menutup dengan kembali ke pembuka, sebab Allah yang mengetahui yang gaib dan yang nyata adalah gema dari ayat 4. Surat sebelumnya, Al-Munafiqun, ditutup dengan peringatan agar harta dan anak tidak melalaikan dari mengingat Allah, dan At-Taghabun memperdalam tema itu. Surat sesudahnya, Ath-Thalaq, memasuki hukum keluarga yang konkret, sehingga urutannya berjalan dari prinsip hati ke aturan. At-Taghabun juga surat terakhir dari kelompok surat yang dibuka dengan tasbih (menyucikan Allah), bersama Al-Hadid, Al-Hasyr, Ash-Shaff, dan Al-Jumu'ah."
+   "text": "Surat ini tersusun seperti cincin: bagian awal dan akhir saling memantul, dan pesan terpenting diletakkan di tengah. Ayat 1 sampai 4 membuka dengan Allah sebagai Pemilik, Pencipta, dan Yang Maha Mengetahui, dan ayat 18 menutup dengan gema yang sama tentang pengetahuan-Nya atas yang gaib dan yang nyata. Di dalamnya ada dua bagian yang berpasangan. Ayat 5 sampai 8 bercerita tentang kerugian umat terdahulu, dan ayat 14 sampai 17 tentang titik rawan kerugian kita sendiri: keluarga, harta, dan kikir. Keduanya ditutup dengan perintah, yaitu berimanlah (ayat 8) dan bertakwalah, dengarlah, taatlah, berinfaklah (ayat 16). Pusatnya ayat 9 sampai 13: Hari Taghabun dengan kolom untung dan kolom rugi yang disejajarkan (ayat 9 dan 10), disusul cara menang sejak di dunia lewat hati yang ditunjuki saat musibah, ketaatan, dan tawakal (ayat 11 sampai 13)."
+  },
+  {
+   "type": "h3",
+   "text": "Hubungan dengan Surat Sebelum dan Sesudah",
+   "id": "hubungan-dengan-surat-sebelum-dan-sesudah"
+  },
+  {
+   "type": "p",
+   "text": "Sebelumnya, Al-Munafiqun (surat 63). Hubungannya kuat secara tema, tidak sekadar urutan. Al-Munafiqun ditutup dengan peringatan agar harta dan anak-anak tidak melalaikan kita dari mengingat Allah, dan dengan perintah berinfak sebelum ajal datang (63:9-10). At-Taghabun mengambil tema yang sama lalu memperdalamnya: harta dan anak adalah ujian, sebagian keluarga bisa menahan langkah, dan infak adalah pinjaman yang dilipatgandakan (64:14-17)."
+  },
+  {
+   "type": "p",
+   "text": "Sesudahnya, Ath-Thalaq (surat 65). At-Taghabun bicara tentang keluarga dari sisi hati, yaitu waspada sekaligus memaafkan. Ath-Thalaq lalu masuk ke hukum keluarga yang konkret ketika hubungan suami istri berada di titik tersulit. Urutannya berjalan dari prinsip hati ke aturan."
+  },
+  {
+   "type": "p",
+   "text": "Kelompok surat bertasbih. At-Taghabun dibuka dengan tasbih (menyucikan Allah), seperti Al-Hadid, Al-Hasyr, Ash-Shaff, dan Al-Jumu'ah, dan merupakan yang terakhir dari kelompok surat yang dibuka dengan pengumuman bahwa seluruh alam memuji Allah."
   },
   {
    "type": "h2",
@@ -159,8 +257,9 @@
    "text": "Isi hati yang bahkan belum sempat menjadi kata-kata."
   },
   {
-   "type": "label",
-   "text": "Kenapa Ayat Ini Ada di Sini"
+   "type": "h3",
+   "text": "Konteks Ayat",
+   "id": "konteks-ayat"
   },
   {
    "type": "p",
@@ -312,8 +411,9 @@
    "text": "Untung pertama yang dijanjikan bukan surga, melainkan dicoretnya utang-utang kita."
   },
   {
-   "type": "label",
-   "text": "Kenapa Ayat Ini Ada di Sini"
+   "type": "h3",
+   "text": "Konteks Ayat",
+   "id": "konteks-ayat-2"
   },
   {
    "type": "p",
@@ -341,7 +441,7 @@
   },
   {
    "type": "p",
-   "text": "Syarat masuk kolom untung sangat jelas dan terjangkau: iman dan amal saleh. Bukan kekayaan, bukan status, bukan seberapa berhasil kita menurut ukuran dunia. Janji pertamanya pun menenangkan, yaitu kesalahan dihapus. Allah tidak mensyaratkan neraca yang bersih tanpa cela. Orang yang beriman dan terus berusaha beramal saleh akan mendapati utang-utangnya dicoret. Ini bukan pemeriksaan yang mencari-cari kesalahan, melainkan pemeriksaan dari Dzat yang ingin menghapus kesalahan."
+   "text": "Syarat masuk kolom untung sangat jelas dan terjangkau: iman dan amal saleh. Kekayaan, status, dan ukuran keberhasilan menurut dunia tidak disebut sama sekali. Janji pertamanya pun menenangkan, yaitu kesalahan dihapus. Allah tidak mensyaratkan neraca yang bersih tanpa cela. Orang yang beriman dan terus berusaha beramal saleh akan mendapati utang-utangnya dicoret. Ini bukan pemeriksaan yang mencari-cari kesalahan, melainkan pemeriksaan dari Dzat yang ingin menghapus kesalahan."
   },
   {
    "type": "p",
@@ -359,7 +459,7 @@
   },
   {
    "type": "p",
-   "text": "Malam ini, buka catatan screen time di ponsel. Ambil satu jam dari sana dan tukarkan dengan sesuatu yang nilainya kekal: membaca satu halaman Al-Qur'an beserta terjemahannya, menelepon orang tua, atau shalat malam dua rakaat. Tulis di catatan ponsel, “Hari ini aku menjual waktuku untuk ___”, dan isi setiap malam selama seminggu untuk melihat polanya."
+   "text": "Malam ini, tulis di catatan ponsel, “Hari ini aku menjual waktuku untuk ___”, lalu isi dengan jujur. Lakukan setiap malam selama seminggu untuk melihat polanya. Cara menukar waktu itu dengan yang kekal ada di bagian Latihan 7 Hari."
   },
   {
    "type": "callout",
@@ -410,8 +510,9 @@
    "text": "Petunjuk selalu punya arah. Pertanyaannya, ke mana hati yang kehilangan itu diarahkan? Bukan ke cara mendapatkan kembali yang hilang, tetapi ke cara membaca dan menyikapi kehilangan itu."
   },
   {
-   "type": "label",
-   "text": "Kenapa Ayat Ini Ada di Sini"
+   "type": "h3",
+   "text": "Konteks Ayat",
+   "id": "konteks-ayat-3"
   },
   {
    "type": "p",
@@ -459,7 +560,11 @@
   },
   {
    "type": "p",
-   "text": "Jadi janjinya bukan masalah langsung selesai. Janjinya, kita tidak dibiarkan menghadapinya dengan hati yang terus menoleh ke belakang. Dan orang yang terus berkata “seandainya” sebenarnya sedang memeriksa sendiri hidupnya lalu selalu menyimpulkan dirinya rugi, padahal pemeriksaan yang sebenarnya belum terjadi dan bukan kita pemeriksanya. Kehilangan di dunia belum tentu tercatat rugi di sisi Allah, dan kesabaran atasnya bisa menjadi untung terbesar di Hari Taghabun."
+   "text": "Kalau musibah terjadi dengan izin Allah, kenapa Allah mengizinkan hal yang menyakitkan? Ini pertanyaan yang jujur, dan ayat 11 tidak menghindarinya. Ayat ini tidak berkata musibah itu baik atau tidak sakit. Ia berkata musibah terjadi dengan izin Allah, artinya tidak ada yang lepas kendali, dan ditutup dengan penegasan bahwa Allah mengetahui segala sesuatu. Kita tidak selalu diberi tahu alasannya. Yang dijanjikan adalah pendampingan berupa hati yang ditunjuki, dan neraca yang belum ditutup: yang di dunia tercatat kerugian bisa menjadi keuntungan besar di Hari Taghabun. Jawaban ini tidak menghapus rasa sakit, tetapi membuatnya tidak sia-sia."
+  },
+  {
+   "type": "p",
+   "text": "Janjinya adalah kita tidak dibiarkan menghadapi musibah dengan hati yang terus menoleh ke belakang. Orang yang terus berkata “seandainya” sedang memeriksa sendiri hidupnya dan selalu menyimpulkan dirinya rugi, padahal pemeriksaan yang sebenarnya belum terjadi. Kehilangan di dunia belum tentu tercatat rugi di sisi Allah, dan kesabaran atasnya bisa menjadi untung terbesar di Hari Taghabun."
   },
   {
    "type": "label",
@@ -473,7 +578,7 @@
   },
   {
    "type": "p",
-   "text": "Setiap kali kalimat “seandainya dulu” muncul tentang sesuatu yang sudah terjadi, ganti dengan قَدَّرَ اللّٰهُ وَمَا شَاءَ فَعَلَ, lalu ucapkan اِنَّا لِلّٰهِ وَاِنَّآ اِلَيْهِ رَاجِعُوْنَ. Setelah itu tulis satu langkah kecil ke depan yang bisa dikerjakan hari ini, cukup satu. Dan tambahkan satu doa: selain meminta masalah diangkat, mintalah “Ya Allah, tunjukilah hatiku dalam menghadapi ini.”"
+   "text": "Tulis satu “seandainya” yang paling sering berputar di kepala, lalu di bawahnya tulis satu hal kecil yang masih bisa kita pilih hari ini. Cara menghentikan putaran itu ada di bagian Latihan 7 Hari."
   },
   {
    "type": "callout",
@@ -545,7 +650,7 @@
    "type": "keyword",
    "term": "Berhati-hatilah terhadap mereka",
    "arabic": "فَاحْذَرُوْهُمْ",
-   "text": "Artinya waspada. Bukan jauhi, bukan lawan."
+   "text": "Artinya waspada, tidak sampai menjauh atau melawan."
   },
   {
    "type": "keyword",
@@ -560,8 +665,9 @@
    "text": "Asalnya dari proses membakar emas untuk memisahkan yang asli dari yang palsu."
   },
   {
-   "type": "label",
-   "text": "Kenapa Ayat Ini Ada di Sini"
+   "type": "h3",
+   "text": "Konteks Ayat",
+   "id": "konteks-ayat-4"
   },
   {
    "type": "p",
@@ -593,7 +699,7 @@
   },
   {
    "type": "p",
-   "text": "Satu catatan penting agar ayat ini tidak disalahpahami. Kata “musuh” di sini bukan izin untuk menuding atau memutus hubungan dengan keluarga. Yang dimaksud sebagian dari mereka, dalam arti dampak, dan ayat yang sama ditutup dengan tiga perintah memaafkan. Membaca ayat ini sebagai izin membenci keluarga berarti membaca setengah ayat dan membuang setengah sisanya."
+   "text": "Bukankah kata “musuh” bisa dipakai untuk membenarkan memutus hubungan keluarga? Tidak. Kata “musuh” di sini bukan izin untuk menuding atau memutus hubungan. Yang dimaksud sebagian dari mereka, dalam arti dampak, yaitu ketika cinta kepada mereka membuat kita meninggalkan yang wajib atau melakukan yang haram. Ayat yang sama ditutup dengan tiga perintah memaafkan, dan konteks turunnya tentang orang yang ingin menghukum keluarga lalu dicegah. Membaca ayat ini sebagai izin membenci keluarga berarti membaca setengah ayat dan membuang setengah sisanya."
   },
   {
    "type": "p",
@@ -672,8 +778,9 @@
    "text": "Asal katanya membelah tanah untuk bercocok tanam. Keberuntungan yang lahir dari usaha menanam."
   },
   {
-   "type": "label",
-   "text": "Kenapa Ayat Ini Ada di Sini"
+   "type": "h3",
+   "text": "Konteks Ayat",
+   "id": "konteks-ayat-5"
   },
   {
    "type": "p",
@@ -701,6 +808,10 @@
   },
   {
    "type": "p",
+   "text": "Kalau takwa cukup semampunya, bukankah itu membuka pintu bermalas-malasan? Hanya kalau kita membohongi diri tentang kemampuan kita. “Semampunya” bukan “semaunya”, dan yang mengetahui batas kemampuan kita yang sebenarnya adalah Allah, Yang Mengetahui yang gaib dan yang nyata (ayat 18). Kita bisa menipu orang lain tentang seberapa lelahnya kita, tetapi tidak bisa menipu Dzat yang mengetahui isi dada (ayat 4). Ayat ini menutup dua pintu sekaligus, putus asa dan malas, dan meminta kejujuran tentang kapasitas diri lalu memakainya sepenuhnya."
+  },
+  {
+   "type": "p",
    "text": "Perintahnya berurutan dan praktis: bertakwa semampunya, mendengar, taat, berinfak. Lalu janjinya: siapa yang dijaga dari kikir jiwanya, merekalah orang-orang yang beruntung. Kata kerjanya berbentuk pasif, “dijaga”. Terbebas dari kikir bukan sepenuhnya prestasi kita, melainkan penjagaan dari Allah, karena itu kita memintanya dalam doa sambil melatihnya dengan memberi."
   },
   {
@@ -715,13 +826,13 @@
   },
   {
    "type": "p",
-   "text": "Pilih satu ibadah yang sempat berhenti, lalu turunkan targetnya ke ukuran yang pasti bisa dikerjakan setiap hari, misalnya satu halaman Al-Qur'an sehari atau tahajud dua rakaat dua kali seminggu. Mulai malam ini. Lalu tentukan satu angka infak rutin, sekecil apa pun, dan pasang transfer otomatis. Melawan kikir paling efektif dengan sistem, bukan dengan suasana hati."
+   "text": "Pilih satu ibadah yang sempat berhenti, lalu turunkan targetnya ke ukuran yang pasti bisa dikerjakan setiap hari, misalnya satu halaman Al-Qur'an sehari atau tahajud dua rakaat dua kali seminggu. Mulai malam ini. Cara melawan kikir ada di bagian Latihan 7 Hari."
   },
   {
    "type": "callout",
    "variant": "golden",
    "label": "Golden Sentence",
-   "text": "Allah meminta semampu kita. Bukan sesempurna orang lain, dan bukan sisa-sisanya."
+   "text": "Allah meminta seluruh kemampuan kita yang jujur, tidak lebih dan tidak kurang."
   },
   {
    "type": "p",
@@ -754,50 +865,8 @@
   },
   {
    "type": "h2",
-   "text": "Pertanyaan Paling Berat",
-   "num": 5,
-   "id": "pertanyaan-paling-berat"
-  },
-  {
-   "type": "faq",
-   "text": "Kalau musibah datang dengan izin Allah, kenapa Allah mengizinkan hal yang menyakitkan?"
-  },
-  {
-   "type": "p",
-   "text": "Ini pertanyaan yang jujur, dan ayat 11 tidak menghindarinya. Ayat itu tidak berkata musibah itu baik atau tidak sakit. Ia berkata musibah terjadi dengan izin Allah, artinya tidak ada yang lepas kendali, lalu ditutup dengan penegasan bahwa Allah mengetahui segala sesuatu."
-  },
-  {
-   "type": "p",
-   "text": "Kita tidak selalu diberi tahu alasan di balik musibah. Yang dijanjikan adalah pendampingan, yaitu hati yang ditunjuki. Surat ini juga memberi kerangka yang lebih besar: neraca belum ditutup. Sesuatu yang di dunia tercatat sebagai kerugian bisa berubah menjadi keuntungan besar di Hari Taghabun, berupa kesabaran yang dibalas tanpa batas dan dosa yang terhapus karena rasa sakit. Kita belum bisa menilai untung-rugi sebuah transaksi sebelum laporannya selesai. Ini bukan jawaban yang menghapus rasa sakit, tetapi jawaban yang membuat rasa sakit tidak sia-sia."
-  },
-  {
-   "type": "faq",
-   "text": "Ayat 14 menyebut keluarga sebagai musuh. Bukankah itu bisa dipakai untuk membenarkan memutus hubungan keluarga?"
-  },
-  {
-   "type": "p",
-   "text": "Justru sebaliknya. Kata yang dipakai menunjukkan sebagian: di antara istri dan anak-anak kalian ada yang menjadi musuh. Bukan semuanya, dan bukan selamanya. Permusuhannya pun bukan dalam arti kebencian, melainkan dalam dampak, yaitu ketika cinta kepada mereka membuat kita meninggalkan yang wajib atau melakukan yang haram."
-  },
-  {
-   "type": "p",
-   "text": "Yang lebih penting, ayat yang sama ditutup dengan tiga perintah memaafkan. Konteks turunnya juga tentang orang-orang yang ingin menghukum keluarga, dan Al-Qur'an mencegahnya. Surat ini mengajarkan kita bercermin lebih dulu, bukan menuding orang di rumah."
-  },
-  {
-   "type": "faq",
-   "text": "Kalau takwa cukup semampunya, bukankah itu membuka pintu untuk bermalas-malasan?"
-  },
-  {
-   "type": "p",
-   "text": "Hanya kalau kita membohongi diri tentang kemampuan kita. “Semampunya” bukan “semaunya”, dan yang mengetahui batas kemampuan kita yang sebenarnya adalah Allah, Yang Mengetahui yang gaib dan yang nyata (ayat 18). Kita bisa menipu orang lain tentang seberapa lelahnya kita, tetapi tidak bisa menipu Dzat yang mengetahui isi dada (ayat 4)."
-  },
-  {
-   "type": "p",
-   "text": "Ayat ini menutup dua pintu sekaligus: pintu putus asa (“aku tidak bisa sempurna, jadi berhenti saja”) dan pintu malas (“segini saja cukup”). Yang diminta adalah kejujuran tentang kapasitas diri, lalu memakainya sepenuhnya."
-  },
-  {
-   "type": "h2",
    "text": "Latihan 7 Hari",
-   "num": 6,
+   "num": 5,
    "id": "latihan-7-hari"
   },
   {
@@ -888,7 +957,7 @@
   {
    "type": "h2",
    "text": "Penutup",
-   "num": 7,
+   "num": 6,
    "id": "penutup"
   },
   {
@@ -910,36 +979,6 @@
    "text": "Neraca hidup belum ditutup. Selama masih ada napas, kita masih bisa pindah ke kolom yang untung."
   },
   {
-   "type": "h3",
-   "text": "5 Pertanyaan Refleksi Akhir",
-   "id": "5-pertanyaan-refleksi-akhir"
-  },
-  {
-   "type": "li",
-   "n": 1,
-   "text": "Di bagian mana dalam hidupku aku merasa untung, padahal mungkin sedang rugi?"
-  },
-  {
-   "type": "li",
-   "n": 2,
-   "text": "Musibah apa yang paling ingin kuubah cara pandangnya setelah membaca ayat 11?"
-  },
-  {
-   "type": "li",
-   "n": 3,
-   "text": "Siapa di keluargaku yang perlu kuhadapi dengan dua sikap sekaligus: waspada dan memaafkan?"
-  },
-  {
-   "type": "li",
-   "n": 4,
-   "text": "Ibadah apa yang akan kumulai lagi dengan ukuran “semampunya” mulai minggu ini?"
-  },
-  {
-   "type": "li",
-   "n": 5,
-   "text": "Berapa “pinjaman kepada Allah” yang akan kusiapkan setiap bulan, dan kapan aku mulai?"
-  },
-  {
    "type": "divider"
   },
   {
@@ -948,9 +987,9 @@
   }
  ],
  "source": {
-  "fileId": "1pptvIZFGLNmYW9aXYwFkapWK53ak_LrX",
+  "fileId": "1m4DgVCkjDhf6vVZiQseO0lrfCz1dV3dj",
   "fileName": "Inspirasi_Quran_At-Taghabun.docx",
-  "modifiedTime": "2026-11-23T10:47:36.395Z",
-  "updatedAt": "2026-11-23T10:47:36.395Z"
+  "modifiedTime": "2026-11-24T04:24:59.001Z",
+  "updatedAt": "2026-11-24T04:24:59.001Z"
  }
 }
