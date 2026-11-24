@@ -2,6 +2,7 @@
 import { useEffect, useMemo, useRef, useState, type ReactNode } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import { AudioProvider } from './AudioContext';
 
 export type NavItem = { slug: string; number: number; name: string; arabic: string };
 
@@ -59,6 +60,7 @@ export default function SiteShell({ items, children }: { items: NavItem[]; child
   const isAdmin = pathname.startsWith('/admin');
 
   return (
+    <AudioProvider>
     <div className={`shell${collapsed ? ' nav-collapsed' : ''}${open ? ' nav-open' : ''}`}>
       <header className="site-header">
         <div className="header-row">
@@ -127,5 +129,6 @@ export default function SiteShell({ items, children }: { items: NavItem[]; child
 
       <div className="shell-main">{children}</div>
     </div>
+    </AudioProvider>
   );
 }
