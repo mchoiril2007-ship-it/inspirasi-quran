@@ -38,7 +38,7 @@ export type Doc = {
 };
 
 export type Video = { id: string; title: string; publishedAt: string };
-export type AudioInfo = { url: string; file: string; hash: string; duration: number; chapters: { title: string; start: number }[]; generatedAt: string; reciterName?: string };
+export type AudioInfo = { url: string; file: string; hash: string; duration: number; chapters: { title: string; start: number }[]; generatedAt: string; reciterName?: string; marks?: [number, number][] };
 
 export const config = configJson as { siteUrl: string; youtubeHandle: string; bridgeUrl: string };
 export const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL || config.siteUrl).replace(/\/$/, '');

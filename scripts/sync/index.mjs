@@ -280,7 +280,7 @@ async function syncAudio(bridge) {
           driveNote = ' (salinan ke Drive gagal: ' + e.message + ')';
         }
       }
-      audio[doc.slug] = { hash, url, file: name, duration: r.duration, chapters: r.chapters, reciterName: config.reciterName || '', driveId, generatedAt: new Date().toISOString() };
+      audio[doc.slug] = { hash, url, file: name, duration: r.duration, chapters: r.chapters, marks: r.marks, reciterName: config.reciterName || '', driveId, generatedAt: new Date().toISOString() };
       writeJson(audioFile, audio);
       status.audio.push({ slug: doc.slug, status: driveNote ? 'warning' : 'ok', message: `Audio dibuat (${Math.round(r.duration / 60)} menit)${driveNote}` });
     } catch (e) {

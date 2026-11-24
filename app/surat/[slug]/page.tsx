@@ -1,7 +1,8 @@
 import type { Metadata } from 'next';
 import Article from '@/components/Article';
 import { ReadingProgress } from '@/components/Client';
-import { getDoc, SITE_URL } from '@/lib/content';
+import ReadAlong from '@/components/ReadAlong';
+import { getAudio, getDoc, getSurah, SITE_URL } from '@/lib/content';
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const doc = getDoc((await params).slug)!;
@@ -17,6 +18,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 export default async function BacaPage({ params }: { params: Promise<{ slug: string }> }) {
   const doc = getDoc((await params).slug)!;
   const toc = doc.blocks.filter((b) => b.type === 'h2') as { text: string; id: string }[];
+  const audio = getAudio(doc.slug);
+  const s = getSurah(doc.slug)!;
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'Article',
@@ -31,6 +34,12 @@ export default async function BacaPage({ params }: { params: Promise<{ slug: str
   return (
     <div className="read">
       <ReadingProgress />
+      {audio?.marks?.length ? (
+        <ReadAlong
+          track={{ slug: doc.slug, src: `/api/audio/${doc.slug}?v=${audio.hash}`, title: doc.title, arabic: s.arabic, duration: audio.duration, chapters: audio.chapters || [] }}
+          marks={audio.marks}
+        />
+      ) : null}
       {toc.length > 2 ? (
         <details className="toc" style={{ marginTop: 24 }}>
           <summary>Daftar isi</summary>

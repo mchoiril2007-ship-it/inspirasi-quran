@@ -23,13 +23,13 @@ export function Rich({ text }: { text: string }) {
 
 export default function Article({ blocks }: { blocks: Block[] }) {
   const out: ReactNode[] = [];
-  let list: { n: number; text: string }[] = [];
+  let list: { n: number; text: string; k: number }[] = [];
   const flush = (k: number) => {
     if (list.length) {
       out.push(
         <ol key={'ol' + k}>
           {list.map((li, i) => (
-            <li key={i}>
+            <li key={i} data-b={li.k}>
               <span className="li-n">{li.n}</span>
               <span>
                 <Rich text={li.text} />
@@ -44,14 +44,14 @@ export default function Article({ blocks }: { blocks: Block[] }) {
 
   blocks.forEach((b, k) => {
     if (b.type === 'li') {
-      list.push({ n: b.n, text: b.text });
+      list.push({ n: b.n, text: b.text, k });
       return;
     }
     flush(k);
     switch (b.type) {
       case 'h2':
         out.push(
-          <h2 key={k} id={b.id}>
+          <h2 key={k} data-b={k} id={b.id}>
             {b.num ? <span className="h2-num">{String(b.num).padStart(2, '0')}</span> : null}
             <span>{b.text}</span>
           </h2>,
@@ -59,35 +59,35 @@ export default function Article({ blocks }: { blocks: Block[] }) {
         break;
       case 'h3':
         out.push(
-          <h3 key={k} id={b.id} className={/^Ayat\s+\d/i.test(b.text) ? 'ayat-h' : undefined}>
+          <h3 key={k} data-b={k} id={b.id} className={/^Ayat\s+\d/i.test(b.text) ? 'ayat-h' : undefined}>
             {b.text}
           </h3>,
         );
         break;
       case 'label':
         out.push(
-          <p key={k} className="label">
+          <p key={k} data-b={k} className="label">
             {b.text}
           </p>,
         );
         break;
       case 'p':
         out.push(
-          <p key={k}>
+          <p key={k} data-b={k}>
             <Rich text={b.text} />
           </p>,
         );
         break;
       case 'faq':
         out.push(
-          <p key={k} className="faq">
+          <p key={k} data-b={k} className="faq">
             “{b.text}”
           </p>,
         );
         break;
       case 'keyword':
         out.push(
-          <p key={k} className="kw">
+          <p key={k} data-b={k} className="kw">
             <strong>{b.term}</strong>{' '}
             <span className="ar-inline" lang="ar" dir="rtl">
               {b.arabic}
@@ -98,7 +98,7 @@ export default function Article({ blocks }: { blocks: Block[] }) {
         break;
       case 'callout':
         out.push(
-          <aside key={k} className={`callout ${b.variant}`}>
+          <aside key={k} data-b={k} className={`callout ${b.variant}`}>
             <div className="c-label">{b.label || (b.variant === 'reflection' ? 'Renungkan' : '')}</div>
             <p>
               <Rich text={b.text} />
@@ -108,7 +108,7 @@ export default function Article({ blocks }: { blocks: Block[] }) {
         break;
       case 'ayah':
         out.push(
-          <figure key={k} className="ayah">
+          <figure key={k} data-b={k} className="ayah">
             {b.arabic.split('\n').map((line, i) => (
               <p key={i} className="ayah-ar" lang="ar" dir="rtl">
                 {line}
@@ -131,14 +131,14 @@ export default function Article({ blocks }: { blocks: Block[] }) {
         break;
       case 'arabic':
         out.push(
-          <p key={k} className="arabic-only" lang="ar" dir="rtl">
+          <p key={k} data-b={k} className="arabic-only" lang="ar" dir="rtl">
             {b.text}
           </p>,
         );
         break;
       case 'table':
         out.push(
-          <table key={k} className="tbl">
+          <table key={k} data-b={k} className="tbl">
             <thead>
               <tr>
                 {b.head.map((h, i) => (
@@ -162,7 +162,7 @@ export default function Article({ blocks }: { blocks: Block[] }) {
         break;
       case 'image':
         out.push(
-          <figure key={k} className="doc-figure">
+          <figure key={k} data-b={k} className="doc-figure">
             <a href={b.src} target="_blank" rel="noopener" aria-label={`Perbesar gambar: ${b.alt || 'gambar'}`}>
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img src={b.src} alt={b.alt || ''} width={b.width || undefined} height={b.height || undefined} loading="lazy" decoding="async" />
@@ -173,14 +173,14 @@ export default function Article({ blocks }: { blocks: Block[] }) {
         break;
       case 'divider':
         out.push(
-          <div key={k} className="divider" aria-hidden="true">
+          <div key={k} data-b={k} className="divider" aria-hidden="true">
             ◆◆◆
           </div>,
         );
         break;
       case 'signature':
         out.push(
-          <p key={k} className="signature">
+          <p key={k} data-b={k} className="signature">
             — {b.text}
           </p>,
         );

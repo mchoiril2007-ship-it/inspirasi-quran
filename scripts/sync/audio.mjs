@@ -73,7 +73,9 @@ export function buildScript(doc, dict = null, opts = {}) {
 
   say(`${doc.title}. ${doc.tagline || ''}`, 'Pembuka');
   pause(900);
-  for (const b of doc.blocks) {
+  for (let bi = 0; bi < doc.blocks.length; bi++) {
+    const b = doc.blocks[bi];
+    const s0 = seg.length;
     switch (b.type) {
       case 'h2':
         pause(900);
@@ -125,6 +127,7 @@ export function buildScript(doc, dict = null, opts = {}) {
       default:
         break;
     }
+    for (let si = s0; si < seg.length; si++) seg[si].b = bi; // penanda blok naskah untuk sorotan "ikuti bacaan"
   }
   return seg;
 }
@@ -292,9 +295,15 @@ export async function renderAudio(doc, segments, config, workDir) {
 
   // Hitung penanda bab (waktu mulai setiap judul)
   const chapters = [];
+  const marks = []; // [indeks blok, detik mulai]
+  let lastB = null;
   let t = 0;
   for (let i = 0; i < segments.length; i++) {
     if (segments[i].chapter) chapters.push({ title: segments[i].chapter, start: Math.round(t) });
+    if (segments[i].b != null && segments[i].b !== lastB) {
+      marks.push([segments[i].b, Math.round(t * 10) / 10]);
+      lastB = segments[i].b;
+    }
     t += await ffprobeDuration(files[i]);
   }
 
@@ -305,5 +314,5 @@ export async function renderAudio(doc, segments, config, workDir) {
     '-metadata', `title=${doc.title}`, '-metadata', 'artist=Quran Inspiration', '-metadata', 'album=Inspirasi Quran', out], { maxBuffer: 1 << 26 });
   const duration = await ffprobeDuration(out);
   fs.rmSync(dir, { recursive: true, force: true });
-  return { file: out, duration: Math.round(duration), chapters, arabicWords: stats };
+  return { file: out, duration: Math.round(duration), chapters, marks, arabicWords: stats };
 }

@@ -22,6 +22,9 @@ Balas dalam bahasa Indonesia yang sederhana. Proyek ini TERPISAH dari dashboard 
   - Kata Arab di dalam kalimat (kata kunci, dll.) dibacakan (`config.arabicWords` = true) dengan suara AI Arab
     `ar-SA-HamedNeural` (`arabicWordSource: 'ai'`, pilihan pemilik). Opsi `'qari'` = rekaman per kata Quran.com.
     Ayat utama tetap murattal utuh dari EveryAyah.
+  - "Ikuti bacaan": tiap segmen audio diberi indeks blok (`b`); `renderAudio` mencatat `marks` [blok, detik] ke audio.json.
+    Tab Baca (`components/ReadAlong.tsx`) menyorot blok `[data-b]` yang sedang dibacakan, gulir otomatis, ketuk paragraf = lompat.
+    Audio diputar oleh satu pemutar global (`components/AudioContext.tsx`) + pemutar mini, tetap jalan saat pindah halaman.
   - Status (gagal/peringatan, video tak cocok, waktu sinkron) ditulis ke branch `status` → dibaca halaman `/admin`.
 - **Jembatan Google**: `apps-script/Code.gs` (Google Apps Script milik pemilik) untuk Drive, YouTube, dan Google Sheet pendaftar.
   Kunci rahasianya TIDAK ada di repo (repo ini publik).

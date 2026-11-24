@@ -367,3 +367,14 @@ body.has-mini { padding-bottom: calc(66px + env(safe-area-inset-bottom)); }
 @media (min-width: 1024px) { .mini { left: 272px; } .nav-collapsed .mini, body:has(.nav-collapsed) .mini { left: 0; } }
 @media (max-width: 380px) { .mini-btn { width: 36px; } .mini-cover { display: none; } }
 .player-other { background: var(--orange-soft); color: var(--text); border-radius: 12px; padding: 10px 14px; font-size: 15px; margin: 0 0 16px; }
+
+/* Ikuti bacaan: sorot bagian yang sedang dibacakan audio */
+.article [data-b] { transition: background-color .35s ease, box-shadow .35s ease; border-radius: 10px; }
+.article [data-b].reading { background: color-mix(in srgb, var(--orange) 11%, transparent); box-shadow: 0 0 0 8px color-mix(in srgb, var(--orange) 11%, transparent); }
+.article figure.ayah.reading, .article aside.reading { box-shadow: 0 0 0 3px var(--orange); background: var(--bg-alt); }
+.readalong { margin: 22px 0 0; display: flex; flex-direction: column; align-items: flex-start; gap: 8px; }
+.readalong-btn { display: inline-flex; align-items: center; gap: 8px; border: 0; cursor: pointer; background: var(--teal); color: #fff; font-weight: 600; font-size: 15px; padding: 10px 16px; border-radius: 999px; }
+.readalong-btn:hover { background: var(--teal-dark); }
+.readalong-hint { font-size: 13px; color: var(--text-3); }
+.follow-btn { position: fixed; left: 50%; transform: translateX(-50%); bottom: calc(84px + env(safe-area-inset-bottom)); z-index: 55; border: 0; cursor: pointer; background: var(--orange); color: #fff; font-weight: 700; font-size: 14px; padding: 10px 18px; border-radius: 999px; box-shadow: 0 6px 20px rgba(0,0,0,.18); }
+@media (min-width: 1024px) { .follow-btn { left: calc(50% + 136px); } }
