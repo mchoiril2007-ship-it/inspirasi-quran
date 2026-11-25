@@ -41,11 +41,18 @@ function paragraph(p, ctx) {
   let style = '';
   let numbered = null;
   let align = '';
+  let shade = '';
+  let border = false;
   if (pPr) {
     for (const c of kids(pPr)) {
       const t = tag(c);
       if (t === 'w:pStyle') style = attr(c, 'w:val') || '';
       if (t === 'w:jc') align = attr(c, 'w:val') || '';
+      if (t === 'w:shd') {
+        const fill = (attr(c, 'w:fill') || '').toUpperCase();
+        if (fill && fill !== 'AUTO' && fill !== 'FFFFFF') shade = fill;
+      }
+      if (t === 'w:pBdr') border = true;
       if (t === 'w:numPr') {
         const numId = kids(c).find((x) => tag(x) === 'w:numId');
         const ilvl = kids(c).find((x) => tag(x) === 'w:ilvl');
@@ -91,6 +98,8 @@ function paragraph(p, ctx) {
     style: styleName,
     bold: chars > 0 && boldChars / chars > 0.85,
     align,
+    shade,
+    border,
   };
 }
 

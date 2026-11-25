@@ -7,7 +7,7 @@ on:
     inputs:
       max_audio:
         description: 'Maksimal audio yang dibuat sekali jalan'
-        default: '3'
+        default: '6'
 
 permissions:
   contents: write
@@ -44,7 +44,7 @@ jobs:
           BRIDGE_URL: ${{ secrets.BRIDGE_URL }}
           BRIDGE_KEY: ${{ secrets.BRIDGE_KEY || secrets.BRIGDE_KEY || vars.BRIDGE_KEY }}
           GH_TOKEN: ${{ github.token }}
-          MAX_AUDIO_PER_RUN: ${{ inputs.max_audio || '3' }}
+          MAX_AUDIO_PER_RUN: ${{ inputs.max_audio || '6' }}
         run: node scripts/sync/index.mjs
 
       - name: Terbitkan perubahan isi

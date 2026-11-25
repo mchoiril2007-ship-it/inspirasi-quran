@@ -248,9 +248,8 @@
    "text": "Kitab maksudnya Al-Qur'an. Hikmah dipahami para ulama sebagai Sunnah, yaitu ajaran dan contoh dari Nabi tentang cara menjalankan Al-Qur'an dalam kehidupan sehari-hari."
   },
   {
-   "type": "h3",
-   "text": "Konteks Ayat",
-   "id": "konteks-ayat"
+   "type": "label",
+   "text": "Konteks Ayat"
   },
   {
    "type": "p",
@@ -304,7 +303,7 @@
   },
   {
    "type": "callout",
-   "variant": "reflection",
+   "variant": "golden",
    "label": "",
    "text": "Hati mulai bersih ketika ayat dibaca pelan-pelan dan kita biarkan ia bertanya kepada kita."
   },
@@ -362,9 +361,8 @@
    "text": "Pemberian yang datang bukan karena penerimanya berhak."
   },
   {
-   "type": "h3",
-   "text": "Konteks Ayat",
-   "id": "konteks-ayat-2"
+   "type": "label",
+   "text": "Konteks Ayat"
   },
   {
    "type": "p",
@@ -406,7 +404,7 @@
   },
   {
    "type": "callout",
-   "variant": "reflection",
+   "variant": "golden",
    "label": "",
    "text": "Ayat ini sudah menyebut kita jauh sebelum kita lahir. Tugas kita tinggal menyusul."
   },
@@ -453,9 +451,8 @@
    "text": "Keledai adalah hewan pengangkut beban. Ia merasakan beratnya, tapi tidak mendapat apa-apa dari isi bawaannya."
   },
   {
-   "type": "h3",
-   "text": "Konteks Ayat",
-   "id": "konteks-ayat-3"
+   "type": "label",
+   "text": "Konteks Ayat"
   },
   {
    "type": "p",
@@ -509,7 +506,7 @@
   },
   {
    "type": "callout",
-   "variant": "reflection",
+   "variant": "golden",
    "label": "",
    "text": "Kita tidak butuh ceramah baru. Kita butuh satu ilmu lama yang akhirnya dipakai."
   },
@@ -591,9 +588,8 @@
    "text": "Allah memberitahukan kembali semua yang pernah kita kerjakan, mirip rekaman hidup yang diputar ulang di depan pemiliknya."
   },
   {
-   "type": "h3",
-   "text": "Konteks Ayat",
-   "id": "konteks-ayat-4"
+   "type": "label",
+   "text": "Konteks Ayat"
   },
   {
    "type": "p",
@@ -643,7 +639,7 @@
   },
   {
    "type": "callout",
-   "variant": "reflection",
+   "variant": "golden",
    "label": "",
    "text": "\"Nanti\" bukan rencana. \"Nanti\" hanya harapan bahwa waktu masih ada."
   },
@@ -690,9 +686,8 @@
    "text": "Allah mengajak kita menimbang sendiri: apa yang sebenarnya hilang saat kita berhenti sebentar, dibandingkan dengan apa yang pelan-pelan hilang saat kita tidak pernah berhenti."
   },
   {
-   "type": "h3",
-   "text": "Konteks Ayat",
-   "id": "konteks-ayat-5"
+   "type": "label",
+   "text": "Konteks Ayat"
   },
   {
    "type": "p",
@@ -734,7 +729,7 @@
   },
   {
    "type": "callout",
-   "variant": "reflection",
+   "variant": "golden",
    "label": "",
    "text": "Allah menyuruh kita bekerja, dan Allah juga menyuruh kita berhenti."
   },
@@ -781,9 +776,8 @@
    "text": "Pesan yang ikut kita bawa keluar dari masjid. Dzikir tidak selesai ketika salat selesai."
   },
   {
-   "type": "h3",
-   "text": "Konteks Ayat",
-   "id": "konteks-ayat-6"
+   "type": "label",
+   "text": "Konteks Ayat"
   },
   {
    "type": "p",
@@ -821,7 +815,7 @@
   },
   {
    "type": "callout",
-   "variant": "reflection",
+   "variant": "golden",
    "label": "",
    "text": "Ilmu yang didengar di mimbar baru terasa artinya kalau ikut sampai ke tempat kita bekerja."
   },
@@ -868,9 +862,8 @@
    "text": "Kalimat penutup surat, yang langsung menjawab akar rasa takut orang-orang yang keluar."
   },
   {
-   "type": "h3",
-   "text": "Konteks Ayat",
-   "id": "konteks-ayat-7"
+   "type": "label",
+   "text": "Konteks Ayat"
   },
   {
    "type": "p",
@@ -916,7 +909,7 @@
   },
   {
    "type": "callout",
-   "variant": "reflection",
+   "variant": "golden",
    "label": "",
    "text": "Rezeki tidak pindah tangan hanya karena kita berhenti sebentar untuk Allah."
   },
@@ -1023,7 +1016,7 @@
   },
   {
    "type": "callout",
-   "variant": "reflection",
+   "variant": "golden",
    "label": "",
    "text": "Kita tidak diminta berhenti mencari dunia. Kita diminta berhenti sebentar, supaya ingat siapa yang memberinya."
   },

@@ -74,7 +74,9 @@ async function syncNaskah(bridge) {
   // Kelompokkan per surat; kalau ada dua file untuk surat yang sama, pakai yang terbaru.
   const bySlug = {};
   for (const f of files) {
-    const s = findSurah(f.name.replace(/\.[a-z]+$/i, ''), { strict: false });
+    const base = f.name.replace(/\.[a-z]+$/i, '');
+    // Nama biasa ("Al-Mumtahanah"), lalu penulisan menyambung ("AshShaff", "AlKahfi") per kata
+    const s = findSurah(base, { strict: false }) || base.split(/[\s_\-.]+/).map((w) => (/^(inspirasi|quran|surat|surah|tafsir)$/i.test(w) ? null : findSurahInTag(w))).find(Boolean) || null;
     if (!s) {
       status.naskah.push({ file: f.name, status: 'error', message: 'Nama file tidak cocok dengan nama surat mana pun. Ubah nama file, misalnya "Inspirasi Quran Al-Ikhlas".' });
       continue;

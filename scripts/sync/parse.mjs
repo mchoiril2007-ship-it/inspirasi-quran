@@ -9,7 +9,7 @@ export const isArabic = (s) => {
   return a > 3 && a > l * 2;
 };
 
-const LABELS = ['kata kunci', 'kenapa ayat ini ada di sini', 'cermin kehidupan', 'allah menjawab', 'coba hari ini'];
+const LABELS = ['kata kunci', 'kenapa ayat ini ada di sini', 'konteks ayat', 'cermin kehidupan', 'allah menjawab', 'coba hari ini'];
 const CALLOUT_LABELS = /^(INTI PESAN SURAT|GOLDEN SENTENCE PENUTUP|GOLDEN SENTENCE|PESAN UTAMA|CATATAN)\s*:?\s*/;
 const REF = /^\(?\s*Q\.?\s*S\.?\s*([^:()]+?)\s*:\s*([\d\s–\-,]+?)\s*\)?\s*$/i;
 const KEYWORD = /^([^():]{2,90}?)\s*\(([^)]*[؀-ۿ][^)]*)\)\s*:\s*([\s\S]+)$/;
@@ -43,6 +43,7 @@ function toCallout(paras) {
   }
   const text = texts.join('\n').trim();
   let variant = 'reflection';
+  if (!label && paras.length === 1 && paras[0].bold && paras[0].align === 'center') variant = 'golden';
   if (/GOLDEN/i.test(label)) variant = 'golden';
   else if (/RENUNG|REFLEKSI|PERTANYAAN|COBA/i.test(label)) variant = 'reflection';
   else if (label) variant = 'key';
@@ -58,6 +59,33 @@ function titleCase(s) {
  * @param meta { fileName }
  */
 export function parseNaskah(raw, { fileName = '', surah: forced = null } = {}) {
+  // Kotak berupa paragraf berlatar warna (bukan tabel) → ubah jadi tabel satu sel agar diproses sebagai kotak
+  raw = raw.reduce((acc, b) => {
+    const boxed = b.t === 'p' && b.shade && !isArabic(b.text) && !/^\(?\s*Q\.?\s*S\./i.test(b.text);
+    const prev = acc[acc.length - 1];
+    if (boxed && prev && prev._box === b.shade) {
+      prev.rows[0][0].push(b);
+      return acc;
+    }
+    if (boxed) {
+      acc.push({ t: 'table', rows: [[[b]]], _box: b.shade });
+      return acc;
+    }
+    acc.push(b);
+    return acc;
+  }, []);
+  // Format "BAGIAN 1" + baris judul di bawahnya → satu judul bagian "1. Judul"
+  raw = raw.reduce((acc, b, i, arr) => {
+    const m = b.t === 'p' && b.text.match(/^BAGIAN\s+(\d{1,2})\s*[:.]?$/i);
+    const next = arr[i + 1];
+    if (m && next && next.t === 'p' && next.text.length < 70) {
+      next.text = `${m[1]}. ${next.text}`;
+      next._fromBagian = true;
+      return acc;
+    }
+    acc.push(b);
+    return acc;
+  }, []);
   // 1) Pisahkan bagian sampul (sebelum heading bernomor pertama) dari isi.
   let firstH2 = raw.findIndex((b) => b.t === 'p' && H2.test(b.text) && !endsLikeSentence(b.text));
   if (firstH2 < 0) firstH2 = 0;
