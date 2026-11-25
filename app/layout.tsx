@@ -13,7 +13,14 @@ export const metadata: Metadata = {
   alternates: { canonical: '/' },
   openGraph: { type: 'website', siteName: 'Quran Inspiration', locale: 'id_ID', url: '/' },
   twitter: { card: 'summary_large_image' },
-  icons: { icon: '/icon.svg', apple: '/icon-512.png' },
+  icons: {
+    icon: [
+      { url: '/favicon.ico', sizes: 'any' },
+      { url: '/icon-32.png', sizes: '32x32', type: 'image/png' },
+      { url: '/icon-192.png', sizes: '192x192', type: 'image/png' },
+    ],
+    apple: [{ url: '/apple-touch-icon.png', sizes: '180x180' }],
+  },
   manifest: '/manifest.webmanifest',
 };
 
@@ -44,13 +51,21 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <main>{children}</main>
           <SubscribeForm />
           <footer className="site-footer">
-            <div className="wrap">
-              <span>© {new Date().getFullYear()} Quran Inspiration · M. Choiril Alam</span>
-              <span>
-                <a href="https://www.instagram.com/quran.insp/" rel="noopener" target="_blank">Instagram @quran.insp</a>
-                {' · '}
-                <a href="https://www.youtube.com/@QuranInspiration" rel="noopener" target="_blank">YouTube</a>
-              </span>
+            <div className="footer-inner">
+              <a href="/" className="footer-logo" aria-label="Quran Inspiration, ke beranda">
+                <span className="brand-mark" aria-hidden="true">
+                  Q
+                </span>
+              </a>
+              <a href="https://www.instagram.com/quran.insp/" target="_blank" rel="noopener noreferrer" className="footer-ig">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                  <rect x="3" y="3" width="18" height="18" rx="5" />
+                  <circle cx="12" cy="12" r="4" />
+                  <circle cx="17.5" cy="6.5" r="0.9" fill="currentColor" stroke="none" />
+                </svg>
+                Ikuti di Instagram @quran.insp
+              </a>
+              <p className="footer-copy">© 2026 Quran Inspiration</p>
             </div>
           </footer>
         </SiteShell>

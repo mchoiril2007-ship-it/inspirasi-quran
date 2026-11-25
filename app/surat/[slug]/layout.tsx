@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { Tabs } from '@/components/Client';
 import { SuratStats } from '@/components/Stats';
@@ -13,22 +14,50 @@ export default async function SuratLayout({ children, params }: { children: Reac
   const doc = getDoc(slug);
   const s = getSurah(slug);
   if (!doc || !s) notFound();
+  const all = getDocs();
+  const i = all.findIndex((d) => d.slug === slug);
+  const prevDoc = i > 0 ? all[i - 1] : null;
+  const nextDoc = i < all.length - 1 ? all[i + 1] : null;
+  const prev = prevDoc ? getSurah(prevDoc.slug) : null;
+  const next = nextDoc ? getSurah(nextDoc.slug) : null;
   return (
     <>
       <header className="surat-head wrap">
         <div className="eyebrow">Surat ke-{s.number}</div>
+        <h1>
+          <span className="sr-only">Inspirasi Quran Surat </span>
+          {s.name.replace(/-/g, '\u2011')}
+        </h1>
+        <p className="surat-meaning">{s.meaning}</p>
         <p className="surat-ar" lang="ar" dir="rtl">
           {s.arabic}
         </p>
-        <h1>{doc.title.replace(/-/g, "\u2011")}</h1>
         {doc.tagline ? <p className="tagline">{doc.tagline}</p> : null}
         <p className="meta">
-          {s.meaning} · {s.ayat} ayat · {s.place}
+          {s.ayat} ayat · {s.place}
         </p>
         <SuratStats slug={slug} />
       </header>
       <Tabs slug={slug} />
       {children}
+      <nav className="surat-pager read" aria-label="Surat lain">
+        {prev ? (
+          <Link href={`/surat/${prev.slug}`} className="pager-prev">
+            <span className="pager-dir">‹ Surat sebelumnya</span>
+            <span className="pager-name">{prev.name}</span>
+          </Link>
+        ) : (
+          <span />
+        )}
+        {next ? (
+          <Link href={`/surat/${next.slug}`} className="pager-next">
+            <span className="pager-dir">Surat berikutnya ›</span>
+            <span className="pager-name">{next.name}</span>
+          </Link>
+        ) : (
+          <span />
+        )}
+      </nav>
     </>
   );
 }
