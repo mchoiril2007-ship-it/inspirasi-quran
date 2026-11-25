@@ -3,6 +3,7 @@
 import { createContext, useCallback, useContext, useEffect, useRef, useState, type ReactNode } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import { trackStat } from './Stats';
 
 export type Chapter = { title: string; start: number };
 export type Track = { slug: string; src: string; title: string; arabic: string; duration: number; chapters: Chapter[] };
@@ -63,6 +64,7 @@ export function AudioProvider({ children }: { children: ReactNode }) {
   const [dur, setDur] = useState(0);
   const [speed, setSpeed] = useState(1);
   const pendingSeek = useRef(0);
+  const counted = useRef<string | null>(null);
 
   useEffect(() => {
     const sp = parseFloat(store.get('qi-speed') || '1');
@@ -76,6 +78,7 @@ export function AudioProvider({ children }: { children: ReactNode }) {
       if (track?.slug !== t.slug) {
         if (track) store.set(posKey(track.slug), String(a.currentTime || 0));
         setTrack(t);
+        counted.current = null;
         setDur(t.duration || 0);
         const saved = parseFloat(store.get(posKey(t.slug)) || '0');
         pendingSeek.current = startAt != null ? startAt : saved > 5 ? saved : 0;
@@ -156,7 +159,13 @@ export function AudioProvider({ children }: { children: ReactNode }) {
       <audio
         ref={ref}
         preload="metadata"
-        onPlay={() => setPlaying(true)}
+        onPlay={() => {
+          setPlaying(true);
+          if (track && counted.current !== track.slug) {
+            counted.current = track.slug;
+            trackStat(track.slug, 'dengar');
+          }
+        }}
         onPause={() => setPlaying(false)}
         onLoadedMetadata={(e) => {
           const a = e.currentTarget;

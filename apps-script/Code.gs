@@ -10,6 +10,8 @@
  *  GET  ?key=..&action=subscribers          -> isi Google Sheet pendaftar
  *  POST {key, action:'subscribe', name, email, whatsapp, page}
  *  POST {key, action:'uploadAudio', name, base64}  -> simpan ke subfolder "Audio"
+ *  POST {key, action:'hit', slug, kind}  -> tambah hitungan baca/dengar/tonton
+ *  GET  ?key=..&action=stats              -> semua hitungan
  */
 
 var KEY = 'GANTI_DENGAN_KUNCI_RAHASIA';
@@ -46,6 +48,10 @@ function handle_(p) {
         return json_(subscribe_(p));
       case 'subscribers':
         return json_(subscribers_());
+      case 'hit':
+        return json_(hit_(p.slug, p.kind));
+      case 'stats':
+        return json_({ ok: true, stats: stats_() });
       case 'uploadAudio':
         return json_(uploadAudio_(p.name, p.base64));
       default:
@@ -236,6 +242,34 @@ function uploadAudio_(name, base64) {
   }
   var created = folder.createFile(blob);
   return { ok: true, id: created.getId() };
+}
+
+// Penghitung baca/dengar/tonton per surat (disimpan di Script Properties)
+function hit_(slug, kind) {
+  if (!/^[a-z0-9\-]{2,40}$/.test(slug || '') || ['baca', 'dengar', 'tonton'].indexOf(kind) < 0) return { ok: false, error: 'Data tidak valid' };
+  var lock = LockService.getScriptLock();
+  lock.waitLock(10000);
+  try {
+    var props = PropertiesService.getScriptProperties();
+    var k = 'stat:' + slug + ':' + kind;
+    var n = (parseInt(props.getProperty(k) || '0', 10) || 0) + 1;
+    props.setProperty(k, String(n));
+    return { ok: true, count: n };
+  } finally {
+    lock.releaseLock();
+  }
+}
+
+function stats_() {
+  var all = PropertiesService.getScriptProperties().getProperties();
+  var out = {};
+  Object.keys(all).forEach(function (k) {
+    var m = k.match(/^stat:([a-z0-9\-]+):(baca|dengar|tonton)$/);
+    if (!m) return;
+    out[m[1]] = out[m[1]] || { baca: 0, dengar: 0, tonton: 0 };
+    out[m[1]][m[2]] = parseInt(all[k], 10) || 0;
+  });
+  return out;
 }
 
 /** Jalankan sekali dari editor untuk memberi izin akses (tombol Run). */

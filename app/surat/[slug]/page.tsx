@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Article from '@/components/Article';
 import { ReadingProgress } from '@/components/Client';
 import ReadAlong from '@/components/ReadAlong';
+import { TrackView } from '@/components/Stats';
 import { getAudio, getDoc, getSurah, SITE_URL } from '@/lib/content';
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
@@ -34,6 +35,7 @@ export default async function BacaPage({ params }: { params: Promise<{ slug: str
   return (
     <div className="read">
       <ReadingProgress />
+      <TrackView slug={doc.slug} kind="baca" />
       {audio?.marks?.length ? (
         <ReadAlong
           track={{ slug: doc.slug, src: `/api/audio/${doc.slug}?v=${audio.hash}`, title: doc.title, arabic: s.arabic, duration: audio.duration, chapters: audio.chapters || [] }}

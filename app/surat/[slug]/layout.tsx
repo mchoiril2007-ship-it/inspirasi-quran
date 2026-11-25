@@ -1,5 +1,6 @@
 import { notFound } from 'next/navigation';
 import { Tabs } from '@/components/Client';
+import { SuratStats } from '@/components/Stats';
 import { getDoc, getDocs, getSurah } from '@/lib/content';
 
 export const dynamicParams = false;
@@ -24,6 +25,7 @@ export default async function SuratLayout({ children, params }: { children: Reac
         <p className="meta">
           {s.meaning} · {s.ayat} ayat · {s.place}
         </p>
+        <SuratStats slug={slug} />
       </header>
       <Tabs slug={slug} />
       {children}

@@ -23,7 +23,7 @@ export default async function TontonPage({ params }: { params: Promise<{ slug: s
         <div className="videos">
           {videos.map((v) => (
             <article key={v.id}>
-              <VideoEmbed id={v.id} title={v.title} />
+              <VideoEmbed id={v.id} title={v.title} slug={slug} />
               <h2 className="video-title">{v.title}</h2>
               {v.publishedAt ? <div className="video-date">{dateFmt.format(new Date(v.publishedAt))}</div> : null}
             </article>

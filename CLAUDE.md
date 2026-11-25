@@ -25,6 +25,9 @@ Balas dalam bahasa Indonesia yang sederhana. Proyek ini TERPISAH dari dashboard 
   - "Ikuti bacaan": tiap segmen audio diberi indeks blok (`b`); `renderAudio` mencatat `marks` [blok, detik] ke audio.json.
     Tab Baca (`components/ReadAlong.tsx`) menyorot blok `[data-b]` yang sedang dibacakan, gulir otomatis, ketuk paragraf = lompat.
     Audio diputar oleh satu pemutar global (`components/AudioContext.tsx`) + pemutar mini, tetap jalan saat pindah halaman.
+  - Penghitung publik baca/dengar/tonton per surat: `/api/stats` (GET semua, POST {slug, kind}) → jembatan Apps Script
+    aksi `hit`/`stats` (Script Properties). Ditampilkan oleh `components/Stats.tsx` di header surat & kartu beranda.
+    Dibaca = tiap buka tab Baca, didengar = tiap mulai putar audio, ditonton = tiap putar video (orang sama bisa terhitung berkali-kali).
   - Status (gagal/peringatan, video tak cocok, waktu sinkron) ditulis ke branch `status` → dibaca halaman `/admin`.
 - **Jembatan Google**: `apps-script/Code.gs` (Google Apps Script milik pemilik) untuk Drive, YouTube, dan Google Sheet pendaftar.
   Kunci rahasianya TIDAK ada di repo (repo ini publik).

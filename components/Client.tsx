@@ -3,6 +3,7 @@ import { useEffect, useMemo, useRef, useState } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { IconBook, IconHeadphones, IconPlayCircle, IconSearch } from './Icons';
+import { SuratStats, trackStat } from './Stats';
 
 export function Tabs({ slug }: { slug: string }) {
   const p = usePathname();
@@ -77,6 +78,7 @@ export function SuratSearch({ items }: { items: CardItem[] }) {
                 </div>
                 <h3>{it.name.replace(/-/g, "\u2011")}</h3>
                 <p className="meaning">{it.meaning}</p>
+                <SuratStats slug={it.slug} compact />
                 <div className="facts">
                   <span>{it.ayat} ayat</span>
                   <span>·</span>
@@ -95,7 +97,7 @@ export function SuratSearch({ items }: { items: CardItem[] }) {
   );
 }
 
-export function VideoEmbed({ id, title }: { id: string; title: string }) {
+export function VideoEmbed({ id, title, slug }: { id: string; title: string; slug?: string }) {
   const [on, setOn] = useState(false);
   return (
     <div className="video-frame">
@@ -107,7 +109,7 @@ export function VideoEmbed({ id, title }: { id: string; title: string }) {
           allowFullScreen
         />
       ) : (
-        <button onClick={() => setOn(true)} style={{ backgroundImage: `url(https://i.ytimg.com/vi/${id}/hqdefault.jpg)` }} aria-label={`Putar video: ${title}`}>
+        <button onClick={() => { setOn(true); if (slug) trackStat(slug, 'tonton'); }} style={{ backgroundImage: `url(https://i.ytimg.com/vi/${id}/hqdefault.jpg)` }} aria-label={`Putar video: ${title}`}>
           <span className="play">
             <svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.5v13a1 1 0 0 0 1.5.86l11-6.5a1 1 0 0 0 0-1.72l-11-6.5A1 1 0 0 0 8 5.5z" /></svg>
           </span>
