@@ -24,6 +24,7 @@ jobs:
       - uses: actions/checkout@v4
         with:
           ref: main
+          fetch-depth: 0
 
       - uses: actions/setup-node@v4
         with:
@@ -54,7 +55,21 @@ jobs:
           git add content public/img
           if ! git diff --cached --quiet; then
             git commit -m "Sinkron otomatis: perbarui isi web"
-            git push origin HEAD:main
+            # Kalau main sudah berubah selama sinkron, gabungkan dulu (hasil sinkron diutamakan), coba sampai 5x
+            for i in 1 2 3 4 5; do
+              if git push origin HEAD:main; then break; fi
+              echo "Push ditolak, menggabungkan perubahan terbaru (percobaan $i)"
+              git fetch origin main
+              OURS=$(git rev-parse HEAD)
+              if ! git rebase -X theirs origin/main; then
+                git rebase --abort || true
+                git reset -q --hard origin/main
+                git checkout "$OURS" -- content public/img
+                git add content public/img
+                git commit -m "Sinkron otomatis: perbarui isi web" || true
+              fi
+              sleep $((i * 5))
+            done
             if [ -n "${{ secrets.VERCEL_DEPLOY_HOOK }}" ]; then curl -s -X POST "${{ secrets.VERCEL_DEPLOY_HOOK }}" > /dev/null; fi
           else
             echo "Tidak ada perubahan isi."
