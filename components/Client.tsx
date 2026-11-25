@@ -72,7 +72,7 @@ export function SuratSearch({ items }: { items: CardItem[] }) {
     <>
       <section id="daftar-surat" className="shelf" aria-labelledby="shelf-title">
         <h2 id="shelf-title" className="shelf-title wrap">
-          <b>Surat tersedia.</b> Geser, pilih, lalu mulai membaca.
+          <b>Surat tersedia.</b> Geser, pilih, lalu mulai memahami.
         </h2>
         {list.length ? (
           <>

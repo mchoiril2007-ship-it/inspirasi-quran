@@ -58,7 +58,7 @@ export default function SiteShell({ items, children }: { items: NavItem[]; child
           <div className="header-row">
             <Link href="/" className="logo" aria-label="Quran Inspiration, ke beranda">
               <span className="brand-mark" aria-hidden="true">
-                ق
+                Q
               </span>
             </Link>
             <div className="header-actions">
