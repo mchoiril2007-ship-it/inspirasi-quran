@@ -5,6 +5,7 @@ import { useEffect, useMemo, useRef, useState, type ReactNode } from 'react';
 import Link from 'next/link';
 import { usePathname, useRouter } from 'next/navigation';
 import { AudioProvider } from './AudioContext';
+import { ShareButton } from './Share';
 
 export type NavItem = { slug: string; number: number; name: string; arabic: string; meaning?: string; keys?: string };
 
@@ -130,6 +131,11 @@ export default function SiteShell({ items, children }: { items: NavItem[]; child
                     </Link>
                   </li>
                 ))}
+                <li className="menu-share">
+                  <ShareButton className="menu-big" label="Bagikan Quran Inspiration" data={{ title: 'Quran Inspiration', text: 'Untuk hati yang rindu memahami', path: '/' }}>
+                    Bagikan
+                  </ShareButton>
+                </li>
                 <li>
                   <button className="menu-big" onClick={goSubscribe}>
                     Langganan

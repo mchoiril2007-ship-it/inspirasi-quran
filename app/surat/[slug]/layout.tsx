@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { Tabs } from '@/components/Client';
 import { SuratStats } from '@/components/Stats';
+import { ShareButton } from '@/components/Share';
 import { getDoc, getDocs, getSurah } from '@/lib/content';
 
 export const dynamicParams = false;
@@ -24,10 +25,17 @@ export default async function SuratLayout({ children, params }: { children: Reac
     <>
       <header className="surat-head wrap">
         <div className="eyebrow">Surat ke-{s.number}</div>
-        <h1>
-          <span className="sr-only">Inspirasi Quran Surat </span>
-          {s.name.replace(/-/g, '\u2011')}
-        </h1>
+        <div className="surat-title-row">
+          <h1>
+            <span className="sr-only">Inspirasi Quran Surat </span>
+            {s.name.replace(/-/g, '\u2011')}
+          </h1>
+          <ShareButton
+            className="share-btn"
+            label={`Bagikan Surat ${s.name}`}
+            data={{ title: `Inspirasi Quran Surat ${s.name}`, text: `Inspirasi Quran Surat ${s.name}${doc.tagline ? ' — ' + doc.tagline : ''}`, path: `/surat/${slug}` }}
+          />
+        </div>
         <p className="surat-meaning">{s.meaning}</p>
         <p className="surat-ar" lang="ar" dir="rtl">
           {s.arabic}
