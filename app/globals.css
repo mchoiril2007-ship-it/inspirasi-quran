@@ -425,20 +425,23 @@ body.has-mini { padding-bottom: calc(66px + env(safe-area-inset-bottom)); }
 .pager-dir { font-size: 14px; color: var(--teal); font-weight: 500; }
 .pager-name { font-size: 19px; font-weight: 700; color: var(--text); letter-spacing: -0.015em; }
 
-/* Halaman depan: kartu pertama terlihat utuh di layar HP */
-.hero { padding: 24px 20px 16px; }
+/* Halaman depan: atas tetap lega; kartu dibuat ringkas agar terlihat utuh di layar HP */
+.hero { padding: 44px 20px 30px; }
 .hero-title { font-size: clamp(36px, 9.6vw, 80px); white-space: nowrap; }
-.hero-sub { margin-top: 8px; font-size: clamp(17px, 4.4vw, 24px); }
-@media (min-width: 760px) { .hero { padding: 56px 24px 32px; } }
-.shelf-title { font-size: clamp(21px, 5.2vw, 32px); margin-bottom: 12px; }
-.shelf-rail { padding-top: 4px; padding-bottom: 22px; }
-.shelf-card { min-height: 0; height: clamp(320px, calc(100svh - 262px), 420px); }
-.shelf-upper { padding: 22px 22px 8px; }
-.shelf-card h3 { font-size: 26px; }
-.shelf-tagline { margin-top: 8px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.hero-sub { margin-top: 12px; font-size: clamp(17px, 4.4vw, 24px); }
+@media (min-width: 760px) { .hero { padding: 72px 24px 44px; } }
+.shelf-title { font-size: clamp(21px, 5.2vw, 32px); margin-bottom: 16px; }
+.shelf-rail { padding-top: 4px; padding-bottom: 22px; align-items: stretch; }
+.shelf-card { min-height: 0; height: auto; }
+.shelf-upper { padding: 22px 22px 0; flex: none; }
+.shelf-card h3 { font-size: 26px; margin: 6px 0 2px; }
+.shelf-meaning { font-size: 15px; }
+.shelf-tagline { margin-top: 8px; font-size: 14px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
 .shelf-card .stats-mini { margin-top: 10px; }
-.shelf-lower { padding: 4px 22px 20px; }
-.shelf-ar { font-size: 40px; line-height: 1.35; }
+.shelf-lower { margin-top: auto; padding: 6px 22px 18px; }
+.shelf-ar { font-size: 36px; line-height: 1.3; }
+.shelf-facts { margin-top: 2px; }
+.shelf-go { bottom: 16px; }
 @media (prefers-color-scheme: dark) {
   .site-footer { background: #161617; border-top-color: #2c2c2e; }
   .footer-copy { border-top-color: #2c2c2e; }
