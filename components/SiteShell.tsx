@@ -70,12 +70,12 @@ export default function SiteShell({ items, children }: { items: NavItem[]; child
                 <path d="M4 7h16M4 12h16M4 17h16" />
               </svg>
             </button>
-            <Link href="/" className="brand" aria-label="Quran Inspiration, ke beranda">
+            <button type="button" className="brand brand-btn" onClick={toggle} aria-label="Quran Inspiration, buka menu daftar surat" aria-expanded={open || !collapsed} aria-controls="side-nav">
               <span className="brand-mark" aria-hidden="true">
                 ق
               </span>
               <span className="brand-text">Quran Inspiration</span>
-            </Link>
+            </button>
           </div>
           {!isAdmin ? (
             <a href="#langganan" className="header-cta">
@@ -116,7 +116,7 @@ export default function SiteShell({ items, children }: { items: NavItem[]; child
             return (
               <Link key={it.slug} href={`/surat/${it.slug}`} className={active ? 'active' : ''} aria-current={active ? 'page' : undefined}>
                 <span className="side-num">{it.number}</span>
-                <span className="side-name">{it.name}</span>
+                <span className="side-name">{it.name.replace(/-/g, "\u2011")}</span>
                 <span className="side-ar" lang="ar">
                   {it.arabic}
                 </span>

@@ -7,7 +7,7 @@ import './globals.css';
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
-  title: { default: "Quran Inspiration · Memahami Al-Qur'an, satu surat setiap kali", template: '%s · Quran Inspiration' },
+  title: { default: "Quran Inspiration · Untuk hati yang rindu memahami Al-Qur'an", template: '%s · Quran Inspiration' },
   description: "Inspirasi Al-Qur'an per surat dalam bahasa Indonesia: baca naskahnya, tonton videonya, dan dengarkan versi audionya dengan murattal ayat Al-Qur'an.",
   applicationName: 'Quran Inspiration',
   alternates: { canonical: '/' },

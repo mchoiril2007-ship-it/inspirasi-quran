@@ -57,7 +57,7 @@ export function SuratSearch({ items }: { items: CardItem[] }) {
 
   return (
     <>
-      <div className="search" role="search">
+      <div id="daftar-surat" className="search" role="search">
         <IconSearch />
         <label htmlFor="cari" className="sr-only">
           Cari surat
