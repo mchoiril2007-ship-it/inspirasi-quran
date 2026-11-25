@@ -30,7 +30,8 @@ function cellText(paras) {
 }
 
 function toCallout(paras) {
-  let texts = paras.map((p) => p.text).filter(Boolean);
+  // Buang simbol hiasan di awal label, mis. "✦ GOLDEN SENTENCE"
+  let texts = paras.map((p) => p.text).filter(Boolean).map((t, i) => (i === 0 ? t.replace(/^[✦★☆◆◇•●▪︎\s]+/u, '') : t));
   let label = '';
   if (texts.length > 1 && /^[A-Z0-9 &:'’-]{4,40}$/.test(texts[0])) {
     label = texts.shift().replace(/:$/, '');

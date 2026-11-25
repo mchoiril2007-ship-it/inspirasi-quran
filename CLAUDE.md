@@ -7,7 +7,7 @@ Balas dalam bahasa Indonesia yang sederhana. Proyek ini TERPISAH dari dashboard 
 - **Web**: Next.js 15 (App Router) di Vercel. Push ke `main` = web terbit ulang otomatis.
 - **Isi**: `content/surat/<slug>.json` (hasil ubah naskah), `content/videos.json`, `content/audio.json`, `content/config.json`.
   File-file ini DITULIS OLEH SINKRON OTOMATIS. Jangan edit manual isi naskah; ubah naskahnya di Google Drive.
-- **Sinkron tiap jam**: `.github/workflows/sync.yml` → `scripts/sync/index.mjs`
+- **Sinkron 2x per jam** (menit 17 & 47): `.github/workflows/sync.yml` → `scripts/sync/index.mjs`
   - Naskah: folder Drive "Inspirasi Quran" (id `1-1ZW84uj74cpH4s7Hq6HdzPzq7y4PitP`), .docx / Google Docs. Nama file dicocokkan ke surat (`lib/match.mjs`).
   - Ubah .docx → blok halaman: `scripts/sync/docx.mjs` + `scripts/sync/parse.mjs`.
   - Video: channel YouTube "M.Choiril Alam" `@quraninspiration` (`content/config.json` → `youtubeHandle`). Dicocokkan berurutan lewat

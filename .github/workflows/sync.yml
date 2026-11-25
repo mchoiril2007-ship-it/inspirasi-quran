@@ -2,7 +2,7 @@ name: Sinkron otomatis (Drive, YouTube, Audio)
 
 on:
   schedule:
-    - cron: '17 * * * *' # setiap jam, menit ke-17
+    - cron: '17,47 * * * *' # dua kali per jam (menit ke-17 dan ke-47)
   workflow_dispatch:
     inputs:
       max_audio:
