@@ -1,134 +1,148 @@
 'use client';
+// Header tipis ala apple.com: logo ق (ke beranda) di kiri, ikon cari & menu di kanan.
+// Pencarian dan menu muncul sebagai panel putih di bawah header.
 import { useEffect, useMemo, useRef, useState, type ReactNode } from 'react';
 import Link from 'next/link';
-import { usePathname } from 'next/navigation';
+import { usePathname, useRouter } from 'next/navigation';
 import { AudioProvider } from './AudioContext';
 
-export type NavItem = { slug: string; number: number; name: string; arabic: string };
+export type NavItem = { slug: string; number: number; name: string; arabic: string; meaning?: string; keys?: string };
 
-const DESKTOP = '(min-width: 1024px)';
 const norm = (s: string) => s.toLowerCase().normalize('NFKD').replace(/[̀-ͯ]/g, '').replace(/['’`\-\s]/g, '');
 
 export default function SiteShell({ items, children }: { items: NavItem[]; children: ReactNode }) {
   const pathname = usePathname();
-  const [open, setOpen] = useState(false); // panel di HP
-  const [collapsed, setCollapsed] = useState(false); // sidebar di laptop disembunyikan
+  const router = useRouter();
+  const [panel, setPanel] = useState<null | 'search' | 'menu'>(null);
   const [q, setQ] = useState('');
-  const closeRef = useRef<HTMLButtonElement>(null);
+  const inputRef = useRef<HTMLInputElement>(null);
   const activeSlug = pathname.startsWith('/surat/') ? pathname.split('/')[2] : null;
 
-  useEffect(() => {
-    try {
-      setCollapsed(localStorage.getItem('qi-nav-collapsed') === '1');
-    } catch {}
-  }, []);
+  // Tutup panel setiap pindah halaman
+  useEffect(() => setPanel(null), [pathname]);
 
-  // Tutup panel HP setiap pindah halaman
-  useEffect(() => setOpen(false), [pathname]);
-
-  // Kunci gulir halaman & tombol Esc saat panel HP terbuka
+  // Esc menutup panel; gulir halaman dikunci selama panel terbuka
   useEffect(() => {
-    if (!open) return;
+    if (!panel) return;
     const prev = document.body.style.overflow;
     document.body.style.overflow = 'hidden';
-    closeRef.current?.focus();
-    const onKey = (e: KeyboardEvent) => e.key === 'Escape' && setOpen(false);
+    const onKey = (e: KeyboardEvent) => e.key === 'Escape' && setPanel(null);
     window.addEventListener('keydown', onKey);
+    if (panel === 'search') setTimeout(() => inputRef.current?.focus(), 60);
     return () => {
       document.body.style.overflow = prev;
       window.removeEventListener('keydown', onKey);
     };
-  }, [open]);
+  }, [panel]);
 
-  const toggle = () => {
-    if (window.matchMedia(DESKTOP).matches) {
-      setCollapsed((c) => {
-        try {
-          localStorage.setItem('qi-nav-collapsed', c ? '0' : '1');
-        } catch {}
-        return !c;
-      });
-    } else setOpen((o) => !o);
-  };
-
-  const list = useMemo(() => {
+  const results = useMemo(() => {
     const n = norm(q);
-    if (!n) return items;
-    return items.filter((it) => norm(it.name).includes(n) || String(it.number) === q.trim());
+    if (!n) return [];
+    return items.filter((it) => norm(`${it.name} ${it.meaning || ''} ${it.keys || ''}`).includes(n) || String(it.number) === q.trim());
   }, [q, items]);
 
-  const isAdmin = pathname.startsWith('/admin');
+  const toggle = (p: 'search' | 'menu') => setPanel((cur) => (cur === p ? null : p));
+  const goSubscribe = () => {
+    setPanel(null);
+    // Tunggu panel tertutup (kunci gulir dilepas), lalu gulir ke formulir langganan
+    setTimeout(() => {
+      const el = document.getElementById('langganan');
+      if (el) window.scrollTo({ top: el.getBoundingClientRect().top + window.scrollY - 48, behavior: 'smooth' });
+    }, 120);
+  };
 
   return (
     <AudioProvider>
-    <div className={`shell${collapsed ? ' nav-collapsed' : ''}${open ? ' nav-open' : ''}`}>
-      <header className="site-header">
-        <div className="header-row">
-          <div className="header-left">
-            <button className="menu-btn" onClick={toggle} aria-label="Buka menu daftar surat" aria-expanded={open || !collapsed} aria-controls="side-nav">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" aria-hidden="true">
-                <path d="M4 7h16M4 12h16M4 17h16" />
-              </svg>
-            </button>
-            <button type="button" className="brand brand-btn" onClick={toggle} aria-label="Quran Inspiration, buka menu daftar surat" aria-expanded={open || !collapsed} aria-controls="side-nav">
+      <div className={`shell${panel ? ' panel-open' : ''}`}>
+        <header className="site-header">
+          <div className="header-row">
+            <Link href="/" className="logo" aria-label="Quran Inspiration, ke beranda">
               <span className="brand-mark" aria-hidden="true">
                 ق
               </span>
-              <span className="brand-text">Quran Inspiration</span>
-            </button>
+            </Link>
+            <div className="header-actions">
+              <button className="icon-btn" onClick={() => toggle('search')} aria-label={panel === 'search' ? 'Tutup pencarian' : 'Cari surat'} aria-expanded={panel === 'search'}>
+                {panel === 'search' ? (
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" /></svg>
+                ) : (
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" /><path d="m20 20-4.6-4.6" /></svg>
+                )}
+              </button>
+              <button className="icon-btn" onClick={() => toggle('menu')} aria-label={panel === 'menu' ? 'Tutup menu' : 'Buka menu'} aria-expanded={panel === 'menu'}>
+                {panel === 'menu' ? (
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" /></svg>
+                ) : (
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" aria-hidden="true"><path d="M4 8h16M4 16h16" /></svg>
+                )}
+              </button>
+            </div>
           </div>
-          {!isAdmin ? (
-            <a href="#langganan" className="header-cta">
-              Langganan
-            </a>
-          ) : null}
-        </div>
-      </header>
+        </header>
 
-      <div className="nav-overlay" onClick={() => setOpen(false)} aria-hidden="true" />
+        {panel === 'search' ? (
+          <div className="drop" role="dialog" aria-label="Cari surat">
+            <div className="drop-inner">
+              <div className="drop-search">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" /><path d="m20 20-4.6-4.6" /></svg>
+                <label htmlFor="cari-surat" className="sr-only">
+                  Cari surat
+                </label>
+                <input ref={inputRef} id="cari-surat" type="search" placeholder="Cari surat" value={q} onChange={(e) => setQ(e.target.value)} autoComplete="off" onKeyDown={(e) => e.key === 'Enter' && results[0] && router.push(`/surat/${results[0].slug}`)} />
+              </div>
+              {q.trim() ? (
+                results.length ? (
+                  <ul className="drop-list">
+                    {results.map((it) => (
+                      <li key={it.slug}>
+                        <Link href={`/surat/${it.slug}`}>
+                          <span className="drop-num">{it.number}</span>
+                          <span className="drop-name">{it.name.replace(/-/g, '‑')}</span>
+                          <span className="drop-sub">{it.meaning}</span>
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                ) : (
+                  <p className="drop-empty">Surat ini belum tersedia.</p>
+                )
+              ) : (
+                <p className="drop-hint">Ketik nama surat atau artinya, misalnya “Al-Jumu’ah” atau “barisan”.</p>
+              )}
+            </div>
+          </div>
+        ) : null}
 
-      <aside id="side-nav" className="side-nav" aria-label="Daftar surat">
-        <div className="side-top">
-          <span className="side-title">Menu</span>
-          <button ref={closeRef} className="side-close" onClick={() => setOpen(false)} aria-label="Tutup menu">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" aria-hidden="true">
-              <path d="M6 6l12 12M18 6L6 18" />
-            </svg>
-          </button>
-        </div>
-        <Link href="/" className={`side-home${pathname === '/' ? ' active' : ''}`} aria-current={pathname === '/' ? 'page' : undefined}>
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-            <path d="M3 11l9-7 9 7" />
-            <path d="M5 10v10h14V10" />
-          </svg>
-          Beranda
-        </Link>
-        <div className="side-search">
-          <label htmlFor="nav-cari" className="sr-only">
-            Cari surat di menu
-          </label>
-          <input id="nav-cari" type="search" placeholder="Cari surat…" value={q} onChange={(e) => setQ(e.target.value)} autoComplete="off" />
-        </div>
-        <div className="side-label">Surat tersedia ({items.length})</div>
-        <nav className="side-list">
-          {list.map((it) => {
-            const active = it.slug === activeSlug;
-            return (
-              <Link key={it.slug} href={`/surat/${it.slug}`} className={active ? 'active' : ''} aria-current={active ? 'page' : undefined}>
-                <span className="side-num">{it.number}</span>
-                <span className="side-name">{it.name.replace(/-/g, "\u2011")}</span>
-                <span className="side-ar" lang="ar">
-                  {it.arabic}
-                </span>
-              </Link>
-            );
-          })}
-          {!list.length ? <p className="side-empty">Surat belum tersedia.</p> : null}
-        </nav>
-      </aside>
+        {panel === 'menu' ? (
+          <nav className="drop" aria-label="Menu">
+            <div className="drop-inner">
+              <ul className="drop-list menu-list">
+                <li>
+                  <Link href="/" className="menu-big" aria-current={pathname === '/' ? 'page' : undefined}>
+                    Beranda
+                  </Link>
+                </li>
+                {items.map((it) => (
+                  <li key={it.slug}>
+                    <Link href={`/surat/${it.slug}`} aria-current={it.slug === activeSlug ? 'page' : undefined}>
+                      <span className="drop-num">{it.number}</span>
+                      <span className="drop-name">{it.name.replace(/-/g, '‑')}</span>
+                    </Link>
+                  </li>
+                ))}
+                <li>
+                  <button className="menu-big" onClick={goSubscribe}>
+                    Langganan
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        ) : null}
+        {panel ? <div className="drop-shade" onClick={() => setPanel(null)} aria-hidden="true" /> : null}
 
-      <div className="shell-main">{children}</div>
-    </div>
+        <div className="shell-main">{children}</div>
+      </div>
     </AudioProvider>
   );
 }

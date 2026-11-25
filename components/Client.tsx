@@ -46,27 +46,10 @@ export function ReadingProgress() {
 
 type CardItem = { slug: string; number: number; name: string; arabic: string; meaning: string; ayat: number; place: string; tagline: string; keys: string; hasVideo: boolean; hasAudio: boolean };
 
-// Palet kartu: warna lembut (atas) + warna lebih dalam (bawah). Berurutan sesuai posisi kartu.
-const PALETTE = [
-  { top: '#CFE5D6', bottom: '#4E7B62', ink: '#1F3B2D' }, // hijau sage
-  { top: '#FBEDC2', bottom: '#B8862B', ink: '#4A3A12' }, // kuning mentega
-  { top: '#D3E3F1', bottom: '#5C7FA6', ink: '#1F3550' }, // biru kabut
-  { top: '#F4DAD3', bottom: '#BF7766', ink: '#4D2A22' }, // merah muda tanah
-  { top: '#DED8EE', bottom: '#7C6CA8', ink: '#2E2650' }, // lavender
-  { top: '#CFE8E3', bottom: '#1A7A6E', ink: '#123F39' }, // teal brand
-  { top: '#EFE2CF', bottom: '#A6814F', ink: '#43331C' }, // pasir
-];
-
 export function SuratSearch({ items }: { items: CardItem[] }) {
-  const [q, setQ] = useState('');
   const rail = useRef<HTMLDivElement>(null);
   const [edge, setEdge] = useState({ start: true, end: false });
-  const norm = (s: string) => s.toLowerCase().normalize('NFKD').replace(/[\u0300-\u036f]/g, '').replace(/['’`\-\s]/g, '');
-  const list = useMemo(() => {
-    const n = norm(q);
-    if (!n) return items;
-    return items.filter((it) => norm(it.keys).includes(n) || String(it.number) === q.trim());
-  }, [q, items]);
+  const list = items;
 
   const updateEdge = () => {
     const r = rail.current;
@@ -87,32 +70,16 @@ export function SuratSearch({ items }: { items: CardItem[] }) {
 
   return (
     <>
-      <div id="daftar-surat" className="search" role="search">
-        <IconSearch />
-        <label htmlFor="cari" className="sr-only">
-          Cari surat
-        </label>
-        <input id="cari" type="search" placeholder="Cari surat, misalnya Al-Ikhlas atau 112" value={q} onChange={(e) => setQ(e.target.value)} autoComplete="off" />
-      </div>
-      <section className="shelf" aria-labelledby="shelf-title">
+      <section id="daftar-surat" className="shelf" aria-labelledby="shelf-title">
         <h2 id="shelf-title" className="shelf-title wrap">
-          {q ? (
-            <>
-              <b>Hasil pencarian.</b> {list.length} surat ditemukan.
-            </>
-          ) : (
-            <>
-              <b>Surat tersedia.</b> Geser, pilih, lalu mulai membaca.
-            </>
-          )}
+          <b>Surat tersedia.</b> Geser, pilih, lalu mulai membaca.
         </h2>
         {list.length ? (
           <>
             <div className="shelf-rail" ref={rail} onScroll={updateEdge}>
               {list.map((it, i) => {
-                const c = PALETTE[i % PALETTE.length];
                 return (
-                  <Link key={it.slug} href={`/surat/${it.slug}`} className="shelf-card" style={{ ['--top' as any]: c.top, ['--bottom' as any]: c.bottom, ['--ink' as any]: c.ink }}>
+                  <Link key={it.slug} href={`/surat/${it.slug}`} className="shelf-card">
                     <div className="shelf-upper">
                       <span className="shelf-eyebrow">Surat ke-{it.number}</span>
                       <h3>{it.name.replace(/-/g, '\u2011')}</h3>
@@ -149,7 +116,7 @@ export function SuratSearch({ items }: { items: CardItem[] }) {
             </div>
           </>
         ) : (
-          <p className="empty wrap">{q ? 'Surat ini belum tersedia. Daftar di bawah supaya Anda dikabari saat terbit.' : 'Belum ada surat.'}</p>
+          <p className="empty wrap">Belum ada surat.</p>
         )}
       </section>
     </>

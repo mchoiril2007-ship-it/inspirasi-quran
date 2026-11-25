@@ -27,14 +27,17 @@ export const viewport: Viewport = {
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
-  const navItems = getDocs().map((d) => ({ slug: d.slug, number: d.number, name: getSurah(d.slug)?.name || d.name, arabic: getSurah(d.slug)?.arabic || '' }));
+  const navItems = getDocs().map((d) => {
+    const su = getSurah(d.slug);
+    return { slug: d.slug, number: d.number, name: su?.name || d.name, arabic: su?.arabic || '', meaning: su?.meaning || '', keys: [...(su?.aliases || []), d.tagline || ''].join(' ') };
+  });
   return (
     <html lang="id">
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
         {/* eslint-disable-next-line @next/next/no-page-custom-font */}
-        <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
       </head>
       <body>
         <SiteShell items={navItems}>
