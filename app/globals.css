@@ -426,10 +426,10 @@ body.has-mini { padding-bottom: calc(66px + env(safe-area-inset-bottom)); }
 .pager-name { font-size: 19px; font-weight: 700; color: var(--text); letter-spacing: -0.015em; }
 
 /* Halaman depan: atas tetap lega; kartu dibuat ringkas agar terlihat utuh di layar HP */
-.hero { padding: 44px 20px 30px; }
+.hero { padding: 46px 20px 64px; }
 .hero-title { font-size: clamp(36px, 9.6vw, 80px); white-space: nowrap; }
 .hero-sub { margin-top: 12px; font-size: clamp(17px, 4.4vw, 24px); }
-@media (min-width: 760px) { .hero { padding: 72px 24px 44px; } }
+@media (min-width: 760px) { .hero { padding: 80px 24px 88px; } }
 .shelf-title { font-size: clamp(21px, 5.2vw, 32px); margin-bottom: 16px; }
 .shelf-rail { padding-top: 4px; padding-bottom: 22px; align-items: stretch; }
 .shelf-card { min-height: 0; height: auto; }
