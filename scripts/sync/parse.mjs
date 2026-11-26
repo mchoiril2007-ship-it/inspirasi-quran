@@ -212,7 +212,8 @@ export function parseNaskah(raw, { fileName = '', surah: forced = null } = {}) {
       continue;
     }
     if (LABELS.includes(lower)) {
-      blocks.push({ type: 'label', text });
+      // Atas permintaan pemilik: sub-bab "Allah Menjawab" tampil sebagai "Titik Terang"
+      blocks.push({ type: 'label', text: lower === 'allah menjawab' ? 'Titik Terang' : text });
       continue;
     }
     const km = text.match(KEYWORD);
