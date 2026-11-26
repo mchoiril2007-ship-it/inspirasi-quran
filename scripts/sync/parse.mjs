@@ -60,6 +60,17 @@ function titleCase(s) {
  * @param meta { fileName }
  */
 export function parseNaskah(raw, { fileName = '', surah: forced = null } = {}) {
+  // Judul bagian tebal TANPA nomor ("Awal Cerita", "Konteks Surat", ...) → beri nomor urut otomatis
+  const hasNumbered = raw.some((b) => b.t === 'p' && ((H2.test(b.text) && !endsLikeSentence(b.text)) || /^BAGIAN\s+\d{1,2}\s*[:.]?$/i.test(b.text)));
+  if (!hasNumbered) {
+    const H2_NAMES = new Set(['awal cerita', 'pembuka', 'konteks surat', 'mengapa surat ini ada', 'peta surat', 'bedah surat', 'latihan 7 hari', 'pertanyaan paling berat', 'penutup']);
+    let n = 0;
+    raw = raw.map((b) => {
+      if (b.t === 'p' && b.bold && b.align !== 'center' && H2_NAMES.has(b.text.trim().toLowerCase())) return { ...b, text: `${++n}. ${b.text.trim()}` };
+      return b;
+    });
+  }
+
   // Kotak berupa paragraf berlatar warna (bukan tabel) → ubah jadi tabel satu sel agar diproses sebagai kotak
   raw = raw.reduce((acc, b) => {
     const boxed = b.t === 'p' && b.shade && !isArabic(b.text) && !/^\(?\s*Q\.?\s*S\./i.test(b.text);
