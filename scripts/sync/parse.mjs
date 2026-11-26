@@ -1,5 +1,6 @@
 // Mengubah blok mentah naskah menjadi struktur halaman web (lihat content/surat/*.json).
 import { findSurah, surahByName } from '../../lib/match.mjs';
+import { pointifyMap } from './points.mjs';
 
 const AR = /[؀-ۿݐ-ݿࢠ-ࣿﭐ-﷿ﹰ-﻿]/g;
 const LATIN = /[A-Za-z]/g;
@@ -250,7 +251,7 @@ export function parseNaskah(raw, { fileName = '', surah: forced = null } = {}) {
     meta: metaLine,
     author: authorLine,
     description,
-    blocks,
+    blocks: pointifyMap(blocks),
   };
 }
 

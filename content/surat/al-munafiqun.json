@@ -154,7 +154,17 @@
   },
   {
    "type": "p",
-   "text": "Surat ini bergerak dalam dua babak. Ayat 1–8 membongkar kemunafikan: ucapan yang benar tapi hati yang berdusta, penampilan yang memukau tapi kosong, dan dua senjata mereka, yaitu tekanan ekonomi dan klaim status. Ayat 9–11 membalik arah: peringatan bagi orang beriman agar harta dan anak tidak melalaikan, dan agar bersedekah sebelum terlambat."
+   "text": "Surat ini bergerak dalam dua babak."
+  },
+  {
+   "type": "li",
+   "n": 1,
+   "text": "Ayat 1–8 membongkar kemunafikan: ucapan yang benar tapi hati yang berdusta, penampilan yang memukau tapi kosong, dan dua senjata mereka, yaitu tekanan ekonomi dan klaim status."
+  },
+  {
+   "type": "li",
+   "n": 2,
+   "text": "Ayat 9–11 membalik arah: peringatan bagi orang beriman agar harta dan anak tidak melalaikan, dan agar bersedekah sebelum terlambat."
   },
   {
    "type": "h3",
