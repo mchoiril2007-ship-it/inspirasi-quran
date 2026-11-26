@@ -36,7 +36,7 @@ export const viewport: Viewport = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   const navItems = getDocs().map((d) => {
     const su = getSurah(d.slug);
-    return { slug: d.slug, number: d.number, name: su?.name || d.name, arabic: su?.arabic || '', meaning: su?.meaning || '', keys: [...(su?.aliases || []), d.tagline || ''].join(' ') };
+    return { slug: d.slug, number: d.number, name: su?.name || d.name, arabic: su?.arabic || '', meaning: su?.meaning || '', aliases: su?.aliases || [] };
   });
   return (
     <html lang="id">

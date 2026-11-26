@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { IconBook, IconHeadphones, IconPlayCircle, IconSearch } from './Icons';
 import { SuratStats, trackStat } from './Stats';
+import { matchSurat } from '@/lib/search';
 
 export function Tabs({ slug }: { slug: string }) {
   const p = usePathname();
@@ -44,12 +45,15 @@ export function ReadingProgress() {
   return <div ref={ref} className="progress" aria-hidden="true" />;
 }
 
-type CardItem = { slug: string; number: number; name: string; arabic: string; meaning: string; ayat: number; place: string; tagline: string; keys: string; hasVideo: boolean; hasAudio: boolean };
+type CardItem = { slug: string; number: number; name: string; arabic: string; meaning: string; ayat: number; place: string; tagline: string; aliases: string[]; hasVideo: boolean; hasAudio: boolean };
 
 export function SuratSearch({ items }: { items: CardItem[] }) {
   const rail = useRef<HTMLDivElement>(null);
   const [edge, setEdge] = useState({ start: true, end: false });
   const list = items;
+  const [view, setView] = useState<'cards' | 'list'>('cards');
+  const [q, setQ] = useState('');
+  const filtered = useMemo(() => matchSurat(items, q), [items, q]);
 
   const updateEdge = () => {
     const r = rail.current;
@@ -71,10 +75,46 @@ export function SuratSearch({ items }: { items: CardItem[] }) {
   return (
     <>
       <section id="daftar-surat" className="shelf" aria-labelledby="shelf-title">
-        <h2 id="shelf-title" className="shelf-title wrap">
-          <b>Surat tersedia.</b> Geser, pilih, lalu mulai memahami.
-        </h2>
-        {list.length ? (
+        <div className="shelf-head wrap">
+          <h2 id="shelf-title" className="shelf-title">
+            Surat tersedia.
+          </h2>
+          <button type="button" className="shelf-toggle" onClick={() => setView((v) => (v === 'cards' ? 'list' : 'cards'))} aria-expanded={view === 'list'}>
+            {view === 'cards' ? `Lihat semua (${items.length}) ›` : 'Tampilkan kartu ‹'}
+          </button>
+          <p className="shelf-sub">{view === 'cards' ? 'Geser, pilih, lalu mulai memahami.' : 'Cari, pilih, lalu mulai memahami.'}</p>
+        </div>
+        {view === 'list' ? (
+          <div className="wrap">
+            <div className="list-search" role="search">
+              <IconSearch />
+              <label htmlFor="cari-daftar" className="sr-only">
+                Cari surat
+              </label>
+              <input id="cari-daftar" type="search" placeholder="Cari surat, misalnya Yasin atau 36" value={q} onChange={(e) => setQ(e.target.value)} autoComplete="off" />
+            </div>
+            {filtered.length ? (
+              <ul className="list-view">
+                {filtered.map((it) => (
+                  <li key={it.slug}>
+                    <Link href={`/surat/${it.slug}`} className="list-row">
+                      <span className="list-num">{it.number}</span>
+                      <span className="list-main">
+                        <span className="list-name">{it.name.replace(/-/g, '\u2011')}</span>
+                        {it.tagline ? <span className="list-theme">{it.tagline}</span> : <span className="list-theme">{it.meaning}</span>}
+                      </span>
+                      <span className="list-ar" lang="ar">
+                        {it.arabic}
+                      </span>
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            ) : (
+              <p className="list-empty">Surat ini belum tersedia.</p>
+            )}
+          </div>
+        ) : list.length ? (
           <>
             <div className="shelf-rail" ref={rail} onScroll={updateEdge}>
               {list.map((it, i) => {

@@ -6,10 +6,9 @@ import Link from 'next/link';
 import { usePathname, useRouter } from 'next/navigation';
 import { AudioProvider } from './AudioContext';
 import { ShareButton } from './Share';
+import { matchSurat } from '@/lib/search';
 
-export type NavItem = { slug: string; number: number; name: string; arabic: string; meaning?: string; keys?: string };
-
-const norm = (s: string) => s.toLowerCase().normalize('NFKD').replace(/[̀-ͯ]/g, '').replace(/['’`\-\s]/g, '');
+export type NavItem = { slug: string; number: number; name: string; arabic: string; meaning?: string; aliases?: string[] };
 
 export default function SiteShell({ items, children }: { items: NavItem[]; children: ReactNode }) {
   const pathname = usePathname();
@@ -36,11 +35,7 @@ export default function SiteShell({ items, children }: { items: NavItem[]; child
     };
   }, [panel]);
 
-  const results = useMemo(() => {
-    const n = norm(q);
-    if (!n) return [];
-    return items.filter((it) => norm(`${it.name} ${it.meaning || ''} ${it.keys || ''}`).includes(n) || String(it.number) === q.trim());
-  }, [q, items]);
+  const results = useMemo(() => (q.trim() ? matchSurat(items, q) : []), [q, items]);
 
   const toggle = (p: 'search' | 'menu') => setPanel((cur) => (cur === p ? null : p));
   const goSubscribe = () => {

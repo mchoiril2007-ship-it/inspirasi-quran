@@ -13,7 +13,7 @@ export default function Home() {
       ayat: s.ayat,
       place: s.place,
       tagline: d.tagline,
-      keys: [s.name, s.meaning, d.tagline, ...s.aliases].join(' '),
+      aliases: s.aliases,
       hasVideo: getVideos(d.slug).length > 0,
       hasAudio: !!getAudio(d.slug),
     };
