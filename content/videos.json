@@ -101,6 +101,26 @@
     "matchedBy": "hashtag"
    }
   ],
+  "al-qalam": [
+   {
+    "id": "J3PVAfLQ7dg",
+    "title": "Saat kita merasa, aku bisa sendiri. Surat Al Qalam",
+    "publishedAt": "2026-06-10T13:21:09Z",
+    "matchedBy": "judul"
+   },
+   {
+    "id": "fWTWErjhl2A",
+    "title": "Surat Al-Qalam: Keserakahan Akar Korupsi dan Kekafiran | Tafsir Religius & Sosial",
+    "publishedAt": "2025-05-16T22:25:17Z",
+    "matchedBy": "judul"
+   },
+   {
+    "id": "cdfm95vEs8s",
+    "title": "Tidak Bersedekah: Bukan Kriminal di Dunia, Tapi Berat di Hadapan Allah!",
+    "publishedAt": "2025-05-16T02:56:10Z",
+    "matchedBy": "deskripsi"
+   }
+  ],
   "fussilat": [
    {
     "id": "y_Xw6F2CylI",
@@ -1411,6 +1431,14 @@
     "matchedBy": "tag"
    }
   ],
+  "al-insan": [
+   {
+    "id": "C9gVgBbPQs0",
+    "title": "Free Will tapi takdir sudah ditentukan",
+    "publishedAt": "2023-01-29T01:04:55Z",
+    "matchedBy": "playlist"
+   }
+  ],
   "ar-rahman": [
    {
     "id": "UtY5F60hjMI",
@@ -1665,6 +1693,20 @@
     "title": "Ketika ada misi yg sulit, apa yg harus kita utamakan untuk diminta ?",
     "publishedAt": "2016-12-13T12:01:27Z",
     "matchedBy": "tag"
+   }
+  ],
+  "al-mulk": [
+   {
+    "id": "ya2G5W4I_vI",
+    "title": "QS AL MULK 23, BERPIKIR INTELEKTUAL MENEMUKAN TUHAN",
+    "publishedAt": "2022-11-29T22:48:58Z",
+    "matchedBy": "judul"
+   },
+   {
+    "id": "LBE23YQaLGk",
+    "title": "KEINDAHAN SURAT AL - MULK (1:30)",
+    "publishedAt": "2019-03-08T07:00:39Z",
+    "matchedBy": "judul"
    }
   ],
   "yunus": [
@@ -2717,6 +2759,14 @@
     "title": "Banyak ibadah, tidak harus menjadi sombong",
     "publishedAt": "2016-12-05T07:51:45Z",
     "matchedBy": "tag"
+   }
+  ],
+  "al-qiyamah": [
+   {
+    "id": "W56ZRZyg1oI",
+    "title": "Quran Inspiration : Al Qiyamah",
+    "publishedAt": "2016-10-07T06:51:58Z",
+    "matchedBy": "judul"
    }
   ],
   "sad": [
