@@ -38,6 +38,7 @@ Balas dalam bahasa Indonesia yang sederhana. Proyek ini TERPISAH dari dashboard 
 Jangan pernah menulis nilai rahasia ke file repo, commit, atau chat.
 
 ## Tugas umum
+- **Persetujuan**: surat baru TIDAK tayang otomatis. Slug harus ditambahkan ke `content/persetujuan.json` (`disetujui`) setelah pemilik setuju. Juz 29 dan surat lain menunggu persetujuan pemilik.
 - Menambah surat: cukup taruh naskah di folder Drive "Inspirasi Quran" dengan nama surat di nama file. Tunggu ≤1 jam.
   Untuk mempercepat: jalankan workflow "Sinkron otomatis" (tab Actions → Run workflow), atau `gh workflow run sync.yml`.
 - Mengubah tampilan: `app/globals.css` (warna brand teal #1A7A6E, oranye #C45000), komponen di `components/`.

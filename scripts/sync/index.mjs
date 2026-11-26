@@ -73,6 +73,7 @@ async function syncNaskah(bridge) {
   log(`${files.length} naskah di Drive`);
   // Kelompokkan per surat; kalau ada dua file untuk surat yang sama, pakai yang terbaru.
   const bySlug = {};
+  const approved = new Set(JSON.parse(fs.readFileSync(path.join(ROOT, 'content', 'persetujuan.json'), 'utf8')).disetujui || []);
   for (const f of files) {
     const base = f.name.replace(/\.[a-z]+$/i, '');
     // Nama biasa ("Al-Mumtahanah"), lalu penulisan menyambung ("AshShaff", "AlKahfi") per kata
@@ -91,6 +92,11 @@ async function syncNaskah(bridge) {
 
   for (const { f, s } of Object.values(bySlug)) {
     const existing = docs[s.slug];
+    // Surat baru hanya tayang setelah disetujui pemilik (content/persetujuan.json → "disetujui").
+    if (!existing && !approved.has(s.slug)) {
+      status.naskah.push({ file: f.name, slug: s.slug, status: 'warning', message: 'Menunggu persetujuan pemilik, belum ditayangkan.' });
+      continue;
+    }
     if (existing?.source?.fileId === f.id && existing?.source?.modifiedTime === f.modifiedTime) {
       status.naskah.push({ file: f.name, slug: s.slug, status: 'ok', message: 'Tidak berubah' });
       continue;
