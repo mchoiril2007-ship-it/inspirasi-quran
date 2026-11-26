@@ -1,5 +1,5 @@
 {
- "_catatan": "Surat baru dari Drive hanya tayang bila slug-nya ada di daftar ini. Surat juz 29 dan lainnya menunggu persetujuan pemilik.",
+ "_catatan": "Persetujuan dimatikan atas permintaan pemilik: semua naskah di folder Drive langsung tayang. Ubah \"wajib\" menjadi true untuk mengaktifkannya lagi.",
  "disetujui": [
   "al-fatihah",
   "al-hasyr",
@@ -15,5 +15,6 @@
   "al-qalam",
   "an-nas",
   "al-ikhlas"
- ]
+ ],
+ "wajib": false
 }
