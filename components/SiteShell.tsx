@@ -19,6 +19,8 @@ export default function SiteShell({ items, children }: { items: NavItem[]; child
   const [q, setQ] = useState('');
   const inputRef = useRef<HTMLInputElement>(null);
   const listRef = useRef<HTMLUListElement>(null);
+  const btnRef = useRef<HTMLButtonElement>(null);
+  const [anchorRight, setAnchorRight] = useState(8);
   const activeSlug = pathname.startsWith('/surat/') ? pathname.split('/')[2] : null;
 
   // Tutup panel setiap pindah halaman
@@ -28,12 +30,18 @@ export default function SiteShell({ items, children }: { items: NavItem[]; child
   useEffect(() => {
     if (!panel) return;
     const prev = document.body.style.overflow;
-    document.body.style.overflow = 'hidden';
+    if (panel === 'menu') document.body.style.overflow = 'hidden';
     const onKey = (e: KeyboardEvent) => e.key === 'Escape' && setPanel(null);
+    const onResize = () => {
+      const r = btnRef.current?.getBoundingClientRect();
+      if (r) setAnchorRight(Math.max(8, Math.round(window.innerWidth - r.right)));
+    };
     window.addEventListener('keydown', onKey);
+    window.addEventListener('resize', onResize);
     return () => {
       document.body.style.overflow = prev;
       window.removeEventListener('keydown', onKey);
+      window.removeEventListener('resize', onResize);
     };
   }, [panel]);
 
@@ -53,7 +61,13 @@ export default function SiteShell({ items, children }: { items: NavItem[]; child
 
   const results = useMemo(() => matchSurat(items, q), [q, items]);
 
-  const toggle = (p: 'surat' | 'menu') => setPanel((cur) => (cur === p ? null : p));
+  const toggle = (p: 'surat' | 'menu') => {
+    if (p === 'surat') {
+      const r = btnRef.current?.getBoundingClientRect();
+      if (r) setAnchorRight(Math.max(8, Math.round(window.innerWidth - r.right)));
+    }
+    setPanel((cur) => (cur === p ? null : p));
+  };
   const goSubscribe = () => {
     setPanel(null);
     // Tunggu panel tertutup (kunci gulir dilepas), lalu gulir ke formulir langganan
@@ -74,7 +88,7 @@ export default function SiteShell({ items, children }: { items: NavItem[]; child
               </span>
             </Link>
             <div className="header-actions">
-              <button className="surat-btn" onClick={() => toggle('surat')} aria-expanded={panel === 'surat'} aria-controls="panel-surat" aria-label={panel === 'surat' ? 'Tutup daftar surat' : 'Buka daftar surat'}>
+              <button ref={btnRef} className="surat-btn" onClick={() => toggle('surat')} aria-expanded={panel === 'surat'} aria-controls="panel-surat" aria-label={panel === 'surat' ? 'Tutup daftar surat' : 'Buka daftar surat'}>
                 Surat
                 <svg className={`surat-chev${panel === 'surat' ? ' up' : ''}`} width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                   <path d="M5 9l7 7 7-7" />
@@ -92,9 +106,8 @@ export default function SiteShell({ items, children }: { items: NavItem[]; child
         </header>
 
         {panel === 'surat' ? (
-          <div id="panel-surat" className="surat-panel" role="dialog" aria-label="Daftar surat">
+          <div id="panel-surat" className="surat-panel" role="dialog" aria-label="Daftar surat" style={{ right: anchorRight }}>
             <div className="sp-search" role="search">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" /><path d="m20 20-4.6-4.6" /></svg>
               <label htmlFor="cari-surat" className="sr-only">
                 Cari surat
               </label>
@@ -102,7 +115,7 @@ export default function SiteShell({ items, children }: { items: NavItem[]; child
                 ref={inputRef}
                 id="cari-surat"
                 type="search"
-                placeholder="Cari surat, misalnya Yasin atau 36"
+                placeholder="Cari surat atau nomor"
                 value={q}
                 onChange={(e) => setQ(e.target.value)}
                 autoComplete="off"
@@ -115,13 +128,7 @@ export default function SiteShell({ items, children }: { items: NavItem[]; child
                   <li key={it.slug}>
                     <Link href={`/surat/${it.slug}`} className="sp-row" aria-current={it.slug === activeSlug ? 'page' : undefined}>
                       <span className="sp-num">{it.number}</span>
-                      <span className="sp-main">
-                        <span className="sp-name">{nb(it.name)}</span>
-                        <span className="sp-theme">{it.tagline || it.meaning}</span>
-                      </span>
-                      <span className="sp-ar" lang="ar">
-                        {it.arabic}
-                      </span>
+                      <span className="sp-name">{nb(it.name)}</span>
                     </Link>
                   </li>
                 ))}
@@ -155,7 +162,7 @@ export default function SiteShell({ items, children }: { items: NavItem[]; child
             </div>
           </nav>
         ) : null}
-        {panel ? <div className={`drop-shade${panel === 'surat' ? ' light' : ''}`} onClick={() => setPanel(null)} aria-hidden="true" /> : null}
+        {panel ? <div className={`drop-shade${panel === 'surat' ? ' clear' : ''}`} onClick={() => setPanel(null)} aria-hidden="true" /> : null}
 
         <div className="shell-main">{children}</div>
       </div>
