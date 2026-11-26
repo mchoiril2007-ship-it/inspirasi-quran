@@ -58,6 +58,15 @@ export default function Article({ blocks }: { blocks: Block[] }) {
         );
         break;
       case 'h3':
+        // Baris nama penulis di akhir naskah ("M. Choiril Alam • @quran.insp") tampil sebagai tanda tangan, bukan judul
+        if (/@[\w.]+/.test(b.text) && b.text.length < 60) {
+          out.push(
+            <p key={k} data-b={k} className="signature">
+              {b.text}
+            </p>,
+          );
+          break;
+        }
         out.push(
           <h3 key={k} data-b={k} id={b.id} className={/^Ayat\s+\d/i.test(b.text) ? 'ayat-h' : undefined}>
             {b.text}
