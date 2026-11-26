@@ -1,6 +1,6 @@
 'use client';
-// Header tipis ala apple.com: logo ق (ke beranda) di kiri, ikon cari & menu di kanan.
-// Pencarian dan menu muncul sebagai panel putih di bawah header.
+// Header tipis ala apple.com: logo Q (ke beranda) di kiri; "Surat ⌄" dan ikon menu di kanan.
+// "Surat" membuka panel putih berisi pencarian + daftar surat. Menu berisi Beranda, Bagikan, Langganan.
 import { useEffect, useMemo, useRef, useState, type ReactNode } from 'react';
 import Link from 'next/link';
 import { usePathname, useRouter } from 'next/navigation';
@@ -8,14 +8,17 @@ import { AudioProvider } from './AudioContext';
 import { ShareButton } from './Share';
 import { matchSurat } from '@/lib/search';
 
-export type NavItem = { slug: string; number: number; name: string; arabic: string; meaning?: string; aliases?: string[] };
+export type NavItem = { slug: string; number: number; name: string; arabic: string; meaning?: string; aliases?: string[]; tagline?: string };
+
+const nb = (s: string) => s.replace(/-/g, '‑');
 
 export default function SiteShell({ items, children }: { items: NavItem[]; children: ReactNode }) {
   const pathname = usePathname();
   const router = useRouter();
-  const [panel, setPanel] = useState<null | 'search' | 'menu'>(null);
+  const [panel, setPanel] = useState<null | 'surat' | 'menu'>(null);
   const [q, setQ] = useState('');
   const inputRef = useRef<HTMLInputElement>(null);
+  const listRef = useRef<HTMLUListElement>(null);
   const activeSlug = pathname.startsWith('/surat/') ? pathname.split('/')[2] : null;
 
   // Tutup panel setiap pindah halaman
@@ -28,16 +31,29 @@ export default function SiteShell({ items, children }: { items: NavItem[]; child
     document.body.style.overflow = 'hidden';
     const onKey = (e: KeyboardEvent) => e.key === 'Escape' && setPanel(null);
     window.addEventListener('keydown', onKey);
-    if (panel === 'search') setTimeout(() => inputRef.current?.focus(), 60);
     return () => {
       document.body.style.overflow = prev;
       window.removeEventListener('keydown', onKey);
     };
   }, [panel]);
 
-  const results = useMemo(() => (q.trim() ? matchSurat(items, q) : []), [q, items]);
+  // Panel Surat: fokus ke kolom cari hanya di perangkat dengan mouse (di HP keyboard akan menutupi daftar);
+  // gulir daftar ke surat yang sedang dibuka; kosongkan pencarian saat ditutup.
+  useEffect(() => {
+    if (panel !== 'surat') {
+      setQ('');
+      return;
+    }
+    const t = setTimeout(() => {
+      if (window.matchMedia('(hover: hover) and (pointer: fine)').matches) inputRef.current?.focus();
+      listRef.current?.querySelector('[aria-current="page"]')?.scrollIntoView({ block: 'nearest' });
+    }, 60);
+    return () => clearTimeout(t);
+  }, [panel]);
 
-  const toggle = (p: 'search' | 'menu') => setPanel((cur) => (cur === p ? null : p));
+  const results = useMemo(() => matchSurat(items, q), [q, items]);
+
+  const toggle = (p: 'surat' | 'menu') => setPanel((cur) => (cur === p ? null : p));
   const goSubscribe = () => {
     setPanel(null);
     // Tunggu panel tertutup (kunci gulir dilepas), lalu gulir ke formulir langganan
@@ -58,12 +74,11 @@ export default function SiteShell({ items, children }: { items: NavItem[]; child
               </span>
             </Link>
             <div className="header-actions">
-              <button className="icon-btn" onClick={() => toggle('search')} aria-label={panel === 'search' ? 'Tutup pencarian' : 'Cari surat'} aria-expanded={panel === 'search'}>
-                {panel === 'search' ? (
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" /></svg>
-                ) : (
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" /><path d="m20 20-4.6-4.6" /></svg>
-                )}
+              <button className="surat-btn" onClick={() => toggle('surat')} aria-expanded={panel === 'surat'} aria-controls="panel-surat" aria-label={panel === 'surat' ? 'Tutup daftar surat' : 'Buka daftar surat'}>
+                Surat
+                <svg className={`surat-chev${panel === 'surat' ? ' up' : ''}`} width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                  <path d="M5 9l7 7 7-7" />
+                </svg>
               </button>
               <button className="icon-btn" onClick={() => toggle('menu')} aria-label={panel === 'menu' ? 'Tutup menu' : 'Buka menu'} aria-expanded={panel === 'menu'}>
                 {panel === 'menu' ? (
@@ -76,36 +91,44 @@ export default function SiteShell({ items, children }: { items: NavItem[]; child
           </div>
         </header>
 
-        {panel === 'search' ? (
-          <div className="drop" role="dialog" aria-label="Cari surat">
-            <div className="drop-inner">
-              <div className="drop-search">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" /><path d="m20 20-4.6-4.6" /></svg>
-                <label htmlFor="cari-surat" className="sr-only">
-                  Cari surat
-                </label>
-                <input ref={inputRef} id="cari-surat" type="search" placeholder="Cari surat" value={q} onChange={(e) => setQ(e.target.value)} autoComplete="off" onKeyDown={(e) => e.key === 'Enter' && results[0] && router.push(`/surat/${results[0].slug}`)} />
-              </div>
-              {q.trim() ? (
-                results.length ? (
-                  <ul className="drop-list">
-                    {results.map((it) => (
-                      <li key={it.slug}>
-                        <Link href={`/surat/${it.slug}`}>
-                          <span className="drop-num">{it.number}</span>
-                          <span className="drop-name">{it.name.replace(/-/g, '‑')}</span>
-                          <span className="drop-sub">{it.meaning}</span>
-                        </Link>
-                      </li>
-                    ))}
-                  </ul>
-                ) : (
-                  <p className="drop-empty">Surat ini belum tersedia.</p>
-                )
-              ) : (
-                <p className="drop-hint">Ketik nama surat atau artinya, misalnya “Al-Jumu’ah” atau “barisan”.</p>
-              )}
+        {panel === 'surat' ? (
+          <div id="panel-surat" className="surat-panel" role="dialog" aria-label="Daftar surat">
+            <div className="sp-search" role="search">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" /><path d="m20 20-4.6-4.6" /></svg>
+              <label htmlFor="cari-surat" className="sr-only">
+                Cari surat
+              </label>
+              <input
+                ref={inputRef}
+                id="cari-surat"
+                type="search"
+                placeholder="Cari surat, misalnya Yasin atau 36"
+                value={q}
+                onChange={(e) => setQ(e.target.value)}
+                autoComplete="off"
+                onKeyDown={(e) => e.key === 'Enter' && results[0] && router.push(`/surat/${results[0].slug}`)}
+              />
             </div>
+            {results.length ? (
+              <ul className="sp-list" ref={listRef}>
+                {results.map((it) => (
+                  <li key={it.slug}>
+                    <Link href={`/surat/${it.slug}`} className="sp-row" aria-current={it.slug === activeSlug ? 'page' : undefined}>
+                      <span className="sp-num">{it.number}</span>
+                      <span className="sp-main">
+                        <span className="sp-name">{nb(it.name)}</span>
+                        <span className="sp-theme">{it.tagline || it.meaning}</span>
+                      </span>
+                      <span className="sp-ar" lang="ar">
+                        {it.arabic}
+                      </span>
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            ) : (
+              <p className="sp-empty">Surat ini belum tersedia.</p>
+            )}
           </div>
         ) : null}
 
@@ -118,14 +141,6 @@ export default function SiteShell({ items, children }: { items: NavItem[]; child
                     Beranda
                   </Link>
                 </li>
-                {items.map((it) => (
-                  <li key={it.slug}>
-                    <Link href={`/surat/${it.slug}`} aria-current={it.slug === activeSlug ? 'page' : undefined}>
-                      <span className="drop-num">{it.number}</span>
-                      <span className="drop-name">{it.name.replace(/-/g, '‑')}</span>
-                    </Link>
-                  </li>
-                ))}
                 <li className="menu-share">
                   <ShareButton className="menu-big" label="Bagikan Quran Inspiration" data={{ title: 'Quran Inspiration', text: 'Untuk hati yang rindu memahami', path: '/' }}>
                     Bagikan
@@ -140,7 +155,7 @@ export default function SiteShell({ items, children }: { items: NavItem[]; child
             </div>
           </nav>
         ) : null}
-        {panel ? <div className="drop-shade" onClick={() => setPanel(null)} aria-hidden="true" /> : null}
+        {panel ? <div className={`drop-shade${panel === 'surat' ? ' light' : ''}`} onClick={() => setPanel(null)} aria-hidden="true" /> : null}
 
         <div className="shell-main">{children}</div>
       </div>
