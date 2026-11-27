@@ -20,7 +20,7 @@
   },
   {
    "type": "p",
-   "text": "Seandainya ada yang bertanya, \"Tadi di rakaat kedua, kamu bilang apa kepada Allah?\", banyak dari kita akan diam. Hafalannya ada. Yang tidak ada adalah kita sendiri, karena saat itu pikiran kita sedang berada di tempat lain."
+   "text": "Seandainya setelah salam kita ditanya, \"Tadi di rakaat kedua, apa yang kita katakan kepada Allah?\", banyak dari kita akan diam. Hafalannya ada. Yang tidak ada adalah kita sendiri, karena saat itu pikiran kita sedang berada di tempat lain."
   },
   {
    "type": "p",
@@ -48,7 +48,7 @@
   },
   {
    "type": "p",
-   "text": "Banyak surat dalam Al-Qur'an turun karena peristiwa tertentu: ada pertanyaan dari para sahabat, ada kejadian yang perlu dijawab. Al-Fatihah tidak punya riwayat kuat tentang peristiwa seperti itu. Kebanyakan ulama berpendapat surat ini turun di Makkah, di masa awal dakwah, ketika jumlah orang yang beriman masih sangat sedikit."
+   "text": "Banyak surat dalam Al-Qur'an turun karena peristiwa tertentu: ada pertanyaan dari para sahabat, ada kejadian yang perlu dijawab. Al-Fatihah tidak punya cerita turun seperti itu. Surat ini turun di Makkah, di masa awal dakwah, ketika jumlah orang yang beriman masih sangat sedikit."
   },
   {
    "type": "p",
@@ -79,8 +79,8 @@
   },
   {
    "type": "h3",
-   "text": "Hadits yang menjadi pegangan naskah ini",
-   "id": "hadits-yang-menjadi-pegangan-naskah-ini"
+   "text": "Percakapan yang Dijawab",
+   "id": "percakapan-yang-dijawab"
   },
   {
    "type": "p",
@@ -92,7 +92,7 @@
   },
   {
    "type": "p",
-   "text": "Ada satu hal teknis yang perlu diketahui sejak awal. Mushaf yang umum dipakai di Indonesia menghitung kalimat \"Dengan nama Allah Yang Maha Pengasih, Maha Penyayang\" (disebut basmalah) sebagai ayat pertama Al-Fatihah, mengikuti pendapat Imam Syafi'i. Sebagian ulama lain tidak menghitungnya sebagai ayat Al-Fatihah, lalu membagi ayat terakhir menjadi dua, sehingga jumlahnya tetap tujuh. Perbedaan ini sudah lama dibahas para ulama dan tidak mengubah isi surat. Naskah ini mengikuti penomoran mushaf Indonesia."
+   "text": "Satu catatan kecil soal nomor ayat. Mushaf yang umum dipakai di Indonesia menghitung kalimat \"Dengan nama Allah Yang Maha Pengasih, Maha Penyayang\", yang biasa disebut basmalah, sebagai ayat pertama Al-Fatihah. Naskah ini mengikuti nomor ayat di mushaf tersebut, jadi nomornya sama dengan yang kita lihat ketika membuka Al-Qur'an di rumah."
   },
   {
    "type": "h3",
@@ -109,7 +109,7 @@
   },
   {
    "type": "p",
-   "text": "Al-Fatihah masuk ke tengah keramaian itu dengan satu kalimat di pusatnya: \"Hanya kepada Engkau.\" Dan kalimat itu kita ulang 17 kali sehari, karena godaan untuk bergantung pada hal lain juga datang berkali-kali dalam sehari."
+   "text": "Al-Fatihah masuk ke tengah keramaian itu dengan satu kalimat di pusatnya: \"Hanya kepada Engkau.\" Dan kalimat itu kita ulang di setiap rakaat, karena godaan untuk bergantung pada hal lain juga datang berkali-kali dalam sehari."
   },
   {
    "type": "h2",
@@ -118,75 +118,48 @@
    "id": "peta-surat"
   },
   {
-   "type": "p",
-   "text": "Sebelum membedah ayat demi ayat, kita lihat dulu isi ketujuh ayatnya dalam satu kalimat."
-  },
-  {
-   "type": "table",
-   "head": [
-    "Ayat",
-    "Isi dalam satu kalimat"
-   ],
-   "rows": [
-    [
-     "1",
-     "Kita memulai dengan nama Allah, Yang Maha Pengasih dan Maha Penyayang."
-    ],
-    [
-     "2",
-     "Semua pujian milik Allah, Tuhan yang memelihara seluruh alam."
-    ],
-    [
-     "3",
-     "Kasih sayang Allah disebut sekali lagi, tepat setelah kekuasaan-Nya atas seluruh alam."
-    ],
-    [
-     "4",
-     "Allah adalah Pemilik hari pembalasan, ujung perjalanan setiap manusia."
-    ],
-    [
-     "5",
-     "Titik balik: hanya Engkau yang kami sembah, hanya Engkau tempat kami minta tolong."
-    ],
-    [
-     "6",
-     "Satu-satunya permintaan di surat ini: tunjukilah kami jalan yang lurus."
-    ],
-    [
-     "7",
-     "Jalan itu adalah jalan orang-orang yang diberi nikmat, bukan jalan yang dimurkai dan bukan jalan yang sesat."
-    ]
-   ]
-  },
-  {
    "type": "image",
    "alt": "Peta struktur Surat Al-Fatihah",
    "width": 600,
-   "height": 484,
-   "src": "/img/surat/al-fatihah/gambar-1-c2240fdfc9.png"
+   "height": 470,
+   "src": "/img/surat/al-fatihah/gambar-1-e9de1b042d.png"
   },
   {
    "type": "p",
-   "text": "Al-Fatihah tersusun seperti cincin. Bagian awal dan bagian akhirnya saling berpasangan, lalu di tengahnya ada satu ayat yang menjadi poros. Cincin itu bisa dibaca dalam tiga bagian."
+   "text": "Gambar ini dibaca dari atas ke bawah."
   },
   {
    "type": "li",
    "n": 1,
-   "text": "Bagian awal dan akhir: ayat 1 sampai 3 dengan ayat 7. Di awal, kasih sayang Allah disebut dua kali sebagai sifat-Nya, yaitu Maha Pengasih dan Maha Penyayang. Di akhir, kasih sayang itu muncul lagi, kali ini sebagai nikmat yang sudah sampai kepada manusia: jalan orang-orang yang Engkau beri nikmat. Surat ini dibuka dengan sumber kasih sayang, dan ditutup dengan orang-orang yang menerimanya."
+   "text": "Al-Fatihah terbagi menjadi tiga bagian, seperti yang ditandai kurung di sisi kiri: mengenal, pusat, dan meminta."
   },
   {
    "type": "li",
    "n": 2,
-   "text": "Bagian tengah luar: ayat 4 dengan ayat 6. Ayat 4 menyebut tujuan akhir setiap orang, yaitu hari pembalasan. Ayat 6 meminta jalan menuju ke sana, yaitu jalan yang lurus. Yang satu tujuan, yang lain rutenya. Setelah kita sadar ada garis akhir, pertanyaan berikutnya tentu saja lewat jalan mana kita sampai ke sana dengan selamat."
+   "text": "Ayat 1 sampai 4 seluruhnya tentang Allah: siapa Dia dan bagaimana sifat-Nya. Ayat 5 berdiri di tengah, satu-satunya ayat yang berbicara tentang Allah dan tentang kita sekaligus."
   },
   {
    "type": "li",
    "n": 3,
-   "text": "Pusat: ayat 5. Di tengah cincin ada dua kalimat yang sengaja dibuat sejajar: hanya Engkau yang kami sembah, dan hanya Engkau tempat kami minta tolong. Semua ayat di atasnya adalah alasan untuk mengucapkan kalimat ini, dan semua ayat di bawahnya adalah akibat dari mengucapkannya."
+   "text": "Ayat 6 dan 7 berisi permintaan kita. Pembagian ini sama dengan pembagian dalam hadits qudsi tadi: bagian untuk Allah, bagian antara Allah dan hamba, lalu bagian untuk hamba."
   },
   {
    "type": "p",
-   "text": "Kalau dibaca dari atas ke bawah, alurnya bergerak dari mengenal Allah, lalu berkomitmen kepada-Nya, lalu meminta. Pembagian yang sama juga muncul di hadits qudsi tadi: ayat-ayat awal disebut bagian untuk Allah, ayat 5 disebut \"antara Aku dan hamba-Ku\", dan ayat-ayat akhir disebut bagian untuk hamba."
+   "text": "Garis lengkung di sisi kanan menunjukkan ayat-ayat yang bisa kita baca berpasangan."
+  },
+  {
+   "type": "li",
+   "n": 4,
+   "text": "Garis luar menghubungkan ayat 1 sampai 3 dengan ayat 7: di awal kasih sayang Allah disebut sebagai sifat-Nya, di akhir kasih sayang itu muncul sebagai nikmat yang sudah sampai kepada manusia."
+  },
+  {
+   "type": "li",
+   "n": 5,
+   "text": "Garis dalam menghubungkan ayat 4 dengan ayat 6: yang satu menyebut tujuan akhir, yaitu hari pembalasan, dan yang lain meminta jalan menuju ke sana."
+  },
+  {
+   "type": "p",
+   "text": "Kotak kuning di tengah adalah pusatnya, ayat 5, dengan dua kalimat yang dibuat sejajar: hanya Engkau yang kami sembah, dan hanya Engkau tempat kami minta tolong. Semua ayat di atasnya menjadi alasan untuk mengucapkan kalimat ini, dan semua ayat di bawahnya adalah permintaan yang lahir setelah kita mengucapkannya."
   },
   {
    "type": "h3",
@@ -224,7 +197,7 @@
   },
   {
    "type": "p",
-   "text": "Kita bedah ayat demi ayat. Ayat 5 sebagai pusat surat mendapat pembahasan paling panjang. Ayat 3 dibahas lebih singkat, karena dua nama yang ada di dalamnya sudah kita bahas di ayat 1."
+   "text": "Kita bedah ayat demi ayat. Ayat 5 sebagai pusat surat mendapat pembahasan paling panjang. Ayat 3 dibahas lebih singkat, karena dua nama di dalamnya sudah kita bahas di ayat 1."
   },
   {
    "type": "h3",
@@ -256,13 +229,13 @@
    "type": "keyword",
    "term": "• Yang Maha Pengasih",
    "arabic": "الرَّحْمٰنِ",
-   "text": "Kasih sayang yang sangat luas, meliputi semua makhluk, baik yang taat maupun yang tidak. Udara, rezeki, dan kesempatan hidup diberikan kepada semua orang."
+   "text": "Kasih sayang yang sangat luas dan terasa sekarang juga, meliputi semua makhluk, baik yang taat maupun yang tidak. Udara, rezeki, dan kesempatan hidup diberikan kepada semua orang. Nama ini hanya dipakai untuk Allah, tidak untuk siapa pun selain Dia."
   },
   {
    "type": "keyword",
    "term": "• Maha Penyayang",
    "arabic": "الرَّحِيْمِ",
-   "text": "Kasih sayang yang terus-menerus dan tidak putus. Para ulama menjelaskan bahwa kasih sayang ini secara khusus tertuju kepada orang-orang beriman, dan puncaknya di akhirat. Kedua nama ini berasal dari akar kata yang sama dengan rahim, tempat bayi dilindungi dan diberi makan sebelum ia bisa membalas apa pun."
+   "text": "Kasih sayang yang tetap dan tidak putus. Para ulama menjelaskan bahwa kasih sayang ini secara khusus tertuju kepada orang-orang beriman, dan puncaknya di akhirat. Kedua nama ini berasal dari kata yang sama dengan rahim, tempat bayi dilindungi dan diberi makan sebelum ia bisa membalas apa pun."
   },
   {
    "type": "label",
@@ -282,23 +255,20 @@
   },
   {
    "type": "p",
-   "text": "Lembur semalam itu atas nama siapa? Atas nama target? Atas nama gengsi? Atas nama takut dinilai gagal? Sadar atau tidak, kita selalu memulai sesuatu atas nama sesuatu, dan nama yang kita pakai di awal menentukan seberapa hancur kita ketika hasilnya meleset."
+   "text": "Banyak dari kita bekerja keras atas nama target, gengsi, atau takut dinilai gagal. Lembur sampai larut, presentasi disiapkan berhari-hari. Lalu hasilnya meleset, dan yang terdengar di kepala bukan lagi \"proyeknya gagal\", tapi \"aku yang gagal\". Nama yang kita pakai di awal ternyata menentukan seberapa hancur kita di akhir."
   },
   {
    "type": "p",
-   "text": "Kalau kita mulai atas nama target, saat target meleset, yang gagal terasa bukan cuma pekerjaannya. Kita merasa diri kitalah yang gagal. Semalaman tidak tidur, presentasi sudah disiapkan berhari-hari, lalu klien menolak, dan yang terdengar di kepala adalah \"aku memang tidak becus\"."
+   "text": "Ayat ini memberi nama yang lain untuk memulai. Kalau kita mulai atas nama target, saat target meleset kita merasa diri kita yang gagal. Kalau kita mulai atas nama Allah, saat target meleset yang gagal cuma hasilnya. Kita sendiri tidak ikut gagal, karena yang menilai kita bukan angka di laporan, melainkan Allah Yang Maha Penyayang, dan Dia sudah mencatat setiap usaha yang jujur. Kecewa tetap ada, perbaikan tetap perlu dilakukan, tapi kekecewaan itu tidak lagi menghancurkan harga diri."
+  },
+  {
+   "type": "h3",
+   "text": "Titik Terang",
+   "id": "titik-terang"
   },
   {
    "type": "p",
-   "text": "Kalau kita mulai atas nama Allah, saat target meleset, yang gagal cuma hasilnya. Kita sendiri tidak ikut gagal, karena yang menilai kita bukan angka di laporan, melainkan Allah Yang Maha Penyayang, dan Dia sudah mencatat setiap usaha yang jujur. Kecewa tetap ada, dan perbaikan tetap perlu dilakukan, tapi kekecewaan itu tidak lagi menghancurkan harga diri."
-  },
-  {
-   "type": "label",
-   "text": "Titik Terang"
-  },
-  {
-   "type": "p",
-   "text": "Dalam hadits qudsi tentang Al-Fatihah, jawaban Allah dimulai dari ayat kedua. Basmalah sendiri sudah membawa jawabannya: begitu kita memulai dengan nama Allah, pekerjaan kecil kita disandarkan kepada Dzat yang kasih sayang-Nya luas dan tidak putus."
+   "text": "Dalam hadits qudsi tentang Al-Fatihah, jawaban Allah dimulai dari ayat kedua. Basmalah sendiri sudah membawa jawabannya: begitu kita memulai dengan nama Allah, pekerjaan kecil kita diserahkan kepada Allah yang kasih sayang-Nya luas dan tidak putus."
   },
   {
    "type": "p",
@@ -348,7 +318,7 @@
    "type": "keyword",
    "term": "• Segala puji",
    "arabic": "اَلْحَمْدُ",
-   "text": "Pujian yang lahir dari pengakuan dan rasa cinta. Terima kasih biasanya muncul setelah kita diberi sesuatu, sedangkan pujian ini diberikan karena Allah memang layak dipuji, saat kita sedang diberi maupun saat sedang diuji. Kata \"segala\" menunjukkan bahwa semua jenis pujian, dari siapa pun dan untuk apa pun, pada akhirnya milik Allah."
+   "text": "Pujian yang lahir dari pengakuan dan rasa cinta, sekaligus berisi terima kasih. Terima kasih biasanya muncul setelah kita diberi sesuatu, sedangkan pujian ini juga diberikan karena Allah memang layak dipuji, saat kita sedang diberi maupun saat sedang diuji. Kata \"segala\" menunjukkan bahwa semua jenis pujian, dari siapa pun dan untuk apa pun, pada akhirnya milik Allah."
   },
   {
    "type": "keyword",
@@ -380,15 +350,16 @@
   },
   {
    "type": "p",
-   "text": "Kita hidup di masa yang lapar pujian. Ada tombol suka, ada kolom komentar, ada bintang lima di aplikasi. Kita mengunggah foto masakan, hasil kerja, atau momen bersama anak, lalu sesekali membuka HP untuk melihat siapa saja yang sudah memberi tanda suka. Diam-diam, harga diri ikut naik dan turun mengikuti angkanya."
+   "text": "Kita hidup di masa yang lapar pujian. Kita mengunggah hasil kerja, masakan, atau momen bersama keluarga, lalu berkali-kali membuka HP untuk melihat berapa yang sudah memberi tanda suka. Diam-diam, harga diri ikut naik dan turun mengikuti angkanya."
   },
   {
    "type": "p",
-   "text": "Ayat ini memberi cara pandang yang menenangkan sekaligus menyadarkan. Ketika orang memuji hasil kerja kita, yang sebenarnya dipuji adalah kemampuan yang Allah titipkan dan kesempatan yang Allah bukakan. Kita hanya pengantar yang membawa pujian itu ke alamat aslinya. Kedengarannya mengecilkan diri, tapi efeknya membebaskan: kalau pujian bukan milik kita, kita tidak perlu gelisah ketika tidak ada yang memuji, dan tidak perlu besar kepala ketika semua orang memuji."
+   "text": "Ayat ini memberi cara pandang yang menenangkan sekaligus menyadarkan. Ketika orang memuji hasil kerja kita, yang sebenarnya dipuji adalah kemampuan yang Allah titipkan dan kesempatan yang Allah bukakan. Kita hanya pengantar yang membawa pujian itu ke alamat aslinya. Kalau pujian bukan milik kita, kita tidak perlu gelisah ketika tidak ada yang memuji, dan tidak perlu besar kepala ketika semua orang memuji."
   },
   {
-   "type": "label",
-   "text": "Titik Terang"
+   "type": "h3",
+   "text": "Titik Terang",
+   "id": "titik-terang-2"
   },
   {
    "type": "callout",
@@ -476,7 +447,7 @@
    "type": "keyword",
    "term": "• Pemilik",
    "arabic": "مٰلِكِ",
-   "text": "Kata ini punya dua cara baca yang sama-sama sah, satu berarti Raja dan satu berarti Pemilik. Keduanya saling melengkapi: Allah adalah Raja yang memerintah sekaligus Pemilik yang menguasai sepenuhnya."
+   "text": "Kata ini punya dua cara baca yang sama-sama sah, ada yang membacanya pendek dan ada yang panjang. Satu berarti Raja dan satu berarti Pemilik. Keduanya saling melengkapi: Allah adalah Raja yang memerintah sekaligus Pemilik yang menguasai sepenuhnya."
   },
   {
    "type": "keyword",
@@ -490,7 +461,7 @@
   },
   {
    "type": "p",
-   "text": "Setelah dua kali disebut Maha Pengasih dan Maha Penyayang, ayat ini mengingatkan bahwa ada hari perhitungan. Kasih sayang Allah nyata, dan pertanggungjawaban juga nyata. Para ulama menggambarkan orang beriman seperti burung dengan dua sayap: harapan dan rasa takut. Ayat 1 sampai 3 mengisi sayap harapan, ayat 4 mengisi sayap rasa takut. Burung dengan satu sayap hanya berputar-putar di tempat."
+   "text": "Setelah dua kali disebut Maha Pengasih dan Maha Penyayang, ayat ini mengingatkan bahwa ada hari perhitungan. Kasih sayang Allah nyata, dan pertanggungjawaban juga nyata. Orang beriman bisa digambarkan seperti burung dengan dua sayap: harapan dan rasa takut. Ayat 1 sampai 3 mengisi sayap harapan, ayat 4 mengisi sayap rasa takut. Burung dengan satu sayap hanya berputar-putar di tempat."
   },
   {
    "type": "p",
@@ -506,15 +477,16 @@
   },
   {
    "type": "p",
-   "text": "Banyak keluarga menyimpan cerita yang tidak pernah selesai. Seorang kakak mengambil bagian yang bukan haknya ketika orang tua wafat. Hubungan saudara putus, adik-adiknya menanggung rugi, dan bertahun-tahun kemudian si kakak tetap hidup tenang, seperti tidak pernah terjadi apa-apa. Yang dirugikan hanya bisa menahan sesak setiap kali lebaran tiba."
+   "text": "Banyak dari kita menyimpan luka karena diperlakukan tidak adil. Hak kita diambil, nama baik kita dirusak, atau orang yang menyakiti kita tidak pernah minta maaf, dan hidupnya tetap tenang seperti tidak terjadi apa-apa. Kita yang dirugikan justru terus menahan sesak."
   },
   {
    "type": "p",
-   "text": "Ayat ini tidak menjelaskan kenapa dunia sering terasa tidak adil. Tapi ayat ini memastikan sesuatu yang lebih penting: ceritanya belum selesai. Dunia bukan episode terakhir. Ada hari ketika semua catatan dibuka, dan Pemilik hari itu tidak bisa dibujuk, tidak bisa ditipu, dan tidak pernah lupa. Bagi yang pernah dirugikan, ayat ini menenangkan. Bagi kita yang kadang tergoda mengambil jalan pintas karena merasa tidak ada yang tahu, ayat ini mengingatkan."
+   "text": "Ayat ini tidak menjelaskan kenapa dunia sering terasa tidak adil. Tapi ayat ini memastikan sesuatu yang lebih penting: ceritanya belum selesai. Ada hari ketika semua catatan dibuka, dan Pemilik hari itu tidak bisa dibujuk, tidak bisa ditipu, dan tidak pernah lupa. Bagi yang pernah dirugikan, ayat ini menenangkan. Bagi kita yang kadang tergoda mengambil jalan pintas karena merasa tidak ada yang tahu, ayat ini mengingatkan."
   },
   {
-   "type": "label",
-   "text": "Titik Terang"
+   "type": "h3",
+   "text": "Titik Terang",
+   "id": "titik-terang-3"
   },
   {
    "type": "callout",
@@ -594,23 +566,19 @@
   },
   {
    "type": "p",
-   "text": "Ayat ini pusat surat, baik dari posisinya, dari susunan cincinnya, maupun menurut hadits qudsi. Ada tiga hal yang terjadi bersamaan di dalamnya."
+   "text": "Ayat ini pusat surat, dan ada tiga hal yang terjadi bersamaan di dalamnya."
   },
   {
    "type": "p",
-   "text": "Pertama, cara bicara berubah. Dari ayat 2 sampai 4, kita membicarakan Allah sebagai \"Dia\". Tiba-tiba di ayat 5 kita berkata \"Engkau\". Kita berhenti menjadi orang yang membicarakan Allah dari jauh, dan menjadi orang yang bicara langsung kepada-Nya. Ini manusiawi: semakin kita mengenal seseorang, semakin kita berani menatapnya dan bicara langsung."
+   "text": "Pertama, cara bicara berubah. Dari ayat 2 sampai 4, kita membicarakan Allah sebagai \"Dia\". Di ayat 5 kita berkata \"Engkau\". Kita berhenti membicarakan Allah dari jauh, lalu bicara langsung kepada-Nya, seperti orang yang makin kenal lalu makin berani menyapa."
   },
   {
    "type": "p",
-   "text": "Kedua, dua kalimat disejajarkan. Kalau hanya ingin singkat, cukup satu kalimat: \"Hanya kepada-Mu kami menyembah dan minta tolong.\" Tapi kata \"hanya kepada Engkau\" diulang dua kali, sehingga kedua kalimat punya bobot yang sama dan tidak bisa dipisahkan."
+   "text": "Kedua, dua kalimat disejajarkan. \"Hanya kepada Engkau\" diulang dua kali, sehingga menyembah dan minta tolong punya bobot yang sama. Menyembah disebut dulu karena itu tujuannya, minta tolong menyusul karena itu jalannya. Untuk menyembah pun kita butuh ditolong: bangun subuh, fokus dalam shalat, dan tetap konsisten, semuanya butuh pertolongan Allah."
   },
   {
    "type": "p",
-   "text": "Ketiga, kita berkata \"kami\". Bahkan ketika shalat sendirian di kamar jam dua pagi, kita tetap berkata \"kami\". Kita tidak pernah menghadap Allah sebagai orang yang terpisah dari saudara-saudara kita."
-  },
-  {
-   "type": "p",
-   "text": "Urutannya juga bermakna. Menyembah disebut lebih dulu karena itulah tujuan, dan minta tolong disebut sesudahnya karena itulah jalannya. Tapi kalimat kedua juga menopang kalimat pertama: bangun subuh, fokus dalam shalat, dan tetap konsisten membaca Al-Qur'an, semuanya butuh pertolongan Allah. Kita berkata, \"Hanya Engkau yang kami sembah,\" lalu segera menambahkan, \"dan untuk itu pun kami butuh Engkau.\""
+   "text": "Ketiga, kita berkata \"kami\". Bahkan ketika shalat sendirian di kamar jam dua pagi, kita tetap berkata \"kami\". Kita menghadap Allah sebagai bagian dari banyak orang yang beribadah, tidak sendirian."
   },
   {
    "type": "label",
@@ -618,19 +586,16 @@
   },
   {
    "type": "p",
-   "text": "\"Aman, aku bisa sendiri.\" Kalimat ini sering keluar dari mulut anak sulung yang ikut menanggung cicilan rumah orang tua, biaya sekolah adik, dan kebutuhannya sendiri. Ia tidak mau merepotkan siapa pun. Kedengarannya dewasa, dan memang ada kebaikan di dalamnya. Masalahnya, sikap yang sama sering terbawa ke hadapan Allah. Shalat tetap jalan, doa tetap diucapkan, tapi di dalam hati yang benar-benar diandalkan adalah kemampuan diri sendiri. Akibatnya semua beban dipikul sendirian, dan kelelahan itu pelan-pelan menumpuk."
+   "text": "Banyak dari kita terbiasa berkata, \"Aman, aku bisa sendiri.\" Cicilan keluarga, biaya sekolah adik, kebutuhan rumah, semuanya kita pikul tanpa mau merepotkan siapa pun. Sikap yang sama sering terbawa ke hadapan Allah: shalat tetap jalan, doa tetap diucapkan, tapi di dalam hati yang benar-benar kita andalkan adalah kemampuan sendiri. Pelan-pelan kelelahan itu menumpuk. Ada juga kebalikannya: rajin berdoa ketika butuh, tapi enggan tunduk ketika diminta taat."
   },
   {
    "type": "p",
-   "text": "Ada juga kebalikannya: rajin berdoa ketika butuh, tapi enggan tunduk ketika diminta taat. Allah diperlakukan seperti nomor darurat yang dihubungi saat genting dan dilupakan saat keadaan aman."
+   "text": "Ayat 5 menutup kedua celah itu sekaligus. \"Hanya Engkau yang kami sembah\" berarti kita tunduk, tidak hanya saat butuh. \"Hanya Engkau tempat kami minta tolong\" berarti kita bergantung kepada-Nya, tidak hanya saat sedang beribadah. Kalimat pertama menjaga kita dari pamer ibadah, karena ibadah hanya untuk Allah. Kalimat kedua menjaga kita dari sombong, karena kita mengaku tidak mampu sendiri. Kita tetap bekerja keras dan saling menolong, tapi beban yang paling berat tidak lagi kita pikul sendirian."
   },
   {
-   "type": "p",
-   "text": "Ayat 5 menutup kedua celah itu sekaligus. \"Hanya Engkau yang kami sembah\" berarti kita tunduk, tidak hanya saat butuh. \"Hanya Engkau tempat kami minta tolong\" berarti kita bergantung kepada-Nya, tidak hanya saat sedang beribadah. Para ulama juga menjelaskan bahwa kalimat pertama melindungi kita dari pamer ibadah, karena ibadah hanya untuk Allah, dan kalimat kedua melindungi kita dari sombong, karena kita mengaku tidak mampu sendiri."
-  },
-  {
-   "type": "label",
-   "text": "Titik Terang"
+   "type": "h3",
+   "text": "Titik Terang",
+   "id": "titik-terang-4"
   },
   {
    "type": "callout",
@@ -640,7 +605,7 @@
   },
   {
    "type": "p",
-   "text": "Hanya ayat ini yang disebut \"antara Aku dan hamba-Ku\". Separuhnya hak Allah, yaitu ibadah, dan separuhnya kebutuhan kita, yaitu pertolongan. Ayat ini seperti kesepakatan yang ditandatangani dua pihak: kita berjanji hanya menyembah-Nya, dan Allah menyatakan bahwa pertolongan yang kita minta akan kita dapatkan. Karena ayat ini kita ulang 17 kali sehari, kesepakatan itu kita perbarui 17 kali sehari, tepat ketika hati mulai bergantung ke tempat lain."
+   "text": "Hanya ayat ini yang disebut \"antara Aku dan hamba-Ku\". Separuhnya hak Allah, yaitu ibadah, dan separuhnya kebutuhan kita, yaitu pertolongan. Ayat ini seperti kesepakatan yang ditandatangani dua pihak: kita berjanji hanya menyembah-Nya, dan Allah menyatakan bahwa pertolongan yang kita minta akan kita dapatkan. Karena ayat ini kita ulang di setiap rakaat, kesepakatan itu terus kita perbarui, tepat ketika hati mulai bergantung ke tempat lain."
   },
   {
    "type": "p",
@@ -696,13 +661,13 @@
    "type": "keyword",
    "term": "• jalan",
    "arabic": "الصِّرَاطَ",
-   "text": "Jalan yang lebar dan jelas, yang bisa dilalui banyak orang. Bentuk katanya tunggal: satu jalan, bukan banyak jalan yang sama-sama benar."
+   "text": "Jalan yang lebar, terang, dan bisa dilalui banyak orang. Bentuk katanya tunggal: satu jalan, bukan banyak jalan yang sama-sama benar."
   },
   {
    "type": "keyword",
    "term": "• yang lurus",
    "arabic": "الْمُسْتَقِيْمَ",
-   "text": "Tidak berbelok-belok. Jalan terpendek antara dua titik adalah garis lurus, sehingga jalan ini adalah jalan yang paling cepat sampai kepada Allah."
+   "text": "Tidak berbelok-belok dan tidak menyimpang, sehingga arahnya jelas sampai ke tujuan."
   },
   {
    "type": "label",
@@ -714,7 +679,7 @@
   },
   {
    "type": "p",
-   "text": "Hal yang paling mengejutkan dari ayat ini justru apa yang tidak ada di dalamnya. Dalam surat yang wajib kita baca 17 kali sehari, Allah mengajarkan satu permintaan saja. Tidak ada \"lapangkan rezeki kami\", tidak ada \"sembuhkan kami\", tidak ada \"mudahkan urusan kami\". Hanya: tunjukilah kami jalan yang lurus."
+   "text": "Hal yang paling mengejutkan dari ayat ini justru apa yang tidak ada di dalamnya. Dalam surat yang wajib kita baca di setiap rakaat, Allah mengajarkan satu permintaan saja. Tidak ada \"lapangkan rezeki kami\", tidak ada \"sembuhkan kami\", tidak ada \"mudahkan urusan kami\". Hanya: tunjukilah kami jalan yang lurus."
   },
   {
    "type": "p",
@@ -726,19 +691,16 @@
   },
   {
    "type": "p",
-   "text": "\"Nanti kalau sudah mapan, aku mulai rajin ngaji.\" \"Nanti kalau anak-anak sudah besar, aku mulai pakai jilbab.\" \"Nanti kalau utang sudah lunas, aku keluar dari pekerjaan yang halal-haramnya meragukan ini.\" Kata \"nanti\" itu terus bergeser, dan tanpa terasa sudah bertahun-tahun."
+   "text": "\"Nanti kalau sudah mapan, aku mulai rajin mengaji.\" \"Nanti kalau utang sudah lunas, aku keluar dari pekerjaan yang halal-haramnya meragukan ini.\" Kata \"nanti\" itu terus bergeser, dan tanpa terasa sudah bertahun-tahun. Masalahnya jarang karena kita tidak tahu jalan yang benar. Kita sudah tahu, tapi jalan yang salah terasa lebih nyaman."
   },
   {
    "type": "p",
-   "text": "Masalahnya jarang karena kita tidak tahu jalan yang benar. Kita sudah tahu. Mirip seperti menyetir dengan aplikasi navigasi yang sudah lima kali berkata \"putar balik\", tapi kita tetap jalan lurus karena jalan yang salah terasa lebih nyaman. Petunjuknya sudah datang berkali-kali; yang belum ada adalah keberanian untuk mengikutinya."
+   "text": "Ayat ini mengajak kita meminta petunjuk setiap hari, seperti aplikasi navigasi yang terus menghitung ulang rute selama kita masih di jalan. Kita tidak pernah berkata, \"Aku sudah tahu tujuannya, matikan saja navigasinya.\" Justru di tengah perjalanan, ketika godaan untuk berbelok paling kuat, petunjuk paling dibutuhkan. Yang kita minta di ayat ini bukan cuma peta, tapi juga keberanian untuk benar-benar mengikutinya."
   },
   {
-   "type": "p",
-   "text": "Aplikasi navigasi juga mengajarkan hal lain. Setelah kita memasukkan tujuan dan mulai berjalan, aplikasinya tidak berhenti bekerja. Setiap beberapa detik ia menghitung ulang: masih di jalur yang benar? Belok di mana? Ada jalan yang ditutup? Kita tidak pernah berkata, \"Aku sudah tahu tujuannya, matikan saja navigasinya.\" Justru di tengah perjalanan, navigasi paling dibutuhkan."
-  },
-  {
-   "type": "label",
-   "text": "Titik Terang"
+   "type": "h3",
+   "text": "Titik Terang",
+   "id": "titik-terang-5"
   },
   {
    "type": "callout",
@@ -752,7 +714,7 @@
   },
   {
    "type": "p",
-   "text": "Pertanyaan yang sering muncul: \"Aku kan sudah Muslim dan sudah shalat. Kenapa masih harus minta ditunjukkan jalan, 17 kali sehari?\" Jawabannya ada di lapis-lapis petunjuk tadi. Tahu jalannya adalah satu hal. Mau melangkah adalah hal lain. Tetap di jalan itu sampai akhir hayat adalah hal yang lebih berat lagi. Kita bisa tahu bahwa membicarakan aib orang itu salah, tapi tetap ikut nimbrung. Kita bisa tahu shalat tepat waktu itu penting, tapi tetap menunda karena tanggung. Selama kita masih hidup, kita masih butuh ketiga lapis itu, setiap hari. Satu hal lagi: jalan yang lurus tidak sama dengan jalan yang mulus. Ia bisa menanjak, berbatu, dan sepi. Yang membuatnya lurus adalah ke mana ia mengarah."
+   "text": "Pertanyaan yang sering muncul: \"Aku kan sudah Muslim dan sudah shalat. Kenapa masih harus minta ditunjukkan jalan setiap hari?\" Jawabannya ada di lapis-lapis petunjuk tadi. Tahu jalannya adalah satu hal. Mau melangkah adalah hal lain. Tetap di jalan itu sampai akhir hayat adalah hal yang lebih berat lagi. Kita bisa tahu bahwa membicarakan aib orang itu salah, tapi tetap ikut nimbrung. Kita bisa tahu shalat tepat waktu itu penting, tapi tetap menunda karena tanggung. Selama kita masih hidup, kita masih butuh ketiga lapis itu, setiap hari. Satu hal lagi: jalan yang lurus tidak sama dengan jalan yang mulus. Ia bisa menanjak, berbatu, dan sepi. Yang membuatnya lurus adalah ke mana ia mengarah."
   },
   {
    "type": "label",
@@ -826,7 +788,7 @@
   },
   {
    "type": "p",
-   "text": "Ayat ini juga menyebut dua cara keluar dari jalan itu. Yang pertama, punya ilmu tapi tidak mengamalkannya. Ini bahaya bagi orang yang merasa sudah paham agama. Yang kedua, beramal tanpa ilmu. Ini bahaya bagi orang yang merasa cukup dengan niat baik. Jalan yang lurus berada di antara keduanya: ilmu yang diamalkan, dan amal yang dilandasi ilmu. Kedua sifat ini disebut sebagai sifat, sehingga yang perlu kita periksa pertama kali adalah diri kita sendiri, bukan orang lain."
+   "text": "Ayat ini juga menyebut dua cara keluar dari jalan itu. Yang pertama, punya ilmu tapi tidak mengamalkannya. Ini bahaya bagi orang yang merasa sudah paham agama. Yang kedua, beramal tanpa ilmu. Ini bahaya bagi orang yang merasa cukup dengan niat baik. Jalan yang lurus berada di antara keduanya: ilmu yang diamalkan, dan amal yang dilandasi ilmu. Ayat ini menyebut sifatnya, bukan nama orang atau kelompok, sehingga yang perlu kita periksa pertama kali adalah diri kita sendiri."
   },
   {
    "type": "label",
@@ -834,31 +796,28 @@
   },
   {
    "type": "p",
-   "text": "Ada orang yang baru mulai belajar agama di usia tiga puluhan. Ia minder melihat teman-teman yang sudah lama hafal banyak surat, merasa tertinggal, dan kadang berpikir lebih baik tidak usah ikut kajian supaya tidak ketahuan belum bisa. Ada juga orang yang sudah lama dikenal religius, dipanggil \"ustadz\" di kantor, lalu merasa tidak perlu belajar lagi."
+   "text": "Banyak dari kita minder belajar agama. Melihat orang lain sudah lama hafal banyak surat, kita merasa tertinggal dan memilih tidak ikut kajian supaya tidak ketahuan belum bisa. Sebaliknya, ada juga yang sudah lama dikenal religius, lalu merasa tidak perlu belajar lagi."
   },
   {
    "type": "p",
-   "text": "Ayat ini memberi pegangan bagi keduanya. Bagi yang minder, jalan lurus bukan jalan para juara yang harus dilalui sendirian. Ia jalan yang sudah dirintis orang-orang terbaik, dan kita diundang ikut berjalan di belakang mereka, selangkah demi selangkah. Bagi yang merasa sudah sampai, ayat ini mengingatkan bahwa label religius tidak menjamin seseorang tetap di jalan; yang menjamin adalah ilmu yang terus diamalkan."
+   "text": "Ayat ini memberi pegangan bagi keduanya. Jalan yang lurus sudah dirintis orang-orang terbaik, dan kita diundang ikut berjalan di belakang mereka, selangkah demi selangkah, dari titik mana pun kita mulai. Label religius juga tidak menjamin seseorang tetap di jalan; yang menjaganya adalah ilmu yang terus diamalkan."
+  },
+  {
+   "type": "h3",
+   "text": "Titik Terang",
+   "id": "titik-terang-6"
   },
   {
    "type": "p",
-   "text": "Kita juga akan mirip dengan siapa pun yang paling sering kita lihat. Akun yang kita ikuti, teman yang paling sering kita ajak bicara, tokoh yang kita kagumi, pelan-pelan membentuk cara kita berpikir. Memilih siapa yang kita ikuti ternyata bagian dari doa minta jalan yang lurus."
-  },
-  {
-   "type": "label",
-   "text": "Titik Terang"
+   "text": "Jawaban Allah untuk ayat 6 berlaku sampai akhir surat: \"Ini untuk hamba-Ku, dan hamba-Ku akan mendapat apa yang ia minta.\""
   },
   {
    "type": "p",
-   "text": "Jawaban Allah untuk ayat 6 berlaku sampai akhir surat: \"Ini untuk hamba-Ku, dan hamba-Ku akan mendapat apa yang ia minta.\" Setelah itu, Rasulullah ﷺ mengajarkan kita menutup Al-Fatihah dengan mengucapkan amin, yang artinya \"kabulkanlah\". Beliau bersabda, ucapkanlah amin ketika imam mengucapkannya, karena siapa yang aminnya bersamaan dengan amin para malaikat, dosa-dosanya yang lalu diampuni (HR. Bukhari). Amin bukan bagian dari Al-Qur'an, tapi ia menutup percakapan ini dengan penuh harap."
+   "text": "Susunan kalimatnya juga mengajarkan sopan santun. Untuk orang yang diberi nikmat, pelakunya disebut jelas: \"Engkau beri nikmat.\" Untuk orang yang dimurkai, pelakunya tidak disebut, hanya \"yang dimurkai\". Nikmat disebut langsung sebagai pemberian Allah, sedangkan murka tidak disebut sebagai perbuatan-Nya secara langsung di dalam doa kita."
   },
   {
    "type": "p",
-   "text": "Susunan kalimatnya juga mengajarkan sopan santun. Untuk orang yang diberi nikmat, pelakunya disebut jelas: \"Engkau beri nikmat.\" Untuk orang yang dimurkai, pelakunya tidak disebut, hanya \"yang dimurkai\". Kebaikan disandarkan langsung kepada Allah, sedangkan murka tidak disandarkan secara langsung di dalam doa kita."
-  },
-  {
-   "type": "p",
-   "text": "Lalu ada pertanyaan yang serius: \"Kalau Allah Maha Penyayang, sampai disebut dua kali, kenapa surat ini ditutup dengan orang yang dimurkai?\" Pertama, yang dimurkai bukan orang yang tidak tahu, tapi orang yang sudah tahu kebenaran lalu memilih berpaling. Murka di sini adalah akibat dari penolakan yang disadari. Kedua, kasih sayang yang sejati tidak sama dengan tidak adanya akibat. Guru yang tidak pernah memberi nilai jelek, seberapa pun malas muridnya, sebenarnya sedang tidak peduli. Dunia tanpa perhitungan akhir juga akan sangat kejam bagi orang-orang yang dizalimi. Ketiga, kelompok yang dimurkai disebut di dalam doa perlindungan. Kita tidak sedang diajak menghakimi orang lain, tapi meminta supaya kita sendiri tidak jatuh ke jalan itu. Allah memperingatkan sebelum terlambat dan memberi kita kalimat untuk meminta perlindungan, 17 kali sehari. Peringatan seperti itu sendiri adalah bentuk kasih sayang."
+   "text": "Lalu ada pertanyaan yang serius: \"Kalau Allah Maha Penyayang, sampai disebut dua kali, kenapa surat ini ditutup dengan orang yang dimurkai?\" Pertama, yang dimurkai bukan orang yang tidak tahu, tapi orang yang sudah tahu kebenaran lalu memilih berpaling. Murka di sini adalah akibat dari penolakan yang disadari. Kedua, kasih sayang yang sejati tidak sama dengan tidak adanya akibat. Guru yang tidak pernah memberi nilai jelek, seberapa pun malas muridnya, sebenarnya sedang tidak peduli. Dunia tanpa perhitungan akhir juga akan sangat kejam bagi orang-orang yang dizalimi. Ketiga, kelompok yang dimurkai disebut di dalam doa perlindungan. Kita tidak sedang diajak menghakimi orang lain, tapi meminta supaya kita sendiri tidak jatuh ke jalan itu. Allah memperingatkan sebelum terlambat dan memberi kita kalimat untuk meminta perlindungan setiap hari. Peringatan seperti itu sendiri adalah bentuk kasih sayang."
   },
   {
    "type": "label",
@@ -868,7 +827,7 @@
    "type": "callout",
    "variant": "reflection",
    "label": "",
-   "text": "Dari dua cara keluar jalan, tahu tapi tidak melakukan, atau melakukan tapi tidak mau belajar, mana yang paling sering menjebak kita? Dan siapa yang selama ini sebenarnya kita jadikan peta jalan hidup?"
+   "text": "Dari dua cara keluar jalan, tahu tapi tidak melakukan, atau melakukan tapi tidak mau belajar, mana yang paling sering menjebak kita?"
   },
   {
    "type": "callout",
@@ -877,19 +836,23 @@
    "text": "Jalan yang lurus sudah dilalui orang-orang terbaik, dan kita diundang berjalan bersama mereka."
   },
   {
+   "type": "p",
+   "text": "Tujuh ayat sudah kita lewati. Sekarang percakapan ini kita bawa ke shalat dan doa yang kita kerjakan setiap hari."
+  },
+  {
    "type": "h2",
-   "text": "Latihan 7 Hari",
+   "text": "Bawa ke Hidup",
    "num": 5,
-   "id": "latihan-7-hari"
+   "id": "bawa-ke-hidup"
   },
   {
    "type": "p",
-   "text": "Tiga langkah ini cukup untuk minggu pertama. Tidak perlu menambah tugas lain."
+   "text": "Tujuh ayat ini kita baca setiap hari, jadi cara terbaik membawanya ke hidup adalah lewat shalat dan doa yang memang sudah kita kerjakan. Tiga langkah ini cukup, tidak perlu menambah tugas lain."
   },
   {
    "type": "li",
    "n": 1,
-   "text": "Satu rakaat sadar di setiap shalat. Kita tidak perlu langsung khusyuk di 17 rakaat. Mulai dari rakaat pertama saja. Di rakaat itu, berhenti sejenak di akhir setiap ayat, seperti cara Rasulullah ﷺ membaca Al-Fatihah ayat demi ayat (HR. Abu Dawud dan Tirmidzi), lalu ingat jawaban Allah untuk ayat itu. Lima rakaat yang sadar dalam sehari jauh lebih baik daripada tidak ada sama sekali."
+   "text": "Satu rakaat yang sadar di setiap shalat. Kita tidak perlu langsung khusyuk di 17 rakaat. Mulai dari rakaat pertama saja. Di rakaat itu, berhenti sejenak di akhir setiap ayat, seperti cara Rasulullah ﷺ membaca Al-Fatihah ayat demi ayat (HR. Abu Dawud dan Tirmidzi), lalu ingat jawaban Allah untuk ayat itu. Kalau sedang menjadi makmum, ikuti bacaan imam sambil mengingat artinya. Kalau arti tujuh ayat ini belum hafal, baca dulu terjemahannya sebelum shalat, cukup sekali sehari sampai melekat. Di akhir Al-Fatihah, ucapkan amin, artinya \"kabulkanlah\", dengan sungguh-sungguh. Rasulullah ﷺ bersabda, siapa yang aminnya bersamaan dengan amin para malaikat, dosa-dosanya yang lalu diampuni (HR. Bukhari). Amin bukan bagian dari Al-Qur'an, tapi ia menutup percakapan ini dengan penuh harap. Lima rakaat yang sadar dalam sehari jauh lebih baik daripada tidak ada sama sekali."
   },
   {
    "type": "li",
@@ -900,68 +863,6 @@
    "type": "li",
    "n": 3,
    "text": "Ubah urutan doa pribadi. Setelah shalat, pakai urutan Al-Fatihah untuk doa kita sendiri: puji dulu dengan menyebut satu nikmat hari itu, akui satu hal yang di luar kendali kita, sebut satu hal yang ingin kita jaga, baru meminta. Mulai permintaan dengan arah sebelum hasil, misalnya \"Ya Allah, tunjukkan cara yang benar menghadapi atasanku\" sebelum \"Ya Allah, lancarkan kenaikan jabatanku\"."
-  },
-  {
-   "type": "h3",
-   "text": "Peta Kontemplasi 7 Hari",
-   "id": "peta-kontemplasi-7-hari"
-  },
-  {
-   "type": "p",
-   "text": "Tujuh ayat, tujuh hari. Setiap hari, fokus pada satu ayat ketika membacanya di rakaat pertama."
-  },
-  {
-   "type": "table",
-   "head": [
-    "Hari",
-    "Tema",
-    "Renungan",
-    "Doa Singkat"
-   ],
-   "rows": [
-    [
-     "1",
-     "Atas nama siapa?",
-     "Pekerjaan apa yang paling bikin cemas minggu ini, dan selama ini sebenarnya kita mulai atas nama siapa?",
-     "Ya Allah, aku memulai ini dengan nama-Mu."
-    ],
-    [
-     "2",
-     "Pengantar pujian",
-     "Pujian dari siapa yang paling kita tunggu, dan apa yang terjadi pada hati kita kalau pujian itu tidak datang?",
-     "Segala puji hanya milik-Mu, ya Tuhanku."
-    ],
-    [
-     "3",
-     "Kekuasaan yang lembut",
-     "Bagaimana rasanya tahu bahwa yang memegang seluruh alam adalah Yang Maha Penyayang?",
-     "Ya Allah Yang Maha Penyayang, jangan jauhkan aku dari kasih sayang-Mu."
-    ],
-    [
-     "4",
-     "Episode terakhir",
-     "Ketidakadilan apa yang masih kita pikul sendirian sampai hari ini?",
-     "Ya Allah, Engkau Pemilik hari pembalasan; urusan ini aku serahkan kepada-Mu."
-    ],
-    [
-     "5",
-     "Hanya Engkau",
-     "Rajin beribadah tapi mengandalkan diri sendiri, atau rajin minta tolong tapi enggan tunduk: mana yang paling menggambarkan kita?",
-     "Hanya kepada-Mu aku tunduk, hanya kepada-Mu aku minta tolong."
-    ],
-    [
-     "6",
-     "Arah sebelum hasil",
-     "Satu hal apa yang sudah kita tahu harus diubah, tapi terus ditunda dengan kata \"nanti\"?",
-     "Ya Allah, tunjukkan aku jalan yang lurus, dan beri aku keberanian mengikutinya."
-    ],
-    [
-     "7",
-     "Teman di jalan",
-     "Siapa yang selama ini sebenarnya kita jadikan peta jalan hidup?",
-     "Ya Allah, kumpulkan aku bersama orang-orang yang Engkau beri nikmat."
-    ]
-   ]
   },
   {
    "type": "h2",
@@ -975,7 +876,7 @@
   },
   {
    "type": "p",
-   "text": "Ayat-ayat Al-Fatihah tidak berubah. Jumlahnya tetap tujuh, urutannya tetap sama. Yang berubah adalah posisi kita di dalamnya: dari orang yang sekadar menyelesaikan bacaan wajib, menjadi orang yang sedang diajak bicara oleh Dzat yang menjawab setiap kalimat kita, bahkan kalimat yang kita ucapkan setengah sadar. Maghrib nanti, ketika kita berdiri lagi di atas sajadah, percakapan itu sudah menunggu."
+   "text": "Ayat-ayat Al-Fatihah tidak berubah. Jumlahnya tetap tujuh, urutannya tetap sama. Yang berubah adalah posisi kita di dalamnya: dari orang yang sekadar menyelesaikan bacaan wajib, menjadi orang yang sedang diajak bicara oleh Allah, yang menjawab setiap kalimat kita, bahkan kalimat yang kita ucapkan setengah sadar. Maghrib nanti, ketika kita berdiri lagi di atas sajadah, percakapan itu sudah menunggu."
   },
   {
    "type": "callout",
@@ -989,9 +890,9 @@
   }
  ],
  "source": {
-  "fileId": "1QiKjp_dRWx0bToOtcLs0lzZQG-MMrxQs",
+  "fileId": "1pifoAUtVBqO1kQeId8dZuXmfEiOrm0S0",
   "fileName": "Inspirasi_Quran_Al-Fatihah.docx",
-  "modifiedTime": "2026-11-26T03:19:12.329Z",
-  "updatedAt": "2026-11-26T03:19:12.329Z"
+  "modifiedTime": "2026-11-27T23:29:08.338Z",
+  "updatedAt": "2026-11-27T23:29:08.338Z"
  }
 }
