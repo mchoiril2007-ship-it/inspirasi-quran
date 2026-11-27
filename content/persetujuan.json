@@ -16,5 +16,23 @@
   "an-nas",
   "al-ikhlas"
  ],
- "wajib": false
+ "wajib": false,
+ "disembunyikan": {
+  "an-nas": {
+   "fileId": "1hV-pXoOyvpCjYN56X_iFCuSX-lceyC0S",
+   "modifiedTime": "2026-11-26T22:47:42.241Z",
+   "fileName": "Inspirasi_Quran_An-Nas.docx"
+  },
+  "al-falaq": {
+   "fileId": "1MFZ8MxqseWdm1ezDSJZpOI91o7EhRuCO",
+   "modifiedTime": "2026-11-27T01:18:03.512Z",
+   "fileName": "Inspirasi_Quran_Al-Falaq.docx"
+  },
+  "al-ikhlas": {
+   "fileId": "1_iqLsr5b_LBk5OMmr2SKj7FxPcZ3S9J2",
+   "modifiedTime": "2026-11-26T23:34:07.256Z",
+   "fileName": "Inspirasi_Quran_Al-Ikhlas.docx"
+  }
+ },
+ "_disembunyikan": "Surat disembunyikan dari web selama file naskah di Drive masih file yang sama (id & waktu ubah sama). Begitu file diganti/diunggah ulang, surat tayang lagi otomatis."
 }

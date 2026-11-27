@@ -94,6 +94,12 @@ async function syncNaskah(bridge) {
 
   for (const { f, s } of Object.values(bySlug)) {
     const existing = docs[s.slug];
+    // Disembunyikan pemilik: tetap tersembunyi selama file Drive-nya belum diganti (id & waktu ubah sama).
+    const hid = gate.disembunyikan?.[s.slug];
+    if (hid && hid.fileId === f.id && hid.modifiedTime === f.modifiedTime) {
+      status.naskah.push({ file: f.name, slug: s.slug, status: 'ok', message: 'Disembunyikan dari web sampai naskah diganti di Drive.' });
+      continue;
+    }
     // Surat baru hanya tayang setelah disetujui pemilik (content/persetujuan.json → "disetujui").
     if (needApproval && !existing && !approved.has(s.slug)) {
       status.naskah.push({ file: f.name, slug: s.slug, status: 'warning', message: 'Menunggu persetujuan pemilik, belum ditayangkan.' });
