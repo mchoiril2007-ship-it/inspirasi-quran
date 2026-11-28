@@ -1,0 +1,130 @@
+{
+ "lastSync": "2026-11-28T12:05:52.927Z",
+ "bridge": "ok",
+ "naskah": [
+  {
+   "file": "Inspirasi_Quran_At-Talaq.docx",
+   "slug": "at-talaq",
+   "status": "warning",
+   "message": "Ada lebih dari satu naskah untuk At-Talaq; yang dipakai adalah yang terbaru."
+  },
+  {
+   "file": "Inspirasi_Quran_Al-Mumtahanah.docx",
+   "slug": "al-mumtahanah",
+   "status": "warning",
+   "message": "Ada lebih dari satu naskah untuk Al-Mumtahanah; yang dipakai adalah yang terbaru."
+  },
+  {
+   "file": "Inspirasi_Quran_Al-Mumtahanah.docx",
+   "slug": "al-mumtahanah",
+   "status": "ok",
+   "message": "Tidak berubah"
+  },
+  {
+   "file": "Inspirasi_Quran_Al-Masad.docx",
+   "slug": "al-lahab",
+   "status": "ok",
+   "message": "Tidak berubah"
+  },
+  {
+   "file": "Inspirasi_Quran_Al-Mujadilah.docx",
+   "slug": "al-mujadilah",
+   "status": "ok",
+   "message": "Tidak berubah"
+  },
+  {
+   "file": "Inspirasi_Quran_At-Talaq.docx",
+   "slug": "at-talaq",
+   "status": "ok",
+   "message": "Tidak berubah"
+  },
+  {
+   "file": "Inspirasi_Quran_At-Tahrim.docx",
+   "slug": "at-tahrim",
+   "status": "ok",
+   "message": "Tidak berubah"
+  },
+  {
+   "file": "Inspirasi_Quran_AlMulk.docx",
+   "slug": "al-mulk",
+   "status": "ok",
+   "message": "Tidak berubah"
+  },
+  {
+   "file": "Inspirasi_Quran_Al-Fatihah.docx",
+   "slug": "al-fatihah",
+   "status": "ok",
+   "message": "Tidak berubah"
+  },
+  {
+   "file": "Inspirasi_Quran_An-Nas.docx",
+   "slug": "an-nas",
+   "status": "ok",
+   "message": "Tidak berubah"
+  },
+  {
+   "file": "Inspirasi_Quran_Al-Falaq.docx",
+   "slug": "al-falaq",
+   "status": "ok",
+   "message": "Tidak berubah"
+  },
+  {
+   "file": "Inspirasi_Quran_Al-Ikhlas.docx",
+   "slug": "al-ikhlas",
+   "status": "ok",
+   "message": "Tidak berubah"
+  },
+  {
+   "file": "Inspirasi_Quran_Al-Hasyr.docx",
+   "slug": "al-hasyr",
+   "status": "ok",
+   "message": "Tidak berubah"
+  },
+  {
+   "file": "Inspirasi_Quran_AshShaff.docx",
+   "slug": "ash-shaff",
+   "status": "ok",
+   "message": "Tidak berubah"
+  },
+  {
+   "file": "Inspirasi_Quran_Al-Jumuah.docx",
+   "slug": "al-jumuah",
+   "status": "ok",
+   "message": "Tidak berubah"
+  },
+  {
+   "file": "Inspirasi_Quran_At-Taghabun.docx",
+   "slug": "at-taghabun",
+   "status": "ok",
+   "message": "Tidak berubah"
+  },
+  {
+   "file": "Inspirasi_Quran_Al-Munafiqun.docx",
+   "slug": "al-munafiqun",
+   "status": "ok",
+   "message": "Tidak berubah"
+  }
+ ],
+ "audio": [],
+ "youtube": {
+  "ok": true,
+  "channel": {
+   "id": "UC08gqVpjgJ4Uvr56k5ERyhw",
+   "title": "M.Choiril Alam",
+   "handle": "@quraninspiration"
+  },
+  "total": 941,
+  "matched": 446,
+  "unmatched": 495,
+  "matchedBy": {
+   "hashtag": 21,
+   "deskripsi": 20,
+   "judul": 282,
+   "playlist": 28,
+   "tag": 95
+  },
+  "playlists": 33
+ },
+ "errors": [],
+ "finishedAt": "2026-11-28T12:06:11.514Z"
+}
