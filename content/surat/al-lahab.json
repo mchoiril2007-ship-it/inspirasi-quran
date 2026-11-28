@@ -111,21 +111,17 @@
   {
    "type": "image",
    "alt": "Peta struktur Surat Al-Lahab",
-   "width": 360,
-   "height": 358,
-   "src": "/img/surat/al-lahab/gambar-1-cc782bcb3c.png"
+   "width": 420,
+   "height": 336,
+   "src": "/img/surat/al-lahab/gambar-1-910bc70c1d.png"
   },
   {
    "type": "p",
-   "text": "Surat ini terbagi menjadi dua bagian yang sejajar. Bagian A (ayat 1 sampai 3) membahas Abu Lahab, bagian B (ayat 4 dan 5) membahas istrinya. Panah oranye di antara keduanya menandakan bahwa keduanya ditempatkan setara: sama-sama aktif memusuhi Nabi, sama-sama menanggung akibatnya."
+   "text": "Surat ini terbagi dua. Bagian A (ayat 1 sampai 3) bercerita tentang Abu Lahab, bagian B (ayat 4 dan 5) tentang istrinya. Keduanya ditempatkan sejajar karena sama-sama memusuhi Nabi dan sama-sama menanggung akibatnya."
   },
   {
    "type": "p",
-   "text": "Di bagian A, warna kotak makin gelap dari atas ke bawah karena gambarannya makin berat: dari tangan, lalu harta dan hasil usaha, sampai api. Di bagian B, gambarannya bergerak dari kayu bakar yang dibawa sang istri ke tali di lehernya."
-  },
-  {
-   "type": "p",
-   "text": "Tiga garis putus-putus bernomor menunjukkan bagian yang saling menyambung: julukan di ayat 1 dengan api di ayat 3, tangan di awal dengan leher di akhir, dan kayu bakar sang istri yang mengarah ke api suaminya."
+   "text": "Baca tiap kolom dari atas ke bawah. Di bagian A, andalan Abu Lahab dicabut satu per satu: usahanya, lalu hartanya, sampai ujungnya api. Di bagian B, kayu bakar yang dibawa istrinya berujung pada tali di lehernya. Surat ini dibuka dengan tangan dan ditutup dengan leher."
   },
   {
    "type": "h3",
@@ -134,11 +130,11 @@
   },
   {
    "type": "p",
-   "text": "Al-Masad berada dalam rangkaian surat pendek yang saling menyambung di mushaf. Al-Kautsar menghibur Nabi bahwa orang yang membenci beliau, dialah yang terputus dari rahmat Allah. Al-Kafirun menegaskan garis pemisah dengan para penyembah berhala. An-Nashr mengabarkan pertolongan Allah bagi pihak yang benar. Lalu Al-Masad menunjukkan kesudahan pihak yang memusuhi, sampai menyebut namanya."
+   "text": "Sebelum Al-Masad ada An-Nashr, yang mengabarkan datangnya pertolongan Allah dan orang-orang yang masuk Islam berbondong-bondong. Al-Masad lalu memperlihatkan sisi sebaliknya: kesudahan orang yang memusuhi kebenaran, padahal ia keluarga terdekat Nabi. Keduanya berdampingan di mushaf, meski An-Nashr turun di akhir masa kenabian dan Al-Masad jauh lebih awal."
   },
   {
    "type": "p",
-   "text": "Urutan ini adalah urutan di mushaf, bukan urutan turun: An-Nashr turun di akhir masa kenabian, sedangkan Al-Masad jauh lebih awal. Sesudah Al-Masad ada Al-Ikhlas; hubungan keduanya terutama karena letaknya berdampingan di mushaf."
+   "text": "Sesudahnya ada Al-Ikhlas. Seruan yang ditolak Abu Lahab di pasar-pasar Makkah adalah \"tidak ada tuhan selain Allah\", dan Al-Ikhlas berisi inti seruan itu. Al-Masad memperlihatkan sandaran Abu Lahab yang runtuh satu per satu: harta, anak, nama besar. Al-Ikhlas lalu menyebut satu-satunya tempat bergantung yang tidak pernah runtuh: Allah, yang tidak beranak dan tidak diperanakkan."
   },
   {
    "type": "h2",
@@ -594,9 +590,9 @@
   }
  ],
  "source": {
-  "fileId": "12rUcOeG32qSasmqbICqwGRHhC1LDjZhb",
+  "fileId": "1jv0JXOEmRwW5COQ3ryfucLFujKbT-Zap",
   "fileName": "Inspirasi_Quran_Al-Masad.docx",
-  "modifiedTime": "2026-11-28T08:40:19.767Z",
-  "updatedAt": "2026-11-28T08:40:19.767Z"
+  "modifiedTime": "2026-11-28T08:57:46.542Z",
+  "updatedAt": "2026-11-28T08:57:46.542Z"
  }
 }
