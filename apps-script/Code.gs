@@ -12,6 +12,10 @@
  *  POST {key, action:'uploadAudio', name, base64}  -> simpan ke subfolder "Audio"
  *  POST {key, action:'hit', slug, kind}  -> tambah hitungan baca/dengar/tonton
  *  GET  ?key=..&action=stats              -> semua hitungan
+ *  GET  ?key=..&action=comments&slug=..   -> komentar satu surat (terbaru di atas)
+ *  GET  ?key=..&action=allComments        -> semua komentar (untuk halaman admin)
+ *  POST {key, action:'addComment', slug, name, text, ipHash}  -> tambah komentar (langsung tampil)
+ *  POST {key, action:'deleteComment', id}  -> hapus komentar
  */
 
 var KEY = 'GANTI_DENGAN_KUNCI_RAHASIA';
@@ -52,6 +56,14 @@ function handle_(p) {
         return json_(hit_(p.slug, p.kind));
       case 'stats':
         return json_({ ok: true, stats: stats_() });
+      case 'comments':
+        return json_(comments_(p.slug));
+      case 'allComments':
+        return json_(allComments_());
+      case 'addComment':
+        return json_(addComment_(p));
+      case 'deleteComment':
+        return json_(deleteComment_(p.id));
       case 'uploadAudio':
         return json_(uploadAudio_(p.name, p.base64));
       default:
@@ -270,6 +282,102 @@ function stats_() {
     out[m[1]][m[2]] = parseInt(all[k], 10) || 0;
   });
   return out;
+}
+
+// ---------- Komentar (disimpan di lembar "Komentar" pada Google Sheet yang sama) ----------
+var LINK_RE = /(https?:\/\/|www\.|\b[a-z0-9][a-z0-9-]*\.(com|net|org|id|io|co|me|xyz|info|biz|ly|link|site|online|shop|store|app|dev|tv|cc|top|club|vip)\b|\bt\.me\/|\bwa\.me\/|bit\.ly|\bdot\s*(com|net|org)\b)/i;
+
+function commentsSheet_() {
+  var ss = sheet_().getParent();
+  var sh = ss.getSheetByName('Komentar');
+  if (!sh) {
+    sh = ss.insertSheet('Komentar');
+    sh.appendRow(['ID', 'Waktu', 'Surat', 'Nama', 'Komentar']);
+    sh.setFrozenRows(1);
+  }
+  return sh;
+}
+
+function readComments_() {
+  var values = commentsSheet_().getDataRange().getValues();
+  var out = [];
+  for (var i = 1; i < values.length; i++) {
+    var r = values[i];
+    if (!r[0]) continue;
+    out.push({ id: String(r[0]), time: r[1] instanceof Date ? r[1].toISOString() : String(r[1]), slug: String(r[2]), name: String(r[3]), text: String(r[4]) });
+  }
+  out.sort(function (a, b) {
+    return a.time < b.time ? 1 : a.time > b.time ? -1 : 0;
+  });
+  return out;
+}
+
+function comments_(slug) {
+  if (!/^[a-z0-9\-]{2,40}$/.test(slug || '')) return { ok: false, error: 'Surat tidak valid' };
+  var all = readComments_().filter(function (c) {
+    return c.slug === slug;
+  });
+  return { ok: true, total: all.length, comments: all.slice(0, 300) };
+}
+
+function allComments_() {
+  var all = readComments_();
+  return { ok: true, total: all.length, comments: all.slice(0, 500) };
+}
+
+function addComment_(p) {
+  var slug = String(p.slug || '');
+  var name = String(p.name || '').replace(/[\u0000-\u001f]/g, ' ').replace(/\s+/g, ' ').trim().slice(0, 60);
+  var text = String(p.text || '').replace(/[\u0000-\u0009\u000b-\u001f]/g, '').replace(/\n{3,}/g, '\n\n').trim().slice(0, 1000);
+  if (!/^[a-z0-9\-]{2,40}$/.test(slug)) return { ok: false, error: 'Surat tidak valid' };
+  if (!name || !text) return { ok: false, error: 'Nama dan komentar wajib diisi' };
+  if (LINK_RE.test(name + ' ' + text)) return { ok: false, error: 'Komentar yang berisi tautan tidak bisa dikirim' };
+  // Batas kiriman per perangkat: 3 per menit
+  var cache = CacheService.getScriptCache();
+  var rk = 'rl:' + String(p.ipHash || 'x').slice(0, 64);
+  var now = Date.now();
+  var hist = [];
+  try {
+    hist = JSON.parse(cache.get(rk) || '[]').filter(function (t) {
+      return now - t < 60000;
+    });
+  } catch (e) {
+    hist = [];
+  }
+  if (hist.length >= 3) return { ok: false, error: 'Terlalu cepat. Tunggu sebentar lalu kirim lagi.', limited: true };
+  hist.push(now);
+  cache.put(rk, JSON.stringify(hist), 90);
+  var lock = LockService.getScriptLock();
+  lock.waitLock(20000);
+  try {
+    var safe = function (v) {
+      return /^[=+\-@]/.test(v) ? "'" + v : v;
+    };
+    var c = { id: Utilities.getUuid(), time: new Date().toISOString(), slug: slug, name: name, text: text };
+    commentsSheet_().appendRow([c.id, new Date(c.time), slug, safe(name), safe(text)]);
+    return { ok: true, comment: c };
+  } finally {
+    lock.releaseLock();
+  }
+}
+
+function deleteComment_(id) {
+  if (!/^[a-f0-9\-]{36}$/.test(id || '')) return { ok: false, error: 'ID tidak valid' };
+  var lock = LockService.getScriptLock();
+  lock.waitLock(20000);
+  try {
+    var sh = commentsSheet_();
+    var ids = sh.getRange(1, 1, Math.max(1, sh.getLastRow()), 1).getValues();
+    for (var i = ids.length - 1; i >= 1; i--) {
+      if (String(ids[i][0]) === id) {
+        sh.deleteRow(i + 1);
+        return { ok: true };
+      }
+    }
+    return { ok: true, missing: true };
+  } finally {
+    lock.releaseLock();
+  }
 }
 
 /** Jalankan sekali dari editor untuk memberi izin akses (tombol Run). */

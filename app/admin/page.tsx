@@ -17,6 +17,7 @@ export default function Admin() {
   const [err, setErr] = useState('');
   const [busy, setBusy] = useState(false);
   const [showAll, setShowAll] = useState(false);
+  const [removing, setRemoving] = useState('');
 
   async function load(password: string) {
     setBusy(true);
@@ -68,6 +69,22 @@ export default function Admin() {
   }
 
   const rows: Row[] = data.subscribers?.rows || [];
+  const comments: { id: string; time: string; slug: string; name: string; text: string }[] = data.comments?.comments || [];
+  const nameOf = (slug: string) => data.docs.find((d: any) => d.slug === slug)?.name || slug;
+  async function removeComment(c: { id: string; name: string }) {
+    if (!window.confirm(`Hapus komentar dari "${c.name}"? Komentar langsung hilang dari web dan tidak bisa dikembalikan.`)) return;
+    setRemoving(c.id);
+    try {
+      const r = await fetch('/api/admin/comments', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ password: pw, id: c.id }) });
+      const d = await r.json();
+      if (!d.ok) throw new Error(d.error);
+      setData((cur: any) => ({ ...cur, comments: { ...cur.comments, total: Math.max(0, (cur.comments.total || 1) - 1), comments: cur.comments.comments.filter((x: any) => x.id !== c.id) } }));
+    } catch (e: any) {
+      window.alert(e.message || 'Komentar gagal dihapus. Coba lagi.');
+    } finally {
+      setRemoving('');
+    }
+  }
   const st = data.status;
   const problems: Item[] = [...(st?.naskah || []), ...(st?.audio || [])].filter((x: Item) => x.status !== 'ok');
   const download = () => {
@@ -146,6 +163,25 @@ export default function Admin() {
             ) : null}
           </tbody>
         </table>
+      </div>
+
+      <h2>Komentar ({data.comments?.total ?? comments.length})</h2>
+      {data.comments?.ok === false ? <p className="form-msg err">Komentar belum bisa dimuat. {data.comments.error || ''}</p> : null}
+      <div className="list cm-admin">
+        {comments.map((c) => (
+          <div className="cm-admin-item" key={c.id}>
+            <div className="cm-admin-main">
+              <div className="cm-admin-meta">
+                <b style={{ color: 'var(--text)' }}>{c.name}</b> · <a href={`/surat/${c.slug}#komentar`}>{nameOf(c.slug)}</a> · {dt(c.time)}
+              </div>
+              <p className="cm-admin-text">{c.text}</p>
+            </div>
+            <button className="cm-del" onClick={() => removeComment(c)} disabled={removing === c.id}>
+              {removing === c.id ? 'Menghapus…' : 'Hapus'}
+            </button>
+          </div>
+        ))}
+        {data.comments?.ok !== false && !comments.length ? <div className="row">Belum ada komentar.</div> : null}
       </div>
 
       <h2>Naskah atau audio yang gagal diproses</h2>

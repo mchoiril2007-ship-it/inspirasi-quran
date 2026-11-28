@@ -30,6 +30,15 @@ export async function POST(req: Request) {
     }
   }
 
+  let comments: any = { ok: false, comments: [] };
+  if (bridgeConfig()) {
+    try {
+      comments = await bridgeCall({ action: 'allComments' });
+    } catch (e: any) {
+      comments = { ok: false, error: e.message, comments: [] };
+    }
+  }
+
   const owner = process.env.VERCEL_GIT_REPO_OWNER;
   const repo = process.env.VERCEL_GIT_REPO_SLUG;
   let status: any = null;
@@ -44,6 +53,7 @@ export async function POST(req: Request) {
   return NextResponse.json({
     ok: true,
     subscribers,
+    comments,
     status,
     repo: owner && repo ? `${owner}/${repo}` : null,
     channel: vd.channel,

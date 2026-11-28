@@ -3,6 +3,7 @@ import { notFound } from 'next/navigation';
 import { Tabs } from '@/components/Client';
 import { SuratStats } from '@/components/Stats';
 import { ShareButton } from '@/components/Share';
+import Comments from '@/components/Comments';
 import { getDoc, getDocs, getSurah } from '@/lib/content';
 
 export const dynamicParams = false;
@@ -48,6 +49,7 @@ export default async function SuratLayout({ children, params }: { children: Reac
       </header>
       <Tabs slug={slug} />
       {children}
+      <Comments slug={slug} />
       <nav className="surat-pager read" aria-label="Surat lain">
         {prev ? (
           <Link href={`/surat/${prev.slug}`} className="pager-prev">
